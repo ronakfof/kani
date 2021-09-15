@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> RMC on a single file</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> RMC on a crate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> RMC on a single file</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> RMC on a crate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -486,6 +486,213 @@ Lines not covered by our proof harness will show in red.</p>
 <li>We saw how to get a failing trace using <code>rmc --visualize</code></li>
 <li>We saw how proof harnesses are used to set up preconditions and assert postconditions.</li>
 <li>We saw how to obtain coverage metrics and use them to ensure our proofs are covering as much as they should be.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="failures-that-rmc-can-spot"><a class="header" href="#failures-that-rmc-can-spot">Failures that RMC can spot</a></h1>
+<p>In the <a href="./tutorial-first-steps.html">last section</a> we saw RMC spot two major kinds of failures: assertions and panics.
+If the proof harness allows some program trace that results in a panic, then RMC will report that as a failure.
+We additionally saw very briefly a couple of other kinds of failures, like null pointer dereferences and overflow.
+In this section, we're going to expand on these additional checks, to give you an idea of what other problems RMC will find.</p>
+<h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
+<p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
+Consider this Rust code (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/rmc-docs/src/tutorial/kinds-of-failure/"><code>rmc-docs/src/tutorial/kinds-of-failure</code></a>):</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
+    if a.len() == 0 {
+        return 0;
+    }
+    return a[i % a.len() + 1];
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>We can again write a simple property test against this code:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    proptest! {
+        #[test]
+        fn doesnt_crash(i: usize, a: Vec&lt;u32&gt;) {
+            get_wrapped(i, &amp;a);
+        }
+    }
+<span class="boring">}
+</span></code></pre></pre>
+<p>This property test will immediately find the failing case because of this dynamic check.</p>
+<p>But what if we change this function to use unsafe Rust:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>return unsafe { *a.get_unchecked(i % a.len() + 1) };
+<span class="boring">}
+</span></code></pre></pre>
+<p>Now the error becomes invisible to this test:</p>
+<pre><code># cargo test
+[...]
+test tests::doesnt_crash ... ok
+</code></pre>
+<p>But we're able to check this unsafe code with RMC:</p>
+<pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
+#[no_mangle]
+fn main() {
+    let size: usize = __nondet();
+    __VERIFIER_assume(size &lt; 4096);
+    let index: usize = __nondet();
+    let array: Vec&lt;u32&gt; = vec![0; size];
+    get_wrapped(index, &amp;array);
+}
+</code></pre></pre>
+<pre><code># rmc tests/bounds-check.rs
+[...]
+** 1 of 468 failed (2 iterations)
+VERIFICATION FAILED
+</code></pre>
+<p>Notice there were a <em>lot</em> of verification conditions being checked: in the above output, 468! (It may change for you.)
+This is a result of using the standard library <code>Vec</code> implementation, which means our harness actually used quite a bit of code, short as it looks.
+RMC is inserting a lot more checks than appear as asserts in our code, so the output can be large.
+Let's narrow that output down a bit:</p>
+<pre><code># rmc tests/bounds-check.rs | grep FAIL
+[get_wrapped.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *var_5: FAILURE
+VERIFICATION FAILED
+</code></pre>
+<p>Notice that, for RMC, this has gone from a simple bounds-checking problem to a pointer-checking problem.
+RMC will check operations on pointers to ensure they're not potentially invalid memory accesses.
+Any unsafe code that manipulates pointers will, as we see here, raise failures if its behavior is actually unsafe. </p>
+<p>Consider trying a few more small exercises with this example:</p>
+<ol>
+<li>Exercise: Switch back to the normal/safe indexing operation and re-try RMC. What changes compared to the unsafe operation and why?
+(Try predicting the answer, then seeing if you got it right.)</li>
+<li>Exercise: Remember how to get a trace from RMC? Find out what inputs it failed on.</li>
+<li>Exercise: Fix the error, run RMC, and see a successful verification.</li>
+<li>Exercise: Try switching back to the unsafe code (now with the error fixed) and re-run RMC. It should still successfully verify.</li>
+</ol>
+<details>
+<summary>Click to see explanation for exercise 1</summary>
+<p>Having switched back to the safe indexing operation, RMC reports two failures instead of just one:</p>
+<pre><code># rmc tests/bounds-check.rs | grep FAIL
+[get_wrapped.assertion.3] line 9 index out of bounds: the length is move _12 but the index is _5: FAILURE
+[get_wrapped.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in a.data[var_5]: FAILURE
+VERIFICATION FAILED
+</code></pre>
+<p>The first is Rust's implicit assertion for the safe indexing operation.
+The second is RMC's check to ensure the pointer operation is actually safe.
+This pattern (two checks for similar issues in safe Rust code) is common, and we'll see it again in the next section.</p>
+</details>
+<h2 id="overflow-and-math-errors"><a class="header" href="#overflow-and-math-errors">Overflow and math errors</a></h2>
+<p>Consider a different variant on the above function:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
+    return a[i % a.len()];
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>We've corrected the out-of-bounds access, but now we've omitted the &quot;base case&quot;: what to return on an empty list.
+RMC will spot this not as a bound error, but as a mathematical error: on an empty list the modulus operator (<code>%</code>) will cause a division by zero.</p>
+<ol>
+<li>Exercise: Try to run RMC on the above, to see what this kind of failure looks like.</li>
+</ol>
+<p>Rust also performs runtime safety checks for integer overflows, much like it does for bounds checks.
+Consider this code (from <code>tests/overflow.rs</code>):</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>fn simple_addition(a: u32, b: u32) -&gt; u32 {
+    return a + b;
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>A trivial function, but if we write a property test for it, we immediately find inputs where it fails, thanks to Rust's dynamic checks.
+RMC will find these failures as well.
+Here's the output from RMC:</p>
+<pre><code># rmc tests/overflow.rs
+[...]
+** Results:
+./tests/overflow.rs function simple_addition
+[simple_addition.assertion.1] line 6 attempt to compute `move _3 + move _4`, which would overflow: FAILURE
+[simple_addition.overflow.1] line 6 arithmetic overflow on unsigned + in var_3 + var_4: FAILURE
+
+** 2 of 2 failed (2 iterations)
+VERIFICATION FAILED
+</code></pre>
+<p>Notice the two failures: the Rust-inserted overflow check (<code>simple_addition.assertion.1</code>) and RMC's explicit overflow check (<code>simple_addition.overflow.1</code>).</p>
+<blockquote>
+<p><strong>NOTE:</strong> You could attempt to fix this issue by using Rust's alternative mathematical functions with explicit overflow behavior.
+For instance, instead of <code>a + b</code> write <code>a.wrapping_add(b)</code>.</p>
+<p>However, <a href="https://github.com/model-checking/rmc/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional RMC overflow check.
+As a result, this currently still fails in RMC.</p>
+</blockquote>
+<h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
+<p>One of the classic subtle bugs that persisted in many implementations for a very long time is finding the midpoint in quick sort.
+This often naively looks like this (from <code>tests/overflow-quicksort.rs</code>):</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>fn find_midpoint(low: u32, high: u32) -&gt; u32 {
+    return (low + high) / 2;
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>RMC immediately spots the bug in the above code.</p>
+<ol>
+<li>Exercise: Fix this function so it no longer overflows.
+(Hint: depending on which approach you take, you may need to add the assumption that <code>high &gt; low</code> to your proof harness.
+Don't add that right away, see what happens if you don't. Just keep it in mind.)</li>
+<li>Exercise: Prove your new implementation actually finds the midpoint correctly by adding an assertion to the test harness.</li>
+</ol>
+<details>
+<summary>Click to see solutions for these exercises</summary>
+<p>A very common approach for resolving the overflow issue looks like this:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>return low + (high - low) / 2;
+<span class="boring">}
+</span></code></pre></pre>
+<p>But if you naively try this (try it!), you'll find a new underflow error: <code>high - low</code> might result in a negative number, but has type <code>u32</code>.
+Hence, the need to add an assumption that would make that impossible.
+(Adding an assumption, though, means there's a new way to &quot;use it wrong.&quot; Perhaps we'd like to avoid that!)</p>
+<p>After that, you might wonder how to &quot;prove your new implementation correct.&quot;
+After all, what does &quot;correct&quot; even mean?
+Often we're using a good approximation of correct, such as the equivalence of two implementations (often one much &quot;simpler&quot; than the other somehow).
+Here's one possible assertion to make that obvious:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>assert!(result as u64 == (a as u64 + b as u64) / 2);
+<span class="boring">}
+</span></code></pre></pre>
+<p>Since this implementation is just the original one, but cast to a wider unsigned integer type, it should have the same result but without overflowing.
+When RMC tells us both of these methods yield the same exact result, that gives us additional confidence that we haven't overlooked something.</p>
+</details>
+<h2 id="future-work"><a class="header" href="#future-work">Future work</a></h2>
+<p>RMC notably does not currently check the following:</p>
+<ol>
+<li>
+<p>Concurrency bugs, deadlocks, or data races.
+It's possible RMC may be extended in the future to find such issues.</p>
+</li>
+<li>
+<p>Rust type invariants.
+For example, it's undefined behavior in Rust to produce a value of type <code>bool</code> that isn't <code>0</code> or <code>1</code>.
+RMC will not spot this error (in presumably unsafe code), yet.</p>
+</li>
+<li>
+<p>Fully generic functions.
+To write a proof harness and call functions, they must be fully &quot;monomorphized.&quot;
+This means we can't currently check a generic function (<code>foo&lt;T&gt;</code>) generically.
+Proof harnesses have to be written specializing type parameters (<code>T</code>) to concrete types (e.g. <code>u32</code>), and check those instead.</p>
+</li>
+</ol>
+<h2 id="summary-1"><a class="header" href="#summary-1">Summary</a></h2>
+<p>In this section:</p>
+<ol>
+<li>We saw RMC spot potential bounds check errors.</li>
+<li>We saw RMC spot actually-unsafe dereferencing of a raw pointer to invalid memory.</li>
+<li>We saw RMC spot a division by zero error.</li>
+<li>We saw RMC spot overflowing addition.</li>
+<li>As an exercise, we tried proving an assertion (finding the midpoint) that was not completely trivial.</li>
 </ol>
 
                     </main>
