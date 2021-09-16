@@ -160,7 +160,8 @@ Consider this Rust code (which can be found under <a href="https://github.com/mo
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
-</span>fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
+</span>/// Wrap &quot;too-large&quot; indexes back into a valid range for the array
+fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
     if a.len() == 0 {
         return 0;
     }
@@ -224,7 +225,7 @@ Any unsafe code that manipulates pointers will, as we see here, raise failures i
 <ol>
 <li>Exercise: Switch back to the normal/safe indexing operation and re-try RMC. What changes compared to the unsafe operation and why?
 (Try predicting the answer, then seeing if you got it right.)</li>
-<li>Exercise: Remember how to get a trace from RMC? Find out what inputs it failed on.</li>
+<li>Exercise: <a href="./tutorial-first-steps.html#getting-a-trace">Remember how to get a trace from RMC?</a> Find out what inputs it failed on.</li>
 <li>Exercise: Fix the error, run RMC, and see a successful verification.</li>
 <li>Exercise: Try switching back to the unsafe code (now with the error fixed) and re-run RMC. It should still successfully verify.</li>
 </ol>
@@ -239,6 +240,47 @@ VERIFICATION FAILED
 <p>The first is Rust's implicit assertion for the safe indexing operation.
 The second is RMC's check to ensure the pointer operation is actually safe.
 This pattern (two checks for similar issues in safe Rust code) is common, and we'll see it again in the next section.</p>
+</details>
+<details>
+<summary>Click to see explanation for exercise 2</summary>
+<p>Having run <code>rmc --visualize</code> and clicked on one of the failures to see a trace, there are three things to immediately notice:</p>
+<ol>
+<li>This trace is huge. The standard library <code>Vec</code> is involved, there's a lot going on.</li>
+<li>The top of the trace file contains some &quot;trace navigation tips&quot; that might be helpful in navigating the trace.</li>
+<li>There's a lot of generated code and it's really hard to just read the trace itself.</li>
+</ol>
+<p>To navigate this trace to find the information you need, we recommend searching for things you expect to be somewhere in the trace:</p>
+<ol>
+<li>Search the document for <code>__nondet</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
+We can use this to find out what example values lead to a problem.
+In this case, where we just have a couple of <code>__nondet</code> values in our proof harness, we can learn a lot just by seeing what these are.
+In this trace we find (and the values you get may be different):</li>
+</ol>
+<pre><code>Step 23: Function main, File tests/bounds-check.rs, Line 43
+let size: usize = __nondet();
+size = 0ul
+
+Step 27: Function main, File tests/bounds-check.rs, Line 45
+let index: usize = __nondet();
+index = 0ul
+
+Step 36: Function main, File tests/bounds-check.rs, Line 43
+let size: usize = __nondet();
+size = 2464ul
+
+Step 39: Function main, File tests/bounds-check.rs, Line 45
+let index: usize = __nondet();
+index = 2463ul
+</code></pre>
+<p>Try not to be fooled by the first assignments: we're seeing zero-initialization there.
+They get overridden by the later assignments.
+You may see different values here, as it depends on the solver's behavior.</p>
+<ol start="2">
+<li>Try searching for &quot;failure:&quot;. This will be near the end of the document.
+Now you can try reverse-searching for assignments to the variables involved.
+For example, search upwards from the failure for <code>i =</code>.</li>
+</ol>
+<p>These two techniques should help you find both the nondeterministic inputs, and see what values were involved in the failing assertion.</p>
 </details>
 <h2 id="overflow-and-math-errors"><a class="header" href="#overflow-and-math-errors">Overflow and math errors</a></h2>
 <p>Consider a different variant on the above function:</p>
