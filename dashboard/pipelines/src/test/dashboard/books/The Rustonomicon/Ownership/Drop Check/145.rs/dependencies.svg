@@ -8,35 +8,35 @@
  viewBox="0.00 0.00 190.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>G</title>
-<!-- 6724247824514111568 -->
+<!-- &#45;2148501930325673189 -->
 <g id="node1" class="node">
-<title>6724247824514111568</title>
-<ellipse fill="none" stroke="black" cx="91" cy="-18" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="91" y="-14.3" font-family="Times,serif" font-size="14.00">145.check</text>
-</g>
-<!-- 362687988886812625 -->
-<g id="node2" class="node">
-<title>362687988886812625</title>
-<polygon fill="#90caf9" stroke="black" points="182,-108 0,-108 0,-72 182,-72 182,-108"/>
-<text text-anchor="middle" x="91" y="-86.3" font-family="Times,serif" font-size="14.00">Is this valid Rust code?</text>
-</g>
-<!-- 362687988886812625&#45;&gt;6724247824514111568 -->
-<g id="edge1" class="edge">
-<title>362687988886812625&#45;&gt;6724247824514111568</title>
-<path fill="none" stroke="black" d="M91,-71.7C91,-63.98 91,-54.71 91,-46.11"/>
-<polygon fill="black" stroke="black" points="94.5,-46.1 91,-36.1 87.5,-46.1 94.5,-46.1"/>
-</g>
-<!-- &#45;2538269543874207541 -->
-<g id="node3" class="node">
-<title>&#45;2538269543874207541</title>
+<title>&#45;2148501930325673189</title>
 <ellipse fill="none" stroke="black" cx="91" cy="-162" rx="40.09" ry="18"/>
 <text text-anchor="middle" x="91" y="-158.3" font-family="Times,serif" font-size="14.00">145.rs</text>
 </g>
-<!-- &#45;2538269543874207541&#45;&gt;362687988886812625 -->
+<!-- &#45;6896096327947173845 -->
+<g id="node3" class="node">
+<title>&#45;6896096327947173845</title>
+<polygon fill="#90caf9" stroke="black" points="182,-108 0,-108 0,-72 182,-72 182,-108"/>
+<text text-anchor="middle" x="91" y="-86.3" font-family="Times,serif" font-size="14.00">Is this valid Rust code?</text>
+</g>
+<!-- &#45;2148501930325673189&#45;&gt;&#45;6896096327947173845 -->
 <g id="edge2" class="edge">
-<title>&#45;2538269543874207541&#45;&gt;362687988886812625</title>
+<title>&#45;2148501930325673189&#45;&gt;&#45;6896096327947173845</title>
 <path fill="none" stroke="black" d="M91,-143.7C91,-135.98 91,-126.71 91,-118.11"/>
 <polygon fill="black" stroke="black" points="94.5,-118.1 91,-108.1 87.5,-118.1 94.5,-118.1"/>
+</g>
+<!-- 4883220849318650610 -->
+<g id="node2" class="node">
+<title>4883220849318650610</title>
+<ellipse fill="none" stroke="black" cx="91" cy="-18" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="91" y="-14.3" font-family="Times,serif" font-size="14.00">145.check</text>
+</g>
+<!-- &#45;6896096327947173845&#45;&gt;4883220849318650610 -->
+<g id="edge1" class="edge">
+<title>&#45;6896096327947173845&#45;&gt;4883220849318650610</title>
+<path fill="none" stroke="black" d="M91,-71.7C91,-63.98 91,-54.71 91,-46.11"/>
+<polygon fill="black" stroke="black" points="94.5,-46.1 91,-36.1 87.5,-46.1 94.5,-46.1"/>
 </g>
 </g>
 </svg>
