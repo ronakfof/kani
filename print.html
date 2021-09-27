@@ -877,23 +877,35 @@ To this end, we use Rust code snippet examples from the following general Rust d
 <li>The Rust Reference</li>
 <li>The Rustonomicon</li>
 <li>The Rust Unstable Book</li>
-<li>Rust by Example</li>
+<li>Rust By Example</li>
 </ul>
 <p>However, not all examples from these books are suited for verification.
-Because of that, we run three different types of jobs when generating the dashboard:</p>
+For instance, some of them are only included to show what is valid Rust code (or what is not).</p>
+<p>Because of that, we run up to three different types of jobs when generating the dashboard:</p>
 <ul>
-<li><code>check</code> jobs (<code>BUILD</code>): This check only uses the Rust front-end to detect if the example is valid Rust code.</li>
-<li><code>codegen</code> jobs (<code>TEST</code>): This check uses the Rust front-end and the RMC back-end to determine if we can generate GotoC code.</li>
-<li><code>verification</code> jobs (<code>REPORT</code>): This check uses all of above and CBMC to obtain a verification result.</li>
+<li><code>check</code> jobs (<code>BUILD</code> stage): This check uses the Rust front-end to detect if the example is valid Rust code.</li>
+<li><code>codegen</code> jobs (<code>TEST</code> stage): This check uses the RMC back-end to determine if we can generate GotoC code.</li>
+<li><code>verification</code> jobs (<code>REPORT</code> stage): This check uses CBMC to obtain a verification result.</li>
 </ul>
+<p>Note that these are incremental: A <code>verification</code> job depends on a previous <code>codegen</code> job.
+Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
+<blockquote>
+<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does not support
+hierarchical views nor custom stages at the moment. For this reason, the results are
+displayed for each example using Litani's default stages (<code>BUILD</code>, <code>TEST</code> and <code>REPORT</code>).</p>
+</blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
 <li>Set the expected output according to flags present in the code snippet.</li>
 <li>Add any required compiler/RMC flags (e.g., CBMC unwinding flags).</li>
 <li>Include custom assertions for verification (only in the case of <code>verification</code> jobs).</li>
 </ol>
-<p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.</p>
-<p>The <a href="./dashboard/index.html">RMC Dashboard</a> displays a summary of the obtained results.</p>
+<p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.
+The results are summarized as follows: If the obtained and expected outputs differ,
+the color of the stage bar will be red. Otherwise, it will be blue.
+If an example shows one red bar, it is considered a failed example that cannot be handled by RMC.</p>
+<p>The <a href="./dashboard/index.html">RMC Dashboard</a> is automatically updated whenever
+a PR gets merged into RMC.</p>
 
                     </main>
 
