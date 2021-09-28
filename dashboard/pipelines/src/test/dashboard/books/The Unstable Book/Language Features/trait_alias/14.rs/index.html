@@ -505,9 +505,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: success</li>
-      <li>2021-09-28T02:03:09Z</li>
-      <li>c996e3d7-fbf9-4103-b9be-5875d50a7682</li>
+      <li>Pipeline status: fail</li>
+      <li>2021-09-28T18:42:30Z</li>
+      <li>c9fa0c19-c93e-4e3c-ae68-c64b867a0728</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d1becc46-58dc-49d4-953c-52bf0d8d0ee9">
+              <a href="#job-c798adfd-d4c6-4863-a257-89cca2746f42">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-dc596171-3ea7-4e9b-9a14-029b6ec31687">
+              <a href="#job-0fb9c8ce-66ac-4dd9-9893-d3cc10e9a853">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,15 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b5f34550-e84e-4040-aab0-121d68eaf9b1">
+              <a href="#job-684dc1ce-da12-4c60-9986-80605f2f26fd">
               
               Can RMC reason about it?
               
@@ -633,15 +639,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-d1becc46-58dc-49d4-953c-52bf0d8d0ee9">
+    <div class="command-table" id="job-c798adfd-d4c6-4863-a257-89cca2746f42">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-d1becc46-58dc-49d4-953c-52bf0d8d0ee9">#</a>
+                <a href="#job-c798adfd-d4c6-4863-a257-89cca2746f42">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -663,7 +669,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                1
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -695,7 +701,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-09-28T02:12:37Z
+                2021-09-28T18:48:00Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,14 +709,14 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-09-28T02:12:37Z
+                2021-09-28T18:48:00Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              yes
+              no
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -728,17 +734,16 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
-warning: trait objects without an explicit `dyn` are deprecated
---> src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs:17:13
+error: expected one of `(`, `async`, `const`, `default`, `extern`, `fn`, `pub`, `unsafe`, or `use`, found keyword `pub`
+--> src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs:13:5
 |
-17 |     let a: &Bar = &123;
-|             ^^^ help: use `dyn`: `dyn Bar`
-|
-= note: `#[warn(bare_trait_objects)]` on by default
-= warning: this is accepted in the current edition (Rust 2018) but is a hard error in Rust 2021!
-= note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+13 | pub pub fn main() {
+|     ^^^
+|     |
+|     expected one of 9 possible tokens
+|     help: visibility `pub` must come before `pub pub`: `pub pub pub`
 
-warning: 1 warning emitted
+error: aborting due to previous error
 
             </xmp>
           </div><!-- class="output-box" -->
@@ -758,15 +763,15 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-dc596171-3ea7-4e9b-9a14-029b6ec31687">
+    <div class="command-table" id="job-0fb9c8ce-66ac-4dd9-9893-d3cc10e9a853">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-dc596171-3ea7-4e9b-9a14-029b6ec31687">#</a>
+                <a href="#job-0fb9c8ce-66ac-4dd9-9893-d3cc10e9a853">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -779,68 +784,11 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
           
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                5
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2021-09-28T02:12:37Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2021-09-28T02:12:38Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
 
           
 
@@ -850,23 +798,6 @@ warning: 1 warning emitted
 
           
 
-          
-          <div class="output-box"><xmp>stderr:
-            
-warning: trait objects without an explicit `dyn` are deprecated
---> src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs:17:13
-|
-17 |     let a: &Bar = &123;
-|             ^^^ help: use `dyn`: `dyn Bar`
-|
-= note: `#[warn(bare_trait_objects)]` on by default
-= warning: this is accepted in the current edition (Rust 2018) but is a hard error in Rust 2021!
-= note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
-
-warning: 1 warning emitted
-
-            </xmp>
-          </div><!-- class="output-box" -->
           
 
         </div><!-- class="command-content" -->
@@ -883,15 +814,15 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b5f34550-e84e-4040-aab0-121d68eaf9b1">
+    <div class="command-table" id="job-684dc1ce-da12-4c60-9986-80605f2f26fd">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b5f34550-e84e-4040-aab0-121d68eaf9b1">#</a>
+                <a href="#job-684dc1ce-da12-4c60-9986-80605f2f26fd">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -909,63 +840,6 @@ warning: 1 warning emitted
           </div><!-- class="command-invocation" -->
 
           
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2021-09-28T02:12:38Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                02s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2021-09-28T02:12:40Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
 
           
 
@@ -973,249 +847,6 @@ warning: 1 warning emitted
           
 
 
-          
-          <div class="output-box"><xmp>stdout:
-            
-CBMC version 5.30.1 (cbmc-5.30.1) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-replacing function pointer by 1 possible targets
-replacing function pointer by 4 possible targets
-replacing function pointer by 4 possible targets
-replacing function pointer by 1 possible targets
-Generic Property Instrumentation
-Running with 8 object bits, 56 offset bits (default)
-Starting Bounded Model Checking
-Unwinding loop _RNvMs1_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 344 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a99438c74cb540eE
-Unwinding loop _RNvMs1_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 344 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs1_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 344 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs3HrqL1YBpFH_5alloc5boxed3BoxDNtNtB4_3fmt5DebugNtNtB4_6marker4SendEL_EECs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.0953467s
-size of program expression: 1246 steps
-simple slicing removed 25 assignments
-Generated 73 VCC(s), 17 remaining after simplification
-Runtime Postprocess Equation: 0.000175001s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.017946s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 3.3e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-22853 variables, 4836 clauses
-SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.013693s
-Runtime decision procedure: 0.031818s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for Signedbv { width: 32 } (MIR type Int(I32)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for Signedbv { width: 32 } (MIR type Int(I32)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_dereference.1] dereference failure: pointer NULL in var_1.vtable->drop: SUCCESS
-[pointer_dereference.2] dereference failure: pointer invalid in var_1.vtable->drop: SUCCESS
-[pointer_dereference.3] dereference failure: deallocated dynamic object in var_1.vtable->drop: SUCCESS
-[pointer_dereference.4] dereference failure: dead object in var_1.vtable->drop: SUCCESS
-[pointer_dereference.5] dereference failure: pointer outside object bounds in var_1.vtable->drop: SUCCESS
-[pointer_dereference.6] dereference failure: invalid integer address in var_1.vtable->drop: SUCCESS
-[pointer_dereference.7] dereference failure: pointer NULL in var_1.vtable->drop: SUCCESS
-[pointer_dereference.8] dereference failure: pointer invalid in var_1.vtable->drop: SUCCESS
-[pointer_dereference.9] dereference failure: deallocated dynamic object in var_1.vtable->drop: SUCCESS
-[pointer_dereference.10] dereference failure: dead object in var_1.vtable->drop: SUCCESS
-[pointer_dereference.11] dereference failure: pointer outside object bounds in var_1.vtable->drop: SUCCESS
-[pointer_dereference.12] dereference failure: invalid integer address in var_1.vtable->drop: SUCCESS
-[pointer_dereference.13] invalid function pointer: SUCCESS
-[pointer_dereference.14] dereference failure: pointer NULL in var_3.vtable->3: SUCCESS
-[pointer_dereference.15] dereference failure: pointer invalid in var_3.vtable->3: SUCCESS
-[pointer_dereference.16] dereference failure: deallocated dynamic object in var_3.vtable->3: SUCCESS
-[pointer_dereference.17] dereference failure: dead object in var_3.vtable->3: SUCCESS
-[pointer_dereference.18] dereference failure: pointer outside object bounds in var_3.vtable->3: SUCCESS
-[pointer_dereference.19] dereference failure: invalid integer address in var_3.vtable->3: SUCCESS
-[pointer_dereference.20] invalid function pointer: SUCCESS
-[pointer_dereference.21] dereference failure: pointer NULL in var_3.vtable->3: SUCCESS
-[pointer_dereference.22] dereference failure: pointer invalid in var_3.vtable->3: SUCCESS
-[pointer_dereference.23] dereference failure: deallocated dynamic object in var_3.vtable->3: SUCCESS
-[pointer_dereference.24] dereference failure: dead object in var_3.vtable->3: SUCCESS
-[pointer_dereference.25] dereference failure: pointer outside object bounds in var_3.vtable->3: SUCCESS
-[pointer_dereference.26] dereference failure: invalid integer address in var_3.vtable->3: SUCCESS
-[pointer_dereference.27] invalid function pointer: SUCCESS
-[pointer_dereference.28] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.29] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.30] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.31] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.32] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.33] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.34] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.35] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.36] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.37] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.38] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.39] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.40] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.41] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.42] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.43] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.44] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.45] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.46] invalid function pointer: SUCCESS
-[pointer_dereference.47] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.48] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.49] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.50] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.51] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.52] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_1): SUCCESS
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
-[alloc::alloc::box_free.assertion.1] line 329 resume instruction: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::exchange_malloc
-[alloc::alloc::exchange_malloc.assertion.2] line 316 unreachable code: SUCCESS
-[alloc::alloc::exchange_malloc.pointer_arithmetic.1] line 316 pointer arithmetic: dead object in (unsigned char *)&var_6 + 0: SUCCESS
-[alloc::alloc::exchange_malloc.pointer_dereference.1] line 316 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_6 + 0)): SUCCESS
-[alloc::alloc::exchange_malloc.assertion.1] line 318 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::Global::alloc_impl
-[std::alloc::Global::alloc_impl.assertion.1] line 167 unreachable code: SUCCESS
-[std::alloc::Global::alloc_impl.pointer_arithmetic.1] line 167 pointer arithmetic: dead object in (unsigned char *)&var_15 + 0: SUCCESS
-[std::alloc::Global::alloc_impl.pointer_dereference.1] line 167 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_15 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
-[std::alloc::dealloc.precondition_instance.1] line 104 free argument must be NULL or valid pointer: SUCCESS
-[std::alloc::dealloc.precondition_instance.2] line 104 free argument must be dynamic object: SUCCESS
-[std::alloc::dealloc.precondition_instance.3] line 104 free argument has offset zero: SUCCESS
-[std::alloc::dealloc.precondition_instance.4] line 104 double free: SUCCESS
-[std::alloc::dealloc.precondition_instance.5] line 104 free called for new[] object: SUCCESS
-[std::alloc::dealloc.precondition_instance.6] line 104 free called for stack-allocated object: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function <std::boxed::Box<T, A> as std::fmt::Debug>::fmt
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.assertion.1] line 1533 Non-null virtual function call for "3": SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.1] line 1533 dereference failure: pointer NULL in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.2] line 1533 dereference failure: pointer invalid in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.3] line 1533 dereference failure: deallocated dynamic object in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.4] line 1533 dereference failure: dead object in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.5] line 1533 dereference failure: pointer outside object bounds in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.6] line 1533 dereference failure: invalid integer address in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.7] line 1533 dereference failure: pointer NULL in var_3.vtable->3: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.8] line 1533 dereference failure: pointer invalid in var_3.vtable->3: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.9] line 1533 dereference failure: deallocated dynamic object in var_3.vtable->3: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.10] line 1533 dereference failure: dead object in var_3.vtable->3: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.11] line 1533 dereference failure: pointer outside object bounds in var_3.vtable->3: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Debug>::fmt.pointer_dereference.12] line 1533 dereference failure: invalid integer address in var_3.vtable->3: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function std::boxed::Box::<T>::new
-[std::boxed::Box::<T>::new.pointer_dereference.1] line 191 dereference failure: pointer NULL in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.2] line 191 dereference failure: pointer invalid in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.3] line 191 dereference failure: deallocated dynamic object in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.4] line 191 dereference failure: dead object in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.5] line 191 dereference failure: pointer outside object bounds in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.6] line 191 dereference failure: invalid integer address in *var_0.0.pointer: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 116 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 116 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 116 dereference failure: deallocated dynamic object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.4] line 116 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 116 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 116 dereference failure: invalid integer address in self->align_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 108 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 108 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 108 dereference failure: deallocated dynamic object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.4] line 108 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 108 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 108 dereference failure: invalid integer address in self->size_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Debug>::fmt
-[<&T as std::fmt::Debug>::fmt.assertion.1] line 2055 Non-null virtual function call for "3": SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2055 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2055 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2055 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2055 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2055 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2055 dereference failure: invalid integer address in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.7] line 2055 dereference failure: pointer NULL in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.8] line 2055 dereference failure: pointer invalid in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.9] line 2055 dereference failure: deallocated dynamic object in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.10] line 2055 dereference failure: dead object in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.11] line 2055 dereference failure: pointer outside object bounds in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.12] line 2055 dereference failure: invalid integer address in var_3.vtable->3: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.13] line 2055 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.14] line 2055 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.15] line 2055 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.16] line 2055 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.17] line 2055 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.18] line 2055 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
-[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 344 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 344 invalid args: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.overflow.1] line 344 arithmetic overflow on unsigned + in var_13 + 1: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 347 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 347 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
-[std::option::Option::<T>::ok_or.assertion.1] line 915 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 915 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.1] line 915 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 917 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.2] line 917 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
-[std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.4] line 188 dereference failure: dead object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.5] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.6] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.7] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.8] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.9] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.10] line 188 dereference failure: dead object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.11] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/non_null.rs function std::ptr::NonNull::<T>::new
-[std::ptr::NonNull::<T>::new.pointer_arithmetic.1] line 215 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[std::ptr::NonNull::<T>::new.pointer_dereference.1] line 215 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 118 dereference failure: pointer NULL in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 118 dereference failure: pointer invalid in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 118 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 118 dereference failure: dead object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 118 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 118 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1903 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1903 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1903 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1905 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1905 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1915 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1915 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs function main
-[main.assertion.1] line 13 resume instruction: SUCCESS
-
-<builtin-library-malloc> function malloc
-[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
-[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
-
-** 0 of 161 failed (1 iterations)
-VERIFICATION SUCCESSFUL
-
-            </xmp>
-          </div><!-- class="output-box" -->
           
 
           
