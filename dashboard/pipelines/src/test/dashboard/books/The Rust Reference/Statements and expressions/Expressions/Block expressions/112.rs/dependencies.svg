@@ -8,33 +8,33 @@
  viewBox="0.00 0.00 190.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>G</title>
-<!-- 8043468194141189128 -->
+<!-- 7814356069571485994 -->
 <g id="node1" class="node">
-<title>8043468194141189128</title>
-<ellipse fill="none" stroke="black" cx="91" cy="-18" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="91" y="-14.3" font-family="Times,serif" font-size="14.00">112.check</text>
-</g>
-<!-- 5069629399589846145 -->
-<g id="node2" class="node">
-<title>5069629399589846145</title>
+<title>7814356069571485994</title>
 <polygon fill="#90caf9" stroke="black" points="182,-108 0,-108 0,-72 182,-72 182,-108"/>
 <text text-anchor="middle" x="91" y="-86.3" font-family="Times,serif" font-size="14.00">Is this valid Rust code?</text>
 </g>
-<!-- 5069629399589846145&#45;&gt;8043468194141189128 -->
+<!-- 1472770573255857181 -->
+<g id="node2" class="node">
+<title>1472770573255857181</title>
+<ellipse fill="none" stroke="black" cx="91" cy="-18" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="91" y="-14.3" font-family="Times,serif" font-size="14.00">112.check</text>
+</g>
+<!-- 7814356069571485994&#45;&gt;1472770573255857181 -->
 <g id="edge2" class="edge">
-<title>5069629399589846145&#45;&gt;8043468194141189128</title>
+<title>7814356069571485994&#45;&gt;1472770573255857181</title>
 <path fill="none" stroke="black" d="M91,-71.7C91,-63.98 91,-54.71 91,-46.11"/>
 <polygon fill="black" stroke="black" points="94.5,-46.1 91,-36.1 87.5,-46.1 94.5,-46.1"/>
 </g>
-<!-- 3790890895645827081 -->
+<!-- &#45;7432846415253201610 -->
 <g id="node3" class="node">
-<title>3790890895645827081</title>
+<title>&#45;7432846415253201610</title>
 <ellipse fill="none" stroke="black" cx="91" cy="-162" rx="40.09" ry="18"/>
 <text text-anchor="middle" x="91" y="-158.3" font-family="Times,serif" font-size="14.00">112.rs</text>
 </g>
-<!-- 3790890895645827081&#45;&gt;5069629399589846145 -->
+<!-- &#45;7432846415253201610&#45;&gt;7814356069571485994 -->
 <g id="edge1" class="edge">
-<title>3790890895645827081&#45;&gt;5069629399589846145</title>
+<title>&#45;7432846415253201610&#45;&gt;7814356069571485994</title>
 <path fill="none" stroke="black" d="M91,-143.7C91,-135.98 91,-126.71 91,-118.11"/>
 <polygon fill="black" stroke="black" points="94.5,-118.1 91,-108.1 87.5,-118.1 94.5,-118.1"/>
 </g>
