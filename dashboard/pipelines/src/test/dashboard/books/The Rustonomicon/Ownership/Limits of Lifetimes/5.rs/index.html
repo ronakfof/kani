@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-01T21:28:03Z</li>
-      <li>8b9976fb-734a-4583-ac34-97112c528f99</li>
+      <li>2021-10-07T21:33:29Z</li>
+      <li>bca18df1-14dc-4243-8737-c189d77ed2e8</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-848fec21-69cd-4a8b-baaf-a632370a99d0">
+              <a href="#job-d748a771-d7cf-4191-8535-b8b81dbdedcc">
               
               Is this valid Rust code?
               
@@ -587,7 +587,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-848fec21-69cd-4a8b-baaf-a632370a99d0">
+    <div class="command-table" id="job-d748a771-d7cf-4191-8535-b8b81dbdedcc">
       
       <div class="success">
       
@@ -595,7 +595,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-848fec21-69cd-4a8b-baaf-a632370a99d0">#</a>
+                <a href="#job-d748a771-d7cf-4191-8535-b8b81dbdedcc">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -649,7 +649,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-01T21:40:38Z
+                2021-10-07T21:37:48Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -657,7 +657,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-01T21:40:39Z
+                2021-10-07T21:37:49Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -686,9 +686,9 @@ error[E0502]: cannot borrow `foo` as immutable because it is also borrowed as mu
 --> src/test/dashboard/books/The Rustonomicon/Ownership/Limits of Lifetimes/5.rs:15:5
 |
 14 |     let loan = foo.mutate_and_share();
-|                --- mutable borrow occurs here
+|                ---------------------- mutable borrow occurs here
 15 |     foo.share();
-|     ^^^ immutable borrow occurs here
+|     ^^^^^^^^^^^ immutable borrow occurs here
 16 |     println!("{:?}", loan);
 |                      ---- mutable borrow later used here
 

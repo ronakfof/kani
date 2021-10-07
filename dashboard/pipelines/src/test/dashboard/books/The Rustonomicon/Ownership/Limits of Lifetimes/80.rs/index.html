@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-01T21:28:03Z</li>
-      <li>8b9976fb-734a-4583-ac34-97112c528f99</li>
+      <li>2021-10-07T21:33:29Z</li>
+      <li>bca18df1-14dc-4243-8737-c189d77ed2e8</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-12c65c6a-0733-4673-b07c-3a28334aa95d">
+              <a href="#job-16766759-3af2-486f-b3aa-1cd4d2383dfb">
               
               Is this valid Rust code?
               
@@ -587,7 +587,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-12c65c6a-0733-4673-b07c-3a28334aa95d">
+    <div class="command-table" id="job-16766759-3af2-486f-b3aa-1cd4d2383dfb">
       
       <div class="success">
       
@@ -595,7 +595,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-12c65c6a-0733-4673-b07c-3a28334aa95d">#</a>
+                <a href="#job-16766759-3af2-486f-b3aa-1cd4d2383dfb">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -649,15 +649,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-01T21:32:16Z
+                2021-10-07T21:37:00Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-01T21:32:16Z
+                2021-10-07T21:37:01Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -689,13 +689,13 @@ error[E0499]: cannot borrow `*map` as mutable more than once at a time
 |                  -- lifetime `'m` defined here
 ...
 12 |       match map.get_mut(&key) {
-|       -     --- first mutable borrow occurs here
+|       -     ----------------- first mutable borrow occurs here
 |  _____|
 | |
 13 | |         Some(value) => value,
 14 | |         None => {
 15 | |             map.insert(key.clone(), V::default());
-| |             ^^^ second mutable borrow occurs here
+| |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ second mutable borrow occurs here
 16 | |             map.get_mut(&key).unwrap()
 17 | |         }
 18 | |     }
@@ -708,14 +708,14 @@ error[E0499]: cannot borrow `*map` as mutable more than once at a time
 |                  -- lifetime `'m` defined here
 ...
 12 |       match map.get_mut(&key) {
-|       -     --- first mutable borrow occurs here
+|       -     ----------------- first mutable borrow occurs here
 |  _____|
 | |
 13 | |         Some(value) => value,
 14 | |         None => {
 15 | |             map.insert(key.clone(), V::default());
 16 | |             map.get_mut(&key).unwrap()
-| |             ^^^ second mutable borrow occurs here
+| |             ^^^^^^^^^^^^^^^^^ second mutable borrow occurs here
 17 | |         }
 18 | |     }
 | |_____- returning this value requires that `*map` is borrowed for `'m`
