@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-afbf402b-0600-4153-a24e-cf823b21b35f">
+              <a href="#job-82fa3cfd-7eab-4126-95c3-c9918fce6bbf">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f487dc9e-1901-4e86-824b-25e728ffa0f5">
+              <a href="#job-afa00514-1422-4f79-92b6-0f3749f16566">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-dc56ca5d-6d0c-42ed-aa7a-ff6d375022d2">
+              <a href="#job-58b7dab7-a1df-4ac4-9c2d-1adb8fbbf5b0">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-afbf402b-0600-4153-a24e-cf823b21b35f">
+    <div class="command-table" id="job-82fa3cfd-7eab-4126-95c3-c9918fce6bbf">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-afbf402b-0600-4153-a24e-cf823b21b35f">#</a>
+                <a href="#job-82fa3cfd-7eab-4126-95c3-c9918fce6bbf">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,15 +695,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:17:19Z
+                2021-10-13T19:25:22Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:17:19Z
+                2021-10-13T19:25:23Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f487dc9e-1901-4e86-824b-25e728ffa0f5">
+    <div class="command-table" id="job-afa00514-1422-4f79-92b6-0f3749f16566">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f487dc9e-1901-4e86-824b-25e728ffa0f5">#</a>
+                <a href="#job-afa00514-1422-4f79-92b6-0f3749f16566">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,15 +803,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:17:20Z
+                2021-10-13T19:26:40Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:17:20Z
+                2021-10-13T19:26:41Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,71 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17hb22f7ef2b5dd96b6E::1::var_1::self" }, typ: StructTag("tag-_939475411981165741"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9917585266639321097") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9917585266639321097") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9917585266639321097") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17hce1e10daca3c2453E::1::var_1::self" }, typ: StructTag("tag-_7115236641637069687"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_10949510548720413587") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_10949510548720413587") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_10949510548720413587") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h955ae5fac5426c54E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h955ae5fac5426c54E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h955ae5fac5426c54E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h955ae5fac5426c54E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h303352349c1a582dE::1::var_14" }, typ: StructTag("tag-_7115236641637069687"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_10949510548720413587") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_10949510548720413587") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_10949510548720413587") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h303352349c1a582dE::1::var_17" }, typ: StructTag("tag-_7115236641637069687"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_10949510548720413587") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_10949510548720413587") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_10949510548720413587") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h367d8bb924a37d84E::1::var_14" }, typ: StructTag("tag-_939475411981165741"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9917585266639321097") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9917585266639321097") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9917585266639321097") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h367d8bb924a37d84E::1::var_17" }, typ: StructTag("tag-_939475411981165741"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9917585266639321097") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9917585266639321097") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9917585266639321097") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +914,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-dc56ca5d-6d0c-42ed-aa7a-ff6d375022d2">
+    <div class="command-table" id="job-58b7dab7-a1df-4ac4-9c2d-1adb8fbbf5b0">
       
       <div class="success">
       
@@ -857,7 +922,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-dc56ca5d-6d0c-42ed-aa7a-ff6d375022d2">#</a>
+                <a href="#job-58b7dab7-a1df-4ac4-9c2d-1adb8fbbf5b0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,7 +976,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:17:21Z
+                2021-10-13T19:26:41Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -919,7 +984,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:17:23Z
+                2021-10-13T19:26:43Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -953,7 +1018,7 @@ Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Hello World/Formatted print/Formatting/17.rs line 35 column 17 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsoWMKfSqpb0_2_17.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop main.0 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Hello World/Formatted print/Formatting/17.rs line 35 column 17 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsoWMKfSqpb0_2_17.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
@@ -976,22 +1041,22 @@ Unwinding loop main.1 iteration 3 file /home/runner/work/rmc/rmc/library/std/src
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Hello World/Formatted print/Formatting/17.rs line 42 column 18 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsoWMKfSqpb0_2_17.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Not unwinding loop main.1 iteration 4 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Runtime Symex: 0.488395s
+Runtime Symex: 0.376331s
 size of program expression: 5496 steps
 simple slicing removed 55 assignments
 Generated 508 VCC(s), 171 remaining after simplification
-Runtime Postprocess Equation: 0.00531233s
+Runtime Postprocess Equation: 0.00102069s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0978223s
+Runtime Convert SSA: 0.069327s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.0136612s
+Runtime Post-process: 0.00496226s
 Solving with MiniSAT 2.2.1 with simplifier
 100787 variables, 26080 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.0969985s
-Runtime decision procedure: 0.195436s
+Runtime Solver: 0.0369503s
+Runtime decision procedure: 0.109037s
 
 ** Results:
 [assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Unsignedbv { width: 8 } } (MIR type Ref(ReErased, u8, Not)). Please report failures:
@@ -1014,34 +1079,34 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_arithmetic.16] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
 [pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
 [pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.22] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
-[pointer_arithmetic.25] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.26] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.27] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.28] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.29] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.30] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.22] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.25] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.26] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.27] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.28] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.29] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.30] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
 [pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Debug>::fmt
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2091 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2091 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2091 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2091 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2091 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2091 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2092 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2092 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2092 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2092 dereference failure: dead object in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2092 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2092 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Display>::fmt
-[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2091 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2091 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2091 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2091 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2091 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2091 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2092 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2092 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2092 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2092 dereference failure: dead object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2092 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2092 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-99e6ead9-674a-48b5-99d1-5d467e6a6f05">
+              <a href="#job-cd34449f-48b7-4da7-a432-b359780c7217">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-fa2f97fe-5cc3-4985-a33f-ab43d7e20092">
+              <a href="#job-02608100-ffb2-48de-82bf-951158f04f69">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-08655b5f-4c0c-4821-9305-c483001286c7">
+              <a href="#job-ff34a493-85bb-4fd3-a51a-b5c788b0fedf">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-99e6ead9-674a-48b5-99d1-5d467e6a6f05">
+    <div class="command-table" id="job-cd34449f-48b7-4da7-a432-b359780c7217">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-99e6ead9-674a-48b5-99d1-5d467e6a6f05">#</a>
+                <a href="#job-cd34449f-48b7-4da7-a432-b359780c7217">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,15 +695,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:46Z
+                2021-10-13T19:26:14Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:47Z
+                2021-10-13T19:26:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-fa2f97fe-5cc3-4985-a33f-ab43d7e20092">
+    <div class="command-table" id="job-02608100-ffb2-48de-82bf-951158f04f69">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-fa2f97fe-5cc3-4985-a33f-ab43d7e20092">#</a>
+                <a href="#job-02608100-ffb2-48de-82bf-951158f04f69">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,7 +803,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:47Z
+                2021-10-13T19:26:14Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -811,7 +811,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:47Z
+                2021-10-13T19:26:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h6576ba63656e34b9E::1::var_1::val" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17hc339e90d8d9c4112E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17hbe1ad67a38382e9aE::1::var_5" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17hbe1ad67a38382e9aE::1::var_7" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +878,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-08655b5f-4c0c-4821-9305-c483001286c7">
+    <div class="command-table" id="job-ff34a493-85bb-4fd3-a51a-b5c788b0fedf">
       
       <div class="success">
       
@@ -857,7 +886,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-08655b5f-4c0c-4821-9305-c483001286c7">#</a>
+                <a href="#job-ff34a493-85bb-4fd3-a51a-b5c788b0fedf">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,15 +940,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:16:05Z
+                2021-10-13T19:26:56Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:16:06Z
+                2021-10-13T19:26:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -955,11 +984,11 @@ Unwinding loop memcmp.0 iteration 1 file <builtin-library-memcmp> line 25 functi
 Unwinding loop memcmp.0 iteration 2 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop memcmp.0 iteration 3 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop memcmp.0 iteration 4 file <builtin-library-memcmp> line 25 function memcmp thread 0
-Runtime Symex: 0.0653112s
+Runtime Symex: 0.0382521s
 size of program expression: 373 steps
 simple slicing removed 0 assignments
 Generated 132 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 3.44e-05s
+Runtime Postprocess Equation: 4.2e-05s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned * in 1 * var_2.len: SUCCESS

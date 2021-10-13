@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-3409dfa0-2485-47b7-9758-4ea462b0655f">
+              <a href="#job-4278d3c7-aca1-470f-a7b6-5a19fe8442ba">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-52b8aab4-9c91-4021-a4e8-a75d67e3f0c1">
+              <a href="#job-8290cbd1-f730-46e7-a8d5-1d31ee93031f">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-864b29bb-d7f8-43c5-9f99-af4afdd6234e">
+              <a href="#job-164ddfa5-b763-45ea-822d-af7cc5833e42">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-3409dfa0-2485-47b7-9758-4ea462b0655f">
+    <div class="command-table" id="job-4278d3c7-aca1-470f-a7b6-5a19fe8442ba">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-3409dfa0-2485-47b7-9758-4ea462b0655f">#</a>
+                <a href="#job-4278d3c7-aca1-470f-a7b6-5a19fe8442ba">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:19:48Z
+                2021-10-13T19:29:36Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:19:48Z
+                2021-10-13T19:29:36Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-52b8aab4-9c91-4021-a4e8-a75d67e3f0c1">
+    <div class="command-table" id="job-8290cbd1-f730-46e7-a8d5-1d31ee93031f">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-52b8aab4-9c91-4021-a4e8-a75d67e3f0c1">#</a>
+                <a href="#job-8290cbd1-f730-46e7-a8d5-1d31ee93031f">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,15 +803,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:20:21Z
+                2021-10-13T19:30:27Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:20:21Z
+                2021-10-13T19:30:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,59 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hefa505d045bf4e27E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hefa505d045bf4e27E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hefa505d045bf4e27E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hefa505d045bf4e27E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17hd729a4ed453df62fE::1::var_1::val" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17he62107ea1cf856feE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2cb84ab7de1655f6E::1::var_5" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2cb84ab7de1655f6E::1::var_7" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +902,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-864b29bb-d7f8-43c5-9f99-af4afdd6234e">
+    <div class="command-table" id="job-164ddfa5-b763-45ea-822d-af7cc5833e42">
       
       <div class="success">
       
@@ -857,7 +910,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-864b29bb-d7f8-43c5-9f99-af4afdd6234e">#</a>
+                <a href="#job-164ddfa5-b763-45ea-822d-af7cc5833e42">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,15 +964,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:20:21Z
+                2021-10-13T19:30:28Z
               </span></p>
               <p>Duration:
               <span class="value">
-                02s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:20:23Z
+                2021-10-13T19:30:29Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -964,7 +1017,7 @@ Unwinding loop memcmp.0 iteration 10 file <builtin-library-memcmp> line 25 funct
 Unwinding loop memcmp.0 iteration 11 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop memcmp.0 iteration 12 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop main.4 iteration 1  thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
@@ -976,22 +1029,22 @@ Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmE
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs3xjmFcmEeyN_3_181.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.242099s
+Runtime Symex: 0.207654s
 size of program expression: 2782 steps
 simple slicing removed 52 assignments
 Generated 459 VCC(s), 32 remaining after simplification
-Runtime Postprocess Equation: 0.000397802s
+Runtime Postprocess Equation: 0.000378696s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.047181s
+Runtime Convert SSA: 0.0499974s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 9.8001e-05s
+Runtime Post-process: 8.7899e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 66412 variables, 16191 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.041199s
-Runtime decision procedure: 0.0886236s
+Runtime Solver: 0.0241152s
+Runtime decision procedure: 0.0769651s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned * in 1 * var_2.len: SUCCESS
@@ -1022,12 +1075,12 @@ Runtime decision procedure: 0.0886236s
 [std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.24] line 1409 dereference failure: invalid integer address in *other: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Display>::fmt
-[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2091 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2091 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2091 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2091 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2091 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2091 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2092 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2092 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2092 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2092 dereference failure: dead object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2092 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2092 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS

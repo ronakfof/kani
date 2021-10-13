@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-094556bc-2532-4b63-9c45-e2d777d242b3">
+              <a href="#job-8346d52e-5d47-44df-84aa-f920ea5adbc4">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a4336757-fd55-4b99-b8a8-7a8dccc541eb">
+              <a href="#job-f31ab9b3-d53d-485d-94cc-b2cc51123b97">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a8f784c9-3c10-4974-bf3a-efc9bde5e2c1">
+              <a href="#job-0cca7030-aa6a-419b-916a-1ef2b19a82b2">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-094556bc-2532-4b63-9c45-e2d777d242b3">
+    <div class="command-table" id="job-8346d52e-5d47-44df-84aa-f920ea5adbc4">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-094556bc-2532-4b63-9c45-e2d777d242b3">#</a>
+                <a href="#job-8346d52e-5d47-44df-84aa-f920ea5adbc4">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:37Z
+                2021-10-13T19:25:20Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:37Z
+                2021-10-13T19:25:20Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -756,7 +756,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a4336757-fd55-4b99-b8a8-7a8dccc541eb">
+    <div class="command-table" id="job-f31ab9b3-d53d-485d-94cc-b2cc51123b97">
       
       <div class="success">
       
@@ -764,7 +764,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a4336757-fd55-4b99-b8a8-7a8dccc541eb">#</a>
+                <a href="#job-f31ab9b3-d53d-485d-94cc-b2cc51123b97">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -818,15 +818,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:21Z
+                2021-10-13T19:26:19Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:22Z
+                2021-10-13T19:26:19Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -859,6 +859,27 @@ warning: use of deprecated associated function `std::sync::atomic::AtomicBool::c
 |
 = note: `#[warn(deprecated)]` on by default
 
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_store_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_store_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_store treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_acq_failrelaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_acqrel_failrelaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_failrelaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_cxchg_failacq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence treated as a sequential operation.
 warning: 1 warning emitted
 
             </xmp>
@@ -879,7 +900,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a8f784c9-3c10-4974-bf3a-efc9bde5e2c1">
+    <div class="command-table" id="job-0cca7030-aa6a-419b-916a-1ef2b19a82b2">
       
       <div class="success">
       
@@ -887,7 +908,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a8f784c9-3c10-4974-bf3a-efc9bde5e2c1">#</a>
+                <a href="#job-0cca7030-aa6a-419b-916a-1ef2b19a82b2">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -941,7 +962,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:22Z
+                2021-10-13T19:27:04Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -949,7 +970,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:23Z
+                2021-10-13T19:27:05Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -981,22 +1002,22 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-Runtime Symex: 0.141857s
+Runtime Symex: 0.0873892s
 size of program expression: 1708 steps
 simple slicing removed 180 assignments
 Generated 132 VCC(s), 28 remaining after simplification
-Runtime Postprocess Equation: 0.000179101s
+Runtime Postprocess Equation: 0.000215998s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0196071s
+Runtime Convert SSA: 0.00967462s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00106601s
+Runtime Post-process: 0.000599695s
 Solving with MiniSAT 2.2.1 with simplifier
 24321 variables, 4711 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.00525893s
-Runtime decision procedure: 0.0331501s
+Runtime Solver: 0.00452206s
+Runtime decision procedure: 0.0194326s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
@@ -1011,44 +1032,44 @@ Runtime decision procedure: 0.0331501s
 [std::alloc::dealloc.precondition_instance.6] line 104 free called for stack-allocated object: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function std::boxed::Box::<T, A>::leak
-[std::boxed::Box::<T, A>::leak.pointer_dereference.1] line 1062 dereference failure: pointer NULL in var_7->0: SUCCESS
-[std::boxed::Box::<T, A>::leak.pointer_dereference.2] line 1062 dereference failure: pointer invalid in var_7->0: SUCCESS
-[std::boxed::Box::<T, A>::leak.pointer_dereference.3] line 1062 dereference failure: deallocated dynamic object in var_7->0: SUCCESS
-[std::boxed::Box::<T, A>::leak.pointer_dereference.4] line 1062 dereference failure: dead object in var_7->0: SUCCESS
-[std::boxed::Box::<T, A>::leak.pointer_dereference.5] line 1062 dereference failure: pointer outside object bounds in var_7->0: SUCCESS
-[std::boxed::Box::<T, A>::leak.pointer_dereference.6] line 1062 dereference failure: invalid integer address in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.1] line 1074 dereference failure: pointer NULL in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.2] line 1074 dereference failure: pointer invalid in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.3] line 1074 dereference failure: deallocated dynamic object in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.4] line 1074 dereference failure: dead object in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.5] line 1074 dereference failure: pointer outside object bounds in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.6] line 1074 dereference failure: invalid integer address in var_7->0: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/sync.rs function <std::sync::Weak<T> as std::ops::Drop>::drop
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_arithmetic.1] line 2084 pointer arithmetic: dead object in (unsigned char *)&var_3 + 0: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.1] line 2084 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_3 + 0)): SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.2] line 2088 dereference failure: pointer NULL in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.3] line 2088 dereference failure: pointer invalid in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.4] line 2088 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.5] line 2088 dereference failure: dead object in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.6] line 2088 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.7] line 2088 dereference failure: invalid integer address in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.8] line 2088 dereference failure: pointer NULL in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.9] line 2088 dereference failure: pointer invalid in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.10] line 2088 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.11] line 2088 dereference failure: dead object in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.12] line 2088 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.13] line 2088 dereference failure: invalid integer address in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_arithmetic.1] line 2099 pointer arithmetic: dead object in (unsigned char *)&var_3 + 0: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.1] line 2099 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_3 + 0)): SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.2] line 2103 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.3] line 2103 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.4] line 2103 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.5] line 2103 dereference failure: dead object in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.6] line 2103 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.7] line 2103 dereference failure: invalid integer address in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.8] line 2103 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.9] line 2103 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.10] line 2103 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.11] line 2103 dereference failure: dead object in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.12] line 2103 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.13] line 2103 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/sync.rs function std::sync::Arc::<T>::drop_slow
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.1] line 1069 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.2] line 1069 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.3] line 1069 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.4] line 1069 dereference failure: dead object in self->ptr: SUCCESS
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.5] line 1069 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::sync::Arc::<T>::drop_slow.pointer_dereference.6] line 1069 dereference failure: invalid integer address in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.1] line 1079 dereference failure: pointer NULL in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.2] line 1079 dereference failure: pointer invalid in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.3] line 1079 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.4] line 1079 dereference failure: dead object in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.5] line 1079 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[std::sync::Arc::<T>::drop_slow.pointer_dereference.6] line 1079 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/sync.rs function std::sync::Arc::<T>::get_mut_unchecked
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.1] line 1527 dereference failure: pointer NULL in this->ptr: SUCCESS
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.2] line 1527 dereference failure: pointer invalid in this->ptr: SUCCESS
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.3] line 1527 dereference failure: deallocated dynamic object in this->ptr: SUCCESS
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.4] line 1527 dereference failure: dead object in this->ptr: SUCCESS
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.5] line 1527 dereference failure: pointer outside object bounds in this->ptr: SUCCESS
-[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.6] line 1527 dereference failure: invalid integer address in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.1] line 1537 dereference failure: pointer NULL in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.2] line 1537 dereference failure: pointer invalid in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.3] line 1537 dereference failure: deallocated dynamic object in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.4] line 1537 dereference failure: dead object in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.5] line 1537 dereference failure: pointer outside object bounds in this->ptr: SUCCESS
+[std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.6] line 1537 dereference failure: invalid integer address in this->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/sync.rs function std::sync::Arc::<T>::new
 [std::sync::Arc::<T>::new.assertion.1] line 343 resume instruction: SUCCESS
@@ -1072,185 +1093,185 @@ Runtime decision procedure: 0.0331501s
 [std::sync::Arc::<T>::new.pointer_dereference.18] line 346 dereference failure: invalid integer address in var_6.0.pointer->data: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/sync.rs function std::sync::Weak::<T>::inner
-[std::sync::Weak::<T>::inner.pointer_dereference.1] line 1932 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.2] line 1932 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.3] line 1932 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.4] line 1932 dereference failure: dead object in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.5] line 1932 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.6] line 1932 dereference failure: invalid integer address in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_arithmetic.1] line 1933 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.7] line 1933 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.8] line 1939 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.9] line 1939 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.10] line 1939 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.11] line 1939 dereference failure: dead object in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.12] line 1939 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::sync::Weak::<T>::inner.pointer_dereference.13] line 1939 dereference failure: invalid integer address in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.1] line 1947 dereference failure: pointer NULL in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.2] line 1947 dereference failure: pointer invalid in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.3] line 1947 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.4] line 1947 dereference failure: dead object in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.5] line 1947 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.6] line 1947 dereference failure: invalid integer address in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_arithmetic.1] line 1948 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.7] line 1948 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.8] line 1954 dereference failure: pointer NULL in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.9] line 1954 dereference failure: pointer invalid in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.10] line 1954 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.11] line 1954 dereference failure: dead object in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.12] line 1954 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[std::sync::Weak::<T>::inner.pointer_dereference.13] line 1954 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 116 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 116 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 116 dereference failure: deallocated dynamic object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.4] line 116 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 116 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 116 dereference failure: invalid integer address in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.1] line 119 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 119 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 119 dereference failure: deallocated dynamic object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.4] line 119 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 119 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 119 dereference failure: invalid integer address in self->align_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 108 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 108 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 108 dereference failure: deallocated dynamic object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.4] line 108 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 108 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 108 dereference failure: invalid integer address in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.1] line 109 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 109 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 109 dereference failure: deallocated dynamic object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.4] line 109 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 109 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 109 dereference failure: invalid integer address in self->size_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/non_null.rs function std::ptr::NonNull::<T>::as_ref
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.1] line 317 dereference failure: pointer NULL in *self: SUCCESS
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.2] line 317 dereference failure: pointer invalid in *self: SUCCESS
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.3] line 317 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.4] line 317 dereference failure: dead object in *self: SUCCESS
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.5] line 317 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::ptr::NonNull::<T>::as_ref.pointer_dereference.6] line 317 dereference failure: invalid integer address in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.1] line 323 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.2] line 323 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.3] line 323 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.4] line 323 dereference failure: dead object in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.5] line 323 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.6] line 323 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 118 dereference failure: pointer NULL in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 118 dereference failure: pointer invalid in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 118 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 118 dereference failure: dead object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 118 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 118 dereference failure: invalid integer address in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 120 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 120 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 120 dereference failure: dead object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 120 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::AtomicBool::compare_and_swap
-[std::sync::atomic::AtomicBool::compare_and_swap.assertion.1] line 496 unreachable code: SUCCESS
+[std::sync::atomic::AtomicBool::compare_and_swap.assertion.1] line 497 unreachable code: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::AtomicBool::compare_exchange
-[std::sync::atomic::AtomicBool::compare_exchange.assertion.1] line 551 unreachable code: SUCCESS
+[std::sync::atomic::AtomicBool::compare_exchange.assertion.1] line 552 unreachable code: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::atomic_compare_exchange
-[std::sync::atomic::atomic_compare_exchange.assertion.1] line 2425 a failure ordering can't be stronger than a success ordering: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.assertion.2] line 2425 there is no such thing as an acquire/release failure ordering: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.assertion.3] line 2425 there is no such thing as a release failure ordering: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.1] line 2426 dereference failure: pointer NULL in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.2] line 2426 dereference failure: pointer invalid in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.3] line 2426 dereference failure: deallocated dynamic object in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.4] line 2426 dereference failure: dead object in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.5] line 2426 dereference failure: pointer outside object bounds in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.6] line 2426 dereference failure: invalid integer address in *var_19: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.7] line 2427 dereference failure: pointer NULL in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.8] line 2427 dereference failure: pointer invalid in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.9] line 2427 dereference failure: deallocated dynamic object in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.10] line 2427 dereference failure: dead object in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.11] line 2427 dereference failure: pointer outside object bounds in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.12] line 2427 dereference failure: invalid integer address in *var_22: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.13] line 2428 dereference failure: pointer NULL in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.14] line 2428 dereference failure: pointer invalid in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.15] line 2428 dereference failure: deallocated dynamic object in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.16] line 2428 dereference failure: dead object in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.17] line 2428 dereference failure: pointer outside object bounds in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.18] line 2428 dereference failure: invalid integer address in *var_25: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.19] line 2429 dereference failure: pointer NULL in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.20] line 2429 dereference failure: pointer invalid in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.21] line 2429 dereference failure: deallocated dynamic object in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.22] line 2429 dereference failure: dead object in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.23] line 2429 dereference failure: pointer outside object bounds in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.24] line 2429 dereference failure: invalid integer address in *var_28: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.25] line 2430 dereference failure: pointer NULL in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.26] line 2430 dereference failure: pointer invalid in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.27] line 2430 dereference failure: deallocated dynamic object in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.28] line 2430 dereference failure: dead object in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.29] line 2430 dereference failure: pointer outside object bounds in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.30] line 2430 dereference failure: invalid integer address in *var_31: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.31] line 2431 dereference failure: pointer NULL in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.32] line 2431 dereference failure: pointer invalid in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.33] line 2431 dereference failure: deallocated dynamic object in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.34] line 2431 dereference failure: dead object in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.35] line 2431 dereference failure: pointer outside object bounds in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.36] line 2431 dereference failure: invalid integer address in *var_34: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.37] line 2432 dereference failure: pointer NULL in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.38] line 2432 dereference failure: pointer invalid in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.39] line 2432 dereference failure: deallocated dynamic object in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.40] line 2432 dereference failure: dead object in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.41] line 2432 dereference failure: pointer outside object bounds in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.42] line 2432 dereference failure: invalid integer address in *var_37: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.43] line 2433 dereference failure: pointer NULL in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.44] line 2433 dereference failure: pointer invalid in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.45] line 2433 dereference failure: deallocated dynamic object in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.46] line 2433 dereference failure: dead object in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.47] line 2433 dereference failure: pointer outside object bounds in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.48] line 2433 dereference failure: invalid integer address in *var_40: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.49] line 2434 dereference failure: pointer NULL in *var_43: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.50] line 2434 dereference failure: pointer invalid in *var_43: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.51] line 2434 dereference failure: deallocated dynamic object in *var_43: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.52] line 2434 dereference failure: dead object in *var_43: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.53] line 2434 dereference failure: pointer outside object bounds in *var_43: SUCCESS
-[std::sync::atomic::atomic_compare_exchange.pointer_dereference.54] line 2434 dereference failure: invalid integer address in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.assertion.1] line 2427 a failure ordering can't be stronger than a success ordering: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.assertion.2] line 2427 there is no such thing as an acquire/release failure ordering: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.assertion.3] line 2427 there is no such thing as a release failure ordering: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.1] line 2428 dereference failure: pointer NULL in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.2] line 2428 dereference failure: pointer invalid in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.3] line 2428 dereference failure: deallocated dynamic object in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.4] line 2428 dereference failure: dead object in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.5] line 2428 dereference failure: pointer outside object bounds in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.6] line 2428 dereference failure: invalid integer address in *var_19: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.7] line 2429 dereference failure: pointer NULL in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.8] line 2429 dereference failure: pointer invalid in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.9] line 2429 dereference failure: deallocated dynamic object in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.10] line 2429 dereference failure: dead object in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.11] line 2429 dereference failure: pointer outside object bounds in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.12] line 2429 dereference failure: invalid integer address in *var_22: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.13] line 2430 dereference failure: pointer NULL in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.14] line 2430 dereference failure: pointer invalid in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.15] line 2430 dereference failure: deallocated dynamic object in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.16] line 2430 dereference failure: dead object in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.17] line 2430 dereference failure: pointer outside object bounds in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.18] line 2430 dereference failure: invalid integer address in *var_25: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.19] line 2431 dereference failure: pointer NULL in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.20] line 2431 dereference failure: pointer invalid in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.21] line 2431 dereference failure: deallocated dynamic object in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.22] line 2431 dereference failure: dead object in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.23] line 2431 dereference failure: pointer outside object bounds in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.24] line 2431 dereference failure: invalid integer address in *var_28: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.25] line 2432 dereference failure: pointer NULL in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.26] line 2432 dereference failure: pointer invalid in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.27] line 2432 dereference failure: deallocated dynamic object in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.28] line 2432 dereference failure: dead object in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.29] line 2432 dereference failure: pointer outside object bounds in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.30] line 2432 dereference failure: invalid integer address in *var_31: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.31] line 2433 dereference failure: pointer NULL in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.32] line 2433 dereference failure: pointer invalid in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.33] line 2433 dereference failure: deallocated dynamic object in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.34] line 2433 dereference failure: dead object in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.35] line 2433 dereference failure: pointer outside object bounds in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.36] line 2433 dereference failure: invalid integer address in *var_34: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.37] line 2434 dereference failure: pointer NULL in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.38] line 2434 dereference failure: pointer invalid in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.39] line 2434 dereference failure: deallocated dynamic object in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.40] line 2434 dereference failure: dead object in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.41] line 2434 dereference failure: pointer outside object bounds in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.42] line 2434 dereference failure: invalid integer address in *var_37: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.43] line 2435 dereference failure: pointer NULL in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.44] line 2435 dereference failure: pointer invalid in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.45] line 2435 dereference failure: deallocated dynamic object in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.46] line 2435 dereference failure: dead object in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.47] line 2435 dereference failure: pointer outside object bounds in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.48] line 2435 dereference failure: invalid integer address in *var_40: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.49] line 2436 dereference failure: pointer NULL in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.50] line 2436 dereference failure: pointer invalid in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.51] line 2436 dereference failure: deallocated dynamic object in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.52] line 2436 dereference failure: dead object in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.53] line 2436 dereference failure: pointer outside object bounds in *var_43: SUCCESS
+[std::sync::atomic::atomic_compare_exchange.pointer_dereference.54] line 2436 dereference failure: invalid integer address in *var_43: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::atomic_store
-[std::sync::atomic::atomic_store.assertion.1] line 2343 there is no such thing as an acquire/release store: SUCCESS
-[std::sync::atomic::atomic_store.assertion.2] line 2343 unreachable code: SUCCESS
-[std::sync::atomic::atomic_store.assertion.3] line 2343 there is no such thing as an acquire store: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.1] line 2344 dereference failure: pointer NULL in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.2] line 2344 dereference failure: pointer invalid in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.3] line 2344 dereference failure: deallocated dynamic object in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.4] line 2344 dereference failure: dead object in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.5] line 2344 dereference failure: pointer outside object bounds in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.6] line 2344 dereference failure: invalid integer address in *var_5: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.7] line 2345 dereference failure: pointer NULL in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.8] line 2345 dereference failure: pointer invalid in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.9] line 2345 dereference failure: deallocated dynamic object in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.10] line 2345 dereference failure: dead object in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.11] line 2345 dereference failure: pointer outside object bounds in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.12] line 2345 dereference failure: invalid integer address in *var_7: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.13] line 2346 dereference failure: pointer NULL in *var_9: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.14] line 2346 dereference failure: pointer invalid in *var_9: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.15] line 2346 dereference failure: deallocated dynamic object in *var_9: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.16] line 2346 dereference failure: dead object in *var_9: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.17] line 2346 dereference failure: pointer outside object bounds in *var_9: SUCCESS
-[std::sync::atomic::atomic_store.pointer_dereference.18] line 2346 dereference failure: invalid integer address in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.assertion.1] line 2345 there is no such thing as an acquire/release store: SUCCESS
+[std::sync::atomic::atomic_store.assertion.2] line 2345 unreachable code: SUCCESS
+[std::sync::atomic::atomic_store.assertion.3] line 2345 there is no such thing as an acquire store: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.1] line 2346 dereference failure: pointer NULL in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.2] line 2346 dereference failure: pointer invalid in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.3] line 2346 dereference failure: deallocated dynamic object in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.4] line 2346 dereference failure: dead object in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.5] line 2346 dereference failure: pointer outside object bounds in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.6] line 2346 dereference failure: invalid integer address in *var_5: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.7] line 2347 dereference failure: pointer NULL in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.8] line 2347 dereference failure: pointer invalid in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.9] line 2347 dereference failure: deallocated dynamic object in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.10] line 2347 dereference failure: dead object in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.11] line 2347 dereference failure: pointer outside object bounds in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.12] line 2347 dereference failure: invalid integer address in *var_7: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.13] line 2348 dereference failure: pointer NULL in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.14] line 2348 dereference failure: pointer invalid in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.15] line 2348 dereference failure: deallocated dynamic object in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.16] line 2348 dereference failure: dead object in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.17] line 2348 dereference failure: pointer outside object bounds in *var_9: SUCCESS
+[std::sync::atomic::atomic_store.pointer_dereference.18] line 2348 dereference failure: invalid integer address in *var_9: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::atomic_sub
-[std::sync::atomic::atomic_sub.assertion.1] line 2404 unreachable code: SUCCESS
-[std::sync::atomic::atomic_sub.overflow.2] line 2405 arithmetic overflow on unsigned - in *var_5 - var_6: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.7] line 2405 dereference failure: pointer NULL in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.8] line 2405 dereference failure: pointer invalid in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.9] line 2405 dereference failure: deallocated dynamic object in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.10] line 2405 dereference failure: dead object in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.11] line 2405 dereference failure: pointer outside object bounds in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.12] line 2405 dereference failure: invalid integer address in *var_5: SUCCESS
-[std::sync::atomic::atomic_sub.overflow.3] line 2406 arithmetic overflow on unsigned - in *var_7 - var_8: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.13] line 2406 dereference failure: pointer NULL in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.14] line 2406 dereference failure: pointer invalid in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.15] line 2406 dereference failure: deallocated dynamic object in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.16] line 2406 dereference failure: dead object in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.17] line 2406 dereference failure: pointer outside object bounds in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.18] line 2406 dereference failure: invalid integer address in *var_7: SUCCESS
-[std::sync::atomic::atomic_sub.overflow.4] line 2407 arithmetic overflow on unsigned - in *var_9 - var_10: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.19] line 2407 dereference failure: pointer NULL in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.20] line 2407 dereference failure: pointer invalid in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.21] line 2407 dereference failure: deallocated dynamic object in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.22] line 2407 dereference failure: dead object in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.23] line 2407 dereference failure: pointer outside object bounds in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.24] line 2407 dereference failure: invalid integer address in *var_9: SUCCESS
-[std::sync::atomic::atomic_sub.overflow.5] line 2408 arithmetic overflow on unsigned - in *var_11 - var_12: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.25] line 2408 dereference failure: pointer NULL in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.26] line 2408 dereference failure: pointer invalid in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.27] line 2408 dereference failure: deallocated dynamic object in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.28] line 2408 dereference failure: dead object in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.29] line 2408 dereference failure: pointer outside object bounds in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.30] line 2408 dereference failure: invalid integer address in *var_11: SUCCESS
-[std::sync::atomic::atomic_sub.overflow.1] line 2409 arithmetic overflow on unsigned - in *var_13 - var_14: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.1] line 2409 dereference failure: pointer NULL in *var_13: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.2] line 2409 dereference failure: pointer invalid in *var_13: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.3] line 2409 dereference failure: deallocated dynamic object in *var_13: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.4] line 2409 dereference failure: dead object in *var_13: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.5] line 2409 dereference failure: pointer outside object bounds in *var_13: SUCCESS
-[std::sync::atomic::atomic_sub.pointer_dereference.6] line 2409 dereference failure: invalid integer address in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.assertion.1] line 2406 unreachable code: SUCCESS
+[std::sync::atomic::atomic_sub.overflow.2] line 2407 arithmetic overflow on unsigned - in *var_5 - var_6: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.7] line 2407 dereference failure: pointer NULL in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.8] line 2407 dereference failure: pointer invalid in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.9] line 2407 dereference failure: deallocated dynamic object in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.10] line 2407 dereference failure: dead object in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.11] line 2407 dereference failure: pointer outside object bounds in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.12] line 2407 dereference failure: invalid integer address in *var_5: SUCCESS
+[std::sync::atomic::atomic_sub.overflow.3] line 2408 arithmetic overflow on unsigned - in *var_7 - var_8: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.13] line 2408 dereference failure: pointer NULL in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.14] line 2408 dereference failure: pointer invalid in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.15] line 2408 dereference failure: deallocated dynamic object in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.16] line 2408 dereference failure: dead object in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.17] line 2408 dereference failure: pointer outside object bounds in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.18] line 2408 dereference failure: invalid integer address in *var_7: SUCCESS
+[std::sync::atomic::atomic_sub.overflow.4] line 2409 arithmetic overflow on unsigned - in *var_9 - var_10: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.19] line 2409 dereference failure: pointer NULL in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.20] line 2409 dereference failure: pointer invalid in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.21] line 2409 dereference failure: deallocated dynamic object in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.22] line 2409 dereference failure: dead object in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.23] line 2409 dereference failure: pointer outside object bounds in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.24] line 2409 dereference failure: invalid integer address in *var_9: SUCCESS
+[std::sync::atomic::atomic_sub.overflow.5] line 2410 arithmetic overflow on unsigned - in *var_11 - var_12: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.25] line 2410 dereference failure: pointer NULL in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.26] line 2410 dereference failure: pointer invalid in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.27] line 2410 dereference failure: deallocated dynamic object in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.28] line 2410 dereference failure: dead object in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.29] line 2410 dereference failure: pointer outside object bounds in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.30] line 2410 dereference failure: invalid integer address in *var_11: SUCCESS
+[std::sync::atomic::atomic_sub.overflow.1] line 2411 arithmetic overflow on unsigned - in *var_13 - var_14: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.1] line 2411 dereference failure: pointer NULL in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.2] line 2411 dereference failure: pointer invalid in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.3] line 2411 dereference failure: deallocated dynamic object in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.4] line 2411 dereference failure: dead object in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.5] line 2411 dereference failure: pointer outside object bounds in *var_13: SUCCESS
+[std::sync::atomic::atomic_sub.pointer_dereference.6] line 2411 dereference failure: invalid integer address in *var_13: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::fence
-[std::sync::atomic::fence.assertion.1] line 2676 there is no such thing as a relaxed fence: SUCCESS
-[std::sync::atomic::fence.assertion.2] line 2676 unreachable code: SUCCESS
+[std::sync::atomic::fence.assertion.1] line 2678 there is no such thing as a relaxed fence: SUCCESS
+[std::sync::atomic::fence.assertion.2] line 2678 unreachable code: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::strongest_failure_ordering
-[std::sync::atomic::strongest_failure_ordering.assertion.1] line 2330 unreachable code: SUCCESS
+[std::sync::atomic::strongest_failure_ordering.assertion.1] line 2332 unreachable code: SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/The Rustonomicon/Concurrency/Atomics/198.rs function main
 [main.assertion.1] line 7 resume instruction: SUCCESS

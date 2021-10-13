@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a96f69b7-72b9-479b-a5d4-91e4762e63e4">
+              <a href="#job-8966e46a-e261-4d14-b83c-a1b4f7000500">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-aae00722-d410-487c-8fb0-db4c27a4310c">
+              <a href="#job-3e41a081-ff39-45ed-9b8d-d7d0436774a5">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-6c01b2fc-cf02-4abb-b4d2-f2b9ee0609ee">
+              <a href="#job-229dad00-02b1-49ea-ad23-7cc1ed005a70">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a96f69b7-72b9-479b-a5d4-91e4762e63e4">
+    <div class="command-table" id="job-8966e46a-e261-4d14-b83c-a1b4f7000500">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a96f69b7-72b9-479b-a5d4-91e4762e63e4">#</a>
+                <a href="#job-8966e46a-e261-4d14-b83c-a1b4f7000500">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:17Z
+                2021-10-13T19:31:15Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:17Z
+                2021-10-13T19:31:15Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-aae00722-d410-487c-8fb0-db4c27a4310c">
+    <div class="command-table" id="job-3e41a081-ff39-45ed-9b8d-d7d0436774a5">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-aae00722-d410-487c-8fb0-db4c27a4310c">#</a>
+                <a href="#job-3e41a081-ff39-45ed-9b8d-d7d0436774a5">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,7 +803,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:19:56Z
+                2021-10-13T19:31:15Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -811,7 +811,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:19:56Z
+                2021-10-13T19:31:15Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +878,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-6c01b2fc-cf02-4abb-b4d2-f2b9ee0609ee">
+    <div class="command-table" id="job-229dad00-02b1-49ea-ad23-7cc1ed005a70">
       
       <div class="success">
       
@@ -857,7 +886,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-6c01b2fc-cf02-4abb-b4d2-f2b9ee0609ee">#</a>
+                <a href="#job-229dad00-02b1-49ea-ad23-7cc1ed005a70">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,15 +940,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:19:56Z
+                2021-10-13T19:31:16Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:19:59Z
+                2021-10-13T19:31:18Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -952,7 +981,7 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csf1rrFuUF4Pg_1_7.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop main.0 iteration 1 file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Flow of Control/while/7.rs line 8 column 5 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csf1rrFuUF4Pg_1_7.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop main.0 iteration 2 file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Flow of Control/while/7.rs line 8 column 5 function main thread 0
@@ -1152,22 +1181,22 @@ Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csf1rrFuUF
 Unwinding loop main.0 iteration 99 file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Flow of Control/while/7.rs line 8 column 5 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csf1rrFuUF4Pg_1_7.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop main.0 iteration 100 file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Flow of Control/while/7.rs line 8 column 5 function main thread 0
-Runtime Symex: 1.12448s
+Runtime Symex: 0.994594s
 size of program expression: 15329 steps
 simple slicing removed 47 assignments
 Generated 661 VCC(s), 459 remaining after simplification
-Runtime Postprocess Equation: 0.00284572s
+Runtime Postprocess Equation: 0.0280066s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.247093s
+Runtime Convert SSA: 0.296295s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 9.7e-05s
+Runtime Post-process: 6.2299e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 293970 variables, 98923 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.251002s
-Runtime decision procedure: 0.508484s
+Runtime Solver: 0.18128s
+Runtime decision procedure: 0.478324s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1

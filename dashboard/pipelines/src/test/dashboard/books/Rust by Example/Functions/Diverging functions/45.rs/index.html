@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-156d1e08-7c41-487f-9728-099466fb3f5b">
+              <a href="#job-97d3adae-31a3-4106-8b56-b85840ff0a46">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-49b5280c-8687-4126-8326-a6ea29b6ac32">
+              <a href="#job-4024a274-8bfd-436c-b475-2e5e9d85cc7b">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-495fa656-c10a-4f5a-816e-373ac764b8ec">
+              <a href="#job-5d28dee0-62de-422c-864f-75d0f1225d83">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-156d1e08-7c41-487f-9728-099466fb3f5b">
+    <div class="command-table" id="job-97d3adae-31a3-4106-8b56-b85840ff0a46">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-156d1e08-7c41-487f-9728-099466fb3f5b">#</a>
+                <a href="#job-97d3adae-31a3-4106-8b56-b85840ff0a46">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:26Z
+                2021-10-13T19:27:22Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:26Z
+                2021-10-13T19:27:22Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-49b5280c-8687-4126-8326-a6ea29b6ac32">
+    <div class="command-table" id="job-4024a274-8bfd-436c-b475-2e5e9d85cc7b">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-49b5280c-8687-4126-8326-a6ea29b6ac32">#</a>
+                <a href="#job-4024a274-8bfd-436c-b475-2e5e9d85cc7b">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,7 +803,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:52Z
+                2021-10-13T19:29:01Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -811,7 +811,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:52Z
+                2021-10-13T19:29:01Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h951c7da031ca36f7E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h951c7da031ca36f7E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h951c7da031ca36f7E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h951c7da031ca36f7E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +878,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-495fa656-c10a-4f5a-816e-373ac764b8ec">
+    <div class="command-table" id="job-5d28dee0-62de-422c-864f-75d0f1225d83">
       
       <div class="success">
       
@@ -857,7 +886,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-495fa656-c10a-4f5a-816e-373ac764b8ec">#</a>
+                <a href="#job-5d28dee0-62de-422c-864f-75d0f1225d83">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,7 +940,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:52Z
+                2021-10-13T19:29:01Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -919,7 +948,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:53Z
+                2021-10-13T19:29:02Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -961,23 +990,23 @@ Unwinding loop _RNvNvCs15pcjr2MG8V_2_454main15sum_odd_numbers.0 iteration 1  thr
 Unwinding loop _RNvNvCs15pcjr2MG8V_2_454main15sum_odd_numbers.1 iteration 4 file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Functions/Diverging functions/45.rs line 6 column 9 function main::sum_odd_numbers thread 0
 Unwinding loop _RNvNvCs15pcjr2MG8V_2_454main15sum_odd_numbers.0 iteration 1  thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs15pcjr2MG8V_2_45.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
-Runtime Symex: 0.0904546s
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
+Runtime Symex: 0.121898s
 size of program expression: 1600 steps
 simple slicing removed 35 assignments
 Generated 253 VCC(s), 2 remaining after simplification
-Runtime Postprocess Equation: 0.000200201s
+Runtime Postprocess Equation: 0.000176598s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00866354s
+Runtime Convert SSA: 0.0109629s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.11e-05s
+Runtime Post-process: 2.17e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 18825 variables, 3638 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 4.79e-05s
-Runtime decision procedure: 0.0154084s
+Runtime Solver: 4.8299e-05s
+Runtime decision procedure: 0.0149345s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned + in var_3 + var_4: SUCCESS

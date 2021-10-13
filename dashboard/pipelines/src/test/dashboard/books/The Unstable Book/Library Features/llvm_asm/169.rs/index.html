@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-77a8fa83-f195-4c00-87c4-39fa62170068">
+              <a href="#job-6bca6941-5a6e-4af9-ad46-059202a6024f">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-71414d88-290d-4b57-b5a4-2ad97bc7323f">
+              <a href="#job-fdfda0f3-7a61-407c-93aa-ba22a91b4d52">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-88cb6f3e-41e9-42f7-8dce-f0a5731ca9f2">
+              <a href="#job-9afb1cb1-49a4-41f4-bcc6-6e9beaad9c0d">
               
               Can RMC reason about it?
               
@@ -635,7 +635,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-77a8fa83-f195-4c00-87c4-39fa62170068">
+    <div class="command-table" id="job-6bca6941-5a6e-4af9-ad46-059202a6024f">
       
       <div class="success">
       
@@ -643,7 +643,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-77a8fa83-f195-4c00-87c4-39fa62170068">#</a>
+                <a href="#job-6bca6941-5a6e-4af9-ad46-059202a6024f">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,15 +697,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:34Z
+                2021-10-13T19:31:33Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:35Z
+                2021-10-13T19:31:33Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -758,7 +758,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-71414d88-290d-4b57-b5a4-2ad97bc7323f">
+    <div class="command-table" id="job-fdfda0f3-7a61-407c-93aa-ba22a91b4d52">
       
       <div class="success">
       
@@ -766,7 +766,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-71414d88-290d-4b57-b5a4-2ad97bc7323f">#</a>
+                <a href="#job-fdfda0f3-7a61-407c-93aa-ba22a91b4d52">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -820,15 +820,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:39Z
+                2021-10-13T19:31:33Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:39Z
+                2021-10-13T19:31:34Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -861,6 +861,30 @@ warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, 
 |
 = note: `#[warn(deprecated)]` on by default
 
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h7a5d6edb8f08a567E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h7a5d6edb8f08a567E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h7a5d6edb8f08a567E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h7a5d6edb8f08a567E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 warning: 1 warning emitted
 
             </xmp>
@@ -881,7 +905,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-88cb6f3e-41e9-42f7-8dce-f0a5731ca9f2">
+    <div class="command-table" id="job-9afb1cb1-49a4-41f4-bcc6-6e9beaad9c0d">
       
       <div class="fail">
       
@@ -889,7 +913,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-88cb6f3e-41e9-42f7-8dce-f0a5731ca9f2">#</a>
+                <a href="#job-9afb1cb1-49a4-41f4-bcc6-6e9beaad9c0d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -943,7 +967,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:40Z
+                2021-10-13T19:31:34Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -951,7 +975,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:40Z
+                2021-10-13T19:31:34Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -984,22 +1008,22 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 aborting path on assume(false) at  thread 0
-Runtime Symex: 0.00562894s
+Runtime Symex: 0.00526856s
 size of program expression: 264 steps
 simple slicing removed 3 assignments
 Generated 1 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 3.2801e-05s
+Runtime Postprocess Equation: 3.8e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00109951s
+Runtime Convert SSA: 0.000905493s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.55e-05s
+Runtime Post-process: 2.63e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 1994 variables, 33 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000246302s
-Runtime decision procedure: 0.00145411s
+Runtime Solver: 0.000214698s
+Runtime decision procedure: 0.00119449s
 
 ** Results:
 [assertion.1] InlineAsm is not currently supported by RMC. Please post your example at https://github.com/model-checking/rmc/issues/2 : FAILURE

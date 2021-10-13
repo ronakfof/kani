@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-58460f90-2464-4f84-a1a2-30ed0fb3d24c">
+              <a href="#job-43faa685-686a-4b8d-8814-bd66dadb27af">
               
               Is this valid Rust code?
               
@@ -565,7 +565,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-68ab1f57-750c-44be-92eb-a97f96010fed">
+              <a href="#job-a722b604-7b71-4f11-9588-90fe003fb72b">
               
               Does RMC support all the Rust features used in it?
               
@@ -595,7 +595,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1207bc7b-ef2e-4a6a-9aee-df74ca94a1a0">
+              <a href="#job-6cda8a65-aae3-4bc2-9f99-552e9a041c8e">
               
               Can RMC reason about it?
               
@@ -637,7 +637,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-58460f90-2464-4f84-a1a2-30ed0fb3d24c">
+    <div class="command-table" id="job-43faa685-686a-4b8d-8814-bd66dadb27af">
       
       <div class="success">
       
@@ -645,7 +645,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-58460f90-2464-4f84-a1a2-30ed0fb3d24c">#</a>
+                <a href="#job-43faa685-686a-4b8d-8814-bd66dadb27af">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -699,15 +699,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:46Z
+                2021-10-13T19:26:02Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:47Z
+                2021-10-13T19:26:02Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -745,7 +745,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-68ab1f57-750c-44be-92eb-a97f96010fed">
+    <div class="command-table" id="job-a722b604-7b71-4f11-9588-90fe003fb72b">
       
       <div class="fail">
       
@@ -753,7 +753,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-68ab1f57-750c-44be-92eb-a97f96010fed">#</a>
+                <a href="#job-a722b604-7b71-4f11-9588-90fe003fb72b">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -807,7 +807,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:01Z
+                2021-10-13T19:31:25Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -815,7 +815,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:02Z
+                2021-10-13T19:31:26Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -840,6 +840,31 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
+WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <! as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN42_$LT$$u21$$u20$as$u20$core..fmt..Debug$GT$3fmt17h66ed36afa438a3bdE
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hb6e87c5024caa23dE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 error: internal compiler error: trimmed_def_paths constructed
 |
 = note: delayed at    0: rustc_errors::HandlerInner::delay_good_path_bug
@@ -847,13 +872,13 @@ at ./compiler/rustc_errors/src/lib.rs:1119:25
 1: rustc_errors::Handler::delay_good_path_bug
 at ./compiler/rustc_errors/src/lib.rs:817:9
 2: rustc_middle::ty::print::pretty::trimmed_def_paths
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:2416:9
+at ./compiler/rustc_middle/src/ty/print/pretty.rs:2438:9
 3: rustc_query_system::query::plumbing::execute_job::{{closure}}
-at ./compiler/rustc_query_system/src/query/plumbing.rs:461:55
+at ./compiler/rustc_query_system/src/query/plumbing.rs:444:55
 4: stacker::maybe_grow
 at /home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.14/src/lib.rs:55:9
 5: rustc_data_structures::stack::ensure_sufficient_stack
-at ./compiler/rustc_data_structures/src/stack.rs:16:5
+at ./compiler/rustc_data_structures/src/stack.rs:17:5
 6: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::{{closure}}::{{closure}}
 at ./compiler/rustc_query_impl/src/plumbing.rs:136:17
 7: rustc_middle::ty::context::tls::enter_context::{{closure}}
@@ -877,11 +902,11 @@ at ./compiler/rustc_middle/src/ty/context.rs:1806:9
 16: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query
 at ./compiler/rustc_query_impl/src/plumbing.rs:124:9
 17: rustc_query_system::query::plumbing::execute_job
-at ./compiler/rustc_query_system/src/query/plumbing.rs:461:22
+at ./compiler/rustc_query_system/src/query/plumbing.rs:444:22
 18: rustc_query_system::query::plumbing::try_execute_query
-at ./compiler/rustc_query_system/src/query/plumbing.rs:414:44
+at ./compiler/rustc_query_system/src/query/plumbing.rs:401:44
 19: rustc_query_system::query::plumbing::get_query
-at ./compiler/rustc_query_system/src/query/plumbing.rs:754:36
+at ./compiler/rustc_query_system/src/query/plumbing.rs:733:36
 20: rustc_middle::ty::query::TyCtxtAt::trimmed_def_paths
 at ./compiler/rustc_middle/src/ty/query.rs:204:17
 21: rustc_middle::ty::query::<impl rustc_middle::ty::context::TyCtxt>::trimmed_def_paths
@@ -909,27 +934,27 @@ at ./compiler/rustc_middle/src/ty/context.rs:1820:9
 32: rustc_middle::mir::pretty_print_const
 at ./compiler/rustc_middle/src/mir/mod.rs:2809:5
 33: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1162:17
+at ./library/core/src/fmt/mod.rs:1163:17
 34: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1616:9
+at ./library/core/src/fmt/mod.rs:1617:9
 35: <rustc_middle::mir::Constant as core::fmt::Debug>::fmt
 at ./compiler/rustc_middle/src/mir/mod.rs:2780:9
 36: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1162:17
+at ./library/core/src/fmt/mod.rs:1163:17
 37: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1616:9
+at ./library/core/src/fmt/mod.rs:1617:9
 38: <rustc_middle::mir::Operand as core::fmt::Debug>::fmt
 39: core::fmt::run
-at ./library/core/src/fmt/mod.rs:1210:5
+at ./library/core/src/fmt/mod.rs:1211:5
 40: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1178:26
+at ./library/core/src/fmt/mod.rs:1179:26
 41: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1616:9
+at ./library/core/src/fmt/mod.rs:1617:9
 42: <rustc_middle::mir::AssertKind<O> as core::fmt::Debug>::fmt
 43: <&T as core::fmt::Debug>::fmt
-at ./library/core/src/fmt/mod.rs:2091:62
+at ./library/core/src/fmt/mod.rs:2092:62
 44: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1162:17
+at ./library/core/src/fmt/mod.rs:1163:17
 45: core::fmt::Write::write_fmt
 at ./library/core/src/fmt/mod.rs:186:9
 46: alloc::fmt::format
@@ -941,19 +966,19 @@ at ./compiler/rustc_codegen_rmc/src/codegen/block.rs:30:28
 49: rustc_codegen_rmc::codegen::function::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_function::{{closure}}
 at ./compiler/rustc_codegen_rmc/src/codegen/function.rs:99:71
 50: core::iter::traits::iterator::Iterator::for_each::call::{{closure}}
-at ./library/core/src/iter/traits/iterator.rs:728:29
+at ./library/core/src/iter/traits/iterator.rs:734:29
 51: core::iter::adapters::map::map_fold::{{closure}}
 at ./library/core/src/iter/adapters/map.rs:84:21
 52: <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::fold::enumerate::{{closure}}
 at ./library/core/src/iter/adapters/enumerate.rs:106:27
 53: core::iter::traits::iterator::Iterator::fold
-at ./library/core/src/iter/traits/iterator.rs:2165:21
+at ./library/core/src/iter/traits/iterator.rs:2171:21
 54: <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::fold
 at ./library/core/src/iter/adapters/enumerate.rs:112:9
 55: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
 at ./library/core/src/iter/adapters/map.rs:124:9
 56: core::iter::traits::iterator::Iterator::for_each
-at ./library/core/src/iter/traits/iterator.rs:731:9
+at ./library/core/src/iter/traits/iterator.rs:737:9
 57: rustc_codegen_rmc::codegen::function::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_function
 at ./compiler/rustc_codegen_rmc/src/codegen/function.rs:99:13
 58: <rustc_codegen_rmc::compiler_interface::GotocCodegenBackend as rustc_codegen_ssa::traits::backend::CodegenBackend>::codegen_crate::{{closure}}
@@ -1015,7 +1040,7 @@ at ./compiler/rustc_span/src/lib.rs:109:5
 86: rustc_interface::util::setup_callbacks_and_run_in_thread_pool_with_globals::{{closure}}
 at ./compiler/rustc_interface/src/util.rs:143:9
 87: std::sys_common::backtrace::__rust_begin_short_backtrace
-at ./library/std/src/sys_common/backtrace.rs:125:18
+at ./library/std/src/sys_common/backtrace.rs:123:18
 88: std::thread::Builder::spawn_unchecked::{{closure}}::{{closure}}
 at ./library/std/src/thread/mod.rs:483:17
 89: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
@@ -1031,9 +1056,9 @@ at ./library/std/src/thread/mod.rs:482:30
 94: core::ops::function::FnOnce::call_once{{vtable.shim}}
 at ./library/core/src/ops/function.rs:227:5
 95: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-at ./library/alloc/src/boxed.rs:1638:9
+at ./library/alloc/src/boxed.rs:1691:9
 96: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-at ./library/alloc/src/boxed.rs:1638:9
+at ./library/alloc/src/boxed.rs:1691:9
 97: std::sys::unix::thread::Thread::new::thread_start
 at ./library/std/src/sys/unix/thread.rs:106:17
 98: start_thread
@@ -1080,7 +1105,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1207bc7b-ef2e-4a6a-9aee-df74ca94a1a0">
+    <div class="command-table" id="job-6cda8a65-aae3-4bc2-9f99-552e9a041c8e">
       
       <div class="in-progress">
       
@@ -1088,7 +1113,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1207bc7b-ef2e-4a6a-9aee-df74ca94a1a0">#</a>
+                <a href="#job-6cda8a65-aae3-4bc2-9f99-552e9a041c8e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">

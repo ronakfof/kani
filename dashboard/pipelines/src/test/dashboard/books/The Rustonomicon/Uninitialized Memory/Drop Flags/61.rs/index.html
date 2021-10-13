@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-cc0866af-8973-4999-bceb-0260eb06a08f">
+              <a href="#job-b2d7795b-5304-4648-9e06-b711b38e3eea">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a831d19b-4f5a-4d10-b015-b3d3c2a0c7e9">
+              <a href="#job-069a1ab8-5d9f-4fdd-9bce-d107d557eada">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-72401c9e-49cc-4a1d-b20d-bda9864d6713">
+              <a href="#job-8120fe1c-3e8d-4bf8-b927-0137b5983bb0">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-cc0866af-8973-4999-bceb-0260eb06a08f">
+    <div class="command-table" id="job-b2d7795b-5304-4648-9e06-b711b38e3eea">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-cc0866af-8973-4999-bceb-0260eb06a08f">#</a>
+                <a href="#job-b2d7795b-5304-4648-9e06-b711b38e3eea">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,15 +695,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:42Z
+                2021-10-13T19:31:28Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:43Z
+                2021-10-13T19:31:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a831d19b-4f5a-4d10-b015-b3d3c2a0c7e9">
+    <div class="command-table" id="job-069a1ab8-5d9f-4fdd-9bce-d107d557eada">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a831d19b-4f5a-4d10-b015-b3d3c2a0c7e9">#</a>
+                <a href="#job-069a1ab8-5d9f-4fdd-9bce-d107d557eada">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,7 +803,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:43Z
+                2021-10-13T19:31:28Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -811,7 +811,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:43Z
+                2021-10-13T19:31:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h17829474565e475dE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h17829474565e475dE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h17829474565e475dE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h17829474565e475dE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +878,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-72401c9e-49cc-4a1d-b20d-bda9864d6713">
+    <div class="command-table" id="job-8120fe1c-3e8d-4bf8-b927-0137b5983bb0">
       
       <div class="success">
       
@@ -857,7 +886,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-72401c9e-49cc-4a1d-b20d-bda9864d6713">#</a>
+                <a href="#job-8120fe1c-3e8d-4bf8-b927-0137b5983bb0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,15 +940,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:44Z
+                2021-10-13T19:32:06Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:44Z
+                2021-10-13T19:32:07Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -953,25 +982,25 @@ Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop main.0 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 28 function main thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CslpStRJa6MvK_2_61.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxlEECslpStRJa6MvK_2_61.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
 Unwinding loop main.1 iteration 1  thread 0
-Runtime Symex: 0.0401042s
+Runtime Symex: 0.0736894s
 size of program expression: 692 steps
 simple slicing removed 42 assignments
 Generated 57 VCC(s), 8 remaining after simplification
-Runtime Postprocess Equation: 5.69e-05s
+Runtime Postprocess Equation: 6.3899e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00470154s
+Runtime Convert SSA: 0.0222686s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 3.4e-05s
+Runtime Post-process: 8.56e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 11944 variables, 2652 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 6.32e-05s
-Runtime decision procedure: 0.012051s
+Runtime Solver: 0.000146199s
+Runtime decision procedure: 0.0225689s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
@@ -986,37 +1015,37 @@ Runtime decision procedure: 0.012051s
 [std::alloc::dealloc.precondition_instance.6] line 104 free called for stack-allocated object: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function <std::boxed::Box<T, A> as std::fmt::Display>::fmt
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.1] line 1528 dereference failure: pointer NULL in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.2] line 1528 dereference failure: pointer invalid in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.3] line 1528 dereference failure: deallocated dynamic object in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.4] line 1528 dereference failure: dead object in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.5] line 1528 dereference failure: pointer outside object bounds in self->0: SUCCESS
-[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.6] line 1528 dereference failure: invalid integer address in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.1] line 1581 dereference failure: pointer NULL in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.2] line 1581 dereference failure: pointer invalid in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.3] line 1581 dereference failure: deallocated dynamic object in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.4] line 1581 dereference failure: dead object in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.5] line 1581 dereference failure: pointer outside object bounds in self->0: SUCCESS
+[<std::boxed::Box<T, A> as std::fmt::Display>::fmt.pointer_dereference.6] line 1581 dereference failure: invalid integer address in self->0: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function std::boxed::Box::<T>::new
-[std::boxed::Box::<T>::new.assertion.1] line 190 resume instruction: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.1] line 191 dereference failure: pointer NULL in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.2] line 191 dereference failure: pointer invalid in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.3] line 191 dereference failure: deallocated dynamic object in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.4] line 191 dereference failure: dead object in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.5] line 191 dereference failure: pointer outside object bounds in *var_0.0.pointer: SUCCESS
-[std::boxed::Box::<T>::new.pointer_dereference.6] line 191 dereference failure: invalid integer address in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.assertion.1] line 191 resume instruction: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.1] line 192 dereference failure: pointer NULL in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.2] line 192 dereference failure: pointer invalid in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.3] line 192 dereference failure: deallocated dynamic object in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.4] line 192 dereference failure: dead object in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.5] line 192 dereference failure: pointer outside object bounds in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.6] line 192 dereference failure: invalid integer address in *var_0.0.pointer: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 116 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 116 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 116 dereference failure: deallocated dynamic object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.4] line 116 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 116 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 116 dereference failure: invalid integer address in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.1] line 119 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 119 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 119 dereference failure: deallocated dynamic object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.4] line 119 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 119 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 119 dereference failure: invalid integer address in self->align_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 108 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 108 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 108 dereference failure: deallocated dynamic object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.4] line 108 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 108 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 108 dereference failure: invalid integer address in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.1] line 109 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 109 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 109 dereference failure: deallocated dynamic object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.4] line 109 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 109 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 109 dereference failure: invalid integer address in self->size_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
@@ -1041,12 +1070,12 @@ Runtime decision procedure: 0.012051s
 [std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 118 dereference failure: pointer NULL in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 118 dereference failure: pointer invalid in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 118 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 118 dereference failure: dead object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 118 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 118 dereference failure: invalid integer address in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 120 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 120 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 120 dereference failure: dead object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 120 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/The Rustonomicon/Uninitialized Memory/Drop Flags/61.rs function main
 [main.assertion.1] line 3 resume instruction: SUCCESS

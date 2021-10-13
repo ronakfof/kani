@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2875814d-3834-4c21-ae19-67290e5d7687">
+              <a href="#job-c4759273-acdb-4ef0-a949-6ff8381a5171">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1c98d49f-1891-4d5f-a913-3c544a6ba111">
+              <a href="#job-d21dd41f-22fb-4126-a7b8-6d3297ee93c5">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-babe2984-2430-4ae5-9e2b-b59f25f39d41">
+              <a href="#job-5a784b9a-a5ec-4e4e-847a-4b1842e2d56a">
               
               Can RMC reason about it?
               
@@ -635,7 +635,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2875814d-3834-4c21-ae19-67290e5d7687">
+    <div class="command-table" id="job-c4759273-acdb-4ef0-a949-6ff8381a5171">
       
       <div class="success">
       
@@ -643,7 +643,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2875814d-3834-4c21-ae19-67290e5d7687">#</a>
+                <a href="#job-c4759273-acdb-4ef0-a949-6ff8381a5171">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,15 +697,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:24Z
+                2021-10-13T19:25:27Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:24Z
+                2021-10-13T19:25:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -743,7 +743,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1c98d49f-1891-4d5f-a913-3c544a6ba111">
+    <div class="command-table" id="job-d21dd41f-22fb-4126-a7b8-6d3297ee93c5">
       
       <div class="success">
       
@@ -751,7 +751,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1c98d49f-1891-4d5f-a913-3c544a6ba111">#</a>
+                <a href="#job-d21dd41f-22fb-4126-a7b8-6d3297ee93c5">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -805,15 +805,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:57Z
+                2021-10-13T19:27:24Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:57Z
+                2021-10-13T19:27:25Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -836,6 +836,41 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h77de4a4b4b484b96E::1::var_3" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -851,7 +886,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-babe2984-2430-4ae5-9e2b-b59f25f39d41">
+    <div class="command-table" id="job-5a784b9a-a5ec-4e4e-847a-4b1842e2d56a">
       
       <div class="fail">
       
@@ -859,7 +894,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-babe2984-2430-4ae5-9e2b-b59f25f39d41">#</a>
+                <a href="#job-5a784b9a-a5ec-4e4e-847a-4b1842e2d56a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -913,7 +948,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:58Z
+                2021-10-13T19:27:25Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -921,7 +956,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:59Z
+                2021-10-13T19:27:26Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -953,68 +988,68 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-**** WARNING: no body for function _ZN3std4path4Path5_join17h0d9802b445eace3cE
+**** WARNING: no body for function _ZN3std4path4Path5_join17h9df1c6160b2eebaeE
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6cjno66YhcD_2_15.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VechEECs6cjno66YhcD_2_15.1 iteration 1  thread 0
-**** WARNING: no body for function _ZN3std3sys4unix6os_str5Slice6to_str17h34ea5090abfba673E
+**** WARNING: no body for function _ZN3std3sys4unix6os_str5Slice6to_str17h0143043e8325975dE
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs line 17 column 11 function main thread 0
 Unwinding loop main.0 iteration 1  thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6cjno66YhcD_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6cjno66YhcD_2_15.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VechEECs6cjno66YhcD_2_15.1 iteration 1  thread 0
-Runtime Symex: 0.199354s
+Runtime Symex: 0.146792s
 size of program expression: 2480 steps
 simple slicing removed 84 assignments
 Generated 167 VCC(s), 50 remaining after simplification
-Runtime Postprocess Equation: 0.000407302s
+Runtime Postprocess Equation: 0.000479796s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0463398s
+Runtime Convert SSA: 0.0686842s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00340522s
+Runtime Post-process: 0.00208438s
 Solving with MiniSAT 2.2.1 with simplifier
 62752 variables, 45908 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0793885s
-Runtime decision procedure: 0.126101s
+Runtime Solver: 0.0933663s
+Runtime decision procedure: 0.162522s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5395 clauses
+62752 variables, 5333 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000604903s
-Runtime decision procedure: 0.000657305s
+Runtime Solver: 0.00157619s
+Runtime decision procedure: 0.00465736s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5380 clauses
+62752 variables, 5319 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000655704s
-Runtime decision procedure: 0.000694604s
+Runtime Solver: 0.000963792s
+Runtime decision procedure: 0.00101349s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5350 clauses
+62752 variables, 5312 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000551404s
-Runtime decision procedure: 0.000587704s
+Runtime Solver: 0.000685395s
+Runtime decision procedure: 0.000747594s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5350 clauses
+62752 variables, 5295 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000500304s
-Runtime decision procedure: 0.000535304s
+Runtime Solver: 0.00146839s
+Runtime decision procedure: 0.00152209s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5351 clauses
+62752 variables, 5257 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000692804s
-Runtime decision procedure: 0.000739105s
+Runtime Solver: 0.00789434s
+Runtime decision procedure: 0.00796574s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-62752 variables, 5350 clauses
-SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000190901s
-Runtime decision procedure: 0.000228301s
+62752 variables, 2887 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime Solver: 9.6e-06s
+Runtime decision procedure: 4.2499e-05s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
@@ -1026,94 +1061,94 @@ Runtime decision procedure: 0.000228301s
 [std::alloc::dealloc.precondition_instance.6] line 104 free called for stack-allocated object: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 519 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 519 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 522 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 522 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 257 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 257 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 257 dereference failure: deallocated dynamic object in self->cap: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 257 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 257 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 257 dereference failure: invalid integer address in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 258 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 258 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.assertion.1] line 264 attempt to compute `move _8 * move _9`, which would overflow: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.overflow.1] line 264 arithmetic overflow on unsigned * in var_8 * var_9: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 264 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 264 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 264 dereference failure: deallocated dynamic object in self->cap: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 264 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 264 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 264 dereference failure: invalid integer address in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 266 dereference failure: pointer NULL in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 266 dereference failure: pointer invalid in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 266 dereference failure: deallocated dynamic object in self->ptr: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 266 dereference failure: dead object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 266 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 266 dereference failure: invalid integer address in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 260 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 260 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 260 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 260 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 260 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 260 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 261 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 261 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.assertion.1] line 267 attempt to compute `move _8 * move _9`, which would overflow: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.overflow.1] line 267 arithmetic overflow on unsigned * in var_8 * var_9: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 267 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 267 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 267 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 267 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 267 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 267 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 269 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 269 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 269 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 269 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 269 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 269 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 240 dereference failure: pointer NULL in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 240 dereference failure: pointer invalid in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 240 dereference failure: deallocated dynamic object in self->ptr: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 240 dereference failure: dead object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 240 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 240 dereference failure: invalid integer address in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 243 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 243 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 243 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 243 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 243 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 243 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Deref>::deref
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2398 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2398 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2398 dereference failure: deallocated dynamic object in self->len: FAILURE
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2398 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2398 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2398 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2400 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2400 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2400 dereference failure: deallocated dynamic object in self->len: FAILURE
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2400 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2400 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2400 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2782 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2782 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2782 dereference failure: deallocated dynamic object in self->len: FAILURE
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2782 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2782 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2782 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2784 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2784 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2784 dereference failure: deallocated dynamic object in self->len: FAILURE
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2784 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2784 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2784 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
-[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1170 assumption failed: FAILURE
+[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: FAILURE
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_ptr
-[std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1134 assumption failed: FAILURE
+[std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1136 assumption failed: FAILURE
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 116 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 116 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 116 dereference failure: deallocated dynamic object in self->align_: FAILURE
-[std::alloc::Layout::align.pointer_dereference.4] line 116 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 116 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 116 dereference failure: invalid integer address in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.1] line 119 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 119 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 119 dereference failure: deallocated dynamic object in self->align_: FAILURE
+[std::alloc::Layout::align.pointer_dereference.4] line 119 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 119 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 119 dereference failure: invalid integer address in self->align_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 108 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 108 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 108 dereference failure: deallocated dynamic object in self->size_: FAILURE
-[std::alloc::Layout::size.pointer_dereference.4] line 108 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 108 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 108 dereference failure: invalid integer address in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.1] line 109 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 109 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 109 dereference failure: deallocated dynamic object in self->size_: FAILURE
+[std::alloc::Layout::size.pointer_dereference.4] line 109 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 109 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 109 dereference failure: invalid integer address in self->size_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/convert/mod.rs function <&T as std::convert::AsRef<U>>::as_ref
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.1] line 491 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.2] line 491 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.3] line 491 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.4] line 491 dereference failure: dead object in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.5] line 491 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.6] line 491 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.1] line 493 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.2] line 493 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.3] line 493 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.4] line 493 dereference failure: dead object in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.5] line 493 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.6] line 493 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Display>::fmt
-[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2091 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2091 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2091 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2091 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2091 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2091 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.1] line 2092 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.2] line 2092 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.3] line 2092 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.4] line 2092 dereference failure: dead object in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.5] line 2092 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::fmt::Display>::fmt.pointer_dereference.6] line 2092 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
@@ -1126,7 +1161,7 @@ Runtime decision procedure: 0.000228301s
 [std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/library/std/src/path.rs function std::path::Path::join
-[std::path::Path::join.assertion.1] line 2356 resume instruction: SUCCESS
+[std::path::Path::join.assertion.1] line 2377 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs function main
 [main.assertion.3] line 5 resume instruction: SUCCESS

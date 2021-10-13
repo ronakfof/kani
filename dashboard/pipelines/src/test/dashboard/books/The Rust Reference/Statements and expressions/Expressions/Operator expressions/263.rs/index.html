@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-dc23a9b1-fdca-4c79-9ef1-4866d1ba464f">
+              <a href="#job-325b7518-985f-489d-8ac3-bfd49836bdd8">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e2f53fa0-8e6b-47b5-a193-21c457bf0205">
+              <a href="#job-ee7f8c0f-8514-4396-8f3a-c531d6076963">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-36b48fac-3a25-40cf-a799-66e4697eedf8">
+              <a href="#job-5723a648-03ca-40ac-949b-35021b7365e4">
               
               Can RMC reason about it?
               
@@ -635,7 +635,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-dc23a9b1-fdca-4c79-9ef1-4866d1ba464f">
+    <div class="command-table" id="job-325b7518-985f-489d-8ac3-bfd49836bdd8">
       
       <div class="success">
       
@@ -643,7 +643,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-dc23a9b1-fdca-4c79-9ef1-4866d1ba464f">#</a>
+                <a href="#job-325b7518-985f-489d-8ac3-bfd49836bdd8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,7 +697,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:16:54Z
+                2021-10-13T19:28:55Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -705,7 +705,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:16:54Z
+                2021-10-13T19:28:55Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -743,7 +743,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e2f53fa0-8e6b-47b5-a193-21c457bf0205">
+    <div class="command-table" id="job-ee7f8c0f-8514-4396-8f3a-c531d6076963">
       
       <div class="success">
       
@@ -751,7 +751,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e2f53fa0-8e6b-47b5-a193-21c457bf0205">#</a>
+                <a href="#job-ee7f8c0f-8514-4396-8f3a-c531d6076963">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -805,15 +805,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:16:55Z
+                2021-10-13T19:28:55Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:16:55Z
+                2021-10-13T19:28:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -836,6 +836,113 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_7" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_44" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_48" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_8::lhs" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_8::lhs" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_13::rhs" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN48_$LT$A$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h9031cfd574158374E::1::var_13::rhs" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN49_$LT$u8$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h945920ccfdaee6adE::1::var_10" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN49_$LT$u8$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h945920ccfdaee6adE::1::var_12" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN49_$LT$u8$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h945920ccfdaee6adE::1::var_16" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN49_$LT$u8$u20$as$u20$core..slice..cmp..SliceOrd$GT$7compare17h945920ccfdaee6adE::1::var_20" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h9d99b45dc78e0ad4E::1::var_11" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h9d99b45dc78e0ad4E::1::var_14" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h9d99b45dc78e0ad4E::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h9d99b45dc78e0ad4E::1::var_15" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17h55dfef322d0bc30fE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -851,7 +958,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-36b48fac-3a25-40cf-a799-66e4697eedf8">
+    <div class="command-table" id="job-5723a648-03ca-40ac-949b-35021b7365e4">
       
       <div class="fail">
       
@@ -859,7 +966,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-36b48fac-3a25-40cf-a799-66e4697eedf8">#</a>
+                <a href="#job-5723a648-03ca-40ac-949b-35021b7365e4">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -913,15 +1020,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:31Z
+                2021-10-13T19:31:23Z
               </span></p>
               <p>Duration:
               <span class="value">
-                02s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:33Z
+                2021-10-13T19:31:24Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -957,28 +1064,28 @@ Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECsicFN8ky
 Unwinding loop _RNvXs6_NtNtCs61cxoXOqFbB_4core5slice3cmplNtB5_8SliceOrd7compareCsicFN8kyuae5_3_263.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/slice/cmp.rs line 176 column 9 function <A as core::slice::cmp::SliceOrd>::compare thread 0
 Unwinding loop _RNvYSlNtNtCs61cxoXOqFbB_4core3cmp10PartialOrd2ltCsicFN8kyuae5_3_263.0 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECsicFN8kyuae5_3_263.0 iteration 1  thread 0
-Runtime Symex: 0.144275s
+Runtime Symex: 0.144391s
 size of program expression: 1752 steps
 simple slicing removed 24 assignments
 Generated 236 VCC(s), 20 remaining after simplification
-Runtime Postprocess Equation: 0.000277702s
+Runtime Postprocess Equation: 0.000179498s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0223177s
+Runtime Convert SSA: 0.0164919s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.93e-05s
+Runtime Post-process: 2.95e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 34248 variables, 8037 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00982775s
-Runtime decision procedure: 0.0368822s
+Runtime Solver: 0.0110404s
+Runtime decision procedure: 0.0339281s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 34248 variables, 60 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000118201s
-Runtime decision procedure: 0.000153201s
+Runtime Solver: 9.2099e-05s
+Runtime decision procedure: 0.000123299s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned + in var_3 + var_4: SUCCESS

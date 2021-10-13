@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-0544ad9f-740e-4572-aff5-bdf357c7db4b">
+              <a href="#job-0bf5f7a0-18df-4ea4-a657-e76d4ca07a6e">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-70a7a0b3-413a-4c79-acd0-24e167fc097c">
+              <a href="#job-02b36c0a-d780-4bec-8754-c82858c01ea7">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-865dddd9-9057-43ef-a22f-6809224aab06">
+              <a href="#job-909284a0-ffe4-4926-ada7-2bbac76b3861">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-0544ad9f-740e-4572-aff5-bdf357c7db4b">
+    <div class="command-table" id="job-0bf5f7a0-18df-4ea4-a657-e76d4ca07a6e">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-0544ad9f-740e-4572-aff5-bdf357c7db4b">#</a>
+                <a href="#job-0bf5f7a0-18df-4ea4-a657-e76d4ca07a6e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:55Z
+                2021-10-13T19:27:56Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:55Z
+                2021-10-13T19:27:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -757,7 +757,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-70a7a0b3-413a-4c79-acd0-24e167fc097c">
+    <div class="command-table" id="job-02b36c0a-d780-4bec-8754-c82858c01ea7">
       
       <div class="success">
       
@@ -765,7 +765,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-70a7a0b3-413a-4c79-acd0-24e167fc097c">#</a>
+                <a href="#job-02b36c0a-d780-4bec-8754-c82858c01ea7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -819,15 +819,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:55Z
+                2021-10-13T19:28:50Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:56Z
+                2021-10-13T19:28:50Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -861,6 +861,30 @@ warning: the feature `inline_const` is incomplete and may not be safe to use and
 = note: `#[warn(incomplete_features)]` on by default
 = note: see issue #76001 <https://github.com/rust-lang/rust/issues/76001> for more information
 
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 warning: 1 warning emitted
 
             </xmp>
@@ -881,7 +905,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-865dddd9-9057-43ef-a22f-6809224aab06">
+    <div class="command-table" id="job-909284a0-ffe4-4926-ada7-2bbac76b3861">
       
       <div class="success">
       
@@ -889,7 +913,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-865dddd9-9057-43ef-a22f-6809224aab06">#</a>
+                <a href="#job-909284a0-ffe4-4926-ada7-2bbac76b3861">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -943,7 +967,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:56Z
+                2021-10-13T19:28:50Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -951,7 +975,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:56Z
+                2021-10-13T19:28:50Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -984,12 +1008,12 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsfKhK9dXZo2R_2_32.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
-Runtime Symex: 0.00691784s
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
+Runtime Symex: 0.010963s
 size of program expression: 277 steps
 simple slicing removed 0 assignments
 Generated 3 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 1.71e-05s
+Runtime Postprocess Equation: 1.74e-05s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1

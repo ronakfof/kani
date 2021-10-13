@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-74bc2a80-9da1-4548-84ef-a3616e6004dd">
+              <a href="#job-e1200e65-ba09-4d67-91f7-87910f40609e">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-575a2cba-06ad-443e-b573-fd9db058810a">
+              <a href="#job-f258781c-db3d-425d-8240-6cd0d9d607e5">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ca0b82b1-d2df-4092-b591-fc08a98ca4ca">
+              <a href="#job-82cad514-3ad7-48f2-92c1-20ac63fbada4">
               
               Can RMC reason about it?
               
@@ -635,7 +635,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-74bc2a80-9da1-4548-84ef-a3616e6004dd">
+    <div class="command-table" id="job-e1200e65-ba09-4d67-91f7-87910f40609e">
       
       <div class="success">
       
@@ -643,7 +643,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-74bc2a80-9da1-4548-84ef-a3616e6004dd">#</a>
+                <a href="#job-e1200e65-ba09-4d67-91f7-87910f40609e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,15 +697,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:13:33Z
+                2021-10-13T19:25:27Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:13:34Z
+                2021-10-13T19:25:27Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -743,7 +743,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-575a2cba-06ad-443e-b573-fd9db058810a">
+    <div class="command-table" id="job-f258781c-db3d-425d-8240-6cd0d9d607e5">
       
       <div class="success">
       
@@ -751,7 +751,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-575a2cba-06ad-443e-b573-fd9db058810a">#</a>
+                <a href="#job-f258781c-db3d-425d-8240-6cd0d9d607e5">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -805,15 +805,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:51Z
+                2021-10-13T19:29:20Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:52Z
+                2021-10-13T19:29:20Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -836,6 +836,95 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17hfed6a4eddd161c1dE::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$3len17h0c92b3300a7328cbE::1::var_1::self" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h5b9010cfcccc0ebfE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h5b9010cfcccc0ebfE::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17heab37a9812818a9eE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17heab37a9812818a9eE::1::var_4" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17heab37a9812818a9eE::1::var_3" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17heab37a9812818a9eE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hf6f1385107892f29E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17h30a2e185f379ce53E::1::var_1::reference" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h993942c570798a10E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h993942c570798a10E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h993942c570798a10E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h993942c570798a10E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -851,7 +940,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ca0b82b1-d2df-4092-b591-fc08a98ca4ca">
+    <div class="command-table" id="job-82cad514-3ad7-48f2-92c1-20ac63fbada4">
       
       <div class="fail">
       
@@ -859,7 +948,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ca0b82b1-d2df-4092-b591-fc08a98ca4ca">#</a>
+                <a href="#job-82cad514-3ad7-48f2-92c1-20ac63fbada4">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -913,15 +1002,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:14:52Z
+                2021-10-13T19:29:21Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:14:55Z
+                2021-10-13T19:29:23Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -954,15 +1043,15 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs5yVsvJalbtb_2_48.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs5yVsvJalbtb_2_48.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCs5yVsvJalbtb_2_48.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VeclEECs5yVsvJalbtb_2_48.1 iteration 1  thread 0
-Runtime Symex: 0.132354s
+Runtime Symex: 0.115658s
 size of program expression: 1511 steps
 simple slicing removed 61 assignments
 Generated 88 VCC(s), 16 remaining after simplification
-Runtime Postprocess Equation: 0.000184401s
+Runtime Postprocess Equation: 0.000137698s
 Passing problem to propositional reduction
 converting SSA
 warning: ignoring nil
@@ -972,33 +1061,33 @@ File: ../src/solvers/flattening/boolbv_width.cpp:197 function: get_entry
 Condition: false
 Reason: Unimplemented
 Backtrace:
-cbmc(print_backtrace(std::ostream&)+0x50) [0x55f856d805f0]
-cbmc(get_backtrace[abi:cxx11]()+0x169) [0x55f856d80b99]
-cbmc(std::enable_if<std::is_base_of<invariant_failedt, invariant_failedt>::value, void>::type invariant_violated_structured<invariant_failedt, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x48) [0x55f856667c48]
-cbmc(boolbv_widtht::get_entry(typet const&) const+0x278) [0x55f856b762b8]
-cbmc(bv_pointerst::bv_pointers_widtht::operator()(typet const&) const+0x3d) [0x55f856b7db2d]
-cbmc(boolbvt::conversion_failed(exprt const&)+0xa6) [0x55f856b38536]
-cbmc(boolbvt::convert_bitvector(exprt const&)+0x653) [0x55f856b39393]
-cbmc(bv_pointerst::convert_bitvector(exprt const&)+0x101) [0x55f856b80761]
-cbmc(boolbvt::convert_bv(exprt const&, nonstd::optional_lite::optional<unsigned long>)+0xc0) [0x55f856b3c460]
-cbmc(boolbvt::convert_byte_update(byte_update_exprt const&)+0x2c4) [0x55f856b49924]
-cbmc(boolbvt::convert_bitvector(exprt const&)+0x869) [0x55f856b395a9]
-cbmc(bv_pointerst::convert_bitvector(exprt const&)+0x101) [0x55f856b80761]
-cbmc(boolbvt::convert_bv(exprt const&, nonstd::optional_lite::optional<unsigned long>)+0xc0) [0x55f856b3c460]
-cbmc(boolbvt::boolbv_set_equality_to_true(equal_exprt const&)+0xea) [0x55f856b389ca]
-cbmc(boolbvt::set_to(exprt const&, bool)+0x78) [0x55f856b38a98]
-cbmc(symex_target_equationt::convert_assignments(decision_proceduret&)+0xd1) [0x55f85688a6c1]
-cbmc(symex_target_equationt::convert_without_assertions(decision_proceduret&)+0x7a) [0x55f856892f4a]
-cbmc(symex_target_equationt::convert(decision_proceduret&)+0x42) [0x55f856893a92]
-cbmc(convert_symex_target_equation(symex_target_equationt&, decision_proceduret&, message_handlert&)+0x334) [0x55f856683614]
-cbmc(prepare_property_decider(std::unordered_map<dstringt, property_infot, std::hash<dstringt>, std::equal_to<dstringt>, std::allocator<std::pair<dstringt const, property_infot> > >&, symex_target_equationt&, goto_symex_property_decidert&, ui_message_handlert&)+0x3c5) [0x55f856683a95]
-cbmc(multi_path_symex_checkert::operator()(std::unordered_map<dstringt, property_infot, std::hash<dstringt>, std::equal_to<dstringt>, std::allocator<std::pair<dstringt const, property_infot> > >&)+0x155) [0x55f856693a05]
-cbmc(all_properties_verifier_with_trace_storaget<multi_path_symex_checkert>::operator()()+0x92) [0x55f856676af2]
-cbmc(cbmc_parse_optionst::doit()+0xd0e) [0x55f85666f39e]
-cbmc(parse_options_baset::main()+0x8f) [0x55f856665e0f]
-cbmc(main+0x39) [0x55f856655439]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fe465cbf0b3]
-cbmc(_start+0x2e) [0x55f85666765e]
+cbmc(print_backtrace(std::ostream&)+0x50) [0x5636df34c5f0]
+cbmc(get_backtrace[abi:cxx11]()+0x169) [0x5636df34cb99]
+cbmc(std::enable_if<std::is_base_of<invariant_failedt, invariant_failedt>::value, void>::type invariant_violated_structured<invariant_failedt, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x48) [0x5636dec33c48]
+cbmc(boolbv_widtht::get_entry(typet const&) const+0x278) [0x5636df1422b8]
+cbmc(bv_pointerst::bv_pointers_widtht::operator()(typet const&) const+0x3d) [0x5636df149b2d]
+cbmc(boolbvt::conversion_failed(exprt const&)+0xa6) [0x5636df104536]
+cbmc(boolbvt::convert_bitvector(exprt const&)+0x653) [0x5636df105393]
+cbmc(bv_pointerst::convert_bitvector(exprt const&)+0x101) [0x5636df14c761]
+cbmc(boolbvt::convert_bv(exprt const&, nonstd::optional_lite::optional<unsigned long>)+0xc0) [0x5636df108460]
+cbmc(boolbvt::convert_byte_update(byte_update_exprt const&)+0x2c4) [0x5636df115924]
+cbmc(boolbvt::convert_bitvector(exprt const&)+0x869) [0x5636df1055a9]
+cbmc(bv_pointerst::convert_bitvector(exprt const&)+0x101) [0x5636df14c761]
+cbmc(boolbvt::convert_bv(exprt const&, nonstd::optional_lite::optional<unsigned long>)+0xc0) [0x5636df108460]
+cbmc(boolbvt::boolbv_set_equality_to_true(equal_exprt const&)+0xea) [0x5636df1049ca]
+cbmc(boolbvt::set_to(exprt const&, bool)+0x78) [0x5636df104a98]
+cbmc(symex_target_equationt::convert_assignments(decision_proceduret&)+0xd1) [0x5636dee566c1]
+cbmc(symex_target_equationt::convert_without_assertions(decision_proceduret&)+0x7a) [0x5636dee5ef4a]
+cbmc(symex_target_equationt::convert(decision_proceduret&)+0x42) [0x5636dee5fa92]
+cbmc(convert_symex_target_equation(symex_target_equationt&, decision_proceduret&, message_handlert&)+0x334) [0x5636dec4f614]
+cbmc(prepare_property_decider(std::unordered_map<dstringt, property_infot, std::hash<dstringt>, std::equal_to<dstringt>, std::allocator<std::pair<dstringt const, property_infot> > >&, symex_target_equationt&, goto_symex_property_decidert&, ui_message_handlert&)+0x3c5) [0x5636dec4fa95]
+cbmc(multi_path_symex_checkert::operator()(std::unordered_map<dstringt, property_infot, std::hash<dstringt>, std::equal_to<dstringt>, std::allocator<std::pair<dstringt const, property_infot> > >&)+0x155) [0x5636dec5fa05]
+cbmc(all_properties_verifier_with_trace_storaget<multi_path_symex_checkert>::operator()()+0x92) [0x5636dec42af2]
+cbmc(cbmc_parse_optionst::doit()+0xd0e) [0x5636dec3b39e]
+cbmc(parse_options_baset::main()+0x8f) [0x5636dec31e0f]
+cbmc(main+0x39) [0x5636dec21439]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f548f8640b3]
+cbmc(_start+0x2e) [0x5636dec3365e]
 
 
 --- end invariant violation report ---

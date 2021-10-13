@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-11T22:10:12Z</li>
-      <li>5e3f4944-cf17-4dce-93e0-545900135324</li>
+      <li>2021-10-13T19:22:17Z</li>
+      <li>e6f441d0-7235-4007-b5df-e5d418a24183</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2a2f0845-ed4e-401e-a8a8-5ffd804e86bc">
+              <a href="#job-de1b3ff5-1f8a-4a3c-a510-6b78cc822256">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a7047430-90f4-4a53-bcdc-b7fd110e6dfb">
+              <a href="#job-66bd31f2-8577-4b29-b4e2-3e7a1065e19a">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1c54a9f0-2a98-4cd3-8988-68ba37d4f6fd">
+              <a href="#job-f6381a30-d1bb-4d57-b369-1b909f2213ad">
               
               Can RMC reason about it?
               
@@ -633,7 +633,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2a2f0845-ed4e-401e-a8a8-5ffd804e86bc">
+    <div class="command-table" id="job-de1b3ff5-1f8a-4a3c-a510-6b78cc822256">
       
       <div class="success">
       
@@ -641,7 +641,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2a2f0845-ed4e-401e-a8a8-5ffd804e86bc">#</a>
+                <a href="#job-de1b3ff5-1f8a-4a3c-a510-6b78cc822256">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:15:42Z
+                2021-10-13T19:25:43Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:15:42Z
+                2021-10-13T19:25:43Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -741,7 +741,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a7047430-90f4-4a53-bcdc-b7fd110e6dfb">
+    <div class="command-table" id="job-66bd31f2-8577-4b29-b4e2-3e7a1065e19a">
       
       <div class="success">
       
@@ -749,7 +749,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a7047430-90f4-4a53-bcdc-b7fd110e6dfb">#</a>
+                <a href="#job-66bd31f2-8577-4b29-b4e2-3e7a1065e19a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -803,7 +803,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:15:43Z
+                2021-10-13T19:25:44Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -811,7 +811,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:15:43Z
+                2021-10-13T19:25:44Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -834,6 +834,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hd55cea50730cab4bE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hd55cea50730cab4bE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hd55cea50730cab4bE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hd55cea50730cab4bE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -849,7 +878,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1c54a9f0-2a98-4cd3-8988-68ba37d4f6fd">
+    <div class="command-table" id="job-f6381a30-d1bb-4d57-b369-1b909f2213ad">
       
       <div class="success">
       
@@ -857,7 +886,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1c54a9f0-2a98-4cd3-8988-68ba37d4f6fd">#</a>
+                <a href="#job-f6381a30-d1bb-4d57-b369-1b909f2213ad">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,7 +940,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-11T22:18:55Z
+                2021-10-13T19:25:44Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -919,7 +948,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-11T22:18:56Z
+                2021-10-13T19:25:45Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -952,43 +981,43 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsaT68FHPCOMO_2_10.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-**** WARNING: no body for function _ZN3std2io5stdio6_print17h8100bc4c6a8d297bE
+**** WARNING: no body for function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsaT68FHPCOMO_2_10.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsaT68FHPCOMO_2_10.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsaT68FHPCOMO_2_10.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.115676s
+Runtime Symex: 0.0516065s
 size of program expression: 1723 steps
 simple slicing removed 51 assignments
 Generated 27 VCC(s), 8 remaining after simplification
-Runtime Postprocess Equation: 0.000263301s
+Runtime Postprocess Equation: 0.000132199s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0218862s
+Runtime Convert SSA: 0.0127554s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 4.14e-05s
+Runtime Post-process: 3.9499e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 20699 variables, 3537 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.00123521s
-Runtime decision procedure: 0.0232813s
+Runtime Solver: 0.00120579s
+Runtime decision procedure: 0.016456s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Debug>::fmt
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2091 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2091 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2091 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2091 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2091 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2091 dereference failure: invalid integer address in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2092 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2092 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2092 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2092 dereference failure: dead object in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2092 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2092 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&mut T as std::fmt::Debug>::fmt
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2095 dereference failure: pointer NULL in *self: SUCCESS
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2095 dereference failure: pointer invalid in *self: SUCCESS
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2095 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2095 dereference failure: dead object in *self: SUCCESS
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2095 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2095 dereference failure: invalid integer address in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2096 dereference failure: pointer NULL in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2096 dereference failure: pointer invalid in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2096 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2096 dereference failure: dead object in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2096 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&mut T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2096 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
