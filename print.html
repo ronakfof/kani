@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> RMC on a crate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -295,6 +295,94 @@ If you run into this issue, a good first start is to raise the limit to 2048, i.
 The labels for each loop can be discovered by running with the following CBMC flag:</p>
 <p><strong><code>--show-loops</code></strong> Print the labels of each loop in the program.
 Useful for <code>--unwindset</code>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-on-a-package"><a class="header" href="#rmc-on-a-package">RMC on a package</a></h1>
+<blockquote>
+<p>RMC currently ships with a <code>cargo-rmc</code> script, but this support is deeply limited (e.g. to a single crate).
+This will be corrected soon, and this documentation updated.
+In the meantime, we document the current build process for a larger project with dependencies here.</p>
+</blockquote>
+<p>To build a larger project (one with dependencies or multiple crates) with RMC, you currently need to:</p>
+<ol>
+<li>Build the project with an appropriate set of flags to output CBMC &quot;symbol table&quot; <code>.json</code> files.</li>
+<li>Link these together into a single &quot;goto binary&quot;, with appropriate preprocessing flags.</li>
+<li>Directly call CBMC on this resulting binary.</li>
+</ol>
+<p>We give an example of this kind of script, with explanations, below.</p>
+<h1 id="building-and-running"><a class="header" href="#building-and-running">Building and running</a></h1>
+<p>Let's assume you have a project you can build with <code>cargo build</code> and you've written a proof harness somewhere in it that you want to run RMC on:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[no_mangle]
+#[cfg(rmc)]
+fn my_harness() {
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>A sample build script might start like this:</p>
+<pre><code class="language-bash">set -eux
+
+# The argument to this script will be the proof harness, e.g. 'my_harness' above
+ENTRY_POINT=$1
+
+export CARGO_TARGET_DIR=target-rmc
+
+env \
+  RUST_BACKTRACE=1 \
+  RUSTC=rmc-rustc \
+  RUSTFLAGS=&quot;-Z trim-diagnostic-paths=no -Z codegen-backend=gotoc --cfg=rmc&quot; \
+  cargo build --target x86_64-unknown-linux-gnu
+</code></pre>
+<p>This allows us to re-use the <code>cargo</code> build system, but with flags that override <code>rustc</code> with RMC instead.
+More specifically, by setting the <code>RUSTC</code> environment variable to <code>rmc-rustc</code>, each Rust source file targeted by <code>cargo build</code> is &quot;compiled&quot; with RMC instead of <code>rustc</code>.
+The result of running <code>rmc-rustc</code> on a source file is a symbol table json file written in the CBMC Goto-C language.
+The use of an alternate target directory ensures RMC and rustc don't confuse each other with different intermediate output.</p>
+<p>Next we can convert the symbol tables into goto binaries, in parallel, and then link them together:</p>
+<pre><code class="language-bash">cd $CARGO_TARGET_DIR/x86_64-unknown-linux-gnu/debug/deps
+
+# Independently translate each symbol table into a goto binary
+ls *.json | parallel symtab2gb {} --out {.}.out
+
+# Link everything together
+goto-cc *.out -o linked-binary.out
+</code></pre>
+<p>At this point we have the project built, but now we want to transform it into something that will run a specific proof harness.
+To do that, we specialize it, preprocess it, and then run CBMC on the result:
+(In practice, we might want to do the above steps once, then repeat the below steps for each proof harness.)</p>
+<pre><code class="language-bash"># Now for each harness we specialize a binary:
+HARNESS_BIN=&quot;harness_${ENTRY_POINT}.out&quot;
+goto-cc --function ${ENTRY_POINT} linked-binary.out empty.c -o &quot;${HARNESS_BIN}&quot;
+
+# Perform some preprocessing
+INSTRUMENT_ARGS=(
+  --drop-unused-functions
+)
+goto-instrument &quot;${INSTRUMENT_ARGS[@]}&quot; &quot;${HARNESS_BIN}&quot; &quot;${HARNESS_BIN}&quot;
+
+# Run CBMC, passing along appropriate CBMC arguments:
+CBMC_ARGS=(
+  # RMC defaults
+  --unwinding-assertions
+  --bounds-check
+  --pointer-check
+  --pointer-primitive-check
+  --pointer-overflow-check
+  --signed-overflow-check
+  --undefined-shift-check
+  --unsigned-overflow-check
+  --conversion-check
+  --div-by-zero-check
+  --float-overflow-check
+  --nan-check
+  # Additional options
+  --unwind 0
+  --object-bits 11
+)
+
+cbmc &quot;${CBMC_ARGS[@]}&quot; &quot;${HARNESS_BIN}&quot;
+</code></pre>
+<p>At this point we have a complete script and should now be able to run <code>./sample-rmc-build my_harness</code> to run a particular proof harness.
+Even in very large projects the removal of unreachable code should mean only the parts relevant to that proof harness are preserved in the RMC run.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-tutorial"><a class="header" href="#rmc-tutorial">RMC tutorial</a></h1>
 <p>If you're interested in applying RMC, then you're probably in this situation:</p>
 <ol>
