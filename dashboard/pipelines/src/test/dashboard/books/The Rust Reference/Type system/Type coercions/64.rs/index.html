@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c9db0903-41f5-46ce-91a0-8c7b71f2dd3a">
+              <a href="#job-14fbe7fa-7327-4558-a0ad-55b42141ffec">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-45d802e2-3554-47c6-ae48-a3aff4e47e07">
+              <a href="#job-e97c6448-956f-4a12-ad20-64dc4c69bcb2">
               
               Does RMC support all the Rust features used in it?
               
@@ -576,7 +576,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-05a403b1-728f-4259-87cb-36e3c94c2eb3">
+              <a href="#job-1faa8b8c-6502-4b68-b3cd-844c639bab95">
               
               Can RMC reason about it?
               
@@ -607,20 +607,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -628,12 +614,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c9db0903-41f5-46ce-91a0-8c7b71f2dd3a">
+    <div class="command-table" id="job-14fbe7fa-7327-4558-a0ad-55b42141ffec">
       
       <div class="success">
       
@@ -641,7 +627,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c9db0903-41f5-46ce-91a0-8c7b71f2dd3a">#</a>
+                <a href="#job-14fbe7fa-7327-4558-a0ad-55b42141ffec">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,15 +681,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:44Z
+                2021-10-22T20:01:04Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:45Z
+                2021-10-22T20:01:04Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -736,12 +722,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-45d802e2-3554-47c6-ae48-a3aff4e47e07">
+    <div class="command-table" id="job-e97c6448-956f-4a12-ad20-64dc4c69bcb2">
       
       <div class="success">
       
@@ -749,7 +735,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-45d802e2-3554-47c6-ae48-a3aff4e47e07">#</a>
+                <a href="#job-e97c6448-956f-4a12-ad20-64dc4c69bcb2">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -762,7 +748,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Type system/Type coercions/64.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Type system/Type coercions/64.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -803,15 +789,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:01Z
+                2021-10-22T20:01:05Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:02Z
+                2021-10-22T20:01:05Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -844,12 +830,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-05a403b1-728f-4259-87cb-36e3c94c2eb3">
+    <div class="command-table" id="job-1faa8b8c-6502-4b68-b3cd-844c639bab95">
       
       <div class="success">
       
@@ -857,7 +843,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-05a403b1-728f-4259-87cb-36e3c94c2eb3">#</a>
+                <a href="#job-1faa8b8c-6502-4b68-b3cd-844c639bab95">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -911,15 +897,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:02Z
+                2021-10-22T20:01:05Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:02Z
+                2021-10-22T20:01:06Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -951,11 +937,11 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-Runtime Symex: 0.000781754s
+Runtime Symex: 0.000612209s
 size of program expression: 40 steps
 simple slicing removed 0 assignments
 Generated 0 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 8.8e-06s
+Runtime Postprocess Equation: 7.2e-06s
 
 ** Results:
 <builtin-library-__CPROVER_assert> function __CPROVER_assert

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-747da0ee-3702-4f6c-ba89-7dd635f30dfe">
+              <a href="#job-cce353ae-28a7-44ba-9ace-b5696b68230c">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -565,7 +565,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2e97018a-c45e-4647-9e86-f11abfc4d4d1">
+              <a href="#job-c0afd957-b39a-40fd-9c06-897596c22a9e">
               
               Does RMC support all the Rust features used in it?
               
@@ -578,7 +578,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -595,7 +595,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-dd705824-cf6d-467f-a38a-ed6d21d2c4b7">
+              <a href="#job-6ae32fb8-226d-4ac0-9b43-e29e02960382">
               
               Can RMC reason about it?
               
@@ -611,20 +611,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -632,12 +618,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-747da0ee-3702-4f6c-ba89-7dd635f30dfe">
+    <div class="command-table" id="job-cce353ae-28a7-44ba-9ace-b5696b68230c">
       
       <div class="success">
       
@@ -645,7 +631,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-747da0ee-3702-4f6c-ba89-7dd635f30dfe">#</a>
+                <a href="#job-cce353ae-28a7-44ba-9ace-b5696b68230c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -699,7 +685,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:36Z
+                2021-10-22T19:56:57Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -707,7 +693,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:36Z
+                2021-10-22T19:56:57Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -740,12 +726,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2e97018a-c45e-4647-9e86-f11abfc4d4d1">
+    <div class="command-table" id="job-c0afd957-b39a-40fd-9c06-897596c22a9e">
       
       <div class="fail">
       
@@ -753,7 +739,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2e97018a-c45e-4647-9e86-f11abfc4d4d1">#</a>
+                <a href="#job-c0afd957-b39a-40fd-9c06-897596c22a9e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -766,7 +752,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/Rust by Example/Std misc/Channels/7.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/Rust by Example/Std misc/Channels/7.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -775,7 +761,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                132
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -807,15 +793,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:36Z
+                2021-10-22T19:57:03Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:39Z
+                2021-10-22T19:57:05Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1117,7 +1103,7 @@ note: we would appreciate a bug report: https://github.com/rust-lang/rust/issues
 
 note: rustc 1.58.0-dev running on x86_64-unknown-linux-gnu
 
-note: compiler flags: -Z codegen-backend=gotoc -Z human_readable_cgu_names --crate-type lib
+note: compiler flags: -Z codegen-backend=gotoc -Z trim-diagnostic-paths=no -Z human_readable_cgu_names --crate-type lib
 
 query stack during panic:
 end of query stack
@@ -1129,336 +1115,6 @@ _ZN4core4hint9black_box17h7c05bbad6907d9caE
 RMC unexpectedly panicked during code generation.
 
 If you are seeing this message, please file an issue here instead of on the Rust compiler: https://github.com/model-checking/rmc/issues/new?labels=bug&template=bug_report.md
-error: internal compiler error: trimmed_def_paths constructed
-|
-= note: delayed at    0: rustc_errors::HandlerInner::delay_good_path_bug
-at ./compiler/rustc_errors/src/lib.rs:1119:25
-1: rustc_errors::Handler::delay_good_path_bug
-at ./compiler/rustc_errors/src/lib.rs:817:9
-2: rustc_middle::ty::print::pretty::trimmed_def_paths
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:2446:9
-3: rustc_query_system::query::plumbing::execute_job::{{closure}}
-at ./compiler/rustc_query_system/src/query/plumbing.rs:444:55
-4: stacker::maybe_grow
-at /home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.14/src/lib.rs:55:9
-5: rustc_data_structures::stack::ensure_sufficient_stack
-at ./compiler/rustc_data_structures/src/stack.rs:16:5
-6: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::{{closure}}::{{closure}}
-at ./compiler/rustc_query_impl/src/plumbing.rs:136:17
-7: rustc_middle::ty::context::tls::enter_context::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1760:50
-8: rustc_middle::ty::context::tls::set_tlv
-at ./compiler/rustc_middle/src/ty/context.rs:1744:9
-9: rustc_middle::ty::context::tls::enter_context
-at ./compiler/rustc_middle/src/ty/context.rs:1760:9
-10: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::{{closure}}
-at ./compiler/rustc_query_impl/src/plumbing.rs:135:13
-11: rustc_middle::ty::context::tls::with_related_context::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1804:13
-12: rustc_middle::ty::context::tls::with_context::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1788:40
-13: rustc_middle::ty::context::tls::with_context_opt
-at ./compiler/rustc_middle/src/ty/context.rs:1777:22
-14: rustc_middle::ty::context::tls::with_context
-at ./compiler/rustc_middle/src/ty/context.rs:1788:9
-15: rustc_middle::ty::context::tls::with_related_context
-at ./compiler/rustc_middle/src/ty/context.rs:1801:9
-16: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query
-at ./compiler/rustc_query_impl/src/plumbing.rs:124:9
-17: rustc_query_system::query::plumbing::execute_job
-at ./compiler/rustc_query_system/src/query/plumbing.rs:444:22
-18: rustc_query_system::query::plumbing::try_execute_query
-at ./compiler/rustc_query_system/src/query/plumbing.rs:401:44
-19: rustc_query_system::query::plumbing::get_query
-at ./compiler/rustc_query_system/src/query/plumbing.rs:733:36
-20: rustc_middle::ty::query::TyCtxtAt::trimmed_def_paths
-at ./compiler/rustc_middle/src/ty/query.rs:204:17
-21: rustc_middle::ty::query::<impl rustc_middle::ty::context::TyCtxt>::trimmed_def_paths
-at ./compiler/rustc_middle/src/ty/query.rs:185:17
-22: rustc_middle::ty::print::pretty::PrettyPrinter::try_print_trimmed_def_path
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:303:15
-23: <rustc_middle::ty::print::pretty::FmtPrinter<F> as rustc_middle::ty::print::Printer>::print_def_path
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:1418:19
-24: <rustc_middle::ty::print::pretty::FmtPrinter<F> as rustc_middle::ty::print::pretty::PrettyPrinter>::print_value_path
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:1619:16
-25: rustc_middle::ty::print::pretty::PrettyPrinter::pretty_print_const
-at ./compiler/rustc_middle/src/ty/print/pretty.rs:962:29
-26: rustc_middle::mir::pretty_print_const::{{closure}}
-at ./compiler/rustc_middle/src/mir/mod.rs:2813:9
-27: rustc_middle::ty::context::tls::with::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1815:32
-28: rustc_middle::ty::context::tls::with_context::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1788:40
-29: rustc_middle::ty::context::tls::with_context_opt
-at ./compiler/rustc_middle/src/ty/context.rs:1777:22
-30: rustc_middle::ty::context::tls::with_context
-at ./compiler/rustc_middle/src/ty/context.rs:1788:9
-31: rustc_middle::ty::context::tls::with
-at ./compiler/rustc_middle/src/ty/context.rs:1815:9
-32: rustc_middle::mir::pretty_print_const
-at ./compiler/rustc_middle/src/mir/mod.rs:2809:5
-33: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1163:17
-34: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1617:9
-35: <rustc_middle::mir::Constant as core::fmt::Debug>::fmt
-at ./compiler/rustc_middle/src/mir/mod.rs:2780:9
-36: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1163:17
-37: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1617:9
-38: <rustc_middle::mir::Operand as core::fmt::Debug>::fmt
-39: core::fmt::run
-at ./library/core/src/fmt/mod.rs:1211:5
-40: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1179:26
-41: core::fmt::Formatter::write_fmt
-at ./library/core/src/fmt/mod.rs:1617:9
-42: <rustc_middle::mir::AssertKind<O> as core::fmt::Debug>::fmt
-43: <&T as core::fmt::Debug>::fmt
-at ./library/core/src/fmt/mod.rs:2092:62
-44: core::fmt::write
-at ./library/core/src/fmt/mod.rs:1163:17
-45: core::fmt::Write::write_fmt
-at ./library/core/src/fmt/mod.rs:186:9
-46: alloc::fmt::format
-at ./library/alloc/src/fmt.rs:579:5
-47: rustc_codegen_rmc::codegen::statement::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_terminator
-at ./compiler/rustc_codegen_rmc/src/codegen/statement.rs:86:45
-48: rustc_codegen_rmc::codegen::block::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_block
-at ./compiler/rustc_codegen_rmc/src/codegen/block.rs:30:28
-49: rustc_codegen_rmc::codegen::function::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_function::{{closure}}
-at ./compiler/rustc_codegen_rmc/src/codegen/function.rs:99:71
-50: core::iter::traits::iterator::Iterator::for_each::call::{{closure}}
-at ./library/core/src/iter/traits/iterator.rs:734:29
-51: core::iter::adapters::map::map_fold::{{closure}}
-at ./library/core/src/iter/adapters/map.rs:84:21
-52: <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::fold::enumerate::{{closure}}
-at ./library/core/src/iter/adapters/enumerate.rs:106:27
-53: core::iter::traits::iterator::Iterator::fold
-at ./library/core/src/iter/traits/iterator.rs:2171:21
-54: <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::fold
-at ./library/core/src/iter/adapters/enumerate.rs:112:9
-55: <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
-at ./library/core/src/iter/adapters/map.rs:124:9
-56: core::iter::traits::iterator::Iterator::for_each
-at ./library/core/src/iter/traits/iterator.rs:737:9
-57: rustc_codegen_rmc::codegen::function::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::codegen_function
-at ./compiler/rustc_codegen_rmc/src/codegen/function.rs:99:13
-58: <rustc_codegen_rmc::compiler_interface::GotocCodegenBackend as rustc_codegen_ssa::traits::backend::CodegenBackend>::codegen_crate::{{closure}}
-at ./compiler/rustc_codegen_rmc/src/compiler_interface.rs:104:35
-59: rustc_codegen_rmc::utils::debug::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::call_with_panic_debug_info::{{closure}}
-at ./compiler/rustc_codegen_rmc/src/utils/debug.rs:87:13
-60: std::thread::local::LocalKey<T>::try_with
-at ./library/std/src/thread/local.rs:399:16
-61: std::thread::local::LocalKey<T>::with
-at ./library/std/src/thread/local.rs:375:9
-62: rustc_codegen_rmc::utils::debug::<impl rustc_codegen_rmc::context::goto_ctx::GotocCtx>::call_with_panic_debug_info
-at ./compiler/rustc_codegen_rmc/src/utils/debug.rs:84:9
-63: <rustc_codegen_rmc::compiler_interface::GotocCodegenBackend as rustc_codegen_ssa::traits::backend::CodegenBackend>::codegen_crate
-at ./compiler/rustc_codegen_rmc/src/compiler_interface.rs:103:25
-64: rustc_interface::passes::start_codegen::{{closure}}
-at ./compiler/rustc_interface/src/passes.rs:1056:9
-65: rustc_data_structures::profiling::VerboseTimingGuard::run
-at ./compiler/rustc_data_structures/src/profiling.rs:611:9
-66: rustc_session::utils::<impl rustc_session::session::Session>::time
-at ./compiler/rustc_session/src/utils.rs:16:9
-67: rustc_interface::passes::start_codegen
-at ./compiler/rustc_interface/src/passes.rs:1055:19
-68: rustc_interface::queries::Queries::ongoing_codegen::{{closure}}::{{closure}}
-at ./compiler/rustc_interface/src/queries.rs:254:20
-69: rustc_interface::passes::QueryContext::enter::{{closure}}
-at ./compiler/rustc_interface/src/passes.rs:784:42
-70: rustc_middle::ty::context::tls::enter_context::{{closure}}
-at ./compiler/rustc_middle/src/ty/context.rs:1760:50
-71: rustc_middle::ty::context::tls::set_tlv
-at ./compiler/rustc_middle/src/ty/context.rs:1744:9
-72: rustc_middle::ty::context::tls::enter_context
-at ./compiler/rustc_middle/src/ty/context.rs:1760:9
-73: rustc_interface::passes::QueryContext::enter
-at ./compiler/rustc_interface/src/passes.rs:784:9
-74: rustc_interface::queries::Queries::ongoing_codegen::{{closure}}
-at ./compiler/rustc_interface/src/queries.rs:245:13
-75: rustc_interface::queries::Query<T>::compute
-at ./compiler/rustc_interface/src/queries.rs:38:28
-76: rustc_driver::run_compiler::{{closure}}::{{closure}}
-at ./compiler/rustc_driver/src/lib.rs:407:13
-77: rustc_interface::queries::<impl rustc_interface::interface::Compiler>::enter
-at ./compiler/rustc_interface/src/queries.rs:394:19
-78: rustc_driver::run_compiler::{{closure}}
-at ./compiler/rustc_driver/src/lib.rs:312:22
-79: rustc_interface::interface::create_compiler_and_run::{{closure}}
-at ./compiler/rustc_interface/src/interface.rs:203:13
-80: rustc_span::with_source_map
-at ./compiler/rustc_span/src/lib.rs:976:5
-81: rustc_interface::interface::create_compiler_and_run
-at ./compiler/rustc_interface/src/interface.rs:197:5
-82: rustc_interface::interface::run_compiler::{{closure}}
-at ./compiler/rustc_interface/src/interface.rs:219:12
-83: rustc_interface::util::setup_callbacks_and_run_in_thread_pool_with_globals::{{closure}}::{{closure}}
-at ./compiler/rustc_interface/src/util.rs:145:13
-84: scoped_tls::ScopedKey<T>::set
-at /home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/scoped-tls-1.0.0/src/lib.rs:137:9
-85: rustc_span::create_session_globals_then
-at ./compiler/rustc_span/src/lib.rs:109:5
-86: rustc_interface::util::setup_callbacks_and_run_in_thread_pool_with_globals::{{closure}}
-at ./compiler/rustc_interface/src/util.rs:143:9
-87: std::sys_common::backtrace::__rust_begin_short_backtrace
-at ./library/std/src/sys_common/backtrace.rs:123:18
-88: std::thread::Builder::spawn_unchecked::{{closure}}::{{closure}}
-at ./library/std/src/thread/mod.rs:483:17
-89: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
-at ./library/core/src/panic/unwind_safe.rs:271:9
-90: std::panicking::try::do_call
-at ./library/std/src/panicking.rs:403:40
-91: std::panicking::try
-at ./library/std/src/panicking.rs:367:19
-92: std::panic::catch_unwind
-at ./library/std/src/panic.rs:133:14
-93: std::thread::Builder::spawn_unchecked::{{closure}}
-at ./library/std/src/thread/mod.rs:482:30
-94: core::ops::function::FnOnce::call_once{{vtable.shim}}
-at ./library/core/src/ops/function.rs:227:5
-95: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-at ./library/alloc/src/boxed.rs:1691:9
-96: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
-at ./library/alloc/src/boxed.rs:1691:9
-97: std::sys::unix::thread::Thread::new::thread_start
-at ./library/std/src/sys/unix/thread.rs:106:17
-98: start_thread
-99: clone
-
-
-thread 'rustc' panicked at 'no warnings or errors encountered even though `delayed_good_path_bugs` issued', compiler/rustc_errors/src/lib.rs:1165:13
-stack backtrace:
-0:     0x7ffb4256fce3 - std::backtrace_rs::backtrace::libunwind::trace::hf9bb2cb37f6dc03d
-at /home/runner/work/rmc/rmc/library/std/src/../../backtrace/src/backtrace/libunwind.rs:93:5
-1:     0x7ffb4256fce3 - std::backtrace_rs::backtrace::trace_unsynchronized::he20a98177cf4d165
-at /home/runner/work/rmc/rmc/library/std/src/../../backtrace/src/backtrace/mod.rs:66:5
-2:     0x7ffb4256fce3 - std::sys_common::backtrace::_print_fmt::h816aecdc99edb22b
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:67:5
-3:     0x7ffb4256fce3 - <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt::hc88666d0bbbfebfd
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:46:22
-4:     0x7ffb425d987e - core::fmt::write::h7a4289d162ef2614
-at /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs:1163:17
-5:     0x7ffb4253d942 - std::io::Write::write_fmt::hb882142449ad8668
-at /home/runner/work/rmc/rmc/library/std/src/io/mod.rs:1696:15
-6:     0x7ffb4256fb6f - std::sys_common::backtrace::_print::h45ea7728c2928d12
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:49:5
-7:     0x7ffb4256fb6f - std::sys_common::backtrace::print::h89b614ea06e8ed8a
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:36:9
-8:     0x7ffb42576d37 - std::panicking::default_hook::{{closure}}::h4583679506714385
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:210:50
-9:     0x7ffb42576b03 - std::panicking::default_hook::h7bb5e8d05b216003
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:227:9
-10:     0x7ffb42e57f51 - <alloc::boxed::Box<F,A> as core::ops::function::Fn<Args>>::call::hf0004f9669b8e3b0
-at /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs:1705:9
-11:     0x7ffb42e57f51 - rustc_driver::DEFAULT_HOOK::{{closure}}::{{closure}}::h1ad12ff5428f34b9
-at /home/runner/work/rmc/rmc/compiler/rustc_driver/src/lib.rs:1184:13
-12:     0x7ffb431014d5 - <alloc::boxed::Box<F,A> as core::ops::function::Fn<Args>>::call::hce3852aefc93b2c5
-at /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs:1705:9
-13:     0x7ffb431014d5 - rustc_codegen_rmc::utils::debug::DEFAULT_HOOK::{{closure}}::{{closure}}::h0f535533a0f1f84b
-at /home/runner/work/rmc/rmc/compiler/rustc_codegen_rmc/src/utils/debug.rs:42:13
-14:     0x7ffb425771a3 - std::panicking::rust_panic_with_hook::hea41870bbdfc76b1
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:628:17
-15:     0x7ffb4253f370 - std::panicking::begin_panic_handler::{{closure}}::h676984fd0deba147
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:521:13
-16:     0x7ffb4253f2d4 - std::sys_common::backtrace::__rust_end_short_backtrace::he817a3c255b5f153
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:139:18
-17:     0x7ffb42576da2 - rust_begin_unwind
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:517:5
-18:     0x7ffb4252daf1 - core::panicking::panic_fmt::h3d001a21e3e3f04e
-at /home/runner/work/rmc/rmc/library/core/src/panicking.rs:100:14
-19:     0x7ffb45427378 - core::panicking::panic_display::h427a5f410b8f8e76
-at /home/runner/work/rmc/rmc/library/core/src/panicking.rs:64:5
-20:     0x7ffb4542ac43 - rustc_errors::HandlerInner::flush_delayed::h0ac8f7c0ff1f921d
-at /home/runner/work/rmc/rmc/compiler/rustc_errors/src/lib.rs:1165:13
-21:     0x7ffb4540a608 - <rustc_errors::HandlerInner as core::ops::drop::Drop>::drop::h9406bae8c5273207
-at /home/runner/work/rmc/rmc/compiler/rustc_errors/src/lib.rs:495:13
-22:     0x7ffb42f1bc3a - core::ptr::drop_in_place<rustc_errors::HandlerInner>::h9803e6a868a181a3
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-23:     0x7ffb42f1bc3a - core::ptr::drop_in_place<core::cell::UnsafeCell<rustc_errors::HandlerInner>>::hc8912c034ec8c13d
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-24:     0x7ffb42f1bc3a - core::ptr::drop_in_place<core::cell::RefCell<rustc_errors::HandlerInner>>::he037438bf366709e
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-25:     0x7ffb42f1bc3a - core::ptr::drop_in_place<rustc_data_structures::sync::Lock<rustc_errors::HandlerInner>>::h93fa6a772d4fec03
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-26:     0x7ffb42f1bc3a - core::ptr::drop_in_place<rustc_errors::Handler>::hf7027e008905a508
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-27:     0x7ffb42f25e45 - core::ptr::drop_in_place<rustc_session::parse::ParseSess>::h06e3fc13e84caa4b
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-28:     0x7ffb42f35f53 - core::ptr::drop_in_place<rustc_session::session::Session>::h3a12227d0667f3f8
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-29:     0x7ffb42f35f53 - <alloc::rc::Rc<T> as core::ops::drop::Drop>::drop::hf845d4f0be0ea138
-at /home/runner/work/rmc/rmc/library/alloc/src/rc.rs:1450:17
-30:     0x7ffb42f35f53 - core::ptr::drop_in_place<alloc::rc::Rc<rustc_session::session::Session>>::h40a8b473a0646d3c
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-31:     0x7ffb42f2a24f - core::ptr::drop_in_place<rustc_interface::interface::Compiler>::hcbcaf994828fc566
-at /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs:188:1
-32:     0x7ffb42eea2a0 - rustc_interface::interface::create_compiler_and_run::{{closure}}::hd6da42cf98eae161
-at /home/runner/work/rmc/rmc/compiler/rustc_interface/src/interface.rs:209:5
-33:     0x7ffb42eea2a0 - rustc_span::with_source_map::h301961afbd9ed1f4
-at /home/runner/work/rmc/rmc/compiler/rustc_span/src/lib.rs:976:5
-34:     0x7ffb42ef810c - rustc_interface::interface::create_compiler_and_run::h39ff569eb5b62a45
-at /home/runner/work/rmc/rmc/compiler/rustc_interface/src/interface.rs:197:5
-35:     0x7ffb42ef9fce - rustc_interface::interface::run_compiler::{{closure}}::h1d6bc12dc189a273
-at /home/runner/work/rmc/rmc/compiler/rustc_interface/src/interface.rs:219:12
-36:     0x7ffb42ef9fce - rustc_interface::util::setup_callbacks_and_run_in_thread_pool_with_globals::{{closure}}::{{closure}}::he97b9e12452fb0a1
-at /home/runner/work/rmc/rmc/compiler/rustc_interface/src/util.rs:145:13
-37:     0x7ffb42ef9fce - scoped_tls::ScopedKey<T>::set::h2f89edfcc8d6793e
-at /home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/scoped-tls-1.0.0/src/lib.rs:137:9
-38:     0x7ffb42f5a625 - rustc_span::create_session_globals_then::h5748c314a58d7c44
-at /home/runner/work/rmc/rmc/compiler/rustc_span/src/lib.rs:109:5
-39:     0x7ffb42f5a625 - rustc_interface::util::setup_callbacks_and_run_in_thread_pool_with_globals::{{closure}}::he4f8a8430d39de6d
-at /home/runner/work/rmc/rmc/compiler/rustc_interface/src/util.rs:143:9
-40:     0x7ffb42f5a625 - std::sys_common::backtrace::__rust_begin_short_backtrace::h5fbc627ab6bad3de
-at /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs:123:18
-41:     0x7ffb42edab7e - std::thread::Builder::spawn_unchecked::{{closure}}::{{closure}}::hda1efc78ade8d2ae
-at /home/runner/work/rmc/rmc/library/std/src/thread/mod.rs:483:17
-42:     0x7ffb42edab7e - <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once::h7944531f9c808243
-at /home/runner/work/rmc/rmc/library/core/src/panic/unwind_safe.rs:271:9
-43:     0x7ffb42edab7e - std::panicking::try::do_call::h6cd7d15ee17e7391
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:403:40
-44:     0x7ffb42edab7e - std::panicking::try::hcbf5b6a1b7d1871a
-at /home/runner/work/rmc/rmc/library/std/src/panicking.rs:367:19
-45:     0x7ffb42eedea8 - std::panic::catch_unwind::hb514c630cd4a0f71
-at /home/runner/work/rmc/rmc/library/std/src/panic.rs:133:14
-46:     0x7ffb42eedea8 - std::thread::Builder::spawn_unchecked::{{closure}}::h89e13e8ebcb21566
-at /home/runner/work/rmc/rmc/library/std/src/thread/mod.rs:482:30
-47:     0x7ffb42eedea8 - core::ops::function::FnOnce::call_once{{vtable.shim}}::hbae4d4bf4b9cc089
-at /home/runner/work/rmc/rmc/library/core/src/ops/function.rs:227:5
-48:     0x7ffb425568c8 - <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::h70028568d6abf1f8
-at /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs:1691:9
-49:     0x7ffb425568c8 - <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::h6aab3766691fc418
-at /home/runner/work/rmc/rmc/library/alloc/src/boxed.rs:1691:9
-50:     0x7ffb4258033a - std::sys::unix::thread::Thread::new::thread_start::h917a7f0302a18d13
-at /home/runner/work/rmc/rmc/library/std/src/sys/unix/thread.rs:106:17
-51:     0x7ffb3cb59609 - start_thread
-52:     0x7ffb423e4293 - clone
-53:                0x0 - <unknown>
-
-error: internal compiler error: unexpected panic
-
-note: the compiler unexpectedly panicked. this is a bug.
-
-note: we would appreciate a bug report: https://github.com/rust-lang/rust/issues/new?labels=C-bug%2C+I-ICE%2C+T-compiler&template=ice.md
-
-note: rustc 1.58.0-dev running on x86_64-unknown-linux-gnu
-
-note: compiler flags: -Z codegen-backend=gotoc -Z human_readable_cgu_names --crate-type lib
-
-query stack during panic:
-end of query stack
-
-[RMC] current codegen item: codegen_function: std::hint::black_box
-_ZN4core4hint9black_box17h7c05bbad6907d9caE
-[RMC] current codegen location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/hint.rs", function: None, line: 157, col: Some(1) }
-
-RMC unexpectedly panicked during code generation.
-
-If you are seeing this message, please file an issue here instead of on the Rust compiler: https://github.com/model-checking/rmc/issues/new?labels=bug&template=bug_report.md
-thread panicked while panicking. aborting.
-/home/runner/work/rmc/rmc/scripts/rmc-rustc: line 20: 75194 Illegal instruction     (core dumped) "${RMC_CANDIDATES[0]}" "$@"
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -1472,12 +1128,12 @@ thread panicked while panicking. aborting.
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-dd705824-cf6d-467f-a38a-ed6d21d2c4b7">
+    <div class="command-table" id="job-6ae32fb8-226d-4ac0-9b43-e29e02960382">
       
       <div class="in-progress">
       
@@ -1485,7 +1141,7 @@ thread panicked while panicking. aborting.
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-dd705824-cf6d-467f-a38a-ed6d21d2c4b7">#</a>
+                <a href="#job-6ae32fb8-226d-4ac0-9b43-e29e02960382">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">

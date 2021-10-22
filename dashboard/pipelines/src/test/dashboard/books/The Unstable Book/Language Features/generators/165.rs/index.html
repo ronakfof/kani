@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-5fb4fdb1-eead-4fcd-a278-c1c697c2e4fa">
+              <a href="#job-6d7079db-a8e7-4d07-8bca-cb584504915c">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -565,7 +565,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c182b790-1789-4304-8c45-9ebafd867ced">
+              <a href="#job-0baa5043-c90f-4380-9772-b83ace6e8f86">
               
               Does RMC support all the Rust features used in it?
               
@@ -578,7 +578,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -595,7 +595,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-bf723a68-3869-485e-a734-ed2d98fdacf6">
+              <a href="#job-5259d6d0-31ff-48fb-b849-994247bef417">
               
               Can RMC reason about it?
               
@@ -611,20 +611,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -632,12 +618,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-5fb4fdb1-eead-4fcd-a278-c1c697c2e4fa">
+    <div class="command-table" id="job-6d7079db-a8e7-4d07-8bca-cb584504915c">
       
       <div class="success">
       
@@ -645,7 +631,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-5fb4fdb1-eead-4fcd-a278-c1c697c2e4fa">#</a>
+                <a href="#job-6d7079db-a8e7-4d07-8bca-cb584504915c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -699,7 +685,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:19Z
+                2021-10-22T19:57:13Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -707,7 +693,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:19Z
+                2021-10-22T19:57:13Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -740,12 +726,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c182b790-1789-4304-8c45-9ebafd867ced">
+    <div class="command-table" id="job-0baa5043-c90f-4380-9772-b83ace6e8f86">
       
       <div class="fail">
       
@@ -753,7 +739,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c182b790-1789-4304-8c45-9ebafd867ced">#</a>
+                <a href="#job-0baa5043-c90f-4380-9772-b83ace6e8f86">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -766,7 +752,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Language Features/generators/165.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Language Features/generators/165.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -807,7 +793,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:19Z
+                2021-10-22T20:00:18Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -815,7 +801,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:19Z
+                2021-10-22T20:00:18Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -851,7 +837,7 @@ note: we would appreciate a bug report: https://github.com/rust-lang/rust/issues
 
 note: rustc 1.58.0-dev running on x86_64-unknown-linux-gnu
 
-note: compiler flags: -Z codegen-backend=gotoc -Z human_readable_cgu_names --crate-type lib
+note: compiler flags: -Z codegen-backend=gotoc -Z trim-diagnostic-paths=no -Z human_readable_cgu_names --crate-type lib
 
 query stack during panic:
 end of query stack
@@ -875,12 +861,12 @@ If you are seeing this message, please file an issue here instead of on the Rust
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-bf723a68-3869-485e-a734-ed2d98fdacf6">
+    <div class="command-table" id="job-5259d6d0-31ff-48fb-b849-994247bef417">
       
       <div class="in-progress">
       
@@ -888,7 +874,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-bf723a68-3869-485e-a734-ed2d98fdacf6">#</a>
+                <a href="#job-5259d6d0-31ff-48fb-b849-994247bef417">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -537,7 +537,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-8ba9b75a-3740-4a2f-bd72-89891ae3b205">
+              <a href="#job-98598714-c112-45d4-acfe-aa5bea2e5ced">
               
               Is this valid Rust code?
               
@@ -550,7 +550,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -567,7 +567,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f3b7abbd-d1ee-447a-899b-31cb99dd119d">
+              <a href="#job-5bd31298-01b8-4ee9-b4c3-91f5afdc0d34">
               
               Does RMC support all the Rust features used in it?
               
@@ -580,7 +580,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -597,7 +597,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-12b011fc-b396-4364-bcf3-9f7c1db5f584">
+              <a href="#job-7e0cc1bd-56ca-4b75-b859-94c50fc8a4d1">
               
               Can RMC reason about it?
               
@@ -613,20 +613,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -634,12 +620,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-8ba9b75a-3740-4a2f-bd72-89891ae3b205">
+    <div class="command-table" id="job-98598714-c112-45d4-acfe-aa5bea2e5ced">
       
       <div class="fail">
       
@@ -647,7 +633,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-8ba9b75a-3740-4a2f-bd72-89891ae3b205">#</a>
+                <a href="#job-98598714-c112-45d4-acfe-aa5bea2e5ced">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -701,7 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:33:08Z
+                2021-10-22T19:56:52Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -709,7 +695,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:33:08Z
+                2021-10-22T19:56:52Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -755,12 +741,12 @@ error: aborting due to previous error
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f3b7abbd-d1ee-447a-899b-31cb99dd119d">
+    <div class="command-table" id="job-5bd31298-01b8-4ee9-b4c3-91f5afdc0d34">
       
       <div class="in-progress">
       
@@ -768,7 +754,7 @@ error: aborting due to previous error
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f3b7abbd-d1ee-447a-899b-31cb99dd119d">#</a>
+                <a href="#job-5bd31298-01b8-4ee9-b4c3-91f5afdc0d34">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -781,7 +767,7 @@ error: aborting due to previous error
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Library Features/asm/242.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Library Features/asm/242.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -806,12 +792,12 @@ error: aborting due to previous error
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-12b011fc-b396-4364-bcf3-9f7c1db5f584">
+    <div class="command-table" id="job-7e0cc1bd-56ca-4b75-b859-94c50fc8a4d1">
       
       <div class="in-progress">
       
@@ -819,7 +805,7 @@ error: aborting due to previous error
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-12b011fc-b396-4364-bcf3-9f7c1db5f584">#</a>
+                <a href="#job-7e0cc1bd-56ca-4b75-b859-94c50fc8a4d1">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">

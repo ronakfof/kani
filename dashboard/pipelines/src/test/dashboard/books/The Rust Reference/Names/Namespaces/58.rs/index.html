@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f32fca6f-ab2b-4f95-a620-3c2d2e69370e">
+              <a href="#job-a06cb7a0-fb2f-464c-8891-b263d8a3101f">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-cfc0a706-53d1-4f5e-9192-764c5f9c0d20">
+              <a href="#job-0ccc397d-d4d8-4014-be74-0fdfe39c8e72">
               
               Does RMC support all the Rust features used in it?
               
@@ -576,7 +576,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1975ed91-db8c-46ae-abcc-495b03e6390c">
+              <a href="#job-32816151-f664-4aee-b1b1-df9d80337c80">
               
               Can RMC reason about it?
               
@@ -607,20 +607,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -628,12 +614,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f32fca6f-ab2b-4f95-a620-3c2d2e69370e">
+    <div class="command-table" id="job-a06cb7a0-fb2f-464c-8891-b263d8a3101f">
       
       <div class="success">
       
@@ -641,7 +627,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f32fca6f-ab2b-4f95-a620-3c2d2e69370e">#</a>
+                <a href="#job-a06cb7a0-fb2f-464c-8891-b263d8a3101f">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +681,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:29:19Z
+                2021-10-22T19:58:52Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +689,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:29:19Z
+                2021-10-22T19:58:52Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -760,12 +746,12 @@ warning: 2 warnings emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-cfc0a706-53d1-4f5e-9192-764c5f9c0d20">
+    <div class="command-table" id="job-0ccc397d-d4d8-4014-be74-0fdfe39c8e72">
       
       <div class="success">
       
@@ -773,7 +759,7 @@ warning: 2 warnings emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-cfc0a706-53d1-4f5e-9192-764c5f9c0d20">#</a>
+                <a href="#job-0ccc397d-d4d8-4014-be74-0fdfe39c8e72">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -786,7 +772,7 @@ warning: 2 warnings emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Names/Namespaces/58.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Names/Namespaces/58.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -827,7 +813,7 @@ warning: 2 warnings emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:29:19Z
+                2021-10-22T20:00:44Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -835,7 +821,7 @@ warning: 2 warnings emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:29:19Z
+                2021-10-22T20:00:44Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -892,12 +878,12 @@ warning: 2 warnings emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1975ed91-db8c-46ae-abcc-495b03e6390c">
+    <div class="command-table" id="job-32816151-f664-4aee-b1b1-df9d80337c80">
       
       <div class="success">
       
@@ -905,7 +891,7 @@ warning: 2 warnings emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1975ed91-db8c-46ae-abcc-495b03e6390c">#</a>
+                <a href="#job-32816151-f664-4aee-b1b1-df9d80337c80">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -959,15 +945,15 @@ warning: 2 warnings emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:33:30Z
+                2021-10-22T20:00:44Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:33:31Z
+                2021-10-22T20:00:44Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -999,11 +985,11 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-Runtime Symex: 0.000837058s
+Runtime Symex: 0.00068751s
 size of program expression: 40 steps
 simple slicing removed 0 assignments
 Generated 0 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 9.4e-06s
+Runtime Postprocess Equation: 7.5e-06s
 
 ** Results:
 <builtin-library-__CPROVER_assert> function __CPROVER_assert

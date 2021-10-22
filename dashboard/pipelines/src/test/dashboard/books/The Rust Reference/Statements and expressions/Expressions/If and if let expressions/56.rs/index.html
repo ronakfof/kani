@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-9bb91d6e-61fd-41d9-adaa-99e5744f7390">
+              <a href="#job-3de64e91-5f17-47ae-b763-fff0b1765d1c">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7ef4ba54-8cbd-4563-983b-1ecacd4212aa">
+              <a href="#job-d66adf31-6f16-42f2-959f-ac581dbf3354">
               
               Does RMC support all the Rust features used in it?
               
@@ -576,7 +576,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2b24c28d-fe73-4ddf-8086-dc27265d8d68">
+              <a href="#job-95cf61a8-b926-4107-9653-9bc5c57092ea">
               
               Can RMC reason about it?
               
@@ -609,20 +609,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -630,12 +616,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-9bb91d6e-61fd-41d9-adaa-99e5744f7390">
+    <div class="command-table" id="job-3de64e91-5f17-47ae-b763-fff0b1765d1c">
       
       <div class="success">
       
@@ -643,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-9bb91d6e-61fd-41d9-adaa-99e5744f7390">#</a>
+                <a href="#job-3de64e91-5f17-47ae-b763-fff0b1765d1c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:28:35Z
+                2021-10-22T20:01:10Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -705,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:28:35Z
+                2021-10-22T20:01:10Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -755,12 +741,12 @@ warning: 1 warning emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7ef4ba54-8cbd-4563-983b-1ecacd4212aa">
+    <div class="command-table" id="job-d66adf31-6f16-42f2-959f-ac581dbf3354">
       
       <div class="success">
       
@@ -768,7 +754,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7ef4ba54-8cbd-4563-983b-1ecacd4212aa">#</a>
+                <a href="#job-d66adf31-6f16-42f2-959f-ac581dbf3354">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -781,7 +767,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Statements and expressions/Expressions/If and if let expressions/56.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Statements and expressions/Expressions/If and if let expressions/56.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -822,15 +808,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:28:37Z
+                2021-10-22T20:01:10Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:28:38Z
+                2021-10-22T20:01:10Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -928,12 +914,12 @@ warning: 1 warning emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2b24c28d-fe73-4ddf-8086-dc27265d8d68">
+    <div class="command-table" id="job-95cf61a8-b926-4107-9653-9bc5c57092ea">
       
       <div class="fail">
       
@@ -941,7 +927,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2b24c28d-fe73-4ddf-8086-dc27265d8d68">#</a>
+                <a href="#job-95cf61a8-b926-4107-9653-9bc5c57092ea">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -995,7 +981,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:28:38Z
+                2021-10-22T20:01:18Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1003,7 +989,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:28:39Z
+                2021-10-22T20:01:19Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1041,28 +1027,28 @@ Unwinding loop memcmp.0 iteration 2 file <builtin-library-memcmp> line 25 functi
 Unwinding loop memcmp.0 iteration 3 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsiqPVkZuzinn_2_56.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsiqPVkZuzinn_2_56.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.126119s
+Runtime Symex: 0.108428s
 size of program expression: 1672 steps
 simple slicing removed 12 assignments
 Generated 177 VCC(s), 31 remaining after simplification
-Runtime Postprocess Equation: 0.000186313s
+Runtime Postprocess Equation: 0.000192703s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0275494s
+Runtime Convert SSA: 0.0170017s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.8104e-05s
+Runtime Post-process: 4.8001e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 25315 variables, 5851 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0170155s
-Runtime decision procedure: 0.0448085s
+Runtime Solver: 0.00785591s
+Runtime decision procedure: 0.0316817s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 25315 variables, 0 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 1.3001e-05s
-Runtime decision procedure: 5.3604e-05s
+Runtime Solver: 1.1e-05s
+Runtime decision procedure: 4.4201e-05s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned * in 1 * var_2.len: SUCCESS

@@ -1,4 +1,5 @@
 // compile-flags: --edition 2018
+// rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 fn double_positives<'a>(numbers: &'a Vec<i32>) -> impl Iterator<Item = i32> + 'a {
     numbers

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-88271fd9-75b2-4350-9d54-dc619abdd86e">
+              <a href="#job-e39e81d1-ba92-4c12-90cd-52d5ce73062c">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-771b1415-77f7-4f71-ad79-2d73388b33bd">
+              <a href="#job-334b5413-22ea-4ad4-add5-640a84221833">
               
               Does RMC support all the Rust features used in it?
               
@@ -576,7 +576,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-59b5e157-7fc8-47ea-902a-06081c5f8cc9">
+              <a href="#job-a3fe5a6b-dad0-4edd-94ea-5c5a5276357d">
               
               Can RMC reason about it?
               
@@ -607,20 +607,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -628,12 +614,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-88271fd9-75b2-4350-9d54-dc619abdd86e">
+    <div class="command-table" id="job-e39e81d1-ba92-4c12-90cd-52d5ce73062c">
       
       <div class="success">
       
@@ -641,7 +627,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-88271fd9-75b2-4350-9d54-dc619abdd86e">#</a>
+                <a href="#job-e39e81d1-ba92-4c12-90cd-52d5ce73062c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -695,7 +681,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:16Z
+                2021-10-22T20:00:44Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -703,7 +689,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:16Z
+                2021-10-22T20:00:44Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -753,12 +739,12 @@ warning: 1 warning emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-771b1415-77f7-4f71-ad79-2d73388b33bd">
+    <div class="command-table" id="job-334b5413-22ea-4ad4-add5-640a84221833">
       
       <div class="success">
       
@@ -766,7 +752,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-771b1415-77f7-4f71-ad79-2d73388b33bd">#</a>
+                <a href="#job-334b5413-22ea-4ad4-add5-640a84221833">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -779,7 +765,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Attributes/Type System/16.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Attributes/Type System/16.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -820,15 +806,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:17Z
+                2021-10-22T20:00:44Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:17Z
+                2021-10-22T20:00:45Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -878,12 +864,12 @@ warning: 1 warning emitted
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-59b5e157-7fc8-47ea-902a-06081c5f8cc9">
+    <div class="command-table" id="job-a3fe5a6b-dad0-4edd-94ea-5c5a5276357d">
       
       <div class="success">
       
@@ -891,7 +877,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-59b5e157-7fc8-47ea-902a-06081c5f8cc9">#</a>
+                <a href="#job-a3fe5a6b-dad0-4edd-94ea-5c5a5276357d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -945,15 +931,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:30:17Z
+                2021-10-22T20:00:45Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:30:18Z
+                2021-10-22T20:00:45Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -986,11 +972,11 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop main.0 iteration 1  thread 0
-Runtime Symex: 0.00345984s
+Runtime Symex: 0.00288224s
 size of program expression: 91 steps
 simple slicing removed 0 assignments
 Generated 16 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 2.1602e-05s
+Runtime Postprocess Equation: 9.1e-06s
 
 ** Results:
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc

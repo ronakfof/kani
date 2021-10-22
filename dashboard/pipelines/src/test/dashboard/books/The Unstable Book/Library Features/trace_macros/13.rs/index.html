@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-21T23:25:20Z</li>
-      <li>86c71de3-efc2-44f9-86fd-07d65586fd14</li>
+      <li>2021-10-22T19:54:10Z</li>
+      <li>dd903084-3369-4f77-a817-575c4cab974a</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -520,7 +520,7 @@ a:visited:active {
 
       
         <div class="toc-section">
-          <p>build</p>
+          <p>check</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-47953237-288d-4d2b-b137-b404778e62dd">
+              <a href="#job-9f6d6a08-e762-4adb-8502-7a91c4196cfe">
               
               Is this valid Rust code?
               
@@ -548,7 +548,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>test</p>
+          <p>codegen</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2f156098-e0a6-414a-9d4b-c1be002c7f3f">
+              <a href="#job-88c55d3d-51c4-4efb-9eba-621a799adddb">
               
               Does RMC support all the Rust features used in it?
               
@@ -576,7 +576,7 @@ a:visited:active {
         
       
         <div class="toc-section">
-          <p>report</p>
+          <p>verification</p>
         </div><!-- class="toc-section" -->
         
           <div class="toc-row">
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-de19e791-a978-4080-be1e-2447fa08a0a9">
+              <a href="#job-590bbf28-19b5-4036-929e-8a4041828ee1">
               
               Can RMC reason about it?
               
@@ -609,20 +609,6 @@ a:visited:active {
 
 
     
-    <div id="depgraph">
-      <div id="depgraph-title">
-        <p>Dependency graph for pipeline</p>
-        <p>(click for larger version)</p>
-      </div><!-- id="depgraph-title" -->
-      <a href="dependencies.svg">
-        <div id="depgraph-preview">
-          <img
-             src="dependencies.svg"
-             alt="pipeline dependency graph" />
-        </div><!-- id="depgraph-preview" -->
-      </a><!-- href="" -->
-    </div><!-- id="depgraph" -->
-    
 
   </div><!-- id="contents-container" -->
 
@@ -630,12 +616,12 @@ a:visited:active {
   
   <div class="stage">
     <div class="stage-name">
-      <p>build</p>
+      <p>check</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-47953237-288d-4d2b-b137-b404778e62dd">
+    <div class="command-table" id="job-9f6d6a08-e762-4adb-8502-7a91c4196cfe">
       
       <div class="success">
       
@@ -643,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-47953237-288d-4d2b-b137-b404778e62dd">#</a>
+                <a href="#job-9f6d6a08-e762-4adb-8502-7a91c4196cfe">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -697,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:49Z
+                2021-10-22T20:01:14Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -705,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:49Z
+                2021-10-22T20:01:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -752,12 +738,12 @@ note: trace_macro
   
   <div class="stage">
     <div class="stage-name">
-      <p>test</p>
+      <p>codegen</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2f156098-e0a6-414a-9d4b-c1be002c7f3f">
+    <div class="command-table" id="job-88c55d3d-51c4-4efb-9eba-621a799adddb">
       
       <div class="success">
       
@@ -765,7 +751,7 @@ note: trace_macro
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2f156098-e0a6-414a-9d4b-c1be002c7f3f">#</a>
+                <a href="#job-88c55d3d-51c4-4efb-9eba-621a799adddb">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -778,7 +764,7 @@ note: trace_macro
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Library Features/trace_macros/13.rs"
+            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Library Features/trace_macros/13.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -819,7 +805,7 @@ note: trace_macro
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:31:49Z
+                2021-10-22T20:01:14Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -827,7 +813,7 @@ note: trace_macro
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:31:49Z
+                2021-10-22T20:01:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -898,12 +884,12 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
   
   <div class="stage">
     <div class="stage-name">
-      <p>report</p>
+      <p>verification</p>
       <div class="underline"></div>
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-de19e791-a978-4080-be1e-2447fa08a0a9">
+    <div class="command-table" id="job-590bbf28-19b5-4036-929e-8a4041828ee1">
       
       <div class="fail">
       
@@ -911,7 +897,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-de19e791-a978-4080-be1e-2447fa08a0a9">#</a>
+                <a href="#job-590bbf28-19b5-4036-929e-8a4041828ee1">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -965,15 +951,15 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-21T23:32:47Z
+                2021-10-22T20:03:20Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-21T23:32:47Z
+                2021-10-22T20:03:21Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1006,22 +992,22 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs2rbQnXxLzUP_2_13.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.0185464s
+Runtime Symex: 0.0106082s
 size of program expression: 277 steps
 simple slicing removed 4 assignments
 Generated 4 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 4.3903e-05s
+Runtime Postprocess Equation: 1.98e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00196724s
+Runtime Convert SSA: 0.00159042s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.7804e-05s
+Runtime Post-process: 4.7401e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 3890 variables, 980 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00119768s
-Runtime decision procedure: 0.00600912s
+Runtime Solver: 0.000990615s
+Runtime decision procedure: 0.00370745s
 
 ** Results:
 function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE
