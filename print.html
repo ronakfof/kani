@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -1108,6 +1108,98 @@ Even if a proof harness has no post-conditions being asserted directly, the asse
 <blockquote>
 <p>TODO: This section is incomplete. We should probably add an example session of finding a proof to write for, perhaps, Firecracker.</p>
 </blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-developer-documentation"><a class="header" href="#rmc-developer-documentation">RMC developer documentation</a></h1>
+<h2 id="build-command-cheat-sheet"><a class="header" href="#build-command-cheat-sheet">Build command cheat sheet</a></h2>
+<pre><code class="language-bash"># Normal build
+./x.py build -i --stage 1 library/std
+</code></pre>
+<pre><code class="language-bash"># Once built successfully once, do a faster rebuild
+./x.py build -i --stage 1 library/std --keep-stage 1
+</code></pre>
+<p>(<a href="https://rustc-dev-guide.rust-lang.org/building/suggested.html#incremental-builds-with---keep-stage"><code>--keep-stage</code> comes with caveats</a>. Know that it may cause spurious build failures.)</p>
+<pre><code class="language-bash"># Full regression suite
+./scripts/rmc-regression.sh
+</code></pre>
+<pre><code class="language-bash"># Test suite run (to run a specific suite from src/test/, just remove the others)
+./x.py test -i --stage 1 rmc firecracker prusti smack expected cargo-rmc
+</code></pre>
+<pre><code class="language-bash"># Dashboard run
+./scripts/setup/install_dashboard_deps.sh
+./x.py run -i --stage 1 dashboard
+</code></pre>
+<pre><code class="language-bash"># Documentation build
+cd rmc-docs
+./build-docs.sh 
+</code></pre>
+<h3 id="resolving-development-issues"><a class="header" href="#resolving-development-issues">Resolving development issues</a></h3>
+<pre><code class="language-bash"># &quot;error[E0514]: found crate `std` compiled by an incompatible version of rustc&quot;
+# or similar error? Clean build RMC:
+rm -rf target build
+./x.py build -i --stage 1 library/std
+</code></pre>
+<h2 id="git-command-cheat-sheet"><a class="header" href="#git-command-cheat-sheet">Git command cheat sheet</a></h2>
+<p>RMC follows the &quot;squash and merge pull request&quot; pattern.
+As a result, the &quot;main commit message&quot; will be the title of your pull request.
+The individual commit message bodies you commit during development will by default be a bulleted list in the squashed commit message body, but these are editable at merge time.
+So you don't have to worry about a series of &quot;oops typo fix&quot; messages while fixing up your pull request, these can be edited out of the final message when you click merge.</p>
+<pre><code class="language-bash"># Set up your git fork
+git remote add fork git@github.com:${USER}/rmc.git
+</code></pre>
+<pre><code class="language-bash"># Reset everything. Don't have any uncommitted changes!
+git clean -xffd
+git submodule foreach --recursive git clean -xffd
+git submodule update --init
+# Don't forget to re-configure your RMC build:
+./configure \
+    --enable-debug \
+    --set=llvm.download-ci-llvm=true \
+    --set=rust.debug-assertions-std=false \
+    --set=rust.deny-warnings=false
+</code></pre>
+<pre><code class="language-bash"># Done with that PR, time for a new one?
+git switch main
+git pull origin
+git submodule update --init
+./x.py build -i --stage 1 library/std
+</code></pre>
+<pre><code class="language-bash"># Need to update local branch (e.g. for an open pull request?)
+git fetch origin
+git merge origin/main
+# Or rebase, but that requires a force push,
+# and because we squash and merge, an extra merge commit in a PR doesn't hurt.
+</code></pre>
+<pre><code class="language-bash"># Search only git-tracked files
+git grep codegen_panic
+</code></pre>
+<pre><code class="language-bash"># See all commits that are part of RMC, not part of Rust
+git log --graph --oneline origin/upstream-rustc..origin/main
+</code></pre>
+<pre><code class="language-bash"># See all files modified by RMC (compared to upstream Rust)
+git diff --stat origin/upstream-rustc..origin/main
+</code></pre>
+<h2 id="rmc-command-cheat-sheet"><a class="header" href="#rmc-command-cheat-sheet">RMC command cheat sheet</a></h2>
+<p>These can help understand what RMC is generating or encountering on an example or test file:</p>
+<pre><code class="language-bash"># Enable `debug!` macro logging output when running RMC:
+rmc --debug file.rs
+</code></pre>
+<pre><code class="language-bash"># Keep CBMC Symbol Table and Goto-C output (.json and .goto)
+rmc --keep-temps file.rs
+</code></pre>
+<pre><code class="language-bash"># Generate &quot;C code&quot; from CBMC IR (.c)
+rmc --gen-c file.rs
+</code></pre>
+<h2 id="cbmc-command-cheat-sheet"><a class="header" href="#cbmc-command-cheat-sheet">CBMC command cheat sheet</a></h2>
+<pre><code class="language-bash"># See CBMC IR from a C file:
+goto-cc file.c -o file.out
+goto-instrument --print-internal-representation file.out
+# or (for json symbol table)
+cbmc --show-symbol-table --json-ui file.out
+# or (an alternative concise format)
+cbmc --show-goto-functions file.out
+</code></pre>
+<pre><code class="language-bash"># Recover C from goto-c binary
+goto-instrument --dump-c file.out &gt; file.gen.c
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-dashboard"><a class="header" href="#rmc-dashboard">RMC Dashboard</a></h1>
 <p>The <a href="./dashboard/index.html">RMC Dashboard</a> is a testing tool based on <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 <p>The purpose of the dashboard to show the level of support in RMC for all Rust features.
