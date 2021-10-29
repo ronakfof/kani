@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-3f8d89cb-25b8-4893-a282-57f4567f993c">
+              <a href="#job-92cd9b6c-cd99-45c6-ae87-d9f18029ab23">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b95be2cf-98e3-4217-a7b5-edec100318a1">
+              <a href="#job-4fc20ebf-4579-460c-bff5-82c6d61f2b44">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-fe3c4ac6-6232-46b8-8239-54b85aec6d0d">
+              <a href="#job-8dc3a176-2b1e-4865-ad9a-7885621a812a">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-3f8d89cb-25b8-4893-a282-57f4567f993c">
+    <div class="command-table" id="job-92cd9b6c-cd99-45c6-ae87-d9f18029ab23">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-3f8d89cb-25b8-4893-a282-57f4567f993c">#</a>
+                <a href="#job-92cd9b6c-cd99-45c6-ae87-d9f18029ab23">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:04Z
+                2021-10-29T21:17:03Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:04Z
+                2021-10-29T21:17:04Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -714,6 +714,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he7cd4de2b69d5863E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he7cd4de2b69d5863E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he7cd4de2b69d5863E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he7cd4de2b69d5863E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -729,7 +758,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b95be2cf-98e3-4217-a7b5-edec100318a1">
+    <div class="command-table" id="job-4fc20ebf-4579-460c-bff5-82c6d61f2b44">
       
       <div class="success">
       
@@ -737,7 +766,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b95be2cf-98e3-4217-a7b5-edec100318a1">#</a>
+                <a href="#job-4fc20ebf-4579-460c-bff5-82c6d61f2b44">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -750,7 +779,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/Rust by Example/Flow of Control/if let/64.rs"
+            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/Rust by Example/Flow of Control/if let/64.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -791,7 +820,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:50Z
+                2021-10-29T21:17:04Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -799,7 +828,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:50Z
+                2021-10-29T21:17:04Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -866,7 +895,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-fe3c4ac6-6232-46b8-8239-54b85aec6d0d">
+    <div class="command-table" id="job-8dc3a176-2b1e-4865-ad9a-7885621a812a">
       
       <div class="fail">
       
@@ -874,7 +903,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-fe3c4ac6-6232-46b8-8239-54b85aec6d0d">#</a>
+                <a href="#job-8dc3a176-2b1e-4865-ad9a-7885621a812a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -928,15 +957,15 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:01Z
+                2021-10-29T21:17:04Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:01Z
+                2021-10-29T21:17:05Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -971,28 +1000,28 @@ Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csa11axvyUkVC_2_64.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csa11axvyUkVC_2_64.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Csa11axvyUkVC_2_64.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.0630478s
+Runtime Symex: 0.0527954s
 size of program expression: 976 steps
 simple slicing removed 8 assignments
 Generated 12 VCC(s), 7 remaining after simplification
-Runtime Postprocess Equation: 0.000103701s
+Runtime Postprocess Equation: 9.3301e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00584734s
+Runtime Convert SSA: 0.00941602s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.3301e-05s
+Runtime Post-process: 5.0901e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 14389 variables, 2926 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00793705s
-Runtime decision procedure: 0.0203511s
+Runtime Solver: 0.0113911s
+Runtime decision procedure: 0.0209163s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 14389 variables, 0 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 1.31e-05s
-Runtime decision procedure: 4.93e-05s
+Runtime Solver: 1.0201e-05s
+Runtime decision procedure: 3.5401e-05s
 
 ** Results:
 function _RINvMs1_NtCs61cxoXOqFbB_4core3fmtNtB6_10ArgumentV13newmECsa11axvyUkVC_2_64::1::var_2::f$object

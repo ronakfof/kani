@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-891d9fd4-b903-4a7d-af8a-e134fcd33b55">
+              <a href="#job-355bc35d-3cce-4984-a530-d32974f2e28a">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-891d9fd4-b903-4a7d-af8a-e134fcd33b55">
+    <div class="command-table" id="job-355bc35d-3cce-4984-a530-d32974f2e28a">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-891d9fd4-b903-4a7d-af8a-e134fcd33b55">#</a>
+                <a href="#job-355bc35d-3cce-4984-a530-d32974f2e28a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,15 +635,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:11Z
+                2021-10-29T21:14:33Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:11Z
+                2021-10-29T21:14:34Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -672,12 +672,12 @@ error[E0308]: mismatched types
 --> src/test/dashboard/books/The Rust Reference/Patterns/231.rs:10:23
 |
 10 | if let Person { name: &person_name, age: 18..=150 } = value { }
-|                       ^^^^^^^^^^^^                    ----- this expression has type `Person`
+|                       ^^^^^^^^^^^^                    ----- this expression has type `main::Person`
 |                       |
-|                       expected struct `String`, found reference
+|                       expected struct `std::string::String`, found reference
 |                       help: you can probably remove the explicit borrow: `person_name`
 |
-= note: expected struct `String`
+= note: expected struct `std::string::String`
 found reference `&_`
 
 error: aborting due to previous error

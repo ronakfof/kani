@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-99a4612a-d659-41c1-b88c-c498d055e462">
+              <a href="#job-cf8a3d9e-d855-4445-b6b5-d3d84c062c83">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b829fe40-3cc6-4787-b376-4e82eb6aa419">
+              <a href="#job-9d88f40b-5bbc-477d-a203-52f38a04228c">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-64176091-aa84-40b3-ae82-578d85efed57">
+              <a href="#job-3e9751a1-c789-4d97-abab-e307e0eb77ff">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-99a4612a-d659-41c1-b88c-c498d055e462">
+    <div class="command-table" id="job-cf8a3d9e-d855-4445-b6b5-d3d84c062c83">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-99a4612a-d659-41c1-b88c-c498d055e462">#</a>
+                <a href="#job-cf8a3d9e-d855-4445-b6b5-d3d84c062c83">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:24Z
+                2021-10-29T21:16:50Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:24Z
+                2021-10-29T21:16:50Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -714,6 +714,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h5f3cf9d441d15d25E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h5f3cf9d441d15d25E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h5f3cf9d441d15d25E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h5f3cf9d441d15d25E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_9139800189790234500") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -729,7 +758,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b829fe40-3cc6-4787-b376-4e82eb6aa419">
+    <div class="command-table" id="job-9d88f40b-5bbc-477d-a203-52f38a04228c">
       
       <div class="success">
       
@@ -737,7 +766,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b829fe40-3cc6-4787-b376-4e82eb6aa419">#</a>
+                <a href="#job-9d88f40b-5bbc-477d-a203-52f38a04228c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -750,7 +779,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/Rust by Example/Std library types/Box, stack and heap/11.rs"
+            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/Rust by Example/Std library types/Box, stack and heap/11.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -791,7 +820,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:27Z
+                2021-10-29T21:19:05Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -799,7 +828,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:28Z
+                2021-10-29T21:19:06Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -866,7 +895,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-64176091-aa84-40b3-ae82-578d85efed57">
+    <div class="command-table" id="job-3e9751a1-c789-4d97-abab-e307e0eb77ff">
       
       <div class="fail">
       
@@ -874,7 +903,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-64176091-aa84-40b3-ae82-578d85efed57">#</a>
+                <a href="#job-3e9751a1-c789-4d97-abab-e307e0eb77ff">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -928,15 +957,15 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:37:17Z
+                2021-10-29T21:19:06Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:37:20Z
+                2021-10-29T21:19:08Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -978,11 +1007,11 @@ Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxIBH_NtCslWsScmlUCsW_2_115PointEEEB1l_.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxNtCslWsScmlUCsW_2_115PointEEB1h_.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxNtCslWsScmlUCsW_2_119RectangleEEB1h_.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.373896s
+Runtime Symex: 0.148885s
 size of program expression: 4314 steps
 simple slicing removed 72 assignments
 Generated 370 VCC(s), 109 remaining after simplification
-Runtime Postprocess Equation: 0.00084071s
+Runtime Postprocess Equation: 0.000568007s
 Passing problem to propositional reduction
 converting SSA
 warning: ignoring byte_extract_little_endian
@@ -1256,21 +1285,21 @@ warning: ignoring byte_extract_little_endian
 * width: 64
 * #c_type: signed_long_int
 * value: 0
-Runtime Convert SSA: 0.0626403s
+Runtime Convert SSA: 0.0432354s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00177522s
+Runtime Post-process: 0.00133932s
 Solving with MiniSAT 2.2.1 with simplifier
 64267 variables, 15566 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0432755s
-Runtime decision procedure: 0.113286s
+Runtime Solver: 0.0189732s
+Runtime decision procedure: 0.0631988s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 64267 variables, 363 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000490706s
-Runtime decision procedure: 0.000552107s
+Runtime Solver: 0.000400105s
+Runtime decision procedure: 0.000448306s
 
 ** Results:
 [assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Double } (MIR type Ref(ReErased, f64, Not)). Please report failures:

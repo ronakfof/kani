@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-329b5734-0d09-4c30-9bb0-f9c49f4d9630">
+              <a href="#job-df22e3a6-8be9-49b1-9a75-fc43431144db">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-329b5734-0d09-4c30-9bb0-f9c49f4d9630">
+    <div class="command-table" id="job-df22e3a6-8be9-49b1-9a75-fc43431144db">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-329b5734-0d09-4c30-9bb0-f9c49f4d9630">#</a>
+                <a href="#job-df22e3a6-8be9-49b1-9a75-fc43431144db">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,7 +635,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:33:21Z
+                2021-10-29T21:12:09Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -643,7 +643,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:33:21Z
+                2021-10-29T21:12:09Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -668,11 +668,11 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
-error[E0038]: the trait `TraitWithSize` cannot be made into an object
+error[E0038]: the trait `main::TraitWithSize` cannot be made into an object
 --> src/test/dashboard/books/The Rust Reference/Items/Traits/150.rs:10:10
 |
 10 | let obj: Box<dyn TraitWithSize> = Box::new(S); // ERROR
-|          ^^^^^^^^^^^^^^^^^^^^^^ `TraitWithSize` cannot be made into an object
+|          ^^^^^^^^^^^^^^^^^^^^^^ `main::TraitWithSize` cannot be made into an object
 |
 note: for a trait to be "object safe" it needs to allow building a vtable to allow the call to be resolvable dynamically; for more information visit <https://doc.rust-lang.org/reference/items/traits.html#object-safety>
 --> src/test/dashboard/books/The Rust Reference/Items/Traits/150.rs:6:33
@@ -682,11 +682,11 @@ note: for a trait to be "object safe" it needs to allow building a vtable to all
 |       |
 |       this trait cannot be made into an object...
 
-error[E0038]: the trait `TraitWithSize` cannot be made into an object
+error[E0038]: the trait `main::TraitWithSize` cannot be made into an object
 --> src/test/dashboard/books/The Rust Reference/Items/Traits/150.rs:10:35
 |
 10 | let obj: Box<dyn TraitWithSize> = Box::new(S); // ERROR
-|                                   ^^^^^^^^^^^ `TraitWithSize` cannot be made into an object
+|                                   ^^^^^^^^^^^ `main::TraitWithSize` cannot be made into an object
 |
 note: for a trait to be "object safe" it needs to allow building a vtable to allow the call to be resolvable dynamically; for more information visit <https://doc.rust-lang.org/reference/items/traits.html#object-safety>
 --> src/test/dashboard/books/The Rust Reference/Items/Traits/150.rs:6:33
@@ -695,8 +695,8 @@ note: for a trait to be "object safe" it needs to allow building a vtable to all
 |       -------------             ^^^^^ ...because it requires `Self: Sized`
 |       |
 |       this trait cannot be made into an object...
-= note: required because of the requirements on the impl of `CoerceUnsized<Box<dyn TraitWithSize>>` for `Box<S>`
-= note: required by cast to type `Box<dyn TraitWithSize>`
+= note: required because of the requirements on the impl of `std::ops::CoerceUnsized<std::boxed::Box<dyn main::TraitWithSize>>` for `std::boxed::Box<main::S>`
+= note: required by cast to type `std::boxed::Box<dyn main::TraitWithSize>`
 
 error: aborting due to 2 previous errors
 

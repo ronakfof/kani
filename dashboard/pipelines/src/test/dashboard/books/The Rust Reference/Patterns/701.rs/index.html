@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-555c02c4-02cc-4f25-92fe-5aa578e347ba">
+              <a href="#job-f9f1b999-4da3-4515-a06a-3c4e7a8697e7">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-cccf15f1-2f42-4fdd-8e49-1949b96081b8">
+              <a href="#job-a834da9d-e14e-4577-bd4b-c7160351f75a">
               
               Does RMC support all the Rust features used in it?
               
@@ -591,7 +591,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-5d66d626-221e-4ce1-b599-0b1ebf367e0f">
+              <a href="#job-371331a6-27ca-46bc-8f14-b6b55da4c923">
               
               Can RMC reason about it?
               
@@ -619,7 +619,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-555c02c4-02cc-4f25-92fe-5aa578e347ba">
+    <div class="command-table" id="job-f9f1b999-4da3-4515-a06a-3c4e7a8697e7">
       
       <div class="success">
       
@@ -627,7 +627,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-555c02c4-02cc-4f25-92fe-5aa578e347ba">#</a>
+                <a href="#job-f9f1b999-4da3-4515-a06a-3c4e7a8697e7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -681,7 +681,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:34:43Z
+                2021-10-29T21:12:31Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -689,7 +689,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:34:43Z
+                2021-10-29T21:12:31Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -712,6 +712,35 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h4fde923e4e5e2817E::1::var_1::val" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17ha48bf52935e81da0E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h458a627c5dfe9ec2E::1::var_5" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h458a627c5dfe9ec2E::1::var_7" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -727,7 +756,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-cccf15f1-2f42-4fdd-8e49-1949b96081b8">
+    <div class="command-table" id="job-a834da9d-e14e-4577-bd4b-c7160351f75a">
       
       <div class="success">
       
@@ -735,7 +764,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-cccf15f1-2f42-4fdd-8e49-1949b96081b8">#</a>
+                <a href="#job-a834da9d-e14e-4577-bd4b-c7160351f75a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -748,7 +777,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Patterns/701.rs"
+            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/The Rust Reference/Patterns/701.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -789,15 +818,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:34:43Z
+                2021-10-29T21:12:39Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:34:44Z
+                2021-10-29T21:12:39Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -864,7 +893,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-5d66d626-221e-4ce1-b599-0b1ebf367e0f">
+    <div class="command-table" id="job-371331a6-27ca-46bc-8f14-b6b55da4c923">
       
       <div class="success">
       
@@ -872,7 +901,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-5d66d626-221e-4ce1-b599-0b1ebf367e0f">#</a>
+                <a href="#job-371331a6-27ca-46bc-8f14-b6b55da4c923">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -926,7 +955,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:36:06Z
+                2021-10-29T21:12:40Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -934,7 +963,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:36:07Z
+                2021-10-29T21:12:41Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -969,11 +998,11 @@ Starting Bounded Model Checking
 Unwinding loop memcmp.0 iteration 1 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop memcmp.0 iteration 2 file <builtin-library-memcmp> line 25 function memcmp thread 0
 Unwinding loop memcmp.0 iteration 3 file <builtin-library-memcmp> line 25 function memcmp thread 0
-Runtime Symex: 0.0517104s
+Runtime Symex: 0.0415679s
 size of program expression: 461 steps
 simple slicing removed 0 assignments
 Generated 171 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 6.2301e-05s
+Runtime Postprocess Equation: 6.1401e-05s
 
 ** Results:
 [overflow.1] arithmetic overflow on unsigned * in 1 * var_2.len: SUCCESS

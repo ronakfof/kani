@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-44de8f5a-09d1-4d2a-83cc-fb1385f74c0f">
+              <a href="#job-122342c8-123f-4099-b057-a3d39d7ae785">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-31be2a9f-6820-40c0-8b1c-57f99a3eceb6">
+              <a href="#job-37211a7e-44d5-48e0-98d1-60f470812c4c">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-36077af2-ac0f-4789-8868-e9a19fc97c2b">
+              <a href="#job-928e25e7-fc30-4e89-b2fd-444192c63b45">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-44de8f5a-09d1-4d2a-83cc-fb1385f74c0f">
+    <div class="command-table" id="job-122342c8-123f-4099-b057-a3d39d7ae785">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-44de8f5a-09d1-4d2a-83cc-fb1385f74c0f">#</a>
+                <a href="#job-122342c8-123f-4099-b057-a3d39d7ae785">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:28:14Z
+                2021-10-29T21:12:57Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:28:14Z
+                2021-10-29T21:12:57Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -714,6 +714,85 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$5first17h1b390aedfde44511E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$5first17h1b390aedfde44511E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17haf6564ed94742cd0E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$8is_empty17h82629ef917a3ae74E::1::var_3" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17hc01d84cceb825a11E::1::var_14" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17hc01d84cceb825a11E::1::var_17" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3num7dec2flt5parse13parse_inf_nan17hde30a2580bdf7d9cE::1::var_11" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3num7dec2flt5parse21parse_partial_inf_nan17h9ba8727d98b9e4b9E::1::var_4" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN110_$LT$core..ops..range..RangeFrom$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17hc5dc91b8df3d3f6fE::1::var_6" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN110_$LT$core..ops..range..RangeFrom$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17hc5dc91b8df3d3f6fE::1::var_9" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN110_$LT$core..ops..range..RangeFrom$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17hc5dc91b8df3d3f6fE::1::var_2::slice" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN110_$LT$core..ops..range..RangeFrom$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17hc5dc91b8df3d3f6fE::1::var_10" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 511, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_1::self"), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_2::count"), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 511, col: Some(52) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_5" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_5" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_2::count" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Typecast(Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_5" }, typ: CInteger(SizeT), location: None }), typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: None, base_name: None }, Parameter { typ: CInteger(SSizeT), identifier: None, base_name: None }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(23) } }, arguments: [Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_4" }, typ: CInteger(SSizeT), location: None }] }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(44) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(44) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 516, col: Some(44) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 517, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::add"), line: 511, col: Some(5) } }), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$3add17heb84b03060547c1dE"), pretty_name: Some("std::ptr::const_ptr::<impl *const T>::add"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 230, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_1::self"), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_1::self") }, Parameter { typ: CInteger(SSizeT), identifier: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_2::count"), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 230, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(43) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(37) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(43) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_2::count" }, typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: BinOp { op: Plus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_4" }, typ: CInteger(SSizeT), location: None } }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: None }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(48) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(48) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 235, col: Some(48) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 236, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs", function: Some("std::ptr::const_ptr::<impl *const T>::offset"), line: 230, col: Some(5) } }), base_name: Some("_ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17h164e9aff3a685014E"), pretty_name: Some("std::ptr::const_ptr::<impl *const T>::offset"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -729,7 +808,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-31be2a9f-6820-40c0-8b1c-57f99a3eceb6">
+    <div class="command-table" id="job-37211a7e-44d5-48e0-98d1-60f470812c4c">
       
       <div class="success">
       
@@ -737,7 +816,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-31be2a9f-6820-40c0-8b1c-57f99a3eceb6">#</a>
+                <a href="#job-37211a7e-44d5-48e0-98d1-60f470812c4c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -750,7 +829,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs"
+            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -791,15 +870,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:30:44Z
+                2021-10-29T21:12:58Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:30:45Z
+                2021-10-29T21:12:58Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -916,7 +995,7 @@ WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-36077af2-ac0f-4789-8868-e9a19fc97c2b">
+    <div class="command-table" id="job-928e25e7-fc30-4e89-b2fd-444192c63b45">
       
       <div class="fail">
       
@@ -924,7 +1003,7 @@ WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-36077af2-ac0f-4789-8868-e9a19fc97c2b">#</a>
+                <a href="#job-928e25e7-fc30-4e89-b2fd-444192c63b45">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -978,15 +1057,15 @@ WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:56Z
+                2021-10-29T21:19:25Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:59Z
+                2021-10-29T21:19:27Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1023,40 +1102,40 @@ Not unwinding loop _RINvMNtNtNtCs61cxoXOqFbB_4core3num7dec2flt6numberNtB3_6Numbe
 Not unwinding loop _RINvMNtNtNtCs61cxoXOqFbB_4core3num7dec2flt6numberNtB3_6Number12is_fast_pathfECsaT68FHPCOMO_2_10.3 iteration 1  thread 0
 Not unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECsaT68FHPCOMO_2_10.1 iteration 1  thread 0
 Not unwinding loop _RNvMNtCs61cxoXOqFbB_4core6resultINtB2_6ResultfNtNtNtB4_3num7dec2flt15ParseFloatErrorE9unwrap_orCsaT68FHPCOMO_2_10.2 iteration 1  thread 0
-Runtime Symex: 0.150476s
+Runtime Symex: 0.0526036s
 size of program expression: 1381 steps
 simple slicing removed 4 assignments
 Generated 112 VCC(s), 27 remaining after simplification
-Runtime Postprocess Equation: 0.000186701s
+Runtime Postprocess Equation: 9.8301e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0200615s
+Runtime Convert SSA: 0.015034s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.92e-05s
+Runtime Post-process: 2.39e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 36041 variables, 6278 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0123253s
-Runtime decision procedure: 0.0383994s
+Runtime Solver: 0.00624098s
+Runtime decision procedure: 0.0214479s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 36041 variables, 332 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00785756s
-Runtime decision procedure: 0.00792206s
+Runtime Solver: 0.000218303s
+Runtime decision procedure: 0.000248903s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 36041 variables, 332 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000800106s
-Runtime decision procedure: 0.000839607s
+Runtime Solver: 0.000672809s
+Runtime decision procedure: 0.000705509s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 36041 variables, 259 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 1.01e-05s
-Runtime decision procedure: 6.61e-05s
+Runtime Solver: 9.3e-06s
+Runtime decision procedure: 5.9101e-05s
 
 ** Results:
 [.unwind.1] unwinding assertion loop 1: FAILURE

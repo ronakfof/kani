@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7dce8ab5-5368-4be2-ab51-c55cee9ee4c4">
+              <a href="#job-0324bb15-c53a-45da-943f-06d384b370a5">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-398f1583-e286-48a8-9c1f-0393b4e0927b">
+              <a href="#job-6201f679-17bd-4e83-aea5-8bd0d7ed3342">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7b9cec75-c4a3-4d65-b954-1397a2ad186b">
+              <a href="#job-5ae56784-e4cf-4cfc-aca7-009294059172">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7dce8ab5-5368-4be2-ab51-c55cee9ee4c4">
+    <div class="command-table" id="job-0324bb15-c53a-45da-943f-06d384b370a5">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7dce8ab5-5368-4be2-ab51-c55cee9ee4c4">#</a>
+                <a href="#job-0324bb15-c53a-45da-943f-06d384b370a5">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:16Z
+                2021-10-29T21:13:26Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:16Z
+                2021-10-29T21:13:26Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -714,6 +714,17 @@ a:visited:active {
           
 
           
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17hc3d0c2f5a77d82e5E::1::var_1::self" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -729,7 +740,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-398f1583-e286-48a8-9c1f-0393b4e0927b">
+    <div class="command-table" id="job-6201f679-17bd-4e83-aea5-8bd0d7ed3342">
       
       <div class="success">
       
@@ -737,7 +748,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-398f1583-e286-48a8-9c1f-0393b4e0927b">#</a>
+                <a href="#job-6201f679-17bd-4e83-aea5-8bd0d7ed3342">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -750,7 +761,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "codegen-backend=gotoc" "-Z" "trim-diagnostic-paths=no" "--cfg=rmc" "--out-dir" "build/tmp" "-Z" "human_readable_cgu_names" "--crate-type=lib" "src/test/dashboard/books/The Unstable Book/Compiler Flags/sanitizer/53.rs"
+            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/The Unstable Book/Compiler Flags/sanitizer/53.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -791,15 +802,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:16Z
+                2021-10-29T21:15:33Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:17Z
+                2021-10-29T21:15:33Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -848,7 +859,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7b9cec75-c4a3-4d65-b954-1397a2ad186b">
+    <div class="command-table" id="job-5ae56784-e4cf-4cfc-aca7-009294059172">
       
       <div class="fail">
       
@@ -856,7 +867,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7b9cec75-c4a3-4d65-b954-1397a2ad186b">#</a>
+                <a href="#job-5ae56784-e4cf-4cfc-aca7-009294059172">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -910,7 +921,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:17Z
+                2021-10-29T21:15:33Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -918,7 +929,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:17Z
+                2021-10-29T21:15:33Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -950,22 +961,22 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-Runtime Symex: 0.00287552s
+Runtime Symex: 0.00246403s
 size of program expression: 88 steps
 simple slicing removed 6 assignments
 Generated 12 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 1.01e-05s
+Runtime Postprocess Equation: 9.2e-06s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.000577904s
+Runtime Convert SSA: 0.000489806s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.45e-05s
+Runtime Post-process: 4.61e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 1083 variables, 227 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00838995s
-Runtime decision procedure: 0.00901716s
+Runtime Solver: 0.00129972s
+Runtime decision procedure: 0.00186492s
 
 ** Results:
 [pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS

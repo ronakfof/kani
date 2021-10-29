@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-10-27T23:25:04Z</li>
-      <li>fc5294d3-a07c-4477-b9f2-deffdb5aa81c</li>
+      <li>2021-10-29T21:09:29Z</li>
+      <li>930a1593-5e91-4c94-9eb0-ac30f59ad593</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-71a980f1-d1f2-4f63-8c7f-252975a5f31a">
+              <a href="#job-093bbb49-9a10-4e9d-ab7c-da9e4eefaab8">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-71a980f1-d1f2-4f63-8c7f-252975a5f31a">
+    <div class="command-table" id="job-093bbb49-9a10-4e9d-ab7c-da9e4eefaab8">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-71a980f1-d1f2-4f63-8c7f-252975a5f31a">#</a>
+                <a href="#job-093bbb49-9a10-4e9d-ab7c-da9e4eefaab8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,15 +635,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-10-27T23:31:08Z
+                2021-10-29T21:12:24Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-10-27T23:31:08Z
+                2021-10-29T21:12:25Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -680,7 +680,7 @@ error[E0277]: `i32` is not an iterator
 13 | | }
 | |_^ `i32` is not an iterator
 |
-= help: the trait `Iterator` is not implemented for `i32`
+= help: the trait `std::iter::Iterator` is not implemented for `i32`
 = note: if you want to iterate between `start` until a value `end`, use the exclusive range syntax `start..end` or the inclusive range syntax `start..=end`
 = help: see issue #48214
 = help: add `#![feature(trivial_bounds)]` to the crate attributes to enable
@@ -691,34 +691,34 @@ error[E0277]: `i32` is not an iterator
 14 | struct UsesA<'a, T>(A<'a, T>);
 |                     ^^^^^^^^ `i32` is not an iterator
 |
-= help: the trait `Iterator` is not implemented for `i32`
+= help: the trait `std::iter::Iterator` is not implemented for `i32`
 = note: if you want to iterate between `start` until a value `end`, use the exclusive range syntax `start..end` or the inclusive range syntax `start..=end`
-note: required by a bound in `A`
+note: required by a bound in `main::A`
 --> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:8:10
 |
 5  | struct A<'a, T>
 |        - required by a bound in this
 ...
 8  |     i32: Iterator,          // Error: `i32` is not an iterator
-|          ^^^^^^^^ required by this bound in `A`
+|          ^^^^^^^^ required by this bound in `main::A`
 
-error[E0277]: the trait bound `&'a mut T: Copy` is not satisfied
+error[E0277]: the trait bound `&'a mut T: std::marker::Copy` is not satisfied
 --> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:14:21
 |
 14 | struct UsesA<'a, T>(A<'a, T>);
-|                     ^^^^^^^^ the trait `Copy` is not implemented for `&'a mut T`
+|                     ^^^^^^^^ the trait `std::marker::Copy` is not implemented for `&'a mut T`
 |
 = help: the following implementations were found:
-<&T as Copy>
-= note: `Copy` is implemented for `&'a T`, but not for `&'a mut T`
-note: required by a bound in `A`
+<&T as std::marker::Copy>
+= note: `std::marker::Copy` is implemented for `&'a T`, but not for `&'a mut T`
+note: required by a bound in `main::A`
 --> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:9:16
 |
 5  | struct A<'a, T>
 |        - required by a bound in this
 ...
 9  |     &'a mut T: Copy,        // (at use) Error: the trait bound is not satisfied
-|                ^^^^ required by this bound in `A`
+|                ^^^^ required by this bound in `main::A`
 
 error[E0277]: the size for values of type `[T]` cannot be known at compilation time
 --> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:14:21
@@ -726,15 +726,15 @@ error[E0277]: the size for values of type `[T]` cannot be known at compilation t
 14 | struct UsesA<'a, T>(A<'a, T>);
 |                     ^^^^^^^^ doesn't have a size known at compile-time
 |
-= help: the trait `Sized` is not implemented for `[T]`
-note: required by a bound in `A`
+= help: the trait `std::marker::Sized` is not implemented for `[T]`
+note: required by a bound in `main::A`
 --> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:10:10
 |
 5  | struct A<'a, T>
 |        - required by a bound in this
 ...
 10 |     [T]: Sized,             // (at use) Error: size cannot be known at compilation
-|          ^^^^^ required by this bound in `A`
+|          ^^^^^ required by this bound in `main::A`
 
 error: aborting due to 4 previous errors
 
