@@ -1,0 +1,14 @@
+{
+  "tag-Unit": "()",
+  "tag-_10437801437184891936": "std::ptr::Unique<i32>",
+  "tag-_11701814515377352235": "std::num::NonZeroUsize",
+  "tag-_16341991368695127689": "std::ops::Range<u32>",
+  "tag-_17519656827680341753": "std::ptr::Unique<u8>",
+  "tag-_2927743386708437450": "std::alloc::Layout",
+  "tag-_4586564250974163792": "std::alloc::Global",
+  "tag-_5895034052075763154": "std::marker::PhantomData<u8>",
+  "tag-_6355949282557680003": "std::ptr::NonNull<u8>",
+  "tag-_690215055756585766": "std::option::Option<u32>",
+  "tag-_7352352643275244430": "std::boxed::Box<i32>",
+  "tag-_8095514839065252940": "std::marker::PhantomData<i32>"
+}
