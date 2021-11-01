@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li class="chapter-item expanded "><a href="dashboard.html" class="active"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li></ol></li><li class="chapter-item expanded "><a href="dashboard.html" class="active"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -163,40 +163,79 @@ To this end, we use Rust code snippet examples from the following general Rust d
 For instance, some of them are only included to show what is valid Rust code (or what is not).</p>
 <p>Because of that, we run up to three different types of jobs when generating the dashboard:</p>
 <ul>
-<li><code>check</code> jobs (<code>BUILD</code> stage): This check uses the Rust front-end to detect if the example is valid Rust code.</li>
-<li><code>codegen</code> jobs (<code>TEST</code> stage): This check uses the RMC back-end to determine if we can generate GotoC code.</li>
-<li><code>verification</code> jobs (<code>REPORT</code> stage): This check uses CBMC to obtain a verification result.</li>
+<li><code>check</code> jobs: This check uses the Rust front-end to detect if the example is valid Rust code.</li>
+<li><code>codegen</code> jobs: This check uses the RMC back-end to determine if we can generate GotoC code.</li>
+<li><code>verification</code> jobs: This check uses CBMC to obtain a verification result.</li>
 </ul>
 <p>Note that these are incremental: A <code>verification</code> job depends on a previous <code>codegen</code> job.
 Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
 <blockquote>
-<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does not support
-hierarchical views nor custom stages at the moment. For this reason, the results are
-displayed for each example using Litani's default stages (<code>BUILD</code>, <code>TEST</code> and <code>REPORT</code>).</p>
+<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does
+not support hierarchical views at the moment. For this reason, we are
+publishing a <a href="./dashboard/dashboard.txt">text version of the dashboard</a> which
+displays the same results in a hierarchical way while we work on adding more
+features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 </blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
 <li>Set the expected output according to flags present in the code snippet.</li>
 <li>Add any required compiler/RMC flags (e.g., CBMC unwinding flags).</li>
-<li>Include custom assertions for verification (only in the case of <code>verification</code> jobs).</li>
 </ol>
 <p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.
 The results are summarized as follows: If the obtained and expected outputs differ,
 the color of the stage bar will be red. Otherwise, it will be blue.
 If an example shows one red bar, it is considered a failed example that cannot be handled by RMC.</p>
-<p>The <a href="./dashboard/index.html">RMC Dashboard</a> is automatically updated whenever
-a PR gets merged into RMC.</p>
+<p>The <a href="./dashboard/index.html">RMC Dashboard</a> and <a href="./dashboard/dashboard.txt">its text version</a> are
+automatically updated whenever a PR gets merged into RMC.</p>
+<h2 id="the-dashboard-procedure"><a class="header" href="#the-dashboard-procedure">The dashboard procedure</a></h2>
+<p>This section describes how the dashboard operates at a high level.</p>
+<p>To kick off the dashboard process use</p>
+<pre><code>./x.py run -i --stage 1 dashboard
+</code></pre>
+<p>The main function of the dashboard is <code>generate_dashboard()</code> in
+<a href="https://github.com/model-checking/rmc/blob/main/src/tools/dashboard/src/books.rs"><code>src/tools/dashboard/src/books.rs</code></a>,
+which follows these steps:</p>
+<ul>
+<li>
+<p>First, it calls the different <code>parse_..._hierarchy()</code> functions which parse
+the summary files for each book.</p>
+</li>
+<li>
+<p>The <code>extract_examples(...)</code> function uses <code>rustdoc</code> to extract all examples
+from the books.</p>
+</li>
+<li>
+<p>Then for each example it will check if there is a corresponding <code>.props</code> file
+in <code>src/tools/dashboard/configs/</code>. The contents of these files (e.g.,
+command-line options) are prepended to the example.</p>
+</li>
+<li>
+<p>All examples are written in the <code>src/test/dashboard/books/</code> folder.</p>
+<p>In general, the path to a given example is
+<code>src/test/dashboard/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
+where <code>&lt;line&gt;</code> is the line number where the example appears in the
+documentation. The <code>.props</code> files mentioned above follow the same naming
+scheme in order to match them and detect conflicts.</p>
+</li>
+<li>
+<p>Then all examples are run using
+<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+</li>
+<li>
+<p>Finally, the Litani log is used to generate the <a href="./dashboard/dashboard.txt">text version of the
+dashboard</a>.</p>
+</li>
+</ul>
 <blockquote>
-<p><strong>Tip:</strong> In addition, we publish a <a href="./dashboard/dashboard.txt">text version of the dashboard</a>
-while we work on adding more features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.
-The <a href="./dashboard/dashboard.txt">text-based dashboard</a> displays the same results in hierarchical way.</p>
+<p><strong>Warning:</strong> Note that any changes done to the examples in
+<code>src/test/dashboard/books/</code> may be gone if the dashboard is executed.</p>
 </blockquote>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="dev-documentation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="rmc-testing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -207,7 +246,7 @@ The <a href="./dashboard/dashboard.txt">text-based dashboard</a> displays the sa
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="dev-documentation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="rmc-testing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 

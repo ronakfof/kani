@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li></ol></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -1200,6 +1200,150 @@ cbmc --show-goto-functions file.out
 <pre><code class="language-bash"># Recover C from goto-c binary
 goto-instrument --dump-c file.out &gt; file.gen.c
 </code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="testing"><a class="header" href="#testing">Testing</a></h1>
+<p>Testing in RMC is carried out in multiple ways. There are at least
+two very good reasons to do it:</p>
+<ol>
+<li>
+<p><strong>Software regression</strong>: A regression is a type of bug
+that appears after a change is introduced where a feature that
+was previously working has unexpectedly stopped working.</p>
+<p>Regression testing allows one to prevent a software regression
+from happening by running a comprehensive set of working tests
+before any change is committed to the project.</p>
+</li>
+<li>
+<p><strong>Software metrics</strong>: A metric is a measure of software
+characteristics which are quantitative and countable. Metrics are
+particularly valuable for project management purposes.</p>
+</li>
+</ol>
+<p>We recommend reading our section on <a href="rmc-testing.html#regression-testing">Regression Testing</a>
+if you are interested in RMC development. At present, we obtain metrics based
+on the <a href="./dashboard.html">RMC dashboard</a>.</p>
+<h1 id="regression-testing"><a class="header" href="#regression-testing">Regression testing</a></h1>
+<p>RMC relies on a quite extensive range of tests to perform regression testing.
+Regression testing can be executed by running the command:</p>
+<pre><code>./scripts/rmc-regression.sh
+</code></pre>
+<p>The <code>rmc-regression.sh</code> script executes different testing commands, which we classify into:</p>
+<ul>
+<li><a href="rmc-testing.html#rmc-testing-suites">RMC testing suites</a></li>
+<li><a href="rmc-testing.html#rust-unit-tests">Rust unit tests</a></li>
+<li><a href="rmc-testing.html#script-based-tests">Script-based tests</a></li>
+</ul>
+<p>See below for a description of each one.</p>
+<p>Note that regression testing is run whenever a Pull Request is opened, updated or merged
+into the main branch. Therefore, it is a good idea to run regression testing locally before
+submitting a Pull Request for RMC.</p>
+<h2 id="rmc-testing-suites"><a class="header" href="#rmc-testing-suites">RMC testing suites</a></h2>
+<p>The RMC testing suites are the main testing resource for RMC. In most cases, the
+tests contained in the RMC testing suites are single Rust files that are run
+using the following command:</p>
+<pre><code>rmc file.rs &lt;options&gt;
+</code></pre>
+<p>Command-line options <code>&lt;options&gt;</code> can be passed to the test by adding a special
+comment to the file.
+Read more about it in the <a href="rmc-testing.html#testing-options">Testingoptions</a> section.</p>
+<p>In particular, the RMC testing suites are composed of:</p>
+<ul>
+<li><code>rmc</code>: The main testing suite for RMC. The test is a single Rust file that is
+run through RMC. In general, the test passes if verification with RMC
+is successful, otherwise it fails.</li>
+<li><code>firecracker</code>: Works like <code>rmc</code> but contains tests inspired by
+<a href="https://github.com/firecracker-microvm/firecracker">Firecracker</a> code.</li>
+<li><code>prusti</code>: Works like <code>rmc</code> but contains tests from the
+<a href="https://github.com/viperproject/prusti-dev">Prusti</a> tool.</li>
+<li><code>smack</code>: Works like <code>rmc</code> but contains tests from the
+<a href="https://github.com/smackers/smack">SMACK</a> tool.</li>
+<li><code>expected</code>: Similar to <code>rmc</code> but with an additional check which ensures that
+lines appearing in <code>*.expected</code> files appear in the output
+generated by <code>rmc</code>.</li>
+<li><code>cargo-rmc</code>: This suite is designed to test the <code>cargo-rmc</code> command. As such,
+this suite works with packages instead of single Rust files.
+Flags can be specified in the <code>Cargo.toml</code> configuration file.
+Similar to the <code>expected</code> suite, we look for <code>*.expected</code> files
+for each function under test.</li>
+</ul>
+<p>We have extended
+<a href="https://rustc-dev-guide.rust-lang.org/tests/intro.html"><code>compiletest</code></a> (the
+Rust compiler testing framework) to work with these suites. That way, we take
+advantage of all <code>compiletest</code> features (e.g., parallel execution).</p>
+<h3 id="testing-stages"><a class="header" href="#testing-stages">Testing stages</a></h3>
+<p>The process of running single-file tests is split into three stages:</p>
+<ul>
+<li><code>check</code>: This stage uses the Rust front-end to detect if the example is valid
+Rust code.</li>
+<li><code>codegen</code>: This stage uses the RMC back-end to determine if we can generate
+GotoC code.</li>
+<li><code>verify</code>: This stage uses CBMC to obtain a verification result.</li>
+</ul>
+<p>If a test fails, the error message will include the stage where it failed:</p>
+<pre><code>error: test failed: expected check success, got failure
+</code></pre>
+<p>When working on a test that is expected to fail, there are two options to
+indicate an expected failure. The first one is to add a comment</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>// rmc-&lt;stage&gt;-fail
+<span class="boring">}
+</span></code></pre></pre>
+<p>at the top of the test file, where <code>&lt;stage&gt;</code> is the stage where the test is
+expected to fail.</p>
+<p>The other option is to use the predicate <code>rmc::expect_fail(cond, message)</code>
+included in the RMC library. The <code>cond</code> in <code>rmc::expect_fail</code> is a condition
+that you expect not to hold during verification. The testing framework expects
+one <code>EXPECTED FAIL</code> message in the verification output for each use of the
+predicate.</p>
+<blockquote>
+<p><strong>Warning:</strong> Note that <code>rmc::expect_fail</code> is only useful to indicate
+failure in the <code>verify</code> stage, errors in other stages will be considered
+testing failures.</p>
+</blockquote>
+<h3 id="testing-options"><a class="header" href="#testing-options">Testing options</a></h3>
+<p>Many tests will require passing command-line options to RMC. These options can
+be specified in single Rust files by adding a comment at the top of the file:</p>
+<pre><code>// rmc-flags: &lt;options&gt;
+</code></pre>
+<p>For example, to increase the unwinding value to 4 in a test, we can write:</p>
+<pre><code>// rmc-flags: --cbmc-args --unwind 4
+</code></pre>
+<p>Alternatively, CBMC flags can also be passed using <code>cbmc-flags</code>:</p>
+<pre><code>// cbmc-flags: --unwind 4
+</code></pre>
+<blockquote>
+<p><strong>Warning:</strong> <code>cbmc-flags</code> is likely to be deprecated in the near future. We
+recommend using <code>rmc-flags</code> with <code>--cbmc-args</code> for now.</p>
+</blockquote>
+<p>For <code>cargo-rmc</code> tests, the preferred way to pass command-line options is adding
+them to <code>Cargo.toml</code> below the <code>[rmc.flags]</code> marker.</p>
+<h2 id="rust-unit-tests"><a class="header" href="#rust-unit-tests">Rust unit tests</a></h2>
+<p>These tests follow the
+<a href="https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html">Rust unit testing</a>
+style.</p>
+<p>At present, RMC only uses unit tests in the
+<a href="https://github.com/model-checking/rmc/tree/main/compiler/cbmc">cbmc crate</a>
+to test the
+<a href="https://github.com/model-checking/rmc/blob/main/compiler/cbmc/src/goto_program/symtab_transformer/identity_transformer.rs">identity symbol table transformer</a>.</p>
+<h2 id="script-based-tests"><a class="header" href="#script-based-tests">Script-based tests</a></h2>
+<p>These are tests which are run using scripts. Scripting gives us the ability to
+perform ad-hoc checks that cannot be done otherwise. They are currently used
+for:</p>
+<ul>
+<li>Standard library codegen</li>
+<li>Firecracker virtio codegen</li>
+<li>Diamond dependency</li>
+<li>Type mismatch</li>
+</ul>
+<p>In fact, most of them are equivalent to running <code>cargo rmc</code> and performing
+checks on the output. The downside to scripting is that these tests will always
+be run, even if there have not been any changes since the last time the
+regression was run.</p>
+<blockquote>
+<p><strong>Warning:</strong> <code>cargo rmc</code> is under heavy development at the moment. Because of
+that, this section may become outdated soon.</p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-dashboard"><a class="header" href="#rmc-dashboard">RMC Dashboard</a></h1>
 <p>The <a href="./dashboard/index.html">RMC Dashboard</a> is a testing tool based on <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 <p>The purpose of the dashboard to show the level of support in RMC for all Rust features.
@@ -1214,33 +1358,72 @@ To this end, we use Rust code snippet examples from the following general Rust d
 For instance, some of them are only included to show what is valid Rust code (or what is not).</p>
 <p>Because of that, we run up to three different types of jobs when generating the dashboard:</p>
 <ul>
-<li><code>check</code> jobs (<code>BUILD</code> stage): This check uses the Rust front-end to detect if the example is valid Rust code.</li>
-<li><code>codegen</code> jobs (<code>TEST</code> stage): This check uses the RMC back-end to determine if we can generate GotoC code.</li>
-<li><code>verification</code> jobs (<code>REPORT</code> stage): This check uses CBMC to obtain a verification result.</li>
+<li><code>check</code> jobs: This check uses the Rust front-end to detect if the example is valid Rust code.</li>
+<li><code>codegen</code> jobs: This check uses the RMC back-end to determine if we can generate GotoC code.</li>
+<li><code>verification</code> jobs: This check uses CBMC to obtain a verification result.</li>
 </ul>
 <p>Note that these are incremental: A <code>verification</code> job depends on a previous <code>codegen</code> job.
 Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
 <blockquote>
-<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does not support
-hierarchical views nor custom stages at the moment. For this reason, the results are
-displayed for each example using Litani's default stages (<code>BUILD</code>, <code>TEST</code> and <code>REPORT</code>).</p>
+<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does
+not support hierarchical views at the moment. For this reason, we are
+publishing a <a href="./dashboard/dashboard.txt">text version of the dashboard</a> which
+displays the same results in a hierarchical way while we work on adding more
+features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 </blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
 <li>Set the expected output according to flags present in the code snippet.</li>
 <li>Add any required compiler/RMC flags (e.g., CBMC unwinding flags).</li>
-<li>Include custom assertions for verification (only in the case of <code>verification</code> jobs).</li>
 </ol>
 <p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.
 The results are summarized as follows: If the obtained and expected outputs differ,
 the color of the stage bar will be red. Otherwise, it will be blue.
 If an example shows one red bar, it is considered a failed example that cannot be handled by RMC.</p>
-<p>The <a href="./dashboard/index.html">RMC Dashboard</a> is automatically updated whenever
-a PR gets merged into RMC.</p>
+<p>The <a href="./dashboard/index.html">RMC Dashboard</a> and <a href="./dashboard/dashboard.txt">its text version</a> are
+automatically updated whenever a PR gets merged into RMC.</p>
+<h2 id="the-dashboard-procedure"><a class="header" href="#the-dashboard-procedure">The dashboard procedure</a></h2>
+<p>This section describes how the dashboard operates at a high level.</p>
+<p>To kick off the dashboard process use</p>
+<pre><code>./x.py run -i --stage 1 dashboard
+</code></pre>
+<p>The main function of the dashboard is <code>generate_dashboard()</code> in
+<a href="https://github.com/model-checking/rmc/blob/main/src/tools/dashboard/src/books.rs"><code>src/tools/dashboard/src/books.rs</code></a>,
+which follows these steps:</p>
+<ul>
+<li>
+<p>First, it calls the different <code>parse_..._hierarchy()</code> functions which parse
+the summary files for each book.</p>
+</li>
+<li>
+<p>The <code>extract_examples(...)</code> function uses <code>rustdoc</code> to extract all examples
+from the books.</p>
+</li>
+<li>
+<p>Then for each example it will check if there is a corresponding <code>.props</code> file
+in <code>src/tools/dashboard/configs/</code>. The contents of these files (e.g.,
+command-line options) are prepended to the example.</p>
+</li>
+<li>
+<p>All examples are written in the <code>src/test/dashboard/books/</code> folder.</p>
+<p>In general, the path to a given example is
+<code>src/test/dashboard/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
+where <code>&lt;line&gt;</code> is the line number where the example appears in the
+documentation. The <code>.props</code> files mentioned above follow the same naming
+scheme in order to match them and detect conflicts.</p>
+</li>
+<li>
+<p>Then all examples are run using
+<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+</li>
+<li>
+<p>Finally, the Litani log is used to generate the <a href="./dashboard/dashboard.txt">text version of the
+dashboard</a>.</p>
+</li>
+</ul>
 <blockquote>
-<p><strong>Tip:</strong> In addition, we publish a <a href="./dashboard/dashboard.txt">text version of the dashboard</a>
-while we work on adding more features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.
-The <a href="./dashboard/dashboard.txt">text-based dashboard</a> displays the same results in hierarchical way.</p>
+<p><strong>Warning:</strong> Note that any changes done to the examples in
+<code>src/test/dashboard/books/</code> may be gone if the dashboard is executed.</p>
 </blockquote>
 
                     </main>
