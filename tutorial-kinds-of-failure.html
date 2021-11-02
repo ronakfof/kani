@@ -198,9 +198,9 @@ test tests::doesnt_crash ... ok
 <pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
 #[no_mangle]
 fn main() {
-    let size: usize = __nondet();
-    __VERIFIER_assume(size &lt; 4096);
-    let index: usize = __nondet();
+    let size: usize = rmc::nondet();
+    rmc::assume(size &lt; 4096);
+    let index: usize = rmc::nondet();
     let array: Vec&lt;u32&gt; = vec![0; size];
     get_wrapped(index, &amp;array);
 }
@@ -251,25 +251,25 @@ This pattern (two checks for similar issues in safe Rust code) is common, and we
 </ol>
 <p>To navigate this trace to find the information you need, we recommend searching for things you expect to be somewhere in the trace:</p>
 <ol>
-<li>Search the document for <code>__nondet</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
+<li>Search the document for <code>rmc::nondet</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
 We can use this to find out what example values lead to a problem.
-In this case, where we just have a couple of <code>__nondet</code> values in our proof harness, we can learn a lot just by seeing what these are.
+In this case, where we just have a couple of <code>rmc::nondet</code> values in our proof harness, we can learn a lot just by seeing what these are.
 In this trace we find (and the values you get may be different):</li>
 </ol>
 <pre><code>Step 23: Function main, File tests/bounds-check.rs, Line 43
-let size: usize = __nondet();
+let size: usize = rmc::nondet();
 size = 0ul
 
 Step 27: Function main, File tests/bounds-check.rs, Line 45
-let index: usize = __nondet();
+let index: usize = rmc::nondet();
 index = 0ul
 
 Step 36: Function main, File tests/bounds-check.rs, Line 43
-let size: usize = __nondet();
+let size: usize = rmc::nondet();
 size = 2464ul
 
 Step 39: Function main, File tests/bounds-check.rs, Line 45
-let index: usize = __nondet();
+let index: usize = rmc::nondet();
 index = 2463ul
 </code></pre>
 <p>Try not to be fooled by the first assignments: we're seeing zero-initialization there.

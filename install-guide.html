@@ -189,8 +189,9 @@ git submodule update --init
     --set=rust.deny-warnings=false
 </code></pre>
 <p><strong>NOTE: If you skip the above (<code>llvm.download-ci-llvm=true</code> specifically), builds may take a long time as all of LLVM would need to be built from scratch.</strong></p>
-<p>Then build RMC:</p>
+<p>Then build RMC and its library:</p>
 <pre><code>./x.py build -i --stage 1 library/std
+./scripts/setup/build_rmc_lib.sh
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>
 <pre><code>./scripts/rmc-regression.sh

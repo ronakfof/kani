@@ -209,7 +209,7 @@ test tests::doesnt_crash ... ok
 <pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
 #[no_mangle]
 fn main() {
-    let x: u32 = __nondet();
+    let x: u32 = rmc::nondet();
     estimate_size(x);
 }
 </code></pre></pre>
@@ -237,7 +237,7 @@ open report/html/index.html
 <p>The first command runs RMC and generates the html-based report in <code>report/</code>.
 The second command opens that report in your default browser (on mac, on linux desktops try <code>xdg-open</code>).
 From this report, we can find the trace of the failure and filter through it to find the relevant line (at present time, an unfortunate amount of generated code is present in the trace):</p>
-<pre><code>let x: u32 = __nondet();
+<pre><code>let x: u32 = rmc::nondet();
 x = 1023u
 </code></pre>
 <p>Here we're seeing the line of code and the value assigned in this particular trace.
@@ -335,8 +335,8 @@ Here's a revised example of the proof harness, one that now succeeds:</p>
 <pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
 #[no_mangle]
 fn main() {
-    let x: u32 = __nondet();
-    __VERIFIER_assume(x &lt; 4096);
+    let x: u32 = rmc::nondet();
+    rmc::assume(x &lt; 4096);
     let y = estimate_size(x);
     assert!(y &lt; 10);
 }
