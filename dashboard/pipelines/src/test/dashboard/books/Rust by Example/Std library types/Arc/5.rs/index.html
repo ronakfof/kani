@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-04T20:14:10Z</li>
-      <li>c92c74a3-43f7-4af4-8ebf-56cfa2354cf5</li>
+      <li>2021-11-04T21:09:03Z</li>
+      <li>a29f66dc-8fca-4c8d-bc80-292cc6a936f9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e78081be-93f2-4585-b97e-9b8377ae5771">
+              <a href="#job-e13166dc-8ab2-4a80-a6b0-619976d9b3fe">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d7502783-d24b-4844-af01-2a7d683f3911">
+              <a href="#job-5a18fecf-7341-48a7-acd7-304ada2bebe3">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a6aa4b0d-6380-4ffd-ae18-3c7caea6eca7">
+              <a href="#job-5265aa8c-4ab6-4fb3-a492-d73803edddf0">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e78081be-93f2-4585-b97e-9b8377ae5771">
+    <div class="command-table" id="job-e13166dc-8ab2-4a80-a6b0-619976d9b3fe">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e78081be-93f2-4585-b97e-9b8377ae5771">#</a>
+                <a href="#job-e13166dc-8ab2-4a80-a6b0-619976d9b3fe">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:22:39Z
+                2021-11-04T21:16:55Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:22:40Z
+                2021-11-04T21:16:55Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -752,6 +752,27 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::io::Error as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17h1ed856e4a2af12f9E
+WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::ffi::NulError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN62_$LT$std..ffi..c_str..NulError$u20$as$u20$core..fmt..Debug$GT$3fmt17h2fc41020e64f3197E
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(5) }, typ: Code { parameters: [Parameter { typ: StructTag("tag-_9002246437548051943"), identifier: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(38) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(22) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1199, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h81354d315922f576E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17ha08f24ff1ecbb117E::1::var_2" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_10510126200213095521")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hfd3e1591ffc47cc7E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hddfb62637ad42e70E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -782,32 +803,6 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::io::Error as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17h1ed856e4a2af12f9E
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::ffi::NulError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN62_$LT$std..ffi..c_str..NulError$u20$as$u20$core..fmt..Debug$GT$3fmt17h2fc41020e64f3197E
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$std..ffi..c_str..CString$u20$as$u20$core..ops..drop..Drop$GT$4drop17h6bdba0372a5c3866E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_37710006453196354") }, location: None }), typ: StructTag("tag-_37710006453196354"), location: None }, field: "inner" }, typ: StructTag("tag-_18190864693307575946"), location: None }, field: "0" }, typ: StructTag("tag-_6707265178576710486"), location: None }, field: "pointer" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h81354d315922f576E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17ha08f24ff1ecbb117E::1::var_2" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_10510126200213095521")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hfd3e1591ffc47cc7E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17ha919e8e346cd5d9bE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_5689125137589689211") }, location: None }), typ: StructTag("tag-_5689125137589689211"), location: None }, field: "0" }, typ: StructTag("tag-_16060194076379321037"), location: None }, field: "pointer" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -832,6 +827,12 @@ Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_10510126200213095521")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$std..ffi..c_str..CString$u20$as$u20$core..ops..drop..Drop$GT$4drop17h6bdba0372a5c3866E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_37710006453196354") }, location: None }), typ: StructTag("tag-_37710006453196354"), location: None }, field: "inner" }, typ: StructTag("tag-_18190864693307575946"), location: None }, field: "0" }, typ: StructTag("tag-_6707265178576710486"), location: None }, field: "pointer" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
@@ -864,7 +865,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-d7502783-d24b-4844-af01-2a7d683f3911">
+    <div class="command-table" id="job-5a18fecf-7341-48a7-acd7-304ada2bebe3">
       
       <div class="success">
       
@@ -872,7 +873,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-d7502783-d24b-4844-af01-2a7d683f3911">#</a>
+                <a href="#job-5a18fecf-7341-48a7-acd7-304ada2bebe3">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -926,7 +927,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:22:56Z
+                2021-11-04T21:16:55Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -934,7 +935,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:22:57Z
+                2021-11-04T21:16:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -995,6 +996,27 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::io::Error as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17h1ed856e4a2af12f9E
+WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::ffi::NulError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN62_$LT$std..ffi..c_str..NulError$u20$as$u20$core..fmt..Debug$GT$3fmt17h2fc41020e64f3197E
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(5) }, typ: Code { parameters: [Parameter { typ: StructTag("tag-_9002246437548051943"), identifier: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(38) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(9) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1198, col: Some(22) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1199, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), line: 1197, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr41_$LT$impl$u20$$BP$mut$u20$$u5b$T$u5d$$GT$10as_mut_ptr17hd56a0c39a70620b9E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut [T]>::as_mut_ptr"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h81354d315922f576E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17ha08f24ff1ecbb117E::1::var_2" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_10510126200213095521")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hfd3e1591ffc47cc7E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hddfb62637ad42e70E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -1025,32 +1047,6 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::io::Error as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17h1ed856e4a2af12f9E
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::ffi::NulError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN62_$LT$std..ffi..c_str..NulError$u20$as$u20$core..fmt..Debug$GT$3fmt17h2fc41020e64f3197E
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$std..ffi..c_str..CString$u20$as$u20$core..ops..drop..Drop$GT$4drop17h6bdba0372a5c3866E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_37710006453196354") }, location: None }), typ: StructTag("tag-_37710006453196354"), location: None }, field: "inner" }, typ: StructTag("tag-_18190864693307575946"), location: None }, field: "0" }, typ: StructTag("tag-_6707265178576710486"), location: None }, field: "pointer" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h81354d315922f576E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17ha08f24ff1ecbb117E::1::var_2" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_10510126200213095521")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hfd3e1591ffc47cc7E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17ha919e8e346cd5d9bE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_5689125137589689211") }, location: None }), typ: StructTag("tag-_5689125137589689211"), location: None }, field: "0" }, typ: StructTag("tag-_16060194076379321037"), location: None }, field: "pointer" }, typ: StructTag("tag-_10510126200213095521"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -1075,6 +1071,12 @@ Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_10510126200213095521")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$std..ffi..c_str..CString$u20$as$u20$core..ops..drop..Drop$GT$4drop17h6bdba0372a5c3866E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_37710006453196354") }, location: None }), typ: StructTag("tag-_37710006453196354"), location: None }, field: "inner" }, typ: StructTag("tag-_18190864693307575946"), location: None }, field: "0" }, typ: StructTag("tag-_6707265178576710486"), location: None }, field: "pointer" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
@@ -1107,7 +1109,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a6aa4b0d-6380-4ffd-ae18-3c7caea6eca7">
+    <div class="command-table" id="job-5265aa8c-4ab6-4fb3-a492-d73803edddf0">
       
       <div class="fail">
       
@@ -1115,7 +1117,7 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a6aa4b0d-6380-4ffd-ae18-3c7caea6eca7">#</a>
+                <a href="#job-5265aa8c-4ab6-4fb3-a492-d73803edddf0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1169,15 +1171,15 @@ WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for 
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:22:58Z
+                2021-11-04T21:16:56Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01m 01s
+                01m 02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:23:59Z
+                2021-11-04T21:17:58Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">

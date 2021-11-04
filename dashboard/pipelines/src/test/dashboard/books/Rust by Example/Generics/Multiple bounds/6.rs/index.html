@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-04T20:14:10Z</li>
-      <li>c92c74a3-43f7-4af4-8ebf-56cfa2354cf5</li>
+      <li>2021-11-04T21:09:03Z</li>
+      <li>a29f66dc-8fca-4c8d-bc80-292cc6a936f9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-bdec0ed4-efc5-4f34-99f0-2729ea8f5d77">
+              <a href="#job-6a563927-5982-43ec-807b-be31589915dd">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f2513ca7-8ae0-4259-8692-9d3ac2f346c3">
+              <a href="#job-a7a11e31-366d-4709-8422-3ba2ca15e252">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-6b586454-1d93-4044-9439-52b820c6ec21">
+              <a href="#job-0f76e504-1fac-425b-95c7-6e3a598d1dbc">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-bdec0ed4-efc5-4f34-99f0-2729ea8f5d77">
+    <div class="command-table" id="job-6a563927-5982-43ec-807b-be31589915dd">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-bdec0ed4-efc5-4f34-99f0-2729ea8f5d77">#</a>
+                <a href="#job-6a563927-5982-43ec-807b-be31589915dd">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:23:36Z
+                2021-11-04T21:11:56Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:23:37Z
+                2021-11-04T21:11:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -717,6 +717,18 @@ a:visited:active {
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hdd1b6d0fca352432E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
 Pointer { typ: StructTag("tag-str") }
@@ -741,19 +753,13 @@ Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_14" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h836765ef987d8c6cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_17" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h4eec8a322c15828fE::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17ha3c02ef2603135e0E::1::var_1::reference" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -770,15 +776,27 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h46c5001cdd1f2c2aE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_14" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_17" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h46c5001cdd1f2c2aE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h4eec8a322c15828fE::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h4ca01d4b37ff7ee3E::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -807,24 +825,6 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h836765ef987d8c6cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17ha3c02ef2603135e0E::1::var_1::reference" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h4ca01d4b37ff7ee3E::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -843,7 +843,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f2513ca7-8ae0-4259-8692-9d3ac2f346c3">
+    <div class="command-table" id="job-a7a11e31-366d-4709-8422-3ba2ca15e252">
       
       <div class="success">
       
@@ -851,7 +851,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f2513ca7-8ae0-4259-8692-9d3ac2f346c3">#</a>
+                <a href="#job-a7a11e31-366d-4709-8422-3ba2ca15e252">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -905,7 +905,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:23:37Z
+                2021-11-04T21:11:56Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -913,7 +913,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:23:38Z
+                2021-11-04T21:11:57Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -939,6 +939,18 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hdd1b6d0fca352432E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
 Pointer { typ: StructTag("tag-str") }
@@ -963,19 +975,13 @@ Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_14" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h836765ef987d8c6cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_17" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h4eec8a322c15828fE::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17ha3c02ef2603135e0E::1::var_1::reference" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -992,15 +998,27 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h46c5001cdd1f2c2aE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_14" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h887cf947f3277007E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h33aca59fa2ecad5bE::1::var_17" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h46c5001cdd1f2c2aE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h46c5001cdd1f2c2aE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h4eec8a322c15828fE::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h4ca01d4b37ff7ee3E::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -1029,24 +1047,6 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h836765ef987d8c6cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17ha3c02ef2603135e0E::1::var_1::reference" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h4ca01d4b37ff7ee3E::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -1065,7 +1065,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-6b586454-1d93-4044-9439-52b820c6ec21">
+    <div class="command-table" id="job-0f76e504-1fac-425b-95c7-6e3a598d1dbc">
       
       <div class="fail">
       
@@ -1073,7 +1073,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-6b586454-1d93-4044-9439-52b820c6ec21">#</a>
+                <a href="#job-0f76e504-1fac-425b-95c7-6e3a598d1dbc">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1127,7 +1127,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-04T20:23:38Z
+                2021-11-04T21:12:28Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1135,7 +1135,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-04T20:23:40Z
+                2021-11-04T21:12:30Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1173,11 +1173,11 @@ Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs45YcXQAG
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs45YcXQAGCSU_1_6.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCs45YcXQAGCSU_1_6.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VeclEECs45YcXQAGCSU_1_6.1 iteration 1  thread 0
-Runtime Symex: 0.18233s
-size of program expression: 2141 steps
+Runtime Symex: 0.0765309s
+size of program expression: 2148 steps
 simple slicing removed 61 assignments
 Generated 123 VCC(s), 29 remaining after simplification
-Runtime Postprocess Equation: 0.0002927s
+Runtime Postprocess Equation: 0.000251403s
 Passing problem to propositional reduction
 converting SSA
 warning: ignoring typecast
@@ -1261,44 +1261,44 @@ warning: ignoring typecast
 * #typedef: __CPROVER_size_t
 * #c_type: unsigned_long_int
 * value: 3
-Runtime Convert SSA: 0.0253571s
+Runtime Convert SSA: 0.0207934s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.65e-05s
+Runtime Post-process: 4.8501e-05s
 Solving with MiniSAT 2.2.1 with simplifier
-38756 variables, 7986 clauses
+38784 variables, 8034 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0159306s
-Runtime decision procedure: 0.0441835s
+Runtime Solver: 0.0178549s
+Runtime decision procedure: 0.0485061s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-38756 variables, 142 clauses
+38784 variables, 142 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.0002313s
-Runtime decision procedure: 0.0002943s
+Runtime Solver: 0.000146602s
+Runtime decision procedure: 0.000207003s
 
 ** Results:
 [assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Signedbv { width: 32 } } (MIR type Ref(ReErased, i32, Not)). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [overflow.1] arithmetic overflow on unsigned * in 4 * var_4.len: SUCCESS
-[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.4] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
+[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.4] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
 [pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
 [pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
 [pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
 [pointer_arithmetic.10] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
 [pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
 [pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.16] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.16] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
 [pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 function _RINvCs45YcXQAGCSU_1_613compare_typesAlj3_INtNtCs33scZ6i20Fm_5alloc3vec3VeclEEB2_::1::var_17$object
 [_RINvCs45YcXQAGCSU_1_613compare_typesAlj3_INtNtCs33scZ6i20Fm_5alloc3vec3VeclEEB2_::1::var_17$object.assertion.1] assertion false: SUCCESS
@@ -1374,6 +1374,17 @@ function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
 
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
 [alloc::alloc::box_free.assertion.1] line 331 resume instruction: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::exchange_malloc
+[alloc::alloc::exchange_malloc.assertion.2] line 318 unreachable code: SUCCESS
+[alloc::alloc::exchange_malloc.pointer_arithmetic.1] line 318 pointer arithmetic: dead object in (unsigned char *)&var_6 + 0: SUCCESS
+[alloc::alloc::exchange_malloc.pointer_dereference.1] line 318 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_6 + 0)): SUCCESS
+[alloc::alloc::exchange_malloc.assertion.1] line 320 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::Global::alloc_impl
+[std::alloc::Global::alloc_impl.assertion.1] line 170 unreachable code: SUCCESS
+[std::alloc::Global::alloc_impl.pointer_arithmetic.1] line 170 pointer arithmetic: dead object in (unsigned char *)&var_15 + 0: SUCCESS
+[std::alloc::Global::alloc_impl.pointer_dereference.1] line 170 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_15 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
 [std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
@@ -1585,6 +1596,13 @@ function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
 [std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
 
+/home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
+[std::option::Option::<T>::ok_or.assertion.1] line 925 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 925 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.1] line 925 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 927 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.2] line 927 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
 /home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::add
 [std::ptr::const_ptr::<impl *const T>::add.overflow.1] line 516 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
 
@@ -1607,6 +1625,10 @@ function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
 [std::ptr::drop_in_place.pointer_dereference.11] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
 
+/home/runner/work/rmc/rmc/library/core/src/ptr/non_null.rs function std::ptr::NonNull::<T>::new
+[std::ptr::NonNull::<T>::new.pointer_arithmetic.1] line 218 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::ptr::NonNull::<T>::new.pointer_dereference.1] line 218 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
 /home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 121 dereference failure: pointer NULL in *self: SUCCESS
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 121 dereference failure: pointer invalid in *self: SUCCESS
@@ -1614,6 +1636,17 @@ function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 121 dereference failure: dead object in *self: SUCCESS
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 121 dereference failure: pointer outside object bounds in *self: SUCCESS
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1899 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1899 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1901 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1911 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/slice/iter.rs function std::slice::Iter::<'a, T>::new
 [std::slice::Iter::<'a, T>::new.assertion.1] line 91 assumption failed: SUCCESS
@@ -1851,7 +1884,7 @@ function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
 <builtin-library-truncf> function truncf
 [truncf.assertion.1] assertion false: SUCCESS
 
-** 1 of 360 failed (2 iterations)
+** 1 of 381 failed (2 iterations)
 VERIFICATION FAILED
 
             </xmp>
