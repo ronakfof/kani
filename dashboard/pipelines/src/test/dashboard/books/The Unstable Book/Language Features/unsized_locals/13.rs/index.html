@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-05T01:51:32Z</li>
-      <li>86274e58-50b2-44f2-aae2-510a2dea7ba6</li>
+      <li>2021-11-05T15:08:54Z</li>
+      <li>9edf6502-e54c-4815-a2d8-18cc42672af4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -537,7 +537,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-4defab7f-d5d4-4b85-84b6-0841d294548a">
+              <a href="#job-a2633fb5-f384-4691-9d2f-74c6b28aac74">
               
               Is this valid Rust code?
               
@@ -567,7 +567,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-732f2183-3000-4bc7-be69-198fe1a490fc">
+              <a href="#job-dd71f2b0-ab3f-4202-9974-5319ec66bf9d">
               
               Does RMC support all the Rust features used in it?
               
@@ -597,7 +597,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-fb0b0b28-c65b-4e64-83ed-e7e32bef816c">
+              <a href="#job-c902fa53-4852-49af-889d-da5ad0a2aeb0">
               
               Can RMC reason about it?
               
@@ -625,7 +625,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-4defab7f-d5d4-4b85-84b6-0841d294548a">
+    <div class="command-table" id="job-a2633fb5-f384-4691-9d2f-74c6b28aac74">
       
       <div class="fail">
       
@@ -633,7 +633,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-4defab7f-d5d4-4b85-84b6-0841d294548a">#</a>
+                <a href="#job-a2633fb5-f384-4691-9d2f-74c6b28aac74">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -687,7 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-05T01:55:31Z
+                2021-11-05T15:17:38Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +695,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-05T01:55:31Z
+                2021-11-05T15:17:38Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -721,12 +721,12 @@ a:visited:active {
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_1::x" }, typ: StructTag("tag-_10845887602398021097"), location: None }, field: "0" }, typ: StructTag("tag-_4459035829908943618"), location: None }, field: "pointer" }, typ: StructTag("tag-_4095434807960081686"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 337 }) }, typ: StructTag(InternedString(SymbolU32 { value: 336 })), location: None }, field: InternedString(SymbolU32 { value: 97 }) }, typ: StructTag(InternedString(SymbolU32 { value: 191 })), location: None }, field: InternedString(SymbolU32 { value: 96 }) }, typ: StructTag(InternedString(SymbolU32 { value: 107 })), location: None }, field: InternedString(SymbolU32 { value: 108 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_4095434807960081686")
-thread 'rustc' panicked at 'called `Option::unwrap()` on a `None` value', compiler/rustc_codegen_rmc/src/codegen/operand.rs:38:69
+StructTag(InternedString(SymbolU32 { value: 107 }))
+thread 'rustc' panicked at 'called `Option::unwrap()` on a `None` value', compiler/rustc_codegen_rmc/src/codegen/operand.rs:39:69
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 error: internal compiler error: unexpected panic
@@ -744,7 +744,7 @@ end of query stack
 
 [RMC] current codegen item: codegen_function: main
 main
-[RMC] current codegen location: Loc { file: "/home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Language Features/unsized_locals/13.rs", function: None, line: 8, col: Some(1) }
+[RMC] current codegen location: Loc { file: InternedString(SymbolU32 { value: 99 }), function: None, line: 8, col: Some(1) }
 
 RMC unexpectedly panicked during code generation.
 
@@ -767,7 +767,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-732f2183-3000-4bc7-be69-198fe1a490fc">
+    <div class="command-table" id="job-dd71f2b0-ab3f-4202-9974-5319ec66bf9d">
       
       <div class="in-progress">
       
@@ -775,7 +775,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-732f2183-3000-4bc7-be69-198fe1a490fc">#</a>
+                <a href="#job-dd71f2b0-ab3f-4202-9974-5319ec66bf9d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -818,7 +818,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-fb0b0b28-c65b-4e64-83ed-e7e32bef816c">
+    <div class="command-table" id="job-c902fa53-4852-49af-889d-da5ad0a2aeb0">
       
       <div class="in-progress">
       
@@ -826,7 +826,7 @@ If you are seeing this message, please file an issue here instead of on the Rust
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-fb0b0b28-c65b-4e64-83ed-e7e32bef816c">#</a>
+                <a href="#job-c902fa53-4852-49af-889d-da5ad0a2aeb0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">

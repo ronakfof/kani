@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-05T01:51:32Z</li>
-      <li>86274e58-50b2-44f2-aae2-510a2dea7ba6</li>
+      <li>2021-11-05T15:08:54Z</li>
+      <li>9edf6502-e54c-4815-a2d8-18cc42672af4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-850a9293-783c-4250-8fea-2bce1e89a796">
+              <a href="#job-f49917e9-d877-4f85-a30d-aedfd81d40ec">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2822ff7b-1192-4b9e-8c50-537f9c23d50f">
+              <a href="#job-6bf06e7b-724b-40e3-9fd1-1bfe823bc399">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-6ada60e3-5d02-411c-9cd7-9f19104c68af">
+              <a href="#job-869f775d-88f4-4417-8532-a3a60b9431b7">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-850a9293-783c-4250-8fea-2bce1e89a796">
+    <div class="command-table" id="job-f49917e9-d877-4f85-a30d-aedfd81d40ec">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-850a9293-783c-4250-8fea-2bce1e89a796">#</a>
+                <a href="#job-f49917e9-d877-4f85-a30d-aedfd81d40ec">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-05T02:01:41Z
+                2021-11-05T15:13:57Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-05T02:01:41Z
+                2021-11-05T15:13:58Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -717,65 +717,65 @@ a:visited:active {
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_2::animal" }, typ: StructTag("tag-_8072749731783240399"), location: None }, field: "0" }, typ: StructTag("tag-_10693477918243725490"), location: None }, field: "pointer" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 513 }) }, typ: StructTag(InternedString(SymbolU32 { value: 131 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 134 })), location: None }, field: InternedString(SymbolU32 { value: 99 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr38drop_in_place$LT$dyn$u20$9..Animal$GT$17h0000aa574cc0b679E::1::var_1" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 158 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr63drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$9..Animal$GT$$GT$17heb84b8a59ba74100E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_8072749731783240399") }, location: None }), typ: StructTag("tag-_8072749731783240399"), location: None }, field: "0" }, typ: StructTag("tag-_10693477918243725490"), location: None }, field: "pointer" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 160 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 131 })) }, location: None }), typ: StructTag(InternedString(SymbolU32 { value: 131 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 134 })), location: None }, field: InternedString(SymbolU32 { value: 99 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h95a9ad9a196dca06E::1::var_2" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 647 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17hbf7d555c5346f04dE::1::var_5" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 749 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17hbf7d555c5346f04dE::1::var_9" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 753 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 801 }) }, typ: StructTag(InternedString(SymbolU32 { value: 361 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-str") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 803 }) }, typ: StructTag(InternedString(SymbolU32 { value: 420 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 806 }) }, typ: StructTag(InternedString(SymbolU32 { value: 361 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-str") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 809 }) }, typ: StructTag(InternedString(SymbolU32 { value: 420 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -794,7 +794,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2822ff7b-1192-4b9e-8c50-537f9c23d50f">
+    <div class="command-table" id="job-6bf06e7b-724b-40e3-9fd1-1bfe823bc399">
       
       <div class="success">
       
@@ -802,7 +802,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2822ff7b-1192-4b9e-8c50-537f9c23d50f">#</a>
+                <a href="#job-6bf06e7b-724b-40e3-9fd1-1bfe823bc399">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -856,7 +856,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-05T02:01:42Z
+                2021-11-05T15:13:58Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -864,7 +864,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-05T02:01:42Z
+                2021-11-05T15:13:58Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -890,65 +890,65 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_2::animal" }, typ: StructTag("tag-_8072749731783240399"), location: None }, field: "0" }, typ: StructTag("tag-_10693477918243725490"), location: None }, field: "pointer" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 513 }) }, typ: StructTag(InternedString(SymbolU32 { value: 131 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 134 })), location: None }, field: InternedString(SymbolU32 { value: 99 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr38drop_in_place$LT$dyn$u20$9..Animal$GT$17h0000aa574cc0b679E::1::var_1" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 158 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr63drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$9..Animal$GT$$GT$17heb84b8a59ba74100E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_8072749731783240399") }, location: None }), typ: StructTag("tag-_8072749731783240399"), location: None }, field: "0" }, typ: StructTag("tag-_10693477918243725490"), location: None }, field: "pointer" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 160 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 131 })) }, location: None }), typ: StructTag(InternedString(SymbolU32 { value: 131 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 134 })), location: None }, field: InternedString(SymbolU32 { value: 99 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h95a9ad9a196dca06E::1::var_2" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 647 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17hbf7d555c5346f04dE::1::var_5" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 749 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17hbf7d555c5346f04dE::1::var_9" }, typ: StructTag("tag-_15334261599096309808"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 753 }) }, typ: StructTag(InternedString(SymbolU32 { value: 141 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
-StructTag("tag-_15334261599096309808")
+StructTag(InternedString(SymbolU32 { value: 141 }))
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 801 }) }, typ: StructTag(InternedString(SymbolU32 { value: 361 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-str") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 803 }) }, typ: StructTag(InternedString(SymbolU32 { value: 420 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 806 }) }, typ: StructTag(InternedString(SymbolU32 { value: 361 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-str") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 120 })) }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h6caca6f71bdc0b8aE::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 809 }) }, typ: StructTag(InternedString(SymbolU32 { value: 420 })), location: None }, field: InternedString(SymbolU32 { value: 121 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }, location: None }
 Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
+Pointer { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
 Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 414 })) }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -967,7 +967,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-6ada60e3-5d02-411c-9cd7-9f19104c68af">
+    <div class="command-table" id="job-869f775d-88f4-4417-8532-a3a60b9431b7">
       
       <div class="fail">
       
@@ -975,7 +975,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-6ada60e3-5d02-411c-9cd7-9f19104c68af">#</a>
+                <a href="#job-869f775d-88f4-4417-8532-a3a60b9431b7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1029,7 +1029,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-05T02:01:42Z
+                2021-11-05T15:14:37Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1037,7 +1037,7 @@ FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-05T02:01:43Z
+                2021-11-05T15:14:38Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1074,33 +1074,33 @@ Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs1fp6WkfRlpb_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxDNtCs1fp6WkfRlpb_1_96AnimalEL_EEB1i_.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.0535563s
+Runtime Symex: 0.0603346s
 size of program expression: 974 steps
 simple slicing removed 23 assignments
 Generated 75 VCC(s), 16 remaining after simplification
-Runtime Postprocess Equation: 9.8007e-05s
+Runtime Postprocess Equation: 8e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00741527s
+Runtime Convert SSA: 0.0055064s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 8.8206e-05s
+Runtime Post-process: 4.6e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 14020 variables, 2775 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00297563s
-Runtime decision procedure: 0.0114107s
+Runtime Solver: 0.011898s
+Runtime decision procedure: 0.0248721s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 14020 variables, 25 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 5.1204e-05s
-Runtime decision procedure: 9.5908e-05s
+Runtime Solver: 4.54e-05s
+Runtime decision procedure: 8.78e-05s
 
 ** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13026364461508016568") (MIR type Adt(Sheep, [])). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag(InternedString(SymbolU32 { value: 83 })) (MIR type Adt(Cow, [])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_14368140615807297037") (MIR type Adt(Cow, [])). Please report failures:
+[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag(InternedString(SymbolU32 { value: 105 })) (MIR type Adt(Sheep, [])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_dereference.1] dereference failure: pointer NULL in var_16.vtable->3: SUCCESS
 [pointer_dereference.2] dereference failure: pointer invalid in var_16.vtable->3: SUCCESS
@@ -1165,8 +1165,8 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_dereference.61] dereference failure: dead object in var_1->0: SUCCESS
 [pointer_dereference.62] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
 [pointer_dereference.63] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_1): SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_1): SUCCESS
+[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 function _RINvMs1_NtCs61cxoXOqFbB_4core3fmtNtB6_10ArgumentV13newReECs1fp6WkfRlpb_1_9::1::var_2::f$object
 [_RINvMs1_NtCs61cxoXOqFbB_4core3fmtNtB6_10ArgumentV13newReECs1fp6WkfRlpb_1_9::1::var_2::f$object.assertion.1] assertion false: SUCCESS
 
@@ -1318,7 +1318,7 @@ function main::1::var_20$object
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Traits/Returning Traits with dyn/9.rs function main
 [main.assertion.2] line 34 resume instruction: SUCCESS
-[main.assertion.1] line 37 Non-null virtual function call for "3": SUCCESS
+[main.assertion.1] line 37 Non-null virtual function call for InternedString(SymbolU32 { value: 148 }): SUCCESS
 [main.pointer_dereference.1] line 37 dereference failure: pointer NULL in var_16.vtable->3: SUCCESS
 [main.pointer_dereference.2] line 37 dereference failure: pointer invalid in var_16.vtable->3: SUCCESS
 [main.pointer_dereference.3] line 37 dereference failure: deallocated dynamic object in var_16.vtable->3: SUCCESS
