@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-09T00:18:59Z</li>
-      <li>12331f68-125b-4c3f-ae00-b09e6b985ba9</li>
+      <li>2021-11-09T19:11:14Z</li>
+      <li>ace39921-577a-4d3b-85a3-23c6555653e9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-0168a5d4-c4d9-4f60-bc96-5db696efe983">
+              <a href="#job-081aed3e-a3cb-4f2b-9e81-c408c5004cb3">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-19c0c116-fedb-4b1a-8d56-f68df7bbca32">
+              <a href="#job-d027cb93-3d69-494f-9d42-1a6e4fda29ca">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-78cd71b5-1389-44c1-9516-8c1c680c2ca9">
+              <a href="#job-4b7df8ca-183c-4351-90d4-fcbc46e29f02">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-0168a5d4-c4d9-4f60-bc96-5db696efe983">
+    <div class="command-table" id="job-081aed3e-a3cb-4f2b-9e81-c408c5004cb3">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-0168a5d4-c4d9-4f60-bc96-5db696efe983">#</a>
+                <a href="#job-081aed3e-a3cb-4f2b-9e81-c408c5004cb3">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:21:44Z
+                2021-11-09T19:14:19Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:21:44Z
+                2021-11-09T19:14:19Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -726,29 +726,29 @@ warning: the feature `inline_const` is incomplete and may not be safe to use and
 = note: see issue #76001 <https://github.com/rust-lang/rust/issues/76001> for more information
 
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 259 }) }, typ: StructTag(InternedString(SymbolU32 { value: 90 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+Pointer { typ: StructTag("tag-str") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+FlexibleArray { typ: StructTag("tag-str") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 261 }) }, typ: StructTag(InternedString(SymbolU32 { value: 195 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 264 }) }, typ: StructTag(InternedString(SymbolU32 { value: 90 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+Pointer { typ: StructTag("tag-str") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+FlexibleArray { typ: StructTag("tag-str") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 269 }) }, typ: StructTag(InternedString(SymbolU32 { value: 195 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 warning: 1 warning emitted
 
             </xmp>
@@ -769,7 +769,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-19c0c116-fedb-4b1a-8d56-f68df7bbca32">
+    <div class="command-table" id="job-d027cb93-3d69-494f-9d42-1a6e4fda29ca">
       
       <div class="success">
       
@@ -777,7 +777,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-19c0c116-fedb-4b1a-8d56-f68df7bbca32">#</a>
+                <a href="#job-d027cb93-3d69-494f-9d42-1a6e4fda29ca">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -831,7 +831,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:24:39Z
+                2021-11-09T19:22:35Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -839,7 +839,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:24:39Z
+                2021-11-09T19:22:35Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -874,29 +874,29 @@ warning: the feature `inline_const` is incomplete and may not be safe to use and
 = note: see issue #76001 <https://github.com/rust-lang/rust/issues/76001> for more information
 
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 259 }) }, typ: StructTag(InternedString(SymbolU32 { value: 90 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+Pointer { typ: StructTag("tag-str") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+FlexibleArray { typ: StructTag("tag-str") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 261 }) }, typ: StructTag(InternedString(SymbolU32 { value: 195 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 264 }) }, typ: StructTag(InternedString(SymbolU32 { value: 90 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+Pointer { typ: StructTag("tag-str") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 87 })) }
+FlexibleArray { typ: StructTag("tag-str") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 269 }) }, typ: StructTag(InternedString(SymbolU32 { value: 195 })), location: None }, field: InternedString(SymbolU32 { value: 88 }) }, typ: Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117hc91e270ce56d5018E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
 Expr type
-Pointer { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
-FlexibleArray { typ: StructTag(InternedString(SymbolU32 { value: 95 })) }
+FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 warning: 1 warning emitted
 
             </xmp>
@@ -917,7 +917,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-78cd71b5-1389-44c1-9516-8c1c680c2ca9">
+    <div class="command-table" id="job-4b7df8ca-183c-4351-90d4-fcbc46e29f02">
       
       <div class="fail">
       
@@ -925,7 +925,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-78cd71b5-1389-44c1-9516-8c1c680c2ca9">#</a>
+                <a href="#job-4b7df8ca-183c-4351-90d4-fcbc46e29f02">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -979,7 +979,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:24:40Z
+                2021-11-09T19:22:35Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -987,7 +987,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:24:40Z
+                2021-11-09T19:22:35Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1020,22 +1020,22 @@ Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CsfKhK9dXZo2R_2_32.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.0144598s
+Runtime Symex: 0.00764708s
 size of program expression: 284 steps
 simple slicing removed 4 assignments
 Generated 4 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 2.8201e-05s
+Runtime Postprocess Equation: 4.3503e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00177053s
+Runtime Convert SSA: 0.00197895s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 3.8101e-05s
+Runtime Post-process: 5.8005e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 3930 variables, 980 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000930417s
-Runtime decision procedure: 0.00277865s
+Runtime Solver: 0.0013517s
+Runtime decision procedure: 0.00490047s
 
 ** Results:
 function _ZN3std2io5stdio6_print17h8a4943aaa5dd417dE

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-09T00:18:59Z</li>
-      <li>12331f68-125b-4c3f-ae00-b09e6b985ba9</li>
+      <li>2021-11-09T19:11:14Z</li>
+      <li>ace39921-577a-4d3b-85a3-23c6555653e9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a495a470-e078-429d-95ed-e1f1655ca789">
+              <a href="#job-043f4970-0f13-4165-a969-cdf0cbbb5d08">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-46be32dc-672c-4bdf-acf4-4bde72d725c7">
+              <a href="#job-0ec2a1cf-a537-4896-8422-ce442976f9e6">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-67c986e3-2105-44d2-b1bd-c03e0b5c1475">
+              <a href="#job-f2d0c20b-40b4-48aa-b729-1eb584640ada">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-a495a470-e078-429d-95ed-e1f1655ca789">
+    <div class="command-table" id="job-043f4970-0f13-4165-a969-cdf0cbbb5d08">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-a495a470-e078-429d-95ed-e1f1655ca789">#</a>
+                <a href="#job-043f4970-0f13-4165-a969-cdf0cbbb5d08">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:22:09Z
+                2021-11-09T19:14:27Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:22:09Z
+                2021-11-09T19:14:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -726,25 +726,25 @@ warning: the feature `unsized_locals` is incomplete and may not be safe to use a
 = note: see issue #48055 <https://github.com/rust-lang/rust/issues/48055> for more information
 
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 315 }) }, typ: StructTag(InternedString(SymbolU32 { value: 314 })), location: None }, field: InternedString(SymbolU32 { value: 84 }) }, typ: StructTag(InternedString(SymbolU32 { value: 147 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_1::x" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 430 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h55cce7396eb3441fE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 434 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h55cce7396eb3441fE::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 469 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hc54d7dea49b71222E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -769,7 +769,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-46be32dc-672c-4bdf-acf4-4bde72d725c7">
+    <div class="command-table" id="job-0ec2a1cf-a537-4896-8422-ce442976f9e6">
       
       <div class="success">
       
@@ -777,7 +777,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-46be32dc-672c-4bdf-acf4-4bde72d725c7">#</a>
+                <a href="#job-0ec2a1cf-a537-4896-8422-ce442976f9e6">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -831,7 +831,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:22:37Z
+                2021-11-09T19:14:28Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -839,7 +839,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:22:37Z
+                2021-11-09T19:14:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -874,25 +874,25 @@ warning: the feature `unsized_locals` is incomplete and may not be safe to use a
 = note: see issue #48055 <https://github.com/rust-lang/rust/issues/48055> for more information
 
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 315 }) }, typ: StructTag(InternedString(SymbolU32 { value: 314 })), location: None }, field: InternedString(SymbolU32 { value: 84 }) }, typ: StructTag(InternedString(SymbolU32 { value: 147 })), location: None }, field: InternedString(SymbolU32 { value: 100 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_1::x" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 430 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h55cce7396eb3441fE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 434 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h55cce7396eb3441fE::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: InternedString(SymbolU32 { value: 469 }) }, typ: StructTag(InternedString(SymbolU32 { value: 152 })), location: None }, field: InternedString(SymbolU32 { value: 137 }) }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17hc54d7dea49b71222E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -917,7 +917,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-67c986e3-2105-44d2-b1bd-c03e0b5c1475">
+    <div class="command-table" id="job-f2d0c20b-40b4-48aa-b729-1eb584640ada">
       
       <div class="fail">
       
@@ -925,7 +925,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-67c986e3-2105-44d2-b1bd-c03e0b5c1475">#</a>
+                <a href="#job-f2d0c20b-40b4-48aa-b729-1eb584640ada">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -979,15 +979,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T00:29:37Z
+                2021-11-09T19:14:47Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T00:29:38Z
+                2021-11-09T19:14:47Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1019,22 +1019,22 @@ Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 8 object bits, 56 offset bits (default)
 Starting Bounded Model Checking
-Runtime Symex: 0.0250981s
+Runtime Symex: 0.0267651s
 size of program expression: 521 steps
 simple slicing removed 323 assignments
 Generated 73 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 5.4701e-05s
+Runtime Postprocess Equation: 6.8405e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00104342s
+Runtime Convert SSA: 0.00106087s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.1301e-05s
+Runtime Post-process: 5.9604e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 1181 variables, 242 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000372507s
-Runtime decision procedure: 0.00150563s
+Runtime Solver: 0.000393828s
+Runtime decision procedure: 0.00153911s
 
 ** Results:
 [assertion.1] Reached assignment statement with unequal types FlexibleArray { typ: Signedbv { width: 32 } } Pointer { typ: Signedbv { width: 32 } }: FAILURE
