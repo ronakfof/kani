@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-09T19:11:14Z</li>
-      <li>ace39921-577a-4d3b-85a3-23c6555653e9</li>
+      <li>2021-11-10T20:13:57Z</li>
+      <li>f2529a8b-02f7-414d-805b-ec6ff851d581</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-304ba84f-ff55-4ac3-831c-015f236268f8">
+              <a href="#job-312ba50e-ba90-4817-989f-278fb5ea281a">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7fb10dcc-df83-4e67-ab31-d47d1cf46259">
+              <a href="#job-06efad37-fc64-4eef-9001-7c657c90fd7c">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,17 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ec0bc7e0-4310-4512-ba28-630b21b250d6">
+              <a href="#job-c7686a73-bbc6-4045-9afe-058a701c2cd5">
               
               Can RMC reason about it?
               
@@ -621,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-304ba84f-ff55-4ac3-831c-015f236268f8">
+    <div class="command-table" id="job-312ba50e-ba90-4817-989f-278fb5ea281a">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-304ba84f-ff55-4ac3-831c-015f236268f8">#</a>
+                <a href="#job-312ba50e-ba90-4817-989f-278fb5ea281a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -651,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                1
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -683,22 +687,22 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-09T19:15:06Z
+                2021-11-10T20:16:48Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-09T19:15:07Z
+                2021-11-10T20:16:48Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              yes
+              no
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -713,6 +717,23 @@ a:visited:active {
 
           
 
+          
+          <div class="output-box"><xmp>stderr:
+            
+error[E0658]: const operands for inline assembly are unstable
+--> src/test/dashboard/books/The Unstable Book/Library Features/asm/119.rs:7:45
+|
+7 |     asm!("add {0}, {number}", inout(reg) x, number = const 5);
+|                                             ^^^^^^^^^^^^^^^^
+|
+= note: see issue #72016 <https://github.com/rust-lang/rust/issues/72016> for more information
+= help: add `#![feature(asm_const)]` to the crate attributes to enable
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0658`.
+            </xmp>
+          </div><!-- class="output-box" -->
           
 
         </div><!-- class="command-content" -->
@@ -729,15 +750,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7fb10dcc-df83-4e67-ab31-d47d1cf46259">
+    <div class="command-table" id="job-06efad37-fc64-4eef-9001-7c657c90fd7c">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7fb10dcc-df83-4e67-ab31-d47d1cf46259">#</a>
+                <a href="#job-06efad37-fc64-4eef-9001-7c657c90fd7c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -754,63 +775,6 @@ a:visited:active {
             </p>
           </div><!-- class="command-invocation" -->
 
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2021-11-09T19:20:26Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                00s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2021-11-09T19:20:26Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
           
 
           
@@ -837,15 +801,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ec0bc7e0-4310-4512-ba28-630b21b250d6">
+    <div class="command-table" id="job-c7686a73-bbc6-4045-9afe-058a701c2cd5">
       
-      <div class="fail">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ec0bc7e0-4310-4512-ba28-630b21b250d6">#</a>
+                <a href="#job-c7686a73-bbc6-4045-9afe-058a701c2cd5">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -863,63 +827,6 @@ a:visited:active {
           </div><!-- class="command-invocation" -->
 
           
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                10
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2021-11-09T19:20:27Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                00s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2021-11-09T19:20:27Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              no
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
 
           
 
@@ -927,241 +834,6 @@ a:visited:active {
           
 
 
-          
-          <div class="output-box"><xmp>stdout:
-            
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/dashboard/books/The Unstable Book/Library Features/asm/119.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 8 object bits, 56 offset bits (default)
-Starting Bounded Model Checking
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Library Features/asm/119.rs line 7 column 5 function main thread 0
-Runtime Symex: 0.00343566s
-size of program expression: 133 steps
-simple slicing removed 3 assignments
-Generated 3 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 1.3101e-05s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.000696753s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 3.2403e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-1466 variables, 33 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000239618s
-Runtime decision procedure: 0.00101148s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Unsignedbv { width: 64 } } (MIR type Ref(ReErased, u64, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-function _ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u64$GT$3fmt17h9e3980f0b9a67180E
-[_ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u64$GT$3fmt17h9e3980f0b9a67180E.assertion.1] assertion false: SUCCESS
-
-function _ZN4core3fmt3num53_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$u64$GT$3fmt17hf45c9ed6c466ba5aE
-[_ZN4core3fmt3num53_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$u64$GT$3fmt17hf45c9ed6c466ba5aE.assertion.1] assertion false: SUCCESS
-
-function _ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$u64$GT$3fmt17h1db8ac059ca37f8cE
-[_ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$u64$GT$3fmt17h1db8ac059ca37f8cE.assertion.1] assertion false: SUCCESS
-
-function _ZN4core3fmt9Formatter15debug_lower_hex17hf65966a9377b50aaE
-[_ZN4core3fmt9Formatter15debug_lower_hex17hf65966a9377b50aaE.assertion.1] assertion false: SUCCESS
-
-function _ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E
-[_ZN4core3fmt9Formatter15debug_upper_hex17h83fa51c2bb071348E.assertion.1] assertion false: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function <&T as std::fmt::Debug>::fmt
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.1] line 2087 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.2] line 2087 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.3] line 2087 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.4] line 2087 dereference failure: dead object in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.5] line 2087 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::fmt::Debug>::fmt.pointer_dereference.6] line 2087 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/macros/mod.rs function main
-[main.pointer_dereference.1] line 39 dereference failure: pointer NULL in *left_val: SUCCESS
-[main.pointer_dereference.2] line 39 dereference failure: pointer invalid in *left_val: SUCCESS
-[main.pointer_dereference.3] line 39 dereference failure: deallocated dynamic object in *left_val: SUCCESS
-[main.pointer_dereference.4] line 39 dereference failure: dead object in *left_val: SUCCESS
-[main.pointer_dereference.5] line 39 dereference failure: pointer outside object bounds in *left_val: SUCCESS
-[main.pointer_dereference.6] line 39 dereference failure: invalid integer address in *left_val: SUCCESS
-[main.assertion.2] line 44 a panicking function core::panicking::assert_failed is invoked: SUCCESS
-[main.pointer_arithmetic.1] line 44 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[main.pointer_dereference.7] line 44 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/panicking.rs function core::panicking::assert_failed
-[core::panicking::assert_failed.assertion.1] line 144 a panicking function core::panicking::assert_failed_inner is invoked: SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Library Features/asm/119.rs function main
-[main.assertion.1] line 7 InlineAsm is not currently supported by RMC. Please post your example at https://github.com/model-checking/rmc/issues/2 : FAILURE
-
-<builtin-library-__CPROVER_assert> function __CPROVER_assert
-[__CPROVER_assert.assertion.1] assertion false: SUCCESS
-
-<builtin-library-__CPROVER_assume> function __CPROVER_assume
-[__CPROVER_assume.assertion.1] assertion false: SUCCESS
-
-<builtin-library-__builtin_powi> function __builtin_powi
-[__builtin_powi.assertion.1] assertion false: SUCCESS
-
-<builtin-library-__builtin_powif> function __builtin_powif
-[__builtin_powif.assertion.1] assertion false: SUCCESS
-
-<builtin-library-calloc> function calloc
-[calloc.assertion.1] assertion false: SUCCESS
-
-<builtin-library-ceil> function ceil
-[ceil.assertion.1] assertion false: SUCCESS
-
-<builtin-library-ceilf> function ceilf
-[ceilf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-copysign> function copysign
-[copysign.assertion.1] assertion false: SUCCESS
-
-<builtin-library-copysignf> function copysignf
-[copysignf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-cos> function cos
-[cos.assertion.1] assertion false: SUCCESS
-
-<builtin-library-cosf> function cosf
-[cosf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-exp2> function exp2
-[exp2.assertion.1] assertion false: SUCCESS
-
-<builtin-library-exp2f> function exp2f
-[exp2f.assertion.1] assertion false: SUCCESS
-
-<builtin-library-exp> function exp
-[exp.assertion.1] assertion false: SUCCESS
-
-<builtin-library-expf> function expf
-[expf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fabs> function fabs
-[fabs.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fabsf> function fabsf
-[fabsf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-floor> function floor
-[floor.assertion.1] assertion false: SUCCESS
-
-<builtin-library-floorf> function floorf
-[floorf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fma> function fma
-[fma.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fmaf> function fmaf
-[fmaf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fmax> function fmax
-[fmax.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fmaxf> function fmaxf
-[fmaxf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fmin> function fmin
-[fmin.assertion.1] assertion false: SUCCESS
-
-<builtin-library-fminf> function fminf
-[fminf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-free> function free
-[free.assertion.1] assertion false: SUCCESS
-
-<builtin-library-log10> function log10
-[log10.assertion.1] assertion false: SUCCESS
-
-<builtin-library-log10f> function log10f
-[log10f.assertion.1] assertion false: SUCCESS
-
-<builtin-library-log2> function log2
-[log2.assertion.1] assertion false: SUCCESS
-
-<builtin-library-log2f> function log2f
-[log2f.assertion.1] assertion false: SUCCESS
-
-<builtin-library-log> function log
-[log.assertion.1] assertion false: SUCCESS
-
-<builtin-library-logf> function logf
-[logf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-malloc> function malloc
-[malloc.assertion.1] assertion false: SUCCESS
-
-<builtin-library-memcmp> function memcmp
-[memcmp.assertion.1] assertion false: SUCCESS
-
-<builtin-library-memcpy> function memcpy
-[memcpy.assertion.1] assertion false: SUCCESS
-
-<builtin-library-memmove> function memmove
-[memmove.assertion.1] assertion false: SUCCESS
-
-<builtin-library-memset> function memset
-[memset.assertion.1] assertion false: SUCCESS
-
-<builtin-library-nearbyint> function nearbyint
-[nearbyint.assertion.1] assertion false: SUCCESS
-
-<builtin-library-nearbyintf> function nearbyintf
-[nearbyintf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-pow> function pow
-[pow.assertion.1] assertion false: SUCCESS
-
-<builtin-library-powf> function powf
-[powf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-realloc> function realloc
-[realloc.assertion.1] assertion false: SUCCESS
-
-<builtin-library-rint> function rint
-[rint.assertion.1] assertion false: SUCCESS
-
-<builtin-library-rintf> function rintf
-[rintf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-round> function round
-[round.assertion.1] assertion false: SUCCESS
-
-<builtin-library-roundf> function roundf
-[roundf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-sin> function sin
-[sin.assertion.1] assertion false: SUCCESS
-
-<builtin-library-sinf> function sinf
-[sinf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-sqrt> function sqrt
-[sqrt.assertion.1] assertion false: SUCCESS
-
-<builtin-library-sqrtf> function sqrtf
-[sqrtf.assertion.1] assertion false: SUCCESS
-
-<builtin-library-trunc> function trunc
-[trunc.assertion.1] assertion false: SUCCESS
-
-<builtin-library-truncf> function truncf
-[truncf.assertion.1] assertion false: SUCCESS
-
-** 1 of 76 failed (2 iterations)
-VERIFICATION FAILED
-
-            </xmp>
-          </div><!-- class="output-box" -->
           
 
           
