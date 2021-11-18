@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 fn add_one(x: i32) -> i32 { x + 1 }
 const MY_COMPUTATION: i32 = 1 + 2 * 3 / 4;

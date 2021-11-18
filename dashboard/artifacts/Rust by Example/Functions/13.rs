@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Unlike C/C++, there's no restriction on the order of function definitions
 pub fn main() {

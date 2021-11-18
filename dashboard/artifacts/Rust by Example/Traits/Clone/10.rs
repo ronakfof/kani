@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // A unit struct without resources
 #[derive(Debug, Clone, Copy)]

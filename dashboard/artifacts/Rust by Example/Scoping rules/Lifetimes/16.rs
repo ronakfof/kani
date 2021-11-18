@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Lifetimes are annotated below with lines denoting the creation
 // and destruction of each variable.

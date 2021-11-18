@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
     // You can use escapes to write bytes by their hexadecimal values...

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
 let (mut a, mut b) = (1, 1);

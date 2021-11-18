@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Create an `enum` to classify a web event. Note how both
 // names and type information together specify the variant:

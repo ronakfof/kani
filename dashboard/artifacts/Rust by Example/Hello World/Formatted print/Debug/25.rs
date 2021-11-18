@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Derive the `fmt::Debug` implementation for `Structure`. `Structure`
 // is a structure which contains a single `i32`.

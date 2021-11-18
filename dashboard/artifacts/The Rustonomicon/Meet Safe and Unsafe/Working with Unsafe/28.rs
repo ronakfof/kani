@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
 fn index(idx: usize, arr: &[u8]) -> Option<u8> {

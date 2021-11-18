@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
     let parsed: i32 = "5".parse().unwrap();

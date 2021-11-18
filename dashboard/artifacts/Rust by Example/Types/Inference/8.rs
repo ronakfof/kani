@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
     // Because of the annotation, the compiler knows that `elem` has type u8.

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Foo introduces a type in the type namespace and a constructor in the value
 // namespace.

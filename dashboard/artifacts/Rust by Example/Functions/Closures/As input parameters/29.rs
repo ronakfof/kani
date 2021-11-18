@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // A function which takes a closure as an argument and calls it.
 // <F> denotes that F is a "Generic type parameter"

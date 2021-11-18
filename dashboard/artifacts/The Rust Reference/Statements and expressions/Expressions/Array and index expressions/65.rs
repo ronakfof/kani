@@ -1,5 +1,5 @@
 // rmc-verify-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // lint is deny by default.
 #![warn(unconditional_panic)]

@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // error[E0262]: invalid lifetime parameter name: `'static`
 pub fn main() {

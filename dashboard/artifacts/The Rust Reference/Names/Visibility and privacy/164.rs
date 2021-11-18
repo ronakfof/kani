@@ -1,3 +1,4 @@
+// compile-flags: --edition 2015
 #![allow(unused)]
 pub mod outer_mod {
     pub mod inner_mod {

@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // This is an example of an error.
 pub fn main() {

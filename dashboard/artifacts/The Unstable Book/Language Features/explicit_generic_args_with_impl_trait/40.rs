@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(explicit_generic_args_with_impl_trait)]
 

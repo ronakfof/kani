@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // This is a simple macro named `say_hello`.
 macro_rules! say_hello {

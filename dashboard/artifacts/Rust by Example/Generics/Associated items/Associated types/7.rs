@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // `A` and `B` are defined in the trait via the `type` keyword.
 // (Note: `type` in this context is different from `type` when used for

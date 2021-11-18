@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // Not object safe if `Self` is a type argument.
 pub fn main() {

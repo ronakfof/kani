@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-11-17T21:43:56Z</li>
-      <li>bd7502cf-bd41-4697-bd22-8dffd9f1ac4a</li>
+      <li>2021-11-18T22:00:25Z</li>
+      <li>dabb22d6-b3c9-42f5-a968-8d4235c9cbdc</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-385577fd-5b64-4708-854e-a62a92f08b9f">
+              <a href="#job-5d366fb6-52fd-48ae-b43e-dce29ea8f453">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1ff75d2b-1603-47d6-afee-58275213fccb">
+              <a href="#job-c806b1c5-df37-4f02-aafb-be8e7c33484e">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e51d536c-80c4-4dd3-8418-ab6547aecb2c">
+              <a href="#job-b9adf859-6292-4582-9549-fbd1e36c5637">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-385577fd-5b64-4708-854e-a62a92f08b9f">
+    <div class="command-table" id="job-5d366fb6-52fd-48ae-b43e-dce29ea8f453">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-385577fd-5b64-4708-854e-a62a92f08b9f">#</a>
+                <a href="#job-5d366fb6-52fd-48ae-b43e-dce29ea8f453">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -642,7 +642,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "-Z" "no-codegen" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
+            "rmc-rustc" "--edition" "2021" "-Z" "no-codegen" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-17T21:46:47Z
+                2021-11-18T22:06:56Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-17T21:46:48Z
+                2021-11-18T22:06:57Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -716,66 +716,6 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17he1b3036ccaf8f9eaE::1::var_5" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17he1b3036ccaf8f9eaE::1::var_9" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h344ae4be6246cda5E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17h9796c8093354a29bE::1::var_1::reference" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17hdb0372b7354eae04E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17hbd54c6a3881e20c7E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_17820639783513976532") }, location: None }), typ: StructTag("tag-_17820639783513976532"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_5" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_4" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_3" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -824,7 +764,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1ff75d2b-1603-47d6-afee-58275213fccb">
+    <div class="command-table" id="job-c806b1c5-df37-4f02-aafb-be8e7c33484e">
       
       <div class="success">
       
@@ -832,7 +772,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1ff75d2b-1603-47d6-afee-58275213fccb">#</a>
+                <a href="#job-c806b1c5-df37-4f02-aafb-be8e7c33484e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -845,7 +785,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2018" "--out-dir" "build/tmp" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
+            "rmc-rustc" "--edition" "2021" "--out-dir" "build/tmp" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -886,7 +826,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-17T21:48:21Z
+                2021-11-18T22:06:57Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -894,7 +834,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-17T21:48:21Z
+                2021-11-18T22:06:57Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -919,66 +859,6 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           
           <div class="output-box"><xmp>stderr:
             
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17he1b3036ccaf8f9eaE::1::var_5" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17he1b3036ccaf8f9eaE::1::var_9" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h344ae4be6246cda5E::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17h9796c8093354a29bE::1::var_1::reference" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17hdb0372b7354eae04E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17hbd54c6a3881e20c7E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_17820639783513976532") }, location: None }), typ: StructTag("tag-_17820639783513976532"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_5" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_4" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_3" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h4184804be7448b9cE::1::var_2" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h2753e213a7608a38E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -1027,7 +907,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e51d536c-80c4-4dd3-8418-ab6547aecb2c">
+    <div class="command-table" id="job-b9adf859-6292-4582-9549-fbd1e36c5637">
       
       <div class="fail">
       
@@ -1035,7 +915,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e51d536c-80c4-4dd3-8418-ab6547aecb2c">#</a>
+                <a href="#job-b9adf859-6292-4582-9549-fbd1e36c5637">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1048,7 +928,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2018" "rmc" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
+            RUSTFLAGS="--edition 2021" "rmc" "src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -1089,7 +969,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-11-17T21:48:22Z
+                2021-11-18T22:12:54Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1097,7 +977,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-11-17T21:48:24Z
+                2021-11-18T22:12:56Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1132,70 +1012,76 @@ Starting Bounded Model Checking
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6cjno66YhcD_2_15.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VechEECs6cjno66YhcD_2_15.1 iteration 1  thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs line 17 column 11 function main thread 0
-Unwinding loop main.0 iteration 1  thread 0
+Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6cjno66YhcD_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6cjno66YhcD_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6cjno66YhcD_2_15.1 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VechEECs6cjno66YhcD_2_15.1 iteration 1  thread 0
-Runtime Symex: 0.140307s
-size of program expression: 2617 steps
+Runtime Symex: 0.196792s
+size of program expression: 2915 steps
 simple slicing removed 84 assignments
-Generated 233 VCC(s), 91 remaining after simplification
-Runtime Postprocess Equation: 0.000436803s
+Generated 233 VCC(s), 82 remaining after simplification
+Runtime Postprocess Equation: 0.000385604s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0418302s
+Runtime Convert SSA: 0.063001s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00256022s
+Runtime Post-process: 0.00273293s
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 51393 clauses
+71848 variables, 62452 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.119869s
-Runtime decision procedure: 0.162479s
+Runtime Solver: 0.120078s
+Runtime decision procedure: 0.186234s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8167 clauses
+71848 variables, 8465 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00136351s
-Runtime decision procedure: 0.00145181s
+Runtime Solver: 0.00274863s
+Runtime decision procedure: 0.00283213s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8160 clauses
+71848 variables, 8443 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000734005s
-Runtime decision procedure: 0.000798905s
+Runtime Solver: 0.00133332s
+Runtime decision procedure: 0.00139872s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8127 clauses
+71848 variables, 8443 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000792305s
-Runtime decision procedure: 0.000848605s
+Runtime Solver: 0.00132501s
+Runtime decision procedure: 0.00138322s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8127 clauses
+71848 variables, 8385 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000646605s
-Runtime decision procedure: 0.000702805s
+Runtime Solver: 0.00087951s
+Runtime decision procedure: 0.000934511s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8127 clauses
+71848 variables, 8366 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000806305s
-Runtime decision procedure: 0.000860605s
+Runtime Solver: 0.00110181s
+Runtime decision procedure: 0.00115801s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-64029 variables, 8127 clauses
-SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000231201s
-Runtime decision procedure: 0.000284402s
+71848 variables, 8355 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00474195s
+Runtime decision procedure: 0.00480236s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+71848 variables, 4832 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00359564s
+Runtime decision procedure: 0.00367114s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+71848 variables, 2876 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime Solver: 9.5e-06s
+Runtime decision procedure: 4.87e-05s
 
 ** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_5149217942549765894") (MIR type Adt(std::rt::begin_panic::PanicPayload, [&str])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-str") (MIR type Ref(ReErased, str, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [_ZN3std2io5stdio6_print17hb315b158471eb315E.assertion.1] assertion false: FAILURE
 
@@ -1326,10 +1212,13 @@ function _ZN3std4path4Path5_join17h972b59c1796392cdE
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 362 invalid args: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 362 invalid args: FAILURE
 [std::fmt::Arguments::<'a>::new_v1.overflow.1] line 362 arithmetic overflow on unsigned + in var_13 + 1: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/panic.rs function main
+[main.assertion.2] line 57 a panicking function std::rt::panic_fmt is invoked: FAILURE
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
 [std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
@@ -1340,15 +1229,10 @@ function _ZN3std4path4Path5_join17h972b59c1796392cdE
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Path/15.rs function main
 [main.assertion.3] line 5 resume instruction: SUCCESS
 [main.assertion.1] line 17 unreachable code: SUCCESS
-[main.assertion.2] line 17 new path is not a valid UTF-8 sequence: FAILURE
 [main.pointer_arithmetic.1] line 17 pointer arithmetic: dead object in (unsigned char *)&var_12 + 0: SUCCESS
 [main.pointer_dereference.1] line 17 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_12 + 0)): SUCCESS
 
-<builtin-library-malloc> function malloc
-[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
-[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
-
-** 31 of 118 failed (7 iterations)
+** 32 of 112 failed (9 iterations)
 VERIFICATION FAILED
 
             </xmp>

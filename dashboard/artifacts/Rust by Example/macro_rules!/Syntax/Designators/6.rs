@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 macro_rules! create_function {
     // This macro takes an argument of designator `ident` and

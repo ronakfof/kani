@@ -1,3 +1,4 @@
+// compile-flags: --edition 2015
 #![allow(unused)]
 mod foo {
     pub mod example { pub mod iter {} }

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // `find_min!` will calculate the minimum of any number of arguments.
 macro_rules! find_min {

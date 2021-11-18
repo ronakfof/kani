@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // This function takes ownership of the heap allocated memory
 fn destroy_box(c: Box<i32>) {

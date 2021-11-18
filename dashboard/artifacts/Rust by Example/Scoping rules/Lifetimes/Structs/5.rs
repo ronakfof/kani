@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // A type `Borrowed` which houses a reference to an
 // `i32`. The reference to `i32` must outlive `Borrowed`.

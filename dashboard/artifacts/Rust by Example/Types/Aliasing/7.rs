@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // `NanoSecond` is a new name for `u64`.
 type NanoSecond = u64;

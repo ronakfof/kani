@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 pub fn main() {
 fn f<'a, 'b>(x: &'a i32, mut y: &'b i32) where 'a: 'b {

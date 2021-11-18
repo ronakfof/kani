@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // One input reference with lifetime `'a` which must live
 // at least as long as the function.

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 use std::thread;

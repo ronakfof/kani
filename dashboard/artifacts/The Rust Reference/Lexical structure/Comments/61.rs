@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 //! A doc comment that applies to the implicit anonymous module of this crate
 

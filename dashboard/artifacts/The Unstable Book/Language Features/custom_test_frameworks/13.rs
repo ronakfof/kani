@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(custom_test_frameworks)]
 #![test_runner(my_runner)]

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // `Centimeters`, a tuple struct that can be compared
 #[derive(PartialEq, PartialOrd)]

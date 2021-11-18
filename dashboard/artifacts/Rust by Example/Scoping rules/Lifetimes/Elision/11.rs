@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // `elided_input` and `annotated_input` essentially have identical signatures
 // because the lifetime of `elided_input` is inferred by the compiler:

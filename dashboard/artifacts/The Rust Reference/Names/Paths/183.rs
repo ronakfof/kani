@@ -1,3 +1,4 @@
+// compile-flags: --edition 2015
 #![allow(unused)]
 // 2015 Edition
 mod a {

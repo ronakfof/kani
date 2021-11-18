@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 #![allow(incomplete_features)]
 #![feature(unsized_locals, unsized_fn_params)]
