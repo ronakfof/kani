@@ -9,7 +9,7 @@ macro_rules! say_hello {
     };
 }
 
-pub fn main() {
+fn main() {
     // This call will expand into `println!("Hello");`
     say_hello!()
 }

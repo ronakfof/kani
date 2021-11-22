@@ -4,7 +4,7 @@
 
 extern crate test;
 
-pub fn main() {
+fn main() {
 struct X;
 impl X { fn iter<T, F>(&self, _: F) where F: FnMut() -> T {} } let b = X;
 b.iter(|| {

@@ -6,7 +6,7 @@ use std::thread;
 const NTHREADS: u32 = 10;
 
 // This is the `main` thread
-pub fn main() {
+fn main() {
     // Make a vector to hold the children which are spawned.
     let mut children = vec![];
 

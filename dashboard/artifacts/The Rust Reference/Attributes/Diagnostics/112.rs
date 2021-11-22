@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 unsafe fn an_unsafe_fn() {}
 // The order of these two attributes does not matter.
 #[deny(warnings)]

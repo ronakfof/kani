@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::mem::{self, MaybeUninit};
 
 // Size of the array is hard-coded but easy to change (meaning, changing just

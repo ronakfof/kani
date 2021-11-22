@@ -18,7 +18,7 @@ fn apply_to_3<F>(f: F) -> i32 where
     f(3)
 }
 
-pub fn main() {
+fn main() {
     use std::mem;
 
     let greeting = "hello";

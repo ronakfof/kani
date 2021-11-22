@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct TypeWithDestructor(i32);
 
 impl Drop for TypeWithDestructor {

@@ -2,6 +2,6 @@
 #![allow(unused)]
 #![feature(box_syntax)]
 
-pub fn main() {
+fn main() {
     let five = box 5;
 }

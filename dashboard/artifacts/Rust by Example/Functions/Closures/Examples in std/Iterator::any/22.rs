@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 4
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let vec1 = vec![1, 2, 3];
     let vec2 = vec![4, 5, 6];
 

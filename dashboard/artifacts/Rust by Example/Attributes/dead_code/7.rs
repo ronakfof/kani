@@ -9,6 +9,6 @@ fn unused_function() {}
 fn noisy_unused_function() {}
 // FIXME ^ Add an attribute to suppress the warning
 
-pub fn main() {
+fn main() {
     used_function();
 }

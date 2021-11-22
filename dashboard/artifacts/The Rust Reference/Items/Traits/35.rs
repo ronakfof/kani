@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Examples of associated trait items with and without definitions.
-pub fn main() {
+fn main() {
 trait Example {
     const CONST_NO_DEFAULT: i32;
     const CONST_WITH_DEFAULT: i32 = 99;

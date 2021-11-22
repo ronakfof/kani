@@ -2,7 +2,7 @@
 #![allow(unused)]
 use std::rc::Rc;
 
-pub fn main() {
+fn main() {
     let rc_examples = "Rc examples".to_string();
     {
         println!("--- rc_a is created ---");

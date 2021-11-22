@@ -20,7 +20,7 @@ struct BarConfig {
     baz: u8,
 }
 
-pub fn main() {
+fn main() {
     let options = AppConfig {
         foo: default(),
         bar: BarConfig {

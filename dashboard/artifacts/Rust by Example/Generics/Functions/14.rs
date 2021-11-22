@@ -25,7 +25,7 @@ fn gen_spec_i32(_s: SGen<i32>) {}
 // Because `SGen<T>` is preceded by `<T>`, this function is generic over `T`.
 fn generic<T>(_s: SGen<T>) {}
 
-pub fn main() {
+fn main() {
     // Using the non-generic functions
     reg_fn(S(A));          // Concrete type.
     gen_spec_t(SGen(A));   // Implicitly specified type parameter `A`.

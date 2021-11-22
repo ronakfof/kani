@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut b = false;
 let x = &mut b;
 {

@@ -10,6 +10,6 @@ impl ConstantId for Struct {
     const ID: i32 = 1;
 }
 
-pub fn main() {
+fn main() {
     assert_eq!(1, Struct::ID);
 }

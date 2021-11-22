@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::future::Future;
 // Desugared
 fn example<'a>(x: &'a str) -> impl Future<Output = usize> + 'a {

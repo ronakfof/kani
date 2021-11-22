@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let words = vec!["a", "b", "c"];
 let slice = &words[..];
 match slice {

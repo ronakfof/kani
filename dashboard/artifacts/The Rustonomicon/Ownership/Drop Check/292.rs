@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Inspector<T>(T, &'static str, Box<for <'r> fn(&'r T) -> String>);
 
 impl<T> Drop for Inspector<T> {

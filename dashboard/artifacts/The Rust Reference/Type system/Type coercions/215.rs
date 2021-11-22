@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let (a, b, c) = (0, 1, 2);
 // For if branches
 let bar = if true {

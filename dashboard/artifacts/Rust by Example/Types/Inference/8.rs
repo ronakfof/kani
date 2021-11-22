@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // Because of the annotation, the compiler knows that `elem` has type u8.
     let elem = 5u8;
 

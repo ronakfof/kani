@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct PrintOnDrop(&'static str);
 impl Drop for PrintOnDrop {
     fn drop(&mut self) {

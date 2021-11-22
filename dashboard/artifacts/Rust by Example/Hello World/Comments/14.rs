@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // This is an example of a line comment
     // There are two slashes at the beginning of the line
     // And nothing written inside these will be read by the compiler

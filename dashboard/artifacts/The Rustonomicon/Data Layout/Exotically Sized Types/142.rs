@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 enum Void {}
 
 let res: Result<u32, Void> = Ok(0);

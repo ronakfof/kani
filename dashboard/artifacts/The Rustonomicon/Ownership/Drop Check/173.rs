@@ -14,7 +14,7 @@ struct World<T> {
     days: Box<u8>,
 }
 
-pub fn main() {
+fn main() {
     let mut world = World {
         inspector: None,
         days: Box::new(1),

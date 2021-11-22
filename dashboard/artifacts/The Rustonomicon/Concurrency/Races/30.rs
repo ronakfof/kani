@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::thread;
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::Arc;

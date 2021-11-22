@@ -15,7 +15,7 @@ fn answer() -> Box<dyn Any> {
     Box::new(42)
 }
 
-pub fn main() {
+fn main() {
     // You CANNOT have unsized statics.
     static X: dyn Any = *answer();  // ERROR
     const Y: dyn Any = *answer();  // ERROR

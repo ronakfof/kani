@@ -8,7 +8,7 @@ fn create_box() {
     // `_box1` is destroyed here, and memory gets freed
 }
 
-pub fn main() {
+fn main() {
     // Allocate an integer on the heap
     let _box2 = Box::new(5i32);
 

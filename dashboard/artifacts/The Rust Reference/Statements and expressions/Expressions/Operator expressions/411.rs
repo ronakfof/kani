@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut values: [i32; 2] = [1, 2];
 let p1: *mut i32 = values.as_mut_ptr();
 let first_address = p1 as usize;

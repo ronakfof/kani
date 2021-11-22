@@ -4,7 +4,7 @@
 // lint is deny by default.
 #![warn(unconditional_panic)]
 
-pub fn main() {
+fn main() {
 ([1, 2, 3, 4])[2];        // Evaluates to 3
 
 let b = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];

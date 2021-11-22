@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let x = std::ops::Range {start: 0, end: 10};
 let y = 0..10;
 

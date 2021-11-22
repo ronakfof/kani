@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::cell::UnsafeCell;
 struct Variance<'a, 'b, T, U: 'a> {
     x: &'a U,               // This makes `Variance` covariant in 'a, and would

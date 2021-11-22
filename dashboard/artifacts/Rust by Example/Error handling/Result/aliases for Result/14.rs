@@ -20,7 +20,7 @@ fn print(result: AliasedResult<i32>) {
     }
 }
 
-pub fn main() {
+fn main() {
     print(multiply("10", "2"));
     print(multiply("t", "2"));
 }

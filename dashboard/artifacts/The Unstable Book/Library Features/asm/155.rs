@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(asm)]
-pub fn main() {
+fn main() {
 let mut a: u64 = 4;
 let b: u64 = 4;
 let c: u64 = 4;

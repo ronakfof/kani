@@ -8,4 +8,4 @@ mod b {
         super::a::foo(); // call a's foo function
     }
 }
-pub fn main() {}
+fn main() {}

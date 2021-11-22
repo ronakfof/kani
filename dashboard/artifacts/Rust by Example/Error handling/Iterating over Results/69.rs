@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let strings = vec!["tofu", "93", "18"];
     let (numbers, errors): (Vec<_>, Vec<_>) = strings
         .into_iter()

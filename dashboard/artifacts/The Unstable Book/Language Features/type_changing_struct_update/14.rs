@@ -3,7 +3,7 @@
 #![allow(unused_variables, dead_code)]
 #![feature(type_changing_struct_update)]
 
-pub fn main () {
+fn main () {
     struct Foo<T, U> {
         field1: T,
         field2: U,

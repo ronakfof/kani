@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Carton<T>(std::ptr::NonNull<T>);
 mod libc {
     pub use ::std::os::raw::c_void;

@@ -8,7 +8,7 @@ fn double_first(vec: Vec<&str>) -> Option<Result<i32, ParseIntError>> {
     })
 }
 
-pub fn main() {
+fn main() {
     let numbers = vec!["42", "93", "18"];
     let empty = vec![];
     let strings = vec!["tofu", "93", "18"];

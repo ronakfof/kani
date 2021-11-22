@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::ops::{Add, Mul, Sub};
 
 macro_rules! assert_equal_len {

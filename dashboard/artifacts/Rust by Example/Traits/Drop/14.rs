@@ -11,7 +11,7 @@ impl Drop for Droppable {
     }
 }
 
-pub fn main() {
+fn main() {
     let _a = Droppable { name: "a" };
 
     // block A

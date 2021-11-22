@@ -12,4 +12,4 @@ pub struct Vec<T> {
 
 unsafe impl<T: Send> Send for Vec<T> {}
 unsafe impl<T: Sync> Sync for Vec<T> {}
-pub fn main() {}
+fn main() {}

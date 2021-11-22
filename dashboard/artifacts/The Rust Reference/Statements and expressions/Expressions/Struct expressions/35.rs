@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Point { x: f64, y: f64 }
 struct NothingInMe { }
 struct TuplePoint(f64, f64);

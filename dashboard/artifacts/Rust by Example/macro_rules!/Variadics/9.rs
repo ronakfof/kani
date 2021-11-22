@@ -16,7 +16,7 @@ macro_rules! calculate {
     }};
 }
 
-pub fn main() {
+fn main() {
     calculate! { // Look ma! Variadic `calculate!`!
         eval 1 + 2,
         eval 3 + 4,

@@ -9,7 +9,7 @@ type Inch = u64;
 type u64_t = u64;
 // TODO ^ Try removing the attribute
 
-pub fn main() {
+fn main() {
     // `NanoSecond` = `Inch` = `u64_t` = `u64`.
     let nanoseconds: NanoSecond = 5 as u64_t;
     let inches: Inch = 2 as u64_t;

@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(doc_notable_trait)]
 
-pub fn main() {
+fn main() {
 #[doc(notable_trait)]
 pub trait MyTrait {}
 

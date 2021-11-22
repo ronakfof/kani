@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 7
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let vec = vec![1, 9, 3, 3, 13, 2];
 
     let index_of_first_even_number = vec.iter().position(|x| x % 2 == 0);

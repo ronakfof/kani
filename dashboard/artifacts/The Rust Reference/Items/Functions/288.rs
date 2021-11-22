@@ -4,7 +4,7 @@
 //
 // Soundness condition: `x` must be safe to dereference until
 // the resulting future is complete.
-pub fn main() {
+fn main() {
 async unsafe fn unsafe_example(x: *const i32) -> i32 {
   *x
 }

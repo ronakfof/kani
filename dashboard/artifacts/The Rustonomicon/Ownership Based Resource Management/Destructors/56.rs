@@ -30,4 +30,4 @@ impl<T> Drop for SuperBox<T> {
         }
     }
 }
-pub fn main() {}
+fn main() {}

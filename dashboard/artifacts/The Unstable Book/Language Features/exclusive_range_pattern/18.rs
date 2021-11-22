@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(exclusive_range_pattern)]
-pub fn main() {
+fn main() {
 let x = 5;
     match x {
         0..10 => println!("single digit"),

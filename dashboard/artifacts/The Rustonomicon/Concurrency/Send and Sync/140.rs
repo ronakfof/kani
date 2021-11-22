@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::ops::{Deref, DerefMut};
 
 struct Carton<T>(std::ptr::NonNull<T>);

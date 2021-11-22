@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 123;                               // type i32
 123i32;                            // type i32
 123u32;                            // type u32

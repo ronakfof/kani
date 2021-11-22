@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let maybe_digit = Some(0);
 fn process_digit(i: i32) { }
 fn process_other(i: i32) { }

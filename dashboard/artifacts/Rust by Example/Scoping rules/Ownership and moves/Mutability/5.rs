@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let immutable_box = Box::new(5u32);
 
     println!("immutable_box contains {}", immutable_box);

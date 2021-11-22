@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn double<const N: i32>() {
     println!("doubled: {}", N * 2);
 }

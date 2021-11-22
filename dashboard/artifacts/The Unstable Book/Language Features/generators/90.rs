@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(arbitrary_self_types, generator_trait)]
-pub fn main() {
+fn main() {
 use std::ops::GeneratorState;
 use std::pin::Pin;
 

@@ -82,7 +82,7 @@ fn function() {
     println!("called `function()`");
 }
 
-pub fn main() {
+fn main() {
     // Modules allow disambiguation between items that have the same name.
     function();
     my_mod::function();

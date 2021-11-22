@@ -57,7 +57,7 @@ impl List {
     }
 }
 
-pub fn main() {
+fn main() {
     // Create an empty linked list
     let mut list = List::new();
 

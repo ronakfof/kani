@@ -3,7 +3,7 @@
 // Examples where const generic parameters can be used.
 
 // Used in the signature of the item itself.
-pub fn main() {
+fn main() {
 fn foo<const N: usize>(arr: [i32; N]) {
     // Used as a type within a function body.
     let x: [i32; N];

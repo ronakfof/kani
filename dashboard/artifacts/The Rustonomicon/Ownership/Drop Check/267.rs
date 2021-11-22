@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(dropck_eyepatch)]
-pub fn main() {
+fn main() {
 use std::fmt::Display;
 
 struct Inspector<'a, 'b, T, U: Display>(&'a u8, &'b u8, T, U);

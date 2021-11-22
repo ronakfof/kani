@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Make `optional` of type `Option<i32>`
-pub fn main() {
+fn main() {
 let mut optional = Some(0);
 
 // Repeatedly try this test.

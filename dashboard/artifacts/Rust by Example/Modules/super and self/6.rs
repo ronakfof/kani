@@ -46,6 +46,6 @@ mod my {
     }
 }
 
-pub fn main() {
+fn main() {
     my::indirect_call();
 }

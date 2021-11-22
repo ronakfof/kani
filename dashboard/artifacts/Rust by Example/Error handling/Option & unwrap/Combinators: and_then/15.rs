@@ -45,7 +45,7 @@ fn eat(food: Food, day: Day) {
     }
 }
 
-pub fn main() {
+fn main() {
     let (cordon_bleu, steak, sushi) = (Food::CordonBleu, Food::Steak, Food::Sushi);
 
     eat(cordon_bleu, Day::Monday);

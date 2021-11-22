@@ -2,7 +2,7 @@
 #![allow(unused)]
 static mut P: *mut usize = std::ptr::null_mut();
 
-pub fn main() {
+fn main() {
     unsafe {
         {
             let mut x = 0;

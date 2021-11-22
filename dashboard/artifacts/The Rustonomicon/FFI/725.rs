@@ -13,4 +13,4 @@ pub extern fn oh_no() -> i32 {
     }
 }
 
-pub fn main() {}
+fn main() {}

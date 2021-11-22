@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(global_asm)]
-pub fn main() {
+fn main() {
 #[cfg(any(target_arch="x86", target_arch="x86_64"))]
 mod x86 {
 

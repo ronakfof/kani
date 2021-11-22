@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 union MyUnion { f1: u32, f2: f32 }
 
 fn f(u: MyUnion) {

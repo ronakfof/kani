@@ -3,7 +3,7 @@
 #![allow(unused)]
 use std::env;
 
-pub fn main() {
+fn main() {
     let linkage = env::var("CARGO_CFG_TARGET_FEATURE").unwrap_or(String::new());
 
     if linkage.contains("crt-static") {

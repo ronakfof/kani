@@ -8,7 +8,7 @@ fn apply<F>(f: F) where
     f();
 }
 
-pub fn main() {
+fn main() {
     let x = 7;
 
     // Capture `x` into an anonymous type and implement

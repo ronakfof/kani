@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 trait Num {
     fn from_i32(n: i32) -> Self;
 }

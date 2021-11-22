@@ -16,7 +16,7 @@ impl Deref for CharContainer {
 
 fn foo(arg: &char) {}
 
-pub fn main() {
+fn main() {
     let x = &mut CharContainer { value: 'y' };
     foo(x); //&mut CharContainer is coerced to &char.
 }

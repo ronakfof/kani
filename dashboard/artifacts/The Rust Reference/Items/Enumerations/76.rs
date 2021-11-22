@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 enum Foo {
     Bar,            // 0
     Baz = 123,      // 123

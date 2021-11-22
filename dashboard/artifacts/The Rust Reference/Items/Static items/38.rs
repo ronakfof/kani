@@ -21,7 +21,7 @@ impl<T> Tr for T {
     }
 }
 
-pub fn main() {
+fn main() {
     <Ty1 as Tr>::default_impl();
     <Ty2 as Tr>::default_impl();
     <Ty1 as Tr>::blanket_impl();

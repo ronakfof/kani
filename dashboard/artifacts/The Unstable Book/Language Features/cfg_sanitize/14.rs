@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(cfg_sanitize)]
 
-pub fn main() {
+fn main() {
 #[cfg(sanitize = "thread")]
 fn a() {
     // ...

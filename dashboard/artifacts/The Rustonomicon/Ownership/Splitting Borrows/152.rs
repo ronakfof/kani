@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {}
+fn main() {}
 use std::mem;
 
 pub struct IterMut<'a, T: 'a>(&'a mut[T]);

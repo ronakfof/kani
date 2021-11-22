@@ -14,7 +14,7 @@ impl FnOnce<(u32, )> for Adder {
     }
 }
 
-pub fn main() {
+fn main() {
     let adder = Adder { a: 3 };
     assert_eq!(adder(2), 5);
 }

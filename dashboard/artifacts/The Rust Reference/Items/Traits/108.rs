@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // This trait is object-safe, but these methods cannot be dispatched on a trait object.
-pub fn main() {
+fn main() {
 trait NonDispatchable {
     // Non-methods cannot be dispatched.
     fn foo() where Self: Sized {}

@@ -2,7 +2,7 @@
 #![allow(unused)]
 //! A doc comment that applies to the implicit anonymous module of this crate
 
-pub fn main() {
+fn main() {
 pub mod outer_module {
 
     //!  - Inner line doc

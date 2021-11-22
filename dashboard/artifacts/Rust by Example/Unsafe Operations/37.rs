@@ -2,7 +2,7 @@
 #![allow(unused)]
 use std::slice;
 
-pub fn main() {
+fn main() {
     let some_vector = vec![1, 2, 3, 4];
 
     let pointer = some_vector.as_ptr();

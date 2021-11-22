@@ -3,7 +3,7 @@
 #![feature(no_coverage)]
 
 // `foo()` will get coverage instrumentation (by default)
-pub fn main() {
+fn main() {
 fn foo() {
   // ...
 }

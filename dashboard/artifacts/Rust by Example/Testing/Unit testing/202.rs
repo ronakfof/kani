@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }

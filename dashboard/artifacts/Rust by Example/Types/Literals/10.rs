@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // Suffixed literals, their types are known at initialization
     let x = 1u8;
     let y = 2u32;

@@ -8,7 +8,7 @@ impl Drop for ToDrop {
     }
 }
 
-pub fn main() {
+fn main() {
     let x = ToDrop;
     println!("Made a ToDrop!");
 }

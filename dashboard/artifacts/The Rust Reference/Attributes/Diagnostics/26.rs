@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 pub mod m1 {
     // Missing documentation is ignored here
     #[allow(missing_docs)]

@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::collections::HashMap;
 use std::hash::Hash;
 fn get_default<'m, K, V>(map: &'m mut HashMap<K, V>, key: K) -> &'m mut V

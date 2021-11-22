@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[repr(C, u8)] // `u8` was added
 enum MyEnum {
     A(u32),

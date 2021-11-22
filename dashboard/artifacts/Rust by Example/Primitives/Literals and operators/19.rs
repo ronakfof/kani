@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // Integer addition
     println!("1 + 2 = {}", 1u32 + 2);
 

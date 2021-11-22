@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let c = [1, 2, 3];
 let d = vec![1, 2, 3];
 let a: &[i32];

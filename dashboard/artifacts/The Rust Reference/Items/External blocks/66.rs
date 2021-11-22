@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Interface to the Windows API
-pub fn main() {
+fn main() {
 extern "stdcall" { }
 }

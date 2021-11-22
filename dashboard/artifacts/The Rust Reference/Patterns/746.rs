@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Dynamic size
-pub fn main() {
+fn main() {
 let v = vec![1, 2, 3];
 match v[..] {
     [a, b] => { /* this arm will not apply because the length doesn't match */ }

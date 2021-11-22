@@ -4,7 +4,7 @@ use std::sync::Arc;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::thread;
 
-pub fn main() {
+fn main() {
     let lock = Arc::new(AtomicBool::new(false)); // value answers "am I locked?"
 
     // ... distribute lock to threads somehow ...

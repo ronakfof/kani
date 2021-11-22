@@ -3,7 +3,7 @@
 #![feature(trait_upcasting)]
 #![allow(incomplete_features)]
 
-pub fn main() {
+fn main() {
 trait Foo {}
 
 trait Bar: Foo {}

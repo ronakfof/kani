@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Point3d { x: i32, y: i32, z: i32 }
 let x = 0;
 let y_value = 0;

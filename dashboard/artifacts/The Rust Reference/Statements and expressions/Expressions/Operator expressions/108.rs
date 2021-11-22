@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::num::ParseIntError;
 fn try_to_parse() -> Result<i32, ParseIntError> {
     let x: i32 = "123".parse()?; // x = 123

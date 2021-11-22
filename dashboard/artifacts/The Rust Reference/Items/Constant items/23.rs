@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 const BIT1: u32 = 1 << 0;
 const BIT2: u32 = 1 << 1;
 

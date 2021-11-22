@@ -13,7 +13,7 @@ impl ConstantIdDefault for OtherStruct {
     const ID: i32 = 5;
 }
 
-pub fn main() {
+fn main() {
     assert_eq!(1, Struct::ID);
     assert_eq!(5, OtherStruct::ID);
 }

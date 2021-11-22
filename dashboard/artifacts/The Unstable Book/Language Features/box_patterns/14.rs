@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(box_patterns)]
 
-pub fn main() {
+fn main() {
     let b = Some(Box::new(5));
     match b {
         Some(box n) if n < 0 => {

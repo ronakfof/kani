@@ -11,7 +11,7 @@ mod foo {
 use self::foo::Zoo as _;
 struct Zoo;  // Underscore import avoids name conflict with this item.
 
-pub fn main() {
+fn main() {
     let z = Zoo;
     z.zoo();
 }

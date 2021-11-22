@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // Increment via closures and functions.
     fn function(i: i32) -> i32 { i + 1 }
 

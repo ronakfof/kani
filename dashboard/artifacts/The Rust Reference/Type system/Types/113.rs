@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
-pub fn main() {
+fn main() {
 enum List<T> {
     Nil,
     Cons(T, Box<List<T>>)

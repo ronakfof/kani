@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::fmt;
 
 struct Inspector<T: fmt::Display>(T, &'static str);

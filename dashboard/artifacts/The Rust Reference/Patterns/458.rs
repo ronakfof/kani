@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let c = 'f';
 let valid_variable = match c {
     'a'..='z' => true,

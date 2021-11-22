@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Indexing a tuple
-pub fn main() {
+fn main() {
 let pair = ("a string", 2);
 assert_eq!(pair.1, 2);
 

@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // For the following trait...
-pub fn main() {
+fn main() {
 trait Foo { }
 
 // These two are the same because Box<T> has no lifetime bound on T

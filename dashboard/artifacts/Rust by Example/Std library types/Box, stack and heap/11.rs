@@ -26,7 +26,7 @@ fn boxed_origin() -> Box<Point> {
     Box::new(Point { x: 0.0, y: 0.0 })
 }
 
-pub fn main() {
+fn main() {
     // (all the type annotations are superfluous)
     // Stack allocated variables
     let point: Point = origin();

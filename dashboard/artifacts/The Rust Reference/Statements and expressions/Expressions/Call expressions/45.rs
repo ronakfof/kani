@@ -21,7 +21,7 @@ impl Ugly for Bar {
     fn print(&self) {}
 }
 
-pub fn main() {
+fn main() {
     let f = Foo;
     let b = Bar;
 

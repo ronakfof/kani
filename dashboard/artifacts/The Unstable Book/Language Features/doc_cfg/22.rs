@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(doc_cfg)]
 
-pub fn main() {
+fn main() {
 #[cfg(any(windows, doc))]
 #[doc(cfg(windows))]
 /// The application's icon in the notification area (a.k.a. system tray).

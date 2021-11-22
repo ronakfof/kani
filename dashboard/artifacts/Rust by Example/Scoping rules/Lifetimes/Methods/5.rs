@@ -10,7 +10,7 @@ impl Owner {
     }
 }
 
-pub fn main() {
+fn main() {
     let mut owner = Owner(18);
 
     owner.add_one();

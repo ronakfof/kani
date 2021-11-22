@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let an_integer = 1u32;
     let a_boolean = true;
     let unit = ();

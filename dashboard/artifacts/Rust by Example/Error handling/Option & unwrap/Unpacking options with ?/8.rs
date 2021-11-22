@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn next_birthday(current_age: Option<u8>) -> Option<String> {
 	// If `current_age` is `None`, this returns `None`.
 	// If `current_age` is `Some`, the inner `u8` gets assigned to `next_age`

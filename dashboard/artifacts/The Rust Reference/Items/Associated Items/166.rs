@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 type Surface = i32;
 type BoundingBox = i32;
 trait Shape {

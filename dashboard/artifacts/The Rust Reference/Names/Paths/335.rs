@@ -40,4 +40,4 @@ mod without { // ::without
     }
 }
 
-pub fn main() {}
+fn main() {}

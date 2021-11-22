@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 7
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let mut names = vec!["Bob", "Frank", "Ferris"];
 
     for name in names.iter_mut() {

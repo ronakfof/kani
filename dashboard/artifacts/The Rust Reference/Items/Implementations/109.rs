@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[derive(Copy, Clone)]
 struct Point {x: f64, y: f64};
 type Surface = i32;

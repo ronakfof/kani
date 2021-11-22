@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 type N = u32;
 struct Foo<const N: usize>;
 // The following is an error, because `N` is interpreted as the type alias `N`.

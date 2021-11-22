@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let mut count = 0u32;
 
     println!("Let's count until infinity!");

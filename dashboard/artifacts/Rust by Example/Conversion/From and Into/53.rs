@@ -13,7 +13,7 @@ impl From<i32> for Number {
     }
 }
 
-pub fn main() {
+fn main() {
     let int = 5;
     // Try removing the type declaration
     let num: Number = int.into();

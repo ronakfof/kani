@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::mem::ManuallyDrop;
 union MyUnion { f1: u32, f2: ManuallyDrop<String> }
 let mut u = MyUnion { f1: 1 };

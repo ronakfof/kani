@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // This is an example of an error.
-pub fn main() {
+fn main() {
 trait Foo { }
 struct TwoBounds<'a, 'b, T: ?Sized + 'a + 'b> {
     f1: &'a i32,

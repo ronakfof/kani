@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // All have type `Option<i32>`
     let number = Some(7);
     let letter: Option<i32> = None;

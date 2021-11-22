@@ -6,4 +6,4 @@ mod a {
         crate::foo();
     }
 }
-pub fn main() {}
+fn main() {}

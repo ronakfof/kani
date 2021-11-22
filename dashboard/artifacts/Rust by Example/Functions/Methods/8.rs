@@ -75,7 +75,7 @@ impl Pair {
     }
 }
 
-pub fn main() {
+fn main() {
     let rectangle = Rectangle {
         // Associated functions are called using double colons
         p1: Point::origin(),

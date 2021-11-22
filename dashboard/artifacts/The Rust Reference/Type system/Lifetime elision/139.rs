@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // For the following trait...
-pub fn main() {
+fn main() {
 trait Bar<'a>: 'a { }
 
 // ...these two are the same:

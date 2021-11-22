@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     fn sum_odd_numbers(up_to: u32) -> u32 {
         let mut acc = 0;
         for i in 0..up_to {

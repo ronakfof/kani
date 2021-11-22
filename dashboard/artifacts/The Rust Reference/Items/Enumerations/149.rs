@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 macro_rules! mac_variant {
     ($vis:vis $name:ident) => {
         enum $name {

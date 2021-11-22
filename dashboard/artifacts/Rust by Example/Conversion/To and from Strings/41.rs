@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let parsed: i32 = "5".parse().unwrap();
     let turbo_parsed = "10".parse::<i32>().unwrap();
 

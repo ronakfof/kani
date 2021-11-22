@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn try_option_some() -> Option<u8> {
     let val = Some(1)?;
     Some(val)

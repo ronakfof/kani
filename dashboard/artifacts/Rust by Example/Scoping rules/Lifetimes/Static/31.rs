@@ -9,7 +9,7 @@ fn coerce_static<'a>(_: &'a i32) -> &'a i32 {
     &NUM
 }
 
-pub fn main() {
+fn main() {
     {
         // Make a `string` literal and print it:
         let static_string = "I'm in read-only memory";

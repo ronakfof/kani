@@ -5,7 +5,7 @@
 
 use std::any::Any;
 
-pub fn main() {
+fn main() {
     let x: Box<dyn Any> = Box::new(42);
     let x: dyn Any = *x;
     //  ^ unsized local variable

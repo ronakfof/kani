@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn random_bool() -> bool { true }
 fn initialization_example() {
     let init_after_if: ();

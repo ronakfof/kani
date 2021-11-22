@@ -5,7 +5,7 @@ struct MySuperSliceable<T: ?Sized> {
     data: T,
 }
 
-pub fn main() {
+fn main() {
     let sized: MySuperSliceable<[u8; 8]> = MySuperSliceable {
         info: 17,
         data: [0; 8],

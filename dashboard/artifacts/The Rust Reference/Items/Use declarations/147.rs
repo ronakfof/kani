@@ -7,4 +7,4 @@ use self::std::fs as self_fs;  // Imports the module below.
 mod std {
     pub mod fs {}
 }
-pub fn main() {}
+fn main() {}

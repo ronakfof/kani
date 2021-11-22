@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[cfg(target_feature = "crt-static")]
 fn foo() {
     println!("the C runtime should be statically linked");

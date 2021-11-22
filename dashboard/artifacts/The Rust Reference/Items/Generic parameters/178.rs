@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // ok
-pub fn main() {
+fn main() {
 struct Foo<const N: usize>;
 enum Bar<const M: usize> { A, B }
 

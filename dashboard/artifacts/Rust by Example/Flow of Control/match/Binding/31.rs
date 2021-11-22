@@ -4,7 +4,7 @@ fn some_number() -> Option<u32> {
     Some(42)
 }
 
-pub fn main() {
+fn main() {
     match some_number() {
         // Got `Some` variant, match if its value, bound to `n`,
         // is equal to 42.

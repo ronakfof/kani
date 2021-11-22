@@ -29,7 +29,7 @@ macro_rules! print_result {
     };
 }
 
-pub fn main() {
+fn main() {
     foo();
     bar();
 

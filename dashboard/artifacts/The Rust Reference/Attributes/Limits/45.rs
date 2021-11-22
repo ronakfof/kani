@@ -3,7 +3,7 @@
 #![allow(unused)]
 #![type_length_limit = "4"]
 
-pub fn main() {
+fn main() {
 fn f<T>(x: T) {}
 
 // This fails to compile because monomorphizing to

@@ -24,7 +24,7 @@ fn print(result: Result<i32, ParseIntError>) {
     }
 }
 
-pub fn main() {
+fn main() {
     // This still presents a reasonable answer.
     let twenty = multiply("10", "2");
     print(twenty);

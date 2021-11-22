@@ -2,6 +2,6 @@
 #![allow(unused)]
 fn bar(_: &i8) { }
 
-pub fn main() {
+fn main() {
     bar(&mut 42);
 }

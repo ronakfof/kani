@@ -5,7 +5,7 @@
 // do not constrain.
 
 // T does not constrain since it does not appear at all.
-pub fn main() {
+fn main() {
 impl<T> Struct { /* ... */ }
 
 // N does not constrain for the same reason.

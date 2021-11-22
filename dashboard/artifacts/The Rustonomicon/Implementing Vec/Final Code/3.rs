@@ -325,7 +325,7 @@ impl<'a, T> Drop for Drain<'a, T> {
     }
 }
 
-pub fn main() {
+fn main() {
     tests::create_push_pop();
     tests::iter_test();
     tests::test_drain();

@@ -17,4 +17,4 @@ impl<T> Drop for Box<T> {
         }
     }
 }
-pub fn main() {}
+fn main() {}

@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(marker_trait_attr)]
 
-pub fn main() {
+fn main() {
 #[marker] trait CheapToClone: Clone {}
 
 impl<T: Copy> CheapToClone for T {}

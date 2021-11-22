@@ -23,7 +23,7 @@ fn print(result: Result<i32, ParseIntError>) {
     }
 }
 
-pub fn main() {
+fn main() {
     print(multiply("10", "2"));
     print(multiply("t", "2"));
 }

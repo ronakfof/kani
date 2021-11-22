@@ -46,4 +46,4 @@ pub mod submodule {
     }
 }
 
-pub fn main() {}
+fn main() {}

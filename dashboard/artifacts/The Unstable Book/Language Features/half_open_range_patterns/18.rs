@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(half_open_range_patterns)]
 #![feature(exclusive_range_pattern)]
-pub fn main() {
+fn main() {
 let x = 5;
     match x {
         ..0 => println!("negative!"), // "RangeTo" pattern. Unstable.

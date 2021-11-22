@@ -2,7 +2,7 @@
 #![allow(unused)]
 // foo is generic over A and B
 
-pub fn main() {
+fn main() {
 fn foo<A, B>(x: A, y: B) {
 }
 }

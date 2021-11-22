@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(asm)]
-pub fn main() {
+fn main() {
 fn mul(a: u64, b: u64) -> u128 {
     let lo: u64;
     let hi: u64;

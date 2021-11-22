@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let x = 0;
     let y = Box::new(0);
     let z1 = x; // x is still valid because i32 is Copy

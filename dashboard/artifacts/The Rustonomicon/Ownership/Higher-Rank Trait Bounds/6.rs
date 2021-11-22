@@ -15,7 +15,7 @@ impl<F> Closure<F>
 
 fn do_it(data: &(u8, u16)) -> &u8 { &data.0 }
 
-pub fn main() {
+fn main() {
     let clo = Closure { data: (0, 1), func: do_it };
     println!("{}", clo.call());
 }

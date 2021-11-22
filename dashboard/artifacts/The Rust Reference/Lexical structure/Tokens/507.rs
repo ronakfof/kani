@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 123.0f64;        // type f64
 0.1f64;          // type f64
 0.1f32;          // type f32

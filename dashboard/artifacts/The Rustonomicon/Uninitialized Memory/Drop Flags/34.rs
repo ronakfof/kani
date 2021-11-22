@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut x = Box::new(0); // x was uninit; just overwrite.
 let mut y = x;           // y was uninit; just overwrite and make x uninit.
 x = Box::new(0);         // x was uninit; just overwrite.

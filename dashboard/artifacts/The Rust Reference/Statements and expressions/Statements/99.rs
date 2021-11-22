@@ -7,7 +7,7 @@
 // }
 
 // good: the block's type is i32
-pub fn main() {
+fn main() {
 if true {
   1
 } else {

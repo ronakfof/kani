@@ -13,7 +13,7 @@ struct PhantomStruct<A, B> { first: A, phantom: PhantomData<B> }
 // Note: Storage is allocated for generic type `A`, but not for `B`.
 //       Therefore, `B` cannot be used in computations.
 
-pub fn main() {
+fn main() {
     // Here, `f32` and `f64` are the hidden parameters.
     // PhantomTuple type specified as `<char, f32>`.
     let _tuple1: PhantomTuple<char, f32> = PhantomTuple('Q', PhantomData);

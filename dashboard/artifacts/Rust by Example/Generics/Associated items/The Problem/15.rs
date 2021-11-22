@@ -30,7 +30,7 @@ fn difference<A, B, C>(container: &C) -> i32 where
     container.last() - container.first()
 }
 
-pub fn main() {
+fn main() {
     let number_1 = 3;
     let number_2 = 10;
 

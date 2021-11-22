@@ -25,4 +25,4 @@ impl<T> Vec<T> {
 fn reallocate(&mut self) { }
 }
 
-pub fn main() {}
+fn main() {}

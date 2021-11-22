@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(asm)]
-pub fn main() {
+fn main() {
 extern "C" fn foo(arg: i32) -> i32 {
     println!("arg = {}", arg);
     arg * 2

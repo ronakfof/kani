@@ -8,4 +8,4 @@ mod implementation {
     }
 }
 
-pub fn main() {}
+fn main() {}

@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(try_blocks)]
 
-pub fn main() {
+fn main() {
 use std::num::ParseIntError;
 
 let result: Result<i32, ParseIntError> = try {

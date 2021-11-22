@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::any::Any;
 type T<'a> = &'a (dyn Any + Send);
 }

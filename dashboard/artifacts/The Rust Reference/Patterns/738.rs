@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Fixed size
-pub fn main() {
+fn main() {
 let arr = [1, 2, 3];
 match arr {
     [1, _, _] => "starts with one",

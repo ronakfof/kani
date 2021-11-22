@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 assert!(123 == 123);
 assert!(23 != -12);
 assert!(12.5 > 12.2);

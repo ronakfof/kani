@@ -8,7 +8,7 @@ trait Foo {
 
 impl<T: ?Sized> Foo for T {}
 
-pub fn main() {
+fn main() {
     let slice: Box<[i32]> = Box::new([1, 2, 3]);
     <[i32] as Foo>::foo(*slice);
 }

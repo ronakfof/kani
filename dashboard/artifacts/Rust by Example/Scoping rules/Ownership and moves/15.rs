@@ -7,7 +7,7 @@ fn destroy_box(c: Box<i32>) {
     // `c` is destroyed and the memory freed
 }
 
-pub fn main() {
+fn main() {
     // _Stack_ allocated integer
     let x = 5u32;
 

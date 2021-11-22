@@ -12,7 +12,7 @@ fn choose_first<'a: 'b, 'b>(first: &'a i32, _: &'b i32) -> &'b i32 {
     first
 }
 
-pub fn main() {
+fn main() {
     let first = 2; // Longer lifetime
     
     {

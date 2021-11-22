@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[must_use]
 fn five() -> i32 { 5i32 }
 

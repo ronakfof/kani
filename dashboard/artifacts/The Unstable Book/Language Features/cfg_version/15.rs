@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(cfg_version)]
 
-pub fn main() {
+fn main() {
 #[cfg(version("1.42"))] // 1.42 and above
 fn a() {
     // ...

@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(arbitrary_enum_discriminant)]
 
-pub fn main() {
+fn main() {
 #[allow(dead_code)]
 #[repr(u8)]
 enum Enum {

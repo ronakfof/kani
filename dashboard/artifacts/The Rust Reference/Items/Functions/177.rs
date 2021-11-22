@@ -1,5 +1,5 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 extern "Rust" fn foo() {}
 }

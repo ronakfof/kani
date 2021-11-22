@@ -26,7 +26,7 @@ fn print_debug<T: Debug>(t: &T) {
 // the bound can access `HasArea`'s function `area`.
 fn area<T: HasArea>(t: &T) -> f64 { t.area() }
 
-pub fn main() {
+fn main() {
     let rectangle = Rectangle { length: 3.0, height: 4.0 };
     let _triangle = Triangle  { length: 3.0, height: 4.0 };
 

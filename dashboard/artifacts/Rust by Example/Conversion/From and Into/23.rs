@@ -13,7 +13,7 @@ impl From<i32> for Number {
     }
 }
 
-pub fn main() {
+fn main() {
     let num = Number::from(30);
     println!("My number is {:?}", num);
 }

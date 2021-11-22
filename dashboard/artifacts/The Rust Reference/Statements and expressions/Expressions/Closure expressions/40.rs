@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn ten_times<F>(f: F) where F: Fn(i32) {
     for index in 0..10 {
         f(index);

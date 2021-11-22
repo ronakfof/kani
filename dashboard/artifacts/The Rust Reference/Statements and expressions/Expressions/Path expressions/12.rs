@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 mod globals {
     pub static STATIC_VAR: i32 = 5;
     pub static mut STATIC_MUT_VAR: i32 = 7;

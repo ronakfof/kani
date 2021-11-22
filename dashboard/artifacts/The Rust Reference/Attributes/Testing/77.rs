@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[test]
 #[should_panic(expected = "values don't match")]
 fn mytest() {

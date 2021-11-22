@@ -4,7 +4,7 @@
 #![crate_type = "lib"]
 
 // A function marked as a unit test
-pub fn main() {
+fn main() {
 #[test]
 fn test_foo() {
     /* ... */

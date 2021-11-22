@@ -9,7 +9,7 @@ impl Foo {
     fn share(&self) {}
 }
 
-pub fn main() {
+fn main() {
     let mut foo = Foo;
     let loan = foo.mutate_and_share();
     foo.share();

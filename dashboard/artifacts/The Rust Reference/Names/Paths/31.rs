@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::io::{self, Write};
 mod m {
     #[clippy::cyclomatic_complexity = "0"]

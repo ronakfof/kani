@@ -8,4 +8,4 @@ pub fn increment(x: u32) -> u32 {
 macro_rules! inc {
     ($x:expr) => ( $crate::increment($x) )
 }
-pub fn main() { }
+fn main() { }

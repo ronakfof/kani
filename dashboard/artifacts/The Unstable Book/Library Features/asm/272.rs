@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(asm)]
 // Multiply x by 6 using shifts and adds
-pub fn main() {
+fn main() {
 let mut x: u64 = 4;
 unsafe {
     asm!(

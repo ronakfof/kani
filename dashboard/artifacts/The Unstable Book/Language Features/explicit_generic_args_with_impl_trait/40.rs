@@ -6,7 +6,7 @@
 fn foo<T: ?Sized>(_f: impl AsRef<T>) {}
 fn bar<T: ?Sized, F: AsRef<T>>(_f: F) {}
 
-pub fn main() {
+fn main() {
     bar::<str, _>("".to_string()); // Okay
     bar::<str, String>("".to_string()); // Okay
 

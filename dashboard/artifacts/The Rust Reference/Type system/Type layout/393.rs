@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // This enum has the same representation as ...
-pub fn main() {
+fn main() {
 #[repr(u8)]
 enum MyEnum {
     A(u32),

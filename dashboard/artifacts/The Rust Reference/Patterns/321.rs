@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let x = 20;
 let (a, _) = (10, x);   // the x is always matched by _
 assert_eq!(a, 10);

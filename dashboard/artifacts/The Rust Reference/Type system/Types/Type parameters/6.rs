@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn to_vec<A: Clone>(xs: &[A]) -> Vec<A> {
     if xs.is_empty() {
         return vec![];

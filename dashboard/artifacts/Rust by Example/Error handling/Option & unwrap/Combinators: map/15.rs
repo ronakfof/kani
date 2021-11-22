@@ -47,7 +47,7 @@ fn eat(food: Option<Cooked>) {
     }
 }
 
-pub fn main() {
+fn main() {
     let apple = Some(Food::Apple);
     let carrot = Some(Food::Carrot);
     let potato = None;

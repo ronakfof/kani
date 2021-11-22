@@ -17,7 +17,7 @@ impl<T> PrintInOption for T where
     }
 }
 
-pub fn main() {
+fn main() {
     let vec = vec![1, 2, 3];
 
     vec.print_in_option();

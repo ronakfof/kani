@@ -18,7 +18,7 @@ mod values {
 }
 
 pub use self::color::Color;
-pub fn main() {
+fn main() {
     // Actual path to the implementing type and impl in the same module.
     color::Color::WHITE;
 

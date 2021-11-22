@@ -3,7 +3,7 @@
 #![allow(unused)]
 // invalid suffixes
 
-pub fn main() {
+fn main() {
 0invalidSuffix;
 
 // uses numbers of the wrong base

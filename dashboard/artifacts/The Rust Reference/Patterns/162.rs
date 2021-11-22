@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 for i in -2..5 {
     match i {
         -1 => println!("It's minus one"),

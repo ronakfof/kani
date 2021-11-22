@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let condition = true;
 let mut x = Box::new(0);    // x was uninit; just overwrite.
 if condition {

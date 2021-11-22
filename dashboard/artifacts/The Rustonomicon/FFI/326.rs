@@ -10,7 +10,7 @@ extern {
    fn trigger_callback();
 }
 
-pub fn main() {
+fn main() {
     unsafe {
         register_callback(callback);
         trigger_callback(); // Triggers the callback.

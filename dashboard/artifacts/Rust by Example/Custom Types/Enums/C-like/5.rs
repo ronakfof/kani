@@ -17,7 +17,7 @@ enum Color {
     Blue = 0x0000ff,
 }
 
-pub fn main() {
+fn main() {
     // `enums` can be cast as integers.
     println!("zero is {}", Number::Zero as i32);
     println!("one is {}", Number::One as i32);

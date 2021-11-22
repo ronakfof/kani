@@ -2,7 +2,7 @@
 #![allow(unused)]
 // Foo introduces a type in the type namespace and a constructor in the value
 // namespace.
-pub fn main() {
+fn main() {
 struct Foo(u32);
 
 // The `Foo` macro is declared in the macro namespace.

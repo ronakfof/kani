@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[forbid(missing_docs)]
 pub mod m3 {
     // Attempting to toggle warning signals an error here

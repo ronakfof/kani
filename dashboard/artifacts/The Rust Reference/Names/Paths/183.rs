@@ -10,4 +10,4 @@ mod b {
         // In Rust 2018, `::a` would be interpreted as the crate `a`.
     }
 }
-pub fn main() {}
+fn main() {}

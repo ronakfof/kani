@@ -13,7 +13,7 @@ struct Single(A);
 // the concrete type `A` defined at the top.
 struct SingleGen<T>(T);
 
-pub fn main() {
+fn main() {
     // `Single` is concrete and explicitly takes `A`.
     let _s = Single(A);
     

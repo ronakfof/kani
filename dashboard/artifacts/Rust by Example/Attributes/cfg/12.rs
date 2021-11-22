@@ -12,7 +12,7 @@ fn are_you_on_linux() {
     println!("You are *not* running linux!");
 }
 
-pub fn main() {
+fn main() {
     are_you_on_linux();
 
     println!("Are you sure?");

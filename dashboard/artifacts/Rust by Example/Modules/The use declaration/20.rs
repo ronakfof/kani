@@ -15,7 +15,7 @@ mod deeply {
     }
 }
 
-pub fn main() {
+fn main() {
     // Easier access to `deeply::nested::function`
     other_function();
 

@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 pub mod libc {
    pub use ::std::os::raw::{c_int, c_void};
    #[allow(non_camel_case_types)]

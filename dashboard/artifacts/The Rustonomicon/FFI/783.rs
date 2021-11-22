@@ -17,4 +17,4 @@ extern "C" {
     pub fn foo(arg: *mut Foo);
     pub fn bar(arg: *mut Bar);
 }
-pub fn main() {}
+fn main() {}

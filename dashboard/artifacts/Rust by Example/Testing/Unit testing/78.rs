@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn sqrt(number: f64) -> Result<f64, String> {
     if number >= 0.0 {
         Ok(number.powf(0.5))

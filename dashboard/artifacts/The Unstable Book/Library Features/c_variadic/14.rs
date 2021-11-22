@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(c_variadic)]
 
-pub fn main() {
+fn main() {
 use std::ffi::VaList;
 
 pub unsafe extern "C" fn vadd(n: usize, mut args: VaList) -> usize {

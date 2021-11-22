@@ -15,7 +15,7 @@ impl Blue for BlueJay {}
 fn red<T: Red>(_: &T)   -> &'static str { "red" }
 fn blue<T: Blue>(_: &T) -> &'static str { "blue" }
 
-pub fn main() {
+fn main() {
     let cardinal = Cardinal;
     let blue_jay = BlueJay;
     let _turkey   = Turkey;

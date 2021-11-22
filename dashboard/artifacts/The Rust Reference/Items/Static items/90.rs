@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn atomic_add(_: &mut u32, _: u32) -> u32 { 2 }
 
 static mut LEVELS: u32 = 0;

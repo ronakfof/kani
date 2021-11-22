@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut x = vec![1, 2, 3];
 
 while let Some(y) = x.pop() {

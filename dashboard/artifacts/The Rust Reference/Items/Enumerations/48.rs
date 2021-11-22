@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 enum Animal {
     Dog(String, f64),
     Cat { name: String, weight: f64 },

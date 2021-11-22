@@ -46,4 +46,4 @@ fn bar() {
     outer_mod::foo();
 }
 
-pub fn main() { bar() }
+fn main() { bar() }

@@ -19,7 +19,7 @@ enum Either<'a> {
     Ref(&'a i32),
 }
 
-pub fn main() {
+fn main() {
     let x = 18;
     let y = 15;
 

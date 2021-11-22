@@ -25,4 +25,4 @@ mod foo {
     }
 }
 
-pub fn main() {}
+fn main() {}

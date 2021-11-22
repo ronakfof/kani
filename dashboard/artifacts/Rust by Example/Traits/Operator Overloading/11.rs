@@ -37,7 +37,7 @@ impl ops::Add<Foo> for Bar {
     }
 }
 
-pub fn main() {
+fn main() {
     println!("Foo + Bar = {:?}", Foo + Bar);
     println!("Bar + Foo = {:?}", Bar + Foo);
 }

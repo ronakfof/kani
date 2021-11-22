@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 trait Trait {
     #[must_use]
     fn use_me(&self) -> i32;

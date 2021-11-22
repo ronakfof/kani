@@ -16,7 +16,7 @@ fn elided_pass(x: &i32) -> &i32 { x }
 
 fn annotated_pass<'a>(x: &'a i32) -> &'a i32 { x }
 
-pub fn main() {
+fn main() {
     let x = 3;
 
     elided_input(&x);

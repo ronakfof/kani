@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(asm)]
 
-pub fn main() {
+fn main() {
 let mut a = 0;
 unsafe {
     asm!(

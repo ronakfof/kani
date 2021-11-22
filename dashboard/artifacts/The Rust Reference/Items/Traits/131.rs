@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::rc::Rc;
 // Examples of non-object safe traits.
 trait NotObjectSafe {

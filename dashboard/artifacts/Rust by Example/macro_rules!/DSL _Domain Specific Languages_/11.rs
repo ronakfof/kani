@@ -9,7 +9,7 @@ macro_rules! calculate {
     }};
 }
 
-pub fn main() {
+fn main() {
     calculate! {
         eval 1 + 2 // hehehe `eval` is _not_ a Rust keyword!
     }

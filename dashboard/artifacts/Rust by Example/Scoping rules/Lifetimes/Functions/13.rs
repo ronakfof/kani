@@ -28,7 +28,7 @@ fn pass_x<'a, 'b>(x: &'a i32, _: &'b i32) -> &'a i32 { x }
 // reference. Then the data is dropped upon exiting the scope, leaving
 // a reference to invalid data to be returned.
 
-pub fn main() {
+fn main() {
     let x = 7;
     let y = 9;
     

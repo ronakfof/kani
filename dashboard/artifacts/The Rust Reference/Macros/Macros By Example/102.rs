@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // compiles OK
-pub fn main() {
+fn main() {
 macro_rules! foo {
     ($l:tt) => { bar!($l); }
 }

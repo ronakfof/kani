@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 macro_rules! foo {
     ($l:expr) => { bar!($l); }
 // ERROR:               ^^ no rules expected this token in macro call

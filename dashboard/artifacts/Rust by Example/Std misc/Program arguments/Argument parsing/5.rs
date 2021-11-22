@@ -19,7 +19,7 @@ match_args {{increase|decrease}} <integer>
     Increase or decrease given integer by one.");
 }
 
-pub fn main() {
+fn main() {
     let args: Vec<String> = env::args().collect();
 
     match args.len() {

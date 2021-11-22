@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Not object safe if `Self` is a type argument.
-pub fn main() {
+fn main() {
 trait Super<A> {}
 trait WithSelf: Super<Self> where Self: Sized {}
 

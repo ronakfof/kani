@@ -5,7 +5,7 @@
 // The library is named "rary"
 #![crate_name = "rary"]
 
-pub fn main() {
+fn main() {
 pub fn public_function() {
     println!("called rary's `public_function()`");
 }

@@ -12,6 +12,6 @@ fn print(a: Box<dyn Printable>) {
     println!("{}", a.stringify());
 }
 
-pub fn main() {
+fn main() {
     print(Box::new(10) as Box<dyn Printable>);
 }

@@ -4,7 +4,7 @@
 use std::ptr;
 
 #[inline(never)]
-pub fn main() {
+fn main() {
     let xs = [0u32; 2];
 
     // force LLVM to allocate `xs` on the stack

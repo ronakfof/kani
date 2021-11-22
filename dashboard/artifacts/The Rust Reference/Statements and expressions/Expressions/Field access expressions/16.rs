@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct HoldsCallable<F: Fn()> { callable: F }
 let holds_callable = HoldsCallable { callable: || () };
 

@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn temp() {}
 trait Use { fn use_temp(&self) -> &Self { self } }
 impl Use for () {}

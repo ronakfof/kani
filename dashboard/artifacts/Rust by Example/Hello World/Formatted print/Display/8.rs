@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Import (via `use`) the `fmt` module to make it available.
-pub fn main() {
+fn main() {
 use std::fmt;
 
 // Define a structure for which `fmt::Display` will be implemented. This is

@@ -3,7 +3,7 @@
 #![feature(custom_test_frameworks)]
 #![test_runner(my_runner)]
 
-pub fn main() {
+fn main() {
 fn my_runner(tests: &[&i32]) {
     for t in tests {
         if **t == 0 {

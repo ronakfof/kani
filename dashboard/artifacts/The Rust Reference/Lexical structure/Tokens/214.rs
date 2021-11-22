@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 "foo"; r"foo";                     // foo
 "\"foo\""; r#""foo""#;             // "foo"
 

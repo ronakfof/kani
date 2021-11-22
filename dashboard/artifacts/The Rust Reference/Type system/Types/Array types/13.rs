@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // A stack-allocated array
-pub fn main() {
+fn main() {
 let array: [i32; 3] = [1, 2, 3];
 
 // A heap-allocated array, coerced to a slice

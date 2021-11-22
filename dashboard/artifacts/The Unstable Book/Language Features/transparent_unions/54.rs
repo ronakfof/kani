@@ -3,7 +3,7 @@
 #![feature(transparent_unions)]
 
 // This union has the same representation as `T`.
-pub fn main() {
+fn main() {
 #[repr(transparent)]
 pub union GenericUnion<T: Copy> { // Unions with non-`Copy` fields are unstable.
     pub field: T,

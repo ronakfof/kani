@@ -2,7 +2,7 @@
 #![allow(unused)]
 static mut A: usize = 0;
 
-pub fn main() {
+fn main() {
     let t = std::thread::spawn(|| {
         unsafe { A += 1 };
     });

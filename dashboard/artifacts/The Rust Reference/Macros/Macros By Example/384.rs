@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 pub mod inner {
     #[macro_export]
     macro_rules! call_foo {

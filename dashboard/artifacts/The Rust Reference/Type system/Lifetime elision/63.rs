@@ -4,7 +4,7 @@
 // The following examples show situations where it is not allowed to elide the
 // lifetime parameter.
 
-pub fn main() {
+fn main() {
 trait Example {
 // Cannot infer, because there are no parameters to infer from.
 fn get_str() -> &str;                                 // ILLEGAL

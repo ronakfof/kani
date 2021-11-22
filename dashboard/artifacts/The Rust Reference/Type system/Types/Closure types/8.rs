@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn f<F : FnOnce() -> String> (g: F) {
     println!("{}", g());
 }

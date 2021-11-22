@@ -5,7 +5,7 @@
 use std::ops::{Generator, GeneratorState};
 use std::pin::Pin;
 
-pub fn main() {
+fn main() {
     let mut generator = || {
         yield 1;
         return "foo"

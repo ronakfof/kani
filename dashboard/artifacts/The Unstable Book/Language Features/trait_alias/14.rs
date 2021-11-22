@@ -10,7 +10,7 @@ fn foo<T: Foo>(v: &T) {
     println!("{:?}", v);
 }
 
-pub pub fn main() {
+pub fn main() {
     foo(&1);
 
     // Use trait alias for trait objects.

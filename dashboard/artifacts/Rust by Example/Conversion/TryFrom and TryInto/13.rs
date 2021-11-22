@@ -18,7 +18,7 @@ impl TryFrom<i32> for EvenNumber {
     }
 }
 
-pub fn main() {
+fn main() {
     // TryFrom
 
     assert_eq!(EvenNumber::try_from(8), Ok(EvenNumber(8)));

@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // STRING: &'static str
-pub fn main() {
+fn main() {
 const STRING: &str = "bitstring";
 
 struct BitsNStrings<'a> {

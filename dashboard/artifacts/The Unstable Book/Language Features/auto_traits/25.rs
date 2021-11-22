@@ -14,7 +14,7 @@ struct MaybeValid<T>(T);
 
 fn must_be_valid<T: Valid>(_t: T) { }
 
-pub fn main() {
+fn main() {
     // works
     must_be_valid( MaybeValid(True) );
 

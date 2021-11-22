@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(no_sanitize)]
 
-pub fn main() {
+fn main() {
 #[no_sanitize(address)]
 fn foo() {
   // ...

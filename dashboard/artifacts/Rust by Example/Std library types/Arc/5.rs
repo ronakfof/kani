@@ -3,7 +3,7 @@
 use std::sync::Arc;
 use std::thread;
 
-pub fn main() {
+fn main() {
     // This variable declaration is where its value is specified.
     let apple = Arc::new("the same apple");
 

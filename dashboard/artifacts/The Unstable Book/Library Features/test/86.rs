@@ -3,7 +3,7 @@
 #![feature(test)]
 
 extern crate test;
-pub fn main() {
+fn main() {
 use test::Bencher;
 
 #[bench]

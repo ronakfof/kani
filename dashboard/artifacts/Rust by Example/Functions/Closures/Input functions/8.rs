@@ -11,7 +11,7 @@ fn function() {
     println!("I'm a function!");
 }
 
-pub fn main() {
+fn main() {
     // Define a closure satisfying the `Fn` bound
     let closure = || println!("I'm a closure!");
 

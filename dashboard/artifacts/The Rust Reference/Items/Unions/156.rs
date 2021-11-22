@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 union MyUnion { f1: u32, f2: f32 }
 // ERROR: cannot borrow `u` (via `u.f2`) as mutable more than once at a time
 fn test() {

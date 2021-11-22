@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(cfg_panic)]
 
-pub fn main() {
+fn main() {
 #[cfg(panic = "unwind")]
 fn a() {
     // ...

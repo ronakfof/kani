@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn as_str(data: &u32) -> &str {
     // compute the string
     let s = format!("{}", data);

@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![allow(unreachable_code)]
 
-pub fn main() {
+fn main() {
     'outer: loop {
         println!("Entered the outer loop");
 

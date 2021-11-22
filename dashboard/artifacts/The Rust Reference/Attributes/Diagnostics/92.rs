@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // This allows all lints in the "unused" group.
-pub fn main() {
+fn main() {
 #[allow(unused)]
 // This overrides the "unused_must_use" lint from the "unused"
 // group to deny.

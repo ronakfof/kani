@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(intrinsics)]
-pub fn main() {}
+fn main() {}
 
 extern "rust-intrinsic" {
     fn transmute<T, U>(x: T) -> U;

@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Here 'a is substituted for 'static
-pub fn main() {
+fn main() {
 let subtype: &(for<'a> fn(&'a i32) -> &'a i32) = &((|x| x) as fn(&_) -> &_);
 let supertype: &(fn(&'static i32) -> &'static i32) = subtype;
 

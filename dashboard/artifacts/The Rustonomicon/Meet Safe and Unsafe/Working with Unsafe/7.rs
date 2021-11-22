@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn index(idx: usize, arr: &[u8]) -> Option<u8> {
     if idx < arr.len() {
         unsafe {

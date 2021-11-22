@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(more_qualified_paths)]
 
-pub fn main() {
+fn main() {
     // destructure through a qualified path
     let <Foo as A>::Assoc { br } = StructStruct { br: 2 };
 }

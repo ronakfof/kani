@@ -3,7 +3,7 @@
 #[derive(Clone, Copy)]
 struct Point { x: i32, y: i32 }
 
-pub fn main() {
+fn main() {
     let c = 'Q';
 
     // A `ref` borrow on the left side of an assignment is equivalent to

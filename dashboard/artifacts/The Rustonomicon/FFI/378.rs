@@ -20,7 +20,7 @@ extern {
    fn trigger_callback();
 }
 
-pub fn main() {
+fn main() {
     // Create the object that will be referenced in the callback:
     let mut rust_object = Box::new(RustObject { a: 5 });
 

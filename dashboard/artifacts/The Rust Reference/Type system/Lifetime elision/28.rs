@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 trait T {}
 trait ToCStr {}
 struct Thing<'a> {f: &'a i32}

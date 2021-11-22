@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let machine_kind = if cfg!(unix) {
   "unix"
 } else if cfg!(windows) {

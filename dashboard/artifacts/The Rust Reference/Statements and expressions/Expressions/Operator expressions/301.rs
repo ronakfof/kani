@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn sum(values: &[f64]) -> f64 { 0.0 }
 fn len(values: &[f64]) -> i32 { 0 }
 fn average(values: &[f64]) -> f64 {

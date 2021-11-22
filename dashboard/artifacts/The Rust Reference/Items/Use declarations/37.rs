@@ -6,7 +6,7 @@ use std::collections::hash_map::{self, HashMap};
 fn foo<T>(_: T){}
 fn bar(map1: HashMap<String, usize>, map2: hash_map::HashMap<String, usize>){}
 
-pub fn main() {
+fn main() {
     // Equivalent to 'foo(vec![std::option::Option::Some(1.0f64),
     // std::option::Option::None]);'
     foo(vec![Some(1.0f64), None]);

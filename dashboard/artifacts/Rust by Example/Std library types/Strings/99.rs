@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let raw_str = r"Escapes don't work here: \x3F \u{211D}";
     println!("{}", raw_str);
 

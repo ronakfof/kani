@@ -8,7 +8,7 @@ mod quux {
     }
 }
 
-pub fn main() {
+fn main() {
     quux::bar();
     quux::baz();
 }

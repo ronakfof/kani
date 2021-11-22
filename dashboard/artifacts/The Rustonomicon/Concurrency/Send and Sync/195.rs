@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Carton<T>(std::ptr::NonNull<T>);
 // Safety: Since there exists a public way to go from a `&Carton<T>` to a `&T`
 // in an unsynchronized fashion (such as `Deref`), then `Carton<T>` can't be

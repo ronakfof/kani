@@ -4,6 +4,6 @@
 #![recursion_limit = "1"]
 
 // This fails because it requires two recursive steps to auto-dereference.
-pub fn main() {
+fn main() {
 (|_: &u8| {})(&&&1);
 }

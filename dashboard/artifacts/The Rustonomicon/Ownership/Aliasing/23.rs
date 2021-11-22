@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn compute(input: &u32, output: &mut u32) {
     if *input > 10 {
         *output = 1;

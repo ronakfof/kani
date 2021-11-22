@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[non_exhaustive]
 pub struct Config {
     pub window_width: u16,

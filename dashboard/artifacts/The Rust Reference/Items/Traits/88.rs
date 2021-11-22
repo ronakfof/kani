@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::rc::Rc;
 use std::sync::Arc;
 use std::pin::Pin;

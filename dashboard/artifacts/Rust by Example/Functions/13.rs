@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Unlike C/C++, there's no restriction on the order of function definitions
-pub fn main() {
+fn main() {
     // We can use this function here, and define it somewhere later
     fizzbuzz_to(100);
 }

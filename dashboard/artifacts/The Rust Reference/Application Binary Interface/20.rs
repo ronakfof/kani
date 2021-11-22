@@ -3,7 +3,7 @@
 // foo.rs
 
 // This is kept because of `#[used]`:
-pub fn main() {
+fn main() {
 #[used]
 static FOO: u32 = 0;
 

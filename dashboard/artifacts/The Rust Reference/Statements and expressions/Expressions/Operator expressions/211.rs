@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 assert_eq!(3 + 6, 9);
 assert_eq!(5.5 - 1.25, 4.25);
 assert_eq!(-5 * 14, -70);

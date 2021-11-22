@@ -3,7 +3,7 @@
 #![feature(transparent_unions)]
 
 // This union has the same representation as `f32`.
-pub fn main() {
+fn main() {
 #[repr(transparent)]
 union SingleFieldUnion {
     field: f32,

@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct A {
     a: u8,
     _pad1: [u8; 3], // to align `b`

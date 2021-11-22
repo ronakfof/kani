@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let example = ("dog", "cat", "horse");
 let dog = example.0;
 let cat = example.1;

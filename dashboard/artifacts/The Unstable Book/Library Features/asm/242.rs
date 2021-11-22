@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(asm)]
-pub fn main() {
+fn main() {
 let ebx: u32;
 let ecx: u32;
 

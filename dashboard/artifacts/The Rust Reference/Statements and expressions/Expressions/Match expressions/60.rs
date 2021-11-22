@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let x = 9;
 let message = match x {
     0 | 1  => "not many",

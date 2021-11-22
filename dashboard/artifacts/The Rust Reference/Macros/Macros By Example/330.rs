@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 self::m!();
 m!(); // OK: Path-based lookup finds m in the current module.
 

@@ -5,7 +5,7 @@
 // silence warnings from the `filter_map` clippy lint
 #![allow(clippy::filter_map)]
 
-pub fn main() {
+fn main() {
     // ...
 }
 

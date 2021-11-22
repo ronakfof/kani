@@ -5,7 +5,7 @@ use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
 
-pub fn main() {
+fn main() {
     // File hosts must exist in current path before this produces output
     if let Ok(lines) = read_lines("./hosts") {
         // Consumes the iterator, returns an (Optional) String

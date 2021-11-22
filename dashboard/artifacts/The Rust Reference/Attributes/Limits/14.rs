@@ -3,7 +3,7 @@
 #![allow(unused)]
 #![recursion_limit = "4"]
 
-pub fn main() {
+fn main() {
 macro_rules! a {
     () => { a!(1); };
     (1) => { a!(2); };

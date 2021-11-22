@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 unsafe {
     let b = [13u8, 17u8];
     let a = &b[0] as *const u8;

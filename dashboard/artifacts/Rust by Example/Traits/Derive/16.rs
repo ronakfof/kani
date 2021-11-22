@@ -19,7 +19,7 @@ impl Inches {
 // `Seconds`, a tuple struct with no additional attributes
 struct Seconds(i32);
 
-pub fn main() {
+fn main() {
     let _one_second = Seconds(1);
 
     // Error: `Seconds` can't be printed; it doesn't implement the `Debug` trait

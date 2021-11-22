@@ -9,6 +9,6 @@
 // Turn on a warning.
 // This can be done in any module, not just the anonymous crate module.
 #![warn(non_camel_case_types)]
-pub fn main() {
+fn main() {
 
 }

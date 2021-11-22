@@ -15,7 +15,7 @@ struct World<'a> {
     inspector: Option<Inspector<'a>>,
 }
 
-pub fn main() {
+fn main() {
     let mut world = World {
         inspector: None,
         days: Box::new(1),

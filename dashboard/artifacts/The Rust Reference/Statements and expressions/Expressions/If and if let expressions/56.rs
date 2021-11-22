@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let dish = ("Ham", "Eggs");
 
 // this body will be skipped because the pattern is refuted

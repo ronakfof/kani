@@ -12,6 +12,6 @@ impl Struct {
     }
 }
 
-pub fn main () {
+fn main () {
     let _struct = Struct::new();
 }

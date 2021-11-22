@@ -10,7 +10,7 @@ fn double_first(vec: Vec<&str>) -> Result<Option<i32>, ParseIntError> {
     opt.map_or(Ok(None), |r| r.map(Some))
 }
 
-pub fn main() {
+fn main() {
     let numbers = vec!["42", "93", "18"];
     let empty = vec![];
     let strings = vec!["tofu", "93", "18"];

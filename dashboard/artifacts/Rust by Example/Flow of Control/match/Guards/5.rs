@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     let pair = (2, -2);
     // TODO ^ Try different values for `pair`
 

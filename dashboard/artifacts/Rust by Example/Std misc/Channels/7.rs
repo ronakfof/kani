@@ -7,7 +7,7 @@ use std::thread;
 
 static NTHREADS: i32 = 3;
 
-pub fn main() {
+fn main() {
     // Channels have two endpoints: the `Sender<T>` and the `Receiver<T>`,
     // where `T` is the type of the message to be transferred
     // (type annotation is superfluous)

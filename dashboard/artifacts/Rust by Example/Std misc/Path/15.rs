@@ -2,7 +2,7 @@
 #![allow(unused)]
 use std::path::Path;
 
-pub fn main() {
+fn main() {
     // Create a `Path` from an `&'static str`
     let path = Path::new(".");
 

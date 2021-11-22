@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let int_reference = &3;
 
 let a = match *int_reference { 0 => "zero", _ => "some" };

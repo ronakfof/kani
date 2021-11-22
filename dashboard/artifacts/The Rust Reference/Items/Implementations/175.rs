@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 trait Seq<T> { fn dummy(&self, _: T) { } }
 impl<T> Seq<T> for Vec<T> {
     /* ... */

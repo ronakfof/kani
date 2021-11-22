@@ -18,7 +18,7 @@ fn create_fnonce() -> impl FnOnce() {
     move || println!("This is a: {}", text)
 }
 
-pub fn main() {
+fn main() {
     let fn_plain = create_fn();
     let mut fn_mut = create_fnmut();
     let fn_once = create_fnonce();

@@ -15,6 +15,6 @@ fn add(a: i32, b: i32) -> i32 {
 #[cfg(not(any(target_arch = "x86", target_arch = "x86_64")))]
 fn add(a: i32, b: i32) -> i32 { a + b }
 
-pub fn main() {
+fn main() {
     assert_eq!(add(3, 14159), 14162)
 }

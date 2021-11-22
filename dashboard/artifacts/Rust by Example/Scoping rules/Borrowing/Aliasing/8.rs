@@ -2,7 +2,7 @@
 #![allow(unused)]
 struct Point { x: i32, y: i32, z: i32 }
 
-pub fn main() {
+fn main() {
     let mut point = Point { x: 0, y: 0, z: 0 };
 
     let borrowed_point = &point;

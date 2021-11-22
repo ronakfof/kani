@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Tells the rustfmt tool to not format the following element.
-pub fn main() {
+fn main() {
 #[rustfmt::skip]
 struct S {
 }

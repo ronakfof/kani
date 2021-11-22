@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn foo<'a, T>() {}
 trait A<U> {}
 struct Ref<'a, T> where T: 'a { r: &'a T }

@@ -5,7 +5,7 @@ fn evil_feeder<T>(input: &mut T, val: T) {
     *input = val;
 }
 
-pub fn main() {
+fn main() {
     let mut mr_snuggles: &'static str = "meow! :3";  // mr. snuggles forever!!
     {
         let spike = String::from("bark! >:V");

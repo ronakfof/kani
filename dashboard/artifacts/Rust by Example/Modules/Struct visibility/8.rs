@@ -22,7 +22,7 @@ mod my {
     }
 }
 
-pub fn main() {
+fn main() {
     // Public structs with public fields can be constructed as usual
     let open_box = my::OpenBox { contents: "public information" };
 

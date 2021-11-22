@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut v = vec![1, 2, 3];
 v.pop();          // Ignore the element returned from pop
 if v.is_empty() {

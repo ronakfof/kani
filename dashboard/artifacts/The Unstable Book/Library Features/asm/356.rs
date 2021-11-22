@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![feature(asm, llvm_asm)]
-pub fn main() {
+fn main() {
 fn load_fpu_control_word(control: u16) {
 unsafe {
     asm!("fldcw [{}]", in(reg) &control, options(nostack));

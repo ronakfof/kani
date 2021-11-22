@@ -3,6 +3,6 @@
 #![allow(unused)]
 // This will not compile
 
-pub fn main() {
+fn main() {
 fn foo(x: i32, ...) {}
 }

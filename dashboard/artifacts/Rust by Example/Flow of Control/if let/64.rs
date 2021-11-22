@@ -7,7 +7,7 @@ enum Foo {
     Qux(u32)
 }
 
-pub fn main() {
+fn main() {
     // Create example variables
     let a = Foo::Bar;
     let b = Foo::Baz;

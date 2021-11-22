@@ -38,7 +38,7 @@ fn try_logon<'a>(accounts: &Accounts<'a>,
     }
 }
 
-pub fn main(){
+fn main(){
     let mut accounts: Accounts = HashMap::new();
 
     let account = Account {

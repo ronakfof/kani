@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 use std::slice::from_raw_parts_mut;
 struct FakeSlice<T>(T);
 impl<T> FakeSlice<T> {

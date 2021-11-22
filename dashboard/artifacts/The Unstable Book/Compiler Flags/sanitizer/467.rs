@@ -2,7 +2,7 @@
 #![allow(unused)]
 use std::mem::MaybeUninit;
 
-pub fn main() {
+fn main() {
     unsafe {
         let a = MaybeUninit::<[usize; 4]>::uninit();
         let a = a.assume_init();

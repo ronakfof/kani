@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 #[track_caller]
 fn f() {
     println!("{}", std::panic::Location::caller());

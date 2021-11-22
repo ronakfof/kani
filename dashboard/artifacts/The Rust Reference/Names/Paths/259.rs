@@ -12,4 +12,4 @@ mod a {
         }
     }
 }
-pub fn main() {}
+fn main() {}

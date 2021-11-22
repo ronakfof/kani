@@ -15,7 +15,7 @@ impl<'a> Default for Borrowed<'a> {
     }
 }
 
-pub fn main() {
+fn main() {
     let b: Borrowed = Default::default();
     println!("b is {:?}", b);
 }

@@ -4,4 +4,4 @@
 pub extern "C" fn hello_from_rust() {
     println!("Hello from Rust!");
 }
-pub fn main() {}
+fn main() {}

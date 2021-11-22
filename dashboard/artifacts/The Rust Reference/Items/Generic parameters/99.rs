@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Examples where const generic parameters cannot be used.
-pub fn main() {
+fn main() {
 fn foo<const N: usize>() {
     // Cannot use in item definitions within a function body.
     const BAD_CONST: [usize; N] = [1; N];

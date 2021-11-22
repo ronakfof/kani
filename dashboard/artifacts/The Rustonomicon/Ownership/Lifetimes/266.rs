@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn some_condition() -> bool { true }
 let mut data = vec![1, 2, 3];
 let x = &data[0];

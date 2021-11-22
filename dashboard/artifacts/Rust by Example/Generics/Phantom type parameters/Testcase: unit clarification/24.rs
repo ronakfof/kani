@@ -27,7 +27,7 @@ impl<Unit> Add for Length<Unit> {
     }
 }
 
-pub fn main() {
+fn main() {
     // Specifies `one_foot` to have phantom type parameter `Inch`.
     let one_foot:  Length<Inch> = Length(12.0, PhantomData);
     // `one_meter` has phantom type parameter `Mm`.

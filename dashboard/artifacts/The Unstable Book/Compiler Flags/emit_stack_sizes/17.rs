@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![crate_type = "lib"]
 
-pub fn main() {
+fn main() {
 use std::ptr;
 
 pub fn foo() {

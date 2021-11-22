@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // You can use escapes to write bytes by their hexadecimal values...
     let byte_escape = "I'm writing \x52\x75\x73\x74!";
     println!("What are you doing\x3F (\\x3F means ?) {}", byte_escape);

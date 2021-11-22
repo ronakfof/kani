@@ -20,7 +20,7 @@ impl S {
 
 impl T1 for S {}
 
-pub fn main() {
+fn main() {
     let s = S;
     s.method_of_t1();
     s.method_of_s();

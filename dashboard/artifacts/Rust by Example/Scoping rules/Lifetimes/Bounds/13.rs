@@ -23,7 +23,7 @@ fn print_ref<'a, T>(t: &'a T) where
     println!("`print_ref`: t is {:?}", t);
 }
 
-pub fn main() {
+fn main() {
     let x = 7;
     let ref_x = Ref(&x);
 

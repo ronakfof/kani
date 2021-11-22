@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Default representation, alignment lowered to 2.
-pub fn main() {
+fn main() {
 #[repr(packed(2))]
 struct PackedStruct {
     first: i16,

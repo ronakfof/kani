@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Used as an expression.
-pub fn main() {
+fn main() {
 let x = vec![1,2,3];
 
 // Used as a statement.

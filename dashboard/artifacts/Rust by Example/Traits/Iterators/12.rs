@@ -35,7 +35,7 @@ fn fibonacci() -> Fibonacci {
     Fibonacci { curr: 0, next: 1 }
 }
 
-pub fn main() {
+fn main() {
     // `0..3` is an `Iterator` that generates: 0, 1, and 2.
     let mut sequence = 0..3;
 

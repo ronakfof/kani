@@ -4,7 +4,7 @@ extern {
     fn foo(x: i32, ...);
 }
 
-pub fn main() {
+fn main() {
     unsafe {
         foo(10, 20, 30, 40, 50);
     }

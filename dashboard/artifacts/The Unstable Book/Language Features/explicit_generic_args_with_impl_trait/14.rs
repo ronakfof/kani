@@ -4,6 +4,6 @@
 
 fn foo<T: ?Sized>(_f: impl AsRef<T>) {}
 
-pub fn main() {
+fn main() {
     foo::<str>("".to_string());
 }

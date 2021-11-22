@@ -2,7 +2,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Self: Sized traits are not object-safe.
-pub fn main() {
+fn main() {
 trait TraitWithSize where Self: Sized {}
 
 struct S;

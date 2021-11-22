@@ -32,7 +32,7 @@ fn print(result: Result<i32>) {
     }
 }
 
-pub fn main() {
+fn main() {
     let numbers = vec!["42", "93", "18"];
     let empty = vec![];
     let strings = vec!["tofu", "93", "18"];

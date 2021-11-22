@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 // rmc-flags: --cbmc-args --unwind 4
 #![allow(unused)]
-pub fn main() {
+fn main() {
     // `Vec` has non-copy semantics.
     let haystack = vec![1, 2, 3];
 

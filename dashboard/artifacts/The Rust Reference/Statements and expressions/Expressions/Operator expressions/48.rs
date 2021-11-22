@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 {
     // a temporary with value 7 is created that lasts for this scope.
     let shared_reference = &7;

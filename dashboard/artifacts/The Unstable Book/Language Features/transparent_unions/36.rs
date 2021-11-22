@@ -3,7 +3,7 @@
 #![feature(transparent_unions)]
 
 // This (non-transparent) union is already valid in stable Rust:
-pub fn main() {
+fn main() {
 pub union GoodUnion {
     pub nothing: (),
 }

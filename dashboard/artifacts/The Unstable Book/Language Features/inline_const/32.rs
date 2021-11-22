@@ -2,7 +2,7 @@
 #![allow(unused)]
 #![feature(inline_const)]
 
-pub fn main() {
+fn main() {
 const fn one() -> i32 { 1 }
 
 let some_int = 3;

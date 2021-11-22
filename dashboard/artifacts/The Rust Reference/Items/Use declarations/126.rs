@@ -6,4 +6,4 @@ mod foo {
 }
 use foo::example::iter;
 use ::foo::baz::foobaz;
-pub fn main() {}
+fn main() {}

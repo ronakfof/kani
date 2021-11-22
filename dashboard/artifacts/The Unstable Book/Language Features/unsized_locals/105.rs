@@ -8,7 +8,7 @@ trait Foo {
 
 impl<T: ?Sized> Foo for T {}
 
-pub fn main () {
+fn main () {
     let slice: Box<dyn Foo> = Box::new([1, 2, 3]);
     // doesn't compile yet
     <dyn Foo as Foo>::foo(*slice);

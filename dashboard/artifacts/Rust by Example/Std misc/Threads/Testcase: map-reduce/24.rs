@@ -4,7 +4,7 @@
 use std::thread;
 
 // This is the `main` thread
-pub fn main() {
+fn main() {
 
     // This is our data to process.
     // We will calculate the sum of all digits via a threaded  map-reduce algorithm.

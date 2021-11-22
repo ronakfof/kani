@@ -4,7 +4,7 @@ fn is_odd(n: u32) -> bool {
     n % 2 == 1
 }
 
-pub fn main() {
+fn main() {
     println!("Find the sum of all the squared odd numbers under 1000");
     let upper = 1000;
 

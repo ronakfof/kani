@@ -31,7 +31,7 @@ fn inspect(event: WebEvent) {
     }
 }
 
-pub fn main() {
+fn main() {
     let pressed = WebEvent::KeyPress('x');
     // `to_owned()` creates an owned `String` from a string slice.
     let pasted  = WebEvent::Paste("my text".to_owned());

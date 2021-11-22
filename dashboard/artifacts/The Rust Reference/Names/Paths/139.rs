@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 mod ops {
     pub struct Range<T> {f1: T}
     pub trait Index<T> {}

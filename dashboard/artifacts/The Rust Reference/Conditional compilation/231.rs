@@ -1,7 +1,7 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
 // The function is only included in the build when compiling for macOS
-pub fn main() {
+fn main() {
 #[cfg(target_os = "macos")]
 fn macos_only() {
   // ...

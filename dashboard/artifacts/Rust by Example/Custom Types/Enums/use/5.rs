@@ -13,7 +13,7 @@ enum Work {
     Soldier,
 }
 
-pub fn main() {
+fn main() {
     // Explicitly `use` each name so they are available without
     // manual scoping.
     use crate::Status::{Poor, Rich};

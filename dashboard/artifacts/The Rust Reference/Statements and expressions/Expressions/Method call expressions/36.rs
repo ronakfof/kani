@@ -18,7 +18,7 @@ impl Bar for Foo {
   }
 }
 
-pub fn main() {
+fn main() {
   let mut f = Foo{};
   f.bar();
 }

@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct S; // Concrete type `S`
 struct GenericVal<T>(T); // Generic type `GenericVal`
 

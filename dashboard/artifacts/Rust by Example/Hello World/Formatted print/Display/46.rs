@@ -30,7 +30,7 @@ impl fmt::Display for Point2D {
     }
 }
 
-pub fn main() {
+fn main() {
     let minmax = MinMax(0, 14);
 
     println!("Compare structures:");

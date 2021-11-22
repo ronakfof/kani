@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 let mut data = vec![1, 2, 3];
 // This mut allows us to change where the reference points to
 let mut x = &data[0];

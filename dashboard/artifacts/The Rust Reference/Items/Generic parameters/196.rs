@@ -1,7 +1,7 @@
 // rmc-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 struct Foo<const B: bool>;
 trait Bar {}
 impl Bar for Foo<true> {}

@@ -1,6 +1,6 @@
 // compile-flags: --edition 2021
 #![allow(unused)]
-pub fn main() {
+fn main() {
 fn foo() {
     // m!(); // Error: m is not in scope.
     macro_rules! m {
