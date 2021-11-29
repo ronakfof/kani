@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 pub fn increment(x: u32) -> u32 {
     x + 1

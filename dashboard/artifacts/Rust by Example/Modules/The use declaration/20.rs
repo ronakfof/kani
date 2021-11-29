@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // Bind the `deeply::nested::function` path to `other_function`.
 use deeply::nested::function as other_function;

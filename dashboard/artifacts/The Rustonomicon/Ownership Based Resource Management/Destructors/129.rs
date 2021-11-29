@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 #![feature(allocator_api, ptr_internals)]
 

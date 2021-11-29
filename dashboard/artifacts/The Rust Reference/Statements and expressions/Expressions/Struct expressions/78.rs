@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 struct Color(u8, u8, u8);

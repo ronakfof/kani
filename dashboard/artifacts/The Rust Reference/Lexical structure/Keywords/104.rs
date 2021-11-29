@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // error[E0262]: invalid lifetime parameter name: `'static`
 fn main() {

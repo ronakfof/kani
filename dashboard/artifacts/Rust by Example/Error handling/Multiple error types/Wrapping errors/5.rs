@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 use std::error;
 use std::error::Error as _;

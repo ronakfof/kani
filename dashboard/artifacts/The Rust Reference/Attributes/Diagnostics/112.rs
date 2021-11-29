@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 unsafe fn an_unsafe_fn() {}

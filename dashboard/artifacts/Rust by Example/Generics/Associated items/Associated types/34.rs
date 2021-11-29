@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 struct Container(i32, i32);
 

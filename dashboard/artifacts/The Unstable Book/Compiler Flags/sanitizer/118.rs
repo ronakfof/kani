@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 static mut P: *mut usize = std::ptr::null_mut();
 

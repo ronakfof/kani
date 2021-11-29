@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // Import (via `use`) the `fmt` module to make it available.
 fn main() {

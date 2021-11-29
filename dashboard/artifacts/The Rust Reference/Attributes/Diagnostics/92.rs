@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // This allows all lints in the "unused" group.
 fn main() {

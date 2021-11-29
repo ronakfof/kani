@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #![feature(arbitrary_self_types, generators, generator_trait)]
 

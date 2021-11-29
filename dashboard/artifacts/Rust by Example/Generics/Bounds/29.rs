@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // A trait which implements the print marker: `{:?}`.
 use std::fmt::Debug;

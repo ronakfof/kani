@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // Returns a future that, when awaited, dereferences `x`.
 //

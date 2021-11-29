@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 #[repr(C, u8)] // `u8` was added

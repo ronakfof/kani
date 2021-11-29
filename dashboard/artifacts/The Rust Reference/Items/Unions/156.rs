@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 union MyUnion { f1: u32, f2: f32 }

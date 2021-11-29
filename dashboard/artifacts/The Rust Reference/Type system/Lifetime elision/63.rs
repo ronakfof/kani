@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // The following examples show situations where it is not allowed to elide the
 // lifetime parameter.

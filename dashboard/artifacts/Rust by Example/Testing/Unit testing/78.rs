@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn main() {
 fn sqrt(number: f64) -> Result<f64, String> {

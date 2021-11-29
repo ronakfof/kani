@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 extern "C" fn new_i32() -> i32 { 0 }

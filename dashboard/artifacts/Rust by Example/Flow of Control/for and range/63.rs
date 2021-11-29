@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 // rmc-flags: --cbmc-args --unwind 7
 #![allow(unused)]
 fn main() {

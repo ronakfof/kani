@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn is_odd(n: u32) -> bool {
     n % 2 == 1

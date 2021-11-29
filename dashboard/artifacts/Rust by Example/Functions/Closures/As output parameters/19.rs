@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn create_fn() -> impl Fn() {
     let text = "Fn".to_owned();

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 struct A;          // Concrete type `A`.
 struct S(A);       // Concrete type `S`.

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #![feature(llvm_asm)]
 #[cfg(any(target_arch = "x86", target_arch = "x86_64"))]

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // Here, Rust infers a lifetime that is as short as possible.
 // The two references are then coerced to that lifetime.

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // Tells the rustfmt tool to not format the following element.
 fn main() {

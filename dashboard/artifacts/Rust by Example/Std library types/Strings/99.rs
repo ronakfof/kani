@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn main() {
     let raw_str = r"Escapes don't work here: \x3F \u{211D}";

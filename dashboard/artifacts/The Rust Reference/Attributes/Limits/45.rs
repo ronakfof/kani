@@ -1,5 +1,5 @@
 // rmc-codegen-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 #![type_length_limit = "4"]
 

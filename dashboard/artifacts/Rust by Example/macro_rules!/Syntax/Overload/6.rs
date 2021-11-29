@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // `test!` will compare `$left` and `$right`
 // in different ways depending on how you invoke it:

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // This module is private, meaning that no external crate can access this
 // module. Because it is private at the root of this current crate, however, any

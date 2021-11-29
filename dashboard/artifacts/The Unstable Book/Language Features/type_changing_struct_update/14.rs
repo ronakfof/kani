@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #![allow(unused_variables, dead_code)]
 #![feature(type_changing_struct_update)]

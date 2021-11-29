@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #[derive(Clone, Copy)]
 struct Point { x: i32, y: i32 }

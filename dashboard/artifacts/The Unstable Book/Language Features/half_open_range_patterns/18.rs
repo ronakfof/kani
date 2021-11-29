@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #![feature(half_open_range_patterns)]
 #![feature(exclusive_range_pattern)]

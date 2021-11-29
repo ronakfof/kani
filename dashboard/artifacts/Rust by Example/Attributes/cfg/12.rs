@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // This function only gets compiled if the target OS is linux
 #[cfg(target_os = "linux")]

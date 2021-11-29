@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // This is a comment, and is ignored by the compiler
 // You can test this code by clicking the "Run" button over there ->

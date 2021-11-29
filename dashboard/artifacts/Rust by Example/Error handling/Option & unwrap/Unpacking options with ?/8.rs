@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn main() {
 fn next_birthday(current_age: Option<u8>) -> Option<String> {

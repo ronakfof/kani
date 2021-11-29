@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 fn main() {
     // `n` will take the values: 1, 2, ..., 100 in each iteration

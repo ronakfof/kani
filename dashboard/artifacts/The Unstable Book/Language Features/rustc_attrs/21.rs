@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 #![feature(rustc_attrs)]
 

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // `F` must implement `Fn` for a closure which takes no
 // inputs and returns nothing - exactly what is required

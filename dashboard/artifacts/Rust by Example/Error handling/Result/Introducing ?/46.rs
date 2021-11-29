@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // To compile and run this example without errors, while using Cargo, change the value 
 // of the `edition` field, in the `[package]` section of the `Cargo.toml` file, to "2015".

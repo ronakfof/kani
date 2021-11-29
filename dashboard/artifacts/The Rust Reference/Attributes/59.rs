@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // General metadata applied to the enclosing module or crate.
 #![crate_type = "lib"]

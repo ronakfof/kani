@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // An attribute to hide warnings for unused code.
 #![allow(dead_code)]

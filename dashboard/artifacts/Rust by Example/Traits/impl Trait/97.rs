@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2015
 #![allow(unused)]
 // Returns a function that adds `y` to its input
 fn make_adder_function(y: i32) -> impl Fn(i32) -> i32 {

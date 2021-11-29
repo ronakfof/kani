@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 fn main() {
 fn atomic_add(_: &mut u32, _: u32) -> u32 { 2 }

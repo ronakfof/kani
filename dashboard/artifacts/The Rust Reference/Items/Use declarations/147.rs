@@ -1,4 +1,4 @@
-// compile-flags: --edition 2021
+// compile-flags: --edition 2018
 #![allow(unused)]
 // use std::fs; // Error, this is ambiguous.
 use ::std::fs;  // Imports from the `std` crate, not the module below.
