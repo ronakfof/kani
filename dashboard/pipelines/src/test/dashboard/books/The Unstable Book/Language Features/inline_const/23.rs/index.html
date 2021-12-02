@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Pipeline src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs
+    Pipeline src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs
   </title>
 <style>
 #title{
@@ -496,7 +496,7 @@ a:visited:active {
 
   <div id="title">
     <h1>
-      RMC pipeline &lsquo;src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs&rsquo;
+      RMC pipeline &lsquo;src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs&rsquo;
     </h1>
     <p id="subtitle">
       Litani CI Dashboard
@@ -505,9 +505,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: fail</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>Pipeline status: success</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-252c477a-1ffd-48ab-94e6-69bcb8fb2915">
+              <a href="#job-f2588bb1-2cc1-4a0c-81fb-1907697d7507">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-19ea2e9f-f1f3-4625-96ef-075e97199e42">
+              <a href="#job-2edf58c4-10be-42d6-ab90-b4edb8e217b0">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,17 +583,15 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f47242e4-2450-4e29-b21c-79d1c455c1a6">
+              <a href="#job-10cdac0d-9001-4717-a2c5-decaa77ed569">
               
               Can RMC reason about it?
               
@@ -621,7 +619,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-252c477a-1ffd-48ab-94e6-69bcb8fb2915">
+    <div class="command-table" id="job-f2588bb1-2cc1-4a0c-81fb-1907697d7507">
       
       <div class="success">
       
@@ -629,7 +627,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-252c477a-1ffd-48ab-94e6-69bcb8fb2915">#</a>
+                <a href="#job-f2588bb1-2cc1-4a0c-81fb-1907697d7507">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -642,7 +640,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2015" "-Z" "no-codegen" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs"
+            "rmc-rustc" "--edition" "2015" "-Z" "no-codegen" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -683,7 +681,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:44:01Z
+                2021-12-02T08:04:45Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +689,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:44:01Z
+                2021-12-02T08:04:45Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -714,46 +712,6 @@ a:visited:active {
           
 
           
-          <div class="output-box"><xmp>stderr:
-            
-warning: the feature `inline_const` is incomplete and may not be safe to use and/or cause compiler crashes
---> src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs:3:12
-|
-3 | #![feature(inline_const)]
-|            ^^^^^^^^^^^^
-|
-= note: `#[warn(incomplete_features)]` on by default
-= note: see issue #76001 <https://github.com/rust-lang/rust/issues/76001> for more information
-
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
-warning: 1 warning emitted
-
-            </xmp>
-          </div><!-- class="output-box" -->
-          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -769,7 +727,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-19ea2e9f-f1f3-4625-96ef-075e97199e42">
+    <div class="command-table" id="job-2edf58c4-10be-42d6-ab90-b4edb8e217b0">
       
       <div class="success">
       
@@ -777,7 +735,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-19ea2e9f-f1f3-4625-96ef-075e97199e42">#</a>
+                <a href="#job-2edf58c4-10be-42d6-ab90-b4edb8e217b0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -790,7 +748,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs"
+            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -831,7 +789,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:49:29Z
+                2021-12-02T08:05:02Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -839,7 +797,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:49:29Z
+                2021-12-02T08:05:02Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -862,46 +820,6 @@ warning: 1 warning emitted
           
 
           
-          <div class="output-box"><xmp>stderr:
-            
-warning: the feature `inline_const` is incomplete and may not be safe to use and/or cause compiler crashes
---> src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs:3:12
-|
-3 | #![feature(inline_const)]
-|            ^^^^^^^^^^^^
-|
-= note: `#[warn(incomplete_features)]` on by default
-= note: see issue #76001 <https://github.com/rust-lang/rust/issues/76001> for more information
-
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_8" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h609ba46a86429dc9E::1::var_14" }, typ: StructTag("tag-_6723126166342416882"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_9139800189790234500") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_9139800189790234500") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
-warning: 1 warning emitted
-
-            </xmp>
-          </div><!-- class="output-box" -->
-          
 
         </div><!-- class="command-content" -->
       </div><!-- class="fail" -->
@@ -917,15 +835,15 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f47242e4-2450-4e29-b21c-79d1c455c1a6">
+    <div class="command-table" id="job-10cdac0d-9001-4717-a2c5-decaa77ed569">
       
-      <div class="fail">
+      <div class="success">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f47242e4-2450-4e29-b21c-79d1c455c1a6">#</a>
+                <a href="#job-10cdac0d-9001-4717-a2c5-decaa77ed569">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -938,7 +856,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2015" "rmc" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.rs"
+            RUSTFLAGS="--edition 2015" "rmc" "src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -947,7 +865,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                10
+                0
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -979,7 +897,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:49:29Z
+                2021-12-02T08:05:02Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -987,14 +905,14 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:49:30Z
+                2021-12-02T08:05:03Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              no
+              yes
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -1012,52 +930,28 @@ warning: 1 warning emitted
             
 CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
 Reading GOTO program from file
-Reading: src/test/dashboard/books/The Unstable Book/Language Features/inline_const/32.goto
+Reading: src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.goto
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs95mv1dc96Gj_2_32.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Runtime Symex: 0.023787s
-size of program expression: 320 steps
-simple slicing removed 4 assignments
-Generated 5 VCC(s), 3 remaining after simplification
-Runtime Postprocess Equation: 2.7e-05s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.00220793s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 6.3101e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-4000 variables, 986 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00128732s
-Runtime decision procedure: 0.0078825s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-4000 variables, 0 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 1.37e-05s
-Runtime decision procedure: 3.37e-05s
+Runtime Symex: 0.00193251s
+size of program expression: 87 steps
+simple slicing removed 0 assignments
+Generated 2 VCC(s), 0 remaining after simplification
+Runtime Postprocess Equation: 1.18e-05s
 
 ** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_12504766598841625470") (MIR type Closure(DefId(1:9048 ~ std[2cce]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-function _ZN3std2io5stdio6_print17hb315b158471eb315E
-[_ZN3std2io5stdio6_print17hb315b158471eb315E.assertion.1] assertion false: FAILURE
+/home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Language Features/inline_const/23.rs function add_one
+[add_one.assertion.1] line 5 attempt to compute `move _2 + const 1_i32`, which would overflow: SUCCESS
 
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
-[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 362 invalid args: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-
-** 1 of 7 failed (2 iterations)
-VERIFICATION FAILED
+** 0 of 3 failed (1 iterations)
+VERIFICATION SUCCESSFUL
 
             </xmp>
           </div><!-- class="output-box" -->

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-26668d05-071c-4515-af68-5c68ec1fbc30">
+              <a href="#job-7fc70bd0-0014-483c-bdc8-a7d979168094">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1251de58-e8d8-4c8e-9f8c-753839d4586a">
+              <a href="#job-8b0d0d21-194e-48ae-a698-e82e61941ae2">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1b49aef7-d542-4474-94be-7d862dffcc92">
+              <a href="#job-627c418d-916c-4f4f-954a-132de330b0e4">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-26668d05-071c-4515-af68-5c68ec1fbc30">
+    <div class="command-table" id="job-7fc70bd0-0014-483c-bdc8-a7d979168094">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-26668d05-071c-4515-af68-5c68ec1fbc30">#</a>
+                <a href="#job-7fc70bd0-0014-483c-bdc8-a7d979168094">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:39:28Z
+                2021-12-02T08:09:32Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:39:29Z
+                2021-12-02T08:09:33Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -717,13 +717,13 @@ a:visited:active {
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h51271776cf8cfb99E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17heaeec255a6e9ab60E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h51271776cf8cfb99E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17heaeec255a6e9ab60E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -752,6 +752,8 @@ Expr type
 Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17hf6633838342708baE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17hf6633838342708baE"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h46d1879652f60685E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
@@ -770,56 +772,51 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h34b6c993b56586b9E::1::var_1::b" }, typ: StructTag("tag-_7606872566487717749"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_4" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_3" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h20cd784edf2cce99E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::alloc::LayoutError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN69_$LT$core..alloc..layout..LayoutError$u20$as$u20$core..fmt..Debug$GT$3fmt17hbfc5f88d73875fa3E
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17hf6633838342708baE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17hf6633838342708baE"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(9) }, typ: Code { parameters: [Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self"), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs"), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs") }], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: BinOp { op: Minus, lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None } }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(13) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(47) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(47) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1223, col: Some(10) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(9) } }), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E"), pretty_name: Some("core::num::<impl usize>::wrapping_sub"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_1112759485216739785") }, identifier: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self"), base_name: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self") }], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(31) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E" }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, arguments: [] }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Switch { control: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, cases: [SwitchCase { case: Expr { value: IntConstant(0), typ: CInteger(SizeT), location: None }, body: Stmt { body: Goto("bb2"), location: None } }], default: Some(Stmt { body: Goto("bb3"), location: None }) }, location: None } }, location: None }, Stmt { body: Label { label: "bb2", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(18446744073709551615), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(39) } }, Stmt { body: Goto("bb4"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(9) } }, Stmt { body: Label { label: "bb3", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_1112759485216739785") }, location: None }), typ: StructTag("tag-_1112759485216739785"), location: None }, field: "cap" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(59) } }, Stmt { body: Goto("bb4"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(9) } }, Stmt { body: Label { label: "bb4", body: Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 230, col: Some(6) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 230, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(5) } }), base_name: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E"), pretty_name: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h9cc1d00520915d6dE::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_4" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_3" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -842,7 +839,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1251de58-e8d8-4c8e-9f8c-753839d4586a">
+    <div class="command-table" id="job-8b0d0d21-194e-48ae-a698-e82e61941ae2">
       
       <div class="success">
       
@@ -850,7 +847,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1251de58-e8d8-4c8e-9f8c-753839d4586a">#</a>
+                <a href="#job-8b0d0d21-194e-48ae-a698-e82e61941ae2">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -904,7 +901,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:39:29Z
+                2021-12-02T08:09:33Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -912,7 +909,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:39:30Z
+                2021-12-02T08:09:34Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -938,13 +935,13 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="output-box"><xmp>stderr:
             
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h51271776cf8cfb99E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17heaeec255a6e9ab60E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h51271776cf8cfb99E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17heaeec255a6e9ab60E::1::var_9" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -973,6 +970,8 @@ Expr type
 Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17hf6633838342708baE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17hf6633838342708baE"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h46d1879652f60685E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
@@ -991,56 +990,51 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h34b6c993b56586b9E::1::var_1::b" }, typ: StructTag("tag-_7606872566487717749"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_4" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_3" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h1339d31b26bcc867E::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h20cd784edf2cce99E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::alloc::LayoutError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN69_$LT$core..alloc..layout..LayoutError$u20$as$u20$core..fmt..Debug$GT$3fmt17hbfc5f88d73875fa3E
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17hf6633838342708baE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17hf6633838342708baE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17hf6633838342708baE"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(9) }, typ: Code { parameters: [Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self"), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs"), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs") }], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_1::self" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(38) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_2::rhs" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(44) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: BinOp { op: Minus, lhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_3" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_4" }, typ: CInteger(SizeT), location: None } }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(13) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(47) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1222, col: Some(47) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1223, col: Some(10) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs", function: Some("core::num::<impl usize>::wrapping_sub"), line: 1221, col: Some(9) } }), base_name: Some("_ZN4core3num23_$LT$impl$u20$usize$GT$12wrapping_sub17hac09ef6e2b049237E"), pretty_name: Some("core::num::<impl usize>::wrapping_sub"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17ha5f75d509d420358E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17ha5f75d509d420358E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_1112759485216739785") }, identifier: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self"), base_name: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self") }], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(31) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17ha5f75d509d420358E" }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, arguments: [] }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Switch { control: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_2" }, typ: CInteger(SizeT), location: None }, cases: [SwitchCase { case: Expr { value: IntConstant(0), typ: CInteger(SizeT), location: None }, body: Stmt { body: Goto("bb2"), location: None } }], default: Some(Stmt { body: Goto("bb3"), location: None }) }, location: None } }, location: None }, Stmt { body: Label { label: "bb2", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(18446744073709551615), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(39) } }, Stmt { body: Goto("bb4"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(9) } }, Stmt { body: Label { label: "bb3", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(12) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_1112759485216739785") }, location: None }), typ: StructTag("tag-_1112759485216739785"), location: None }, field: "cap" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(59) } }, Stmt { body: Goto("bb4"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 229, col: Some(9) } }, Stmt { body: Label { label: "bb4", body: Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 230, col: Some(6) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 230, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs", function: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), line: 228, col: Some(5) } }), base_name: Some("_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8capacity17h83f035d6b192fe11E"), pretty_name: Some("alloc::raw_vec::RawVec::<T, A>::capacity"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN75_$LT$usize$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$5index17h4294e4c0aea9c49cE::1::var_2::slice" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5slice4hack8into_vec17h9cc1d00520915d6dE::1::var_1::b" }, typ: StructTag("tag-_1932018498655314673"), location: None }, field: "0" }, typ: StructTag("tag-_15639296706287096376"), location: None }, field: "pointer" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_4" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_3" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h50236e17783a858cE::1::var_2" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -1063,7 +1057,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1b49aef7-d542-4474-94be-7d862dffcc92">
+    <div class="command-table" id="job-627c418d-916c-4f4f-954a-132de330b0e4">
       
       <div class="fail">
       
@@ -1071,7 +1065,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1b49aef7-d542-4474-94be-7d862dffcc92">#</a>
+                <a href="#job-627c418d-916c-4f4f-954a-132de330b0e4">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1125,15 +1119,15 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:43:58Z
+                2021-12-02T08:09:34Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                04s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:44:01Z
+                2021-12-02T08:09:38Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1166,66 +1160,63 @@ Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1CshVKX6ctfPl_3_266.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionjE5ok_orNtNtCs33scZ6i20Fm_5alloc11collections19TryReserveErrorKindECshVKX6ctfPl_3_266.0 iteration 1  thread 0
+Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionjE5ok_orNtNtCslgfTW8i2kpw_5alloc11collections19TryReserveErrorKindECshVKX6ctfPl_3_266.0 iteration 1  thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/cmp.rs line 1208 column 11 function std::cmp::max_by thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6max_byjNvYjNtB2_3Ord3cmpECshVKX6ctfPl_3_266.0 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6max_byjNvYjNtB2_3Ord3cmpECshVKX6ctfPl_3_266.1 iteration 1  thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/cmp.rs line 1208 column 11 function std::cmp::max_by thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6max_byjNvYjNtB2_3Ord3cmpECshVKX6ctfPl_3_266.0 iteration 1  thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3cmp6max_byjNvYjNtB2_3Ord3cmpECshVKX6ctfPl_3_266.1 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 925 column 15 function std::option::Option::<T>::ok_or thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 950 column 15 function std::option::Option::<T>::ok_or thread 0
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionjE5ok_orNtNtNtB5_5alloc6layout11LayoutErrorECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs line 303 column 26 function std::alloc::Layout::repeat thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1293 column 15 function std::result::Result::<T, E>::unwrap thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs line 406 column 32 function std::alloc::Layout::array thread 0
-Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCshVKX6ctfPl_3_266.1 iteration 1  thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs line 408 column 26 function std::alloc::Layout::array thread 0
+Unwinding loop _RNvMs_NtCslgfTW8i2kpw_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCshVKX6ctfPl_3_266.1 iteration 1  thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 851 column 15 function std::result::Result::<T, E>::map_err thread 0
-Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultNtNtNtB5_5alloc6layout6LayoutNtBK_11LayoutErrorE7map_errNtNtCs33scZ6i20Fm_5alloc11collections19TryReserveErrorKindNCINvNtB1G_7raw_vec11finish_growNtNtB1G_5alloc6GlobalE0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 448 column 22 function alloc::raw_vec::finish_grow thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 925 column 15 function std::option::Option::<T>::ok_or thread 0
+Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultNtNtNtB5_5alloc6layout6LayoutNtBK_11LayoutErrorE7map_errNtNtCslgfTW8i2kpw_5alloc11collections19TryReserveErrorKindNCINvNtB1G_7raw_vec11finish_growNtNtB1G_5alloc6GlobalE0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 456 column 22 function alloc::raw_vec::finish_grow thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 950 column 15 function std::option::Option::<T>::ok_or thread 0
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs line 170 column 27 function std::alloc::Global::alloc_impl thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 925 column 15 function std::option::Option::<T>::ok_or thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 950 column 15 function std::option::Option::<T>::ok_or thread 0
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs line 170 column 27 function std::alloc::Global::alloc_impl thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 925 column 15 function std::option::Option::<T>::ok_or thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 950 column 15 function std::option::Option::<T>::ok_or thread 0
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs line 202 column 27 function std::alloc::Global::grow_impl thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs line 215 column 31 function std::alloc::Global::grow_impl thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 851 column 15 function std::result::Result::<T, E>::map_err thread 0
-Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultINtNtNtB5_3ptr8non_null7NonNullShENtNtB5_5alloc10AllocErrorE7map_errNtNtCs33scZ6i20Fm_5alloc11collections15TryReserveErrorNCINvNtB1S_7raw_vec11finish_growNtNtB1S_5alloc6GlobalEs_0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 393 column 19 function alloc::raw_vec::RawVec::<T, A>::grow_amortized thread 0
+Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultINtNtNtB5_3ptr8non_null7NonNullShENtNtB5_5alloc10AllocErrorE7map_errNtNtCslgfTW8i2kpw_5alloc11collections15TryReserveErrorNCINvNtB1S_7raw_vec11finish_growNtNtB1S_5alloc6GlobalEs_0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 401 column 19 function alloc::raw_vec::RawVec::<T, A>::grow_amortized thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/collections/mod.rs line 80 column 10 function <std::collections::TryReserveErrorKind as std::clone::Clone>::clone thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 851 column 15 function std::result::Result::<T, E>::map_err thread 0
-Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultuNtNtCs33scZ6i20Fm_5alloc11collections15TryReserveErrorE7map_errNtBL_19TryReserveErrorKindNCNvNtBN_7raw_vec14handle_reserve0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 479 column 11 function alloc::raw_vec::handle_reserve thread 0
+Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6resultINtB3_6ResultuNtNtCslgfTW8i2kpw_5alloc11collections15TryReserveErrorE7map_errNtBL_19TryReserveErrorKindNCNvNtBN_7raw_vec14handle_reserve0ECshVKX6ctfPl_3_266.0 iteration 1  thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 487 column 11 function alloc::raw_vec::handle_reserve thread 0
 Unwinding loop main.0 iteration 1 file /home/runner/work/rmc/rmc/src/test/dashboard/books/The Rustonomicon/Ownership/Lifetimes/266.rs line 10 column 5 function main thread 0
-Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCshVKX6ctfPl_3_266.1 iteration 1  thread 0
-Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VeclEECshVKX6ctfPl_3_266.1 iteration 1  thread 0
-Runtime Symex: 0.479846s
-size of program expression: 7523 steps
+Unwinding loop _RNvMs_NtCslgfTW8i2kpw_5alloc7raw_vecINtB4_6RawVeclE14current_memoryCshVKX6ctfPl_3_266.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCslgfTW8i2kpw_5alloc3vec3VeclEECshVKX6ctfPl_3_266.1 iteration 1  thread 0
+Runtime Symex: 0.600251s
+size of program expression: 6630 steps
 simple slicing removed 76 assignments
-Generated 805 VCC(s), 297 remaining after simplification
-Runtime Postprocess Equation: 0.00156042s
+Generated 727 VCC(s), 265 remaining after simplification
+Runtime Postprocess Equation: 0.00135741s
 Passing problem to propositional reduction
 converting SSA
 warning: ignoring typecast
 * type: struct_tag
-* identifier: tag-_4586564250974163792
+* identifier: tag-_2726940206501895102
 0: struct
 * type: struct_tag
-* identifier: tag-_1932018498655314673
+* identifier: tag-_7606872566487717749
 0: struct
 * type: struct_tag
-* identifier: tag-_4586564250974163792
+* identifier: tag-_2726940206501895102
 1: struct
 * type: struct_tag
 * identifier: tag-_15639296706287096376
@@ -1298,26 +1289,24 @@ warning: ignoring typecast
 * #typedef: __CPROVER_size_t
 * #c_type: unsigned_long_int
 * value: 3
-Runtime Convert SSA: 0.229297s
+Runtime Convert SSA: 0.167699s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.0483611s
+Runtime Post-process: 0.0227652s
 Solving with MiniSAT 2.2.1 with simplifier
-185583 variables, 71041 clauses
+161818 variables, 67361 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.199185s
-Runtime decision procedure: 0.430072s
+Runtime Solver: 0.138797s
+Runtime decision procedure: 0.316106s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-185583 variables, 505 clauses
+161818 variables, 350 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000895511s
-Runtime decision procedure: 0.00109831s
+Runtime Solver: 0.000760106s
+Runtime decision procedure: 0.000983307s
 
 ** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_12504766598841625470") (MIR type Closure(DefId(1:9048 ~ std[2cce]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_2569938144898316218") (MIR type Adt(std::alloc::LayoutError, [])). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [overflow.1] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
 [overflow.2] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
@@ -1392,12 +1381,11 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_primitives.55] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
 [pointer_primitives.56] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
 [pointer_primitives.57] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.58] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [precondition_instance.1] memcpy src/dst overlap: SUCCESS
 [precondition_instance.2] memcpy source region readable: SUCCESS
 [precondition_instance.3] memcpy destination region writeable: SUCCESS
-function _ZN3std2io5stdio6_print17hb315b158471eb315E
-[_ZN3std2io5stdio6_print17hb315b158471eb315E.assertion.1] assertion false: FAILURE
+function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
+[_ZN3std2io5stdio6_print17h43e101c4e19578f2E.assertion.1] assertion false: FAILURE
 
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
 [alloc::alloc::box_free.assertion.1] line 331 resume instruction: SUCCESS
@@ -1503,8 +1491,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [main.pointer_dereference.6] line 49 dereference failure: invalid integer address in *var_7.0.pointer: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 469 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 469 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 477 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 477 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::capacity
 [alloc::raw_vec::RawVec::<T, A>::capacity.pointer_dereference.1] line 229 dereference failure: pointer NULL in self->cap: SUCCESS
@@ -1515,8 +1503,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [alloc::raw_vec::RawVec::<T, A>::capacity.pointer_dereference.6] line 229 dereference failure: invalid integer address in self->cap: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes
-[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.assertion.1] line 357 attempt to divide `_5` by zero: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.division-by-zero.1] line 357 division by zero in var_5 / var_6: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.assertion.1] line 365 attempt to divide `_5` by zero: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.division-by-zero.1] line 365 division by zero in var_5 / var_6: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
 [alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 238 dereference failure: pointer NULL in self->cap: SUCCESS
@@ -1545,21 +1533,21 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [alloc::raw_vec::RawVec::<T, A>::from_raw_parts_in.assertion.1] line 212 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::grow_amortized
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_arithmetic.1] line 379 pointer arithmetic: dead object in (unsigned char *)&var_6 + 8: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.1] line 379 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_6 + 8)): SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.2] line 383 unreachable code: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.overflow.1] line 383 arithmetic overflow on unsigned to signed type conversion in (long int)var_8.case: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_arithmetic.2] line 383 pointer arithmetic: dead object in (unsigned char *)&var_13 + 8: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.2] line 383 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_13 + 8)): SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.1] line 387 attempt to compute `move _20 * const 2_usize`, which would overflow: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.3] line 387 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.4] line 387 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.5] line 387 dereference failure: deallocated dynamic object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.6] line 387 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.7] line 387 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.8] line 387 dereference failure: invalid integer address in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.3] line 393 unreachable code: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::grow_amortized.overflow.2] line 393 arithmetic overflow on unsigned to signed type conversion in (long int)var_28.case: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_arithmetic.1] line 387 pointer arithmetic: dead object in (unsigned char *)&var_6 + 8: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.1] line 387 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_6 + 8)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.2] line 391 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.overflow.1] line 391 arithmetic overflow on unsigned to signed type conversion in (long int)var_8.case: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_arithmetic.2] line 391 pointer arithmetic: dead object in (unsigned char *)&var_13 + 8: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.2] line 391 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_13 + 8)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.1] line 395 attempt to compute `move _20 * const 2_usize`, which would overflow: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.3] line 395 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.4] line 395 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.5] line 395 dereference failure: deallocated dynamic object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.6] line 395 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.7] line 395 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.pointer_dereference.8] line 395 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.assertion.3] line 401 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::grow_amortized.overflow.2] line 401 arithmetic overflow on unsigned to signed type conversion in (long int)var_28.case: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
 [alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 221 dereference failure: pointer NULL in self->ptr: SUCCESS
@@ -1570,75 +1558,75 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 221 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::set_ptr
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.1] line 361 dereference failure: pointer NULL in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.2] line 361 dereference failure: pointer invalid in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.3] line 361 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.4] line 361 dereference failure: dead object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.5] line 361 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.6] line 361 dereference failure: invalid integer address in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.7] line 362 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.8] line 362 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.9] line 362 dereference failure: deallocated dynamic object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.10] line 362 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.11] line 362 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.12] line 362 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.1] line 369 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.2] line 369 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.3] line 369 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.4] line 369 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.5] line 369 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.6] line 369 dereference failure: invalid integer address in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.7] line 370 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.8] line 370 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.9] line 370 dereference failure: deallocated dynamic object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.10] line 370 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.11] line 370 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::set_ptr.pointer_dereference.12] line 370 dereference failure: invalid integer address in self->cap: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::alloc_guard
-[alloc::raw_vec::alloc_guard.pointer_arithmetic.1] line 498 pointer arithmetic: dead object in (unsigned char *)&var_4 + 8: SUCCESS
-[alloc::raw_vec::alloc_guard.pointer_dereference.1] line 498 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 8)): SUCCESS
+[alloc::raw_vec::alloc_guard.pointer_arithmetic.1] line 506 pointer arithmetic: dead object in (unsigned char *)&var_4 + 8: SUCCESS
+[alloc::raw_vec::alloc_guard.pointer_dereference.1] line 506 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::finish_grow
-[alloc::raw_vec::finish_grow.assertion.1] line 448 unreachable code: SUCCESS
-[alloc::raw_vec::finish_grow.overflow.1] line 448 arithmetic overflow on unsigned to signed type conversion in (long int)var_5.case: SUCCESS
-[alloc::raw_vec::finish_grow.assertion.2] line 450 unreachable code: SUCCESS
-[alloc::raw_vec::finish_grow.overflow.2] line 450 arithmetic overflow on unsigned to signed type conversion in (long int)var_13.case: SUCCESS
-[alloc::raw_vec::finish_grow.pointer_arithmetic.1] line 452 pointer arithmetic: dead object in (unsigned char *)&current_memory + 0: SUCCESS
-[alloc::raw_vec::finish_grow.pointer_dereference.1] line 452 dereference failure: dead object in *((unsigned char **)((unsigned char *)&current_memory + 0)): SUCCESS
-[alloc::raw_vec::finish_grow.assertion.3] line 456 assumption failed: SUCCESS
+[alloc::raw_vec::finish_grow.assertion.1] line 456 unreachable code: SUCCESS
+[alloc::raw_vec::finish_grow.overflow.1] line 456 arithmetic overflow on unsigned to signed type conversion in (long int)var_5.case: SUCCESS
+[alloc::raw_vec::finish_grow.assertion.2] line 458 unreachable code: SUCCESS
+[alloc::raw_vec::finish_grow.overflow.2] line 458 arithmetic overflow on unsigned to signed type conversion in (long int)var_13.case: SUCCESS
+[alloc::raw_vec::finish_grow.pointer_arithmetic.1] line 460 pointer arithmetic: dead object in (unsigned char *)&current_memory + 0: SUCCESS
+[alloc::raw_vec::finish_grow.pointer_dereference.1] line 460 dereference failure: dead object in *((unsigned char **)((unsigned char *)&current_memory + 0)): SUCCESS
+[alloc::raw_vec::finish_grow.assertion.3] line 464 assumption failed: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::finish_grow::{closure#0}
-[alloc::raw_vec::finish_grow::{closure#0}.pointer_arithmetic.1] line 448 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#0}.pointer_dereference.1] line 448 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+[alloc::raw_vec::finish_grow::{closure#0}.pointer_arithmetic.1] line 456 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#0}.pointer_dereference.1] line 456 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::finish_grow::{closure#1}
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.1] line 463 dereference failure: pointer NULL in *var_1.0: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.2] line 463 dereference failure: pointer invalid in *var_1.0: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.3] line 463 dereference failure: deallocated dynamic object in *var_1.0: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.4] line 463 dereference failure: dead object in *var_1.0: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.5] line 463 dereference failure: pointer outside object bounds in *var_1.0: SUCCESS
-[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.6] line 463 dereference failure: invalid integer address in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.1] line 471 dereference failure: pointer NULL in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.2] line 471 dereference failure: pointer invalid in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.3] line 471 dereference failure: deallocated dynamic object in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.4] line 471 dereference failure: dead object in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.5] line 471 dereference failure: pointer outside object bounds in *var_1.0: SUCCESS
+[alloc::raw_vec::finish_grow::{closure#1}.pointer_dereference.6] line 471 dereference failure: invalid integer address in *var_1.0: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::handle_reserve
-[alloc::raw_vec::handle_reserve.assertion.1] line 479 unreachable code: SUCCESS
-[alloc::raw_vec::handle_reserve.overflow.1] line 479 arithmetic overflow on unsigned to signed type conversion in (long int)var_2.case: SUCCESS
-[alloc::raw_vec::handle_reserve.pointer_arithmetic.1] line 479 pointer arithmetic: deallocated dynamic object in (unsigned char *)&var_2.cases.Err.0 + 8: SUCCESS
-[alloc::raw_vec::handle_reserve.pointer_arithmetic.2] line 479 pointer arithmetic: dead object in (unsigned char *)&var_2.cases.Err.0 + 8: SUCCESS
-[alloc::raw_vec::handle_reserve.pointer_dereference.1] line 479 dereference failure: deallocated dynamic object in *((unsigned long int *)((unsigned char *)&var_2.cases.Err.0 + 8)): SUCCESS
-[alloc::raw_vec::handle_reserve.pointer_dereference.2] line 479 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_2.cases.Err.0 + 8)): SUCCESS
-[alloc::raw_vec::handle_reserve.assertion.2] line 480 a panicking function alloc::raw_vec::capacity_overflow is invoked: SUCCESS
-[alloc::raw_vec::handle_reserve.assertion.3] line 481 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
+[alloc::raw_vec::handle_reserve.assertion.1] line 487 unreachable code: SUCCESS
+[alloc::raw_vec::handle_reserve.overflow.1] line 487 arithmetic overflow on unsigned to signed type conversion in (long int)var_2.case: SUCCESS
+[alloc::raw_vec::handle_reserve.pointer_arithmetic.1] line 487 pointer arithmetic: deallocated dynamic object in (unsigned char *)&var_2.cases.Err.0 + 8: SUCCESS
+[alloc::raw_vec::handle_reserve.pointer_arithmetic.2] line 487 pointer arithmetic: dead object in (unsigned char *)&var_2.cases.Err.0 + 8: SUCCESS
+[alloc::raw_vec::handle_reserve.pointer_dereference.1] line 487 dereference failure: deallocated dynamic object in *((unsigned long int *)((unsigned char *)&var_2.cases.Err.0 + 8)): SUCCESS
+[alloc::raw_vec::handle_reserve.pointer_dereference.2] line 487 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_2.cases.Err.0 + 8)): SUCCESS
+[alloc::raw_vec::handle_reserve.assertion.2] line 488 a panicking function alloc::raw_vec::capacity_overflow is invoked: SUCCESS
+[alloc::raw_vec::handle_reserve.assertion.3] line 489 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/slice.rs function std::slice::hack::into_vec
 [std::slice::hack::into_vec.assertion.1] line 165 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Deref>::deref
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2403 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2403 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2403 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2403 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2403 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2403 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2434 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2434 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2434 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2434 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2434 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2434 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2787 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2787 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2787 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2787 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2787 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2787 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2818 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2818 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2818 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2818 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2818 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2818 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Index<I>>::index
-[<std::vec::Vec<T, A> as std::ops::Index<I>>::index.assertion.1] line 2496 resume instruction: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Index<I>>::index.assertion.1] line 2527 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
 [std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: SUCCESS
@@ -1647,46 +1635,44 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1136 assumption failed: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::push
-[std::vec::Vec::<T, A>::push.assertion.2] line 1694 resume instruction: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.1] line 1697 dereference failure: pointer NULL in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.2] line 1697 dereference failure: pointer invalid in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.3] line 1697 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.4] line 1697 dereference failure: dead object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.5] line 1697 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.6] line 1697 dereference failure: invalid integer address in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.7] line 1701 dereference failure: pointer NULL in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.8] line 1701 dereference failure: pointer invalid in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.9] line 1701 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.10] line 1701 dereference failure: dead object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.11] line 1701 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.12] line 1701 dereference failure: invalid integer address in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.13] line 1702 dereference failure: pointer NULL in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.14] line 1702 dereference failure: pointer invalid in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.15] line 1702 dereference failure: deallocated dynamic object in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.16] line 1702 dereference failure: dead object in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.17] line 1702 dereference failure: pointer outside object bounds in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.18] line 1702 dereference failure: invalid integer address in *var_14: SUCCESS
-[std::vec::Vec::<T, A>::push.assertion.1] line 1703 attempt to compute `((*_1).1: usize) + const 1_usize`, which would overflow: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.19] line 1703 dereference failure: pointer NULL in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.20] line 1703 dereference failure: pointer invalid in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.21] line 1703 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.22] line 1703 dereference failure: dead object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.23] line 1703 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.24] line 1703 dereference failure: invalid integer address in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.25] line 1703 dereference failure: pointer NULL in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.26] line 1703 dereference failure: pointer invalid in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.27] line 1703 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.28] line 1703 dereference failure: dead object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.29] line 1703 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[std::vec::Vec::<T, A>::push.pointer_dereference.30] line 1703 dereference failure: invalid integer address in self->len: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::reserve
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.1] line 809 dereference failure: pointer NULL in self->len: SUCCESS
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.2] line 809 dereference failure: pointer invalid in self->len: SUCCESS
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.3] line 809 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.4] line 809 dereference failure: dead object in self->len: SUCCESS
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.5] line 809 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[std::vec::Vec::<T, A>::reserve.pointer_dereference.6] line 809 dereference failure: invalid integer address in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.assertion.2] line 1725 resume instruction: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.1] line 1728 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.2] line 1728 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.3] line 1728 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.4] line 1728 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.5] line 1728 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.6] line 1728 dereference failure: invalid integer address in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.7] line 1729 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.8] line 1729 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.9] line 1729 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.10] line 1729 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.11] line 1729 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.12] line 1729 dereference failure: invalid integer address in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.13] line 1732 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.14] line 1732 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.15] line 1732 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.16] line 1732 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.17] line 1732 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.18] line 1732 dereference failure: invalid integer address in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.19] line 1733 dereference failure: pointer NULL in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.20] line 1733 dereference failure: pointer invalid in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.21] line 1733 dereference failure: deallocated dynamic object in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.22] line 1733 dereference failure: dead object in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.23] line 1733 dereference failure: pointer outside object bounds in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.24] line 1733 dereference failure: invalid integer address in *var_15: SUCCESS
+[std::vec::Vec::<T, A>::push.assertion.1] line 1734 attempt to compute `((*_1).1: usize) + const 1_usize`, which would overflow: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.25] line 1734 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.26] line 1734 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.27] line 1734 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.28] line 1734 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.29] line 1734 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.30] line 1734 dereference failure: invalid integer address in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.31] line 1734 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.32] line 1734 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.33] line 1734 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.34] line 1734 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.35] line 1734 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::push.pointer_dereference.36] line 1734 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function <std::alloc::Layout as std::clone::Clone>::clone
 [<std::alloc::Layout as std::clone::Clone>::clone.pointer_dereference.1] line 30 dereference failure: pointer NULL in *self: SUCCESS
@@ -1705,25 +1691,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::array
-[std::alloc::Layout::array.assertion.1] line 406 unreachable code: SUCCESS
-[std::alloc::Layout::array.pointer_arithmetic.1] line 406 pointer arithmetic: dead object in (unsigned char *)&var_5 + 8: SUCCESS
-[std::alloc::Layout::array.pointer_dereference.1] line 406 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_5 + 8)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::from_size_align
-[std::alloc::Layout::from_size_align.pointer_arithmetic.1] line 63 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_dereference.1] line 63 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-[std::alloc::Layout::from_size_align.assertion.1] line 80 attempt to compute `move _10 - const 1_usize`, which would overflow: SUCCESS
-[std::alloc::Layout::from_size_align.assertion.2] line 80 attempt to compute `const core::num::<impl usize>::MAX - move _9`, which would overflow: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_arithmetic.2] line 81 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_dereference.2] line 81 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::pad_to_align
-[std::alloc::Layout::pad_to_align.assertion.1] line 282 attempt to compute `move _7 + move _9`, which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::repeat
-[std::alloc::Layout::repeat.assertion.1] line 302 attempt to compute `move _4 + move _6`, which would overflow: SUCCESS
-[std::alloc::Layout::repeat.assertion.2] line 303 unreachable code: SUCCESS
-[std::alloc::Layout::repeat.overflow.1] line 303 arithmetic overflow on unsigned to signed type conversion in (long int)var_12.case: SUCCESS
+[std::alloc::Layout::array.assertion.1] line 408 unreachable code: SUCCESS
+[std::alloc::Layout::array.overflow.1] line 408 arithmetic overflow on unsigned to signed type conversion in (long int)var_3.case: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
 [std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
@@ -1770,50 +1739,47 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/intrinsics.rs function std::intrinsics::write_bytes
-[std::intrinsics::write_bytes.overflow.1] line 2254 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.1] line 2254 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.2] line 2254 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.3] line 2254 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.4] line 2254 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.5] line 2254 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.6] line 2254 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.7] line 2254 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.8] line 2254 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.9] line 2254 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.10] line 2254 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.11] line 2254 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.12] line 2254 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.13] line 2254 pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.14] line 2254 deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.15] line 2254 dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.16] line 2254 pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.17] line 2254 pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.18] line 2254 deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.19] line 2254 dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.20] line 2254 pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.21] line 2254 pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.22] line 2254 deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.23] line 2254 dead object in OBJECT_SIZE((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.24] line 2254 pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.25] line 2254 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.26] line 2254 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.27] line 2254 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.pointer_primitives.28] line 2254 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[std::intrinsics::write_bytes.precondition_instance.1] line 2254 memset destination region writeable: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs function core::num::<impl usize>::count_ones
-[core::num::<impl usize>::count_ones.overflow.1] line 87 arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)var_2: SUCCESS
+[std::intrinsics::write_bytes.overflow.1] line 2256 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.1] line 2256 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.2] line 2256 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.3] line 2256 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.4] line 2256 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.5] line 2256 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.6] line 2256 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.7] line 2256 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.8] line 2256 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.9] line 2256 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.10] line 2256 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.11] line 2256 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.12] line 2256 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.13] line 2256 pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.14] line 2256 deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.15] line 2256 dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.16] line 2256 pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.17] line 2256 pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.18] line 2256 deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.19] line 2256 dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.20] line 2256 pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.21] line 2256 pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.22] line 2256 deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.23] line 2256 dead object in OBJECT_SIZE((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.24] line 2256 pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.25] line 2256 pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.26] line 2256 deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.27] line 2256 dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.pointer_primitives.28] line 2256 pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[std::intrinsics::write_bytes.precondition_instance.1] line 2256 memset destination region writeable: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
-[std::option::Option::<T>::ok_or.assertion.1] line 925 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.assertion.2] line 925 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.assertion.3] line 925 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.overflow.1] line 925 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::option::Option::<T>::ok_or.overflow.2] line 925 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 925 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.1] line 925 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 927 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.2] line 927 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.assertion.1] line 950 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.assertion.2] line 950 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.assertion.3] line 950 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.overflow.1] line 950 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[std::option::Option::<T>::ok_or.overflow.2] line 950 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 950 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.1] line 950 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 952 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.2] line 952 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
 [std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
@@ -1852,39 +1818,32 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.2] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.3] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.4] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.5] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.6] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.7] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.8] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.1] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.2] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.3] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.4] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.5] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.3] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.5] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1899 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.3] line 1899 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.5] line 1899 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.4] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.6] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1901 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.4] line 1901 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.6] line 1901 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.2] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.3] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.4] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.5] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.6] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.7] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.1] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.2] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.3] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.4] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.5] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1946 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.3] line 1946 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1946 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.3] line 1946 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1948 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.4] line 1948 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1948 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.4] line 1948 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.3] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1911 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1911 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.3] line 1911 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1958 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1958 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::map_err
 [std::result::Result::<T, E>::map_err.assertion.1] line 851 unreachable code: SUCCESS
@@ -1895,13 +1854,6 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::result::Result::<T, E>::map_err.pointer_arithmetic.2] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
 [std::result::Result::<T, E>::map_err.pointer_dereference.1] line 851 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
 [std::result::Result::<T, E>::map_err.pointer_dereference.2] line 851 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::unwrap
-[std::result::Result::<T, E>::unwrap.assertion.3] line 1292 resume instruction: SUCCESS
-[std::result::Result::<T, E>::unwrap.assertion.2] line 1293 unreachable code: SUCCESS
-[std::result::Result::<T, E>::unwrap.pointer_arithmetic.1] line 1293 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[std::result::Result::<T, E>::unwrap.pointer_dereference.1] line 1293 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[std::result::Result::<T, E>::unwrap.assertion.1] line 1295 a panicking function std::result::unwrap_failed is invoked: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/slice/index.rs function <usize as std::slice::SliceIndex<[T]>>::index
 [<usize as std::slice::SliceIndex<[T]>>::index.assertion.1] line 184 index out of bounds: the length is move _4 but the index is _3: SUCCESS
@@ -2029,7 +1981,7 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [realloc.precondition_instance.11] line 30 free called for new[] object: SUCCESS
 [realloc.precondition_instance.12] line 30 free called for stack-allocated object: SUCCESS
 
-** 1 of 590 failed (2 iterations)
+** 1 of 564 failed (2 iterations)
 VERIFICATION FAILED
 
             </xmp>

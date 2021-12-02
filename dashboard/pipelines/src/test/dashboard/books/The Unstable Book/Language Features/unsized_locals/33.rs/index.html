@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-06709246-52e5-4045-913b-7e66a4e2faa8">
+              <a href="#job-adca653d-0c88-4cdf-a6d2-60701e7be78b">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-06709246-52e5-4045-913b-7e66a4e2faa8">
+    <div class="command-table" id="job-adca653d-0c88-4cdf-a6d2-60701e7be78b">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-06709246-52e5-4045-913b-7e66a4e2faa8">#</a>
+                <a href="#job-adca653d-0c88-4cdf-a6d2-60701e7be78b">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,7 +635,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:42:04Z
+                2021-12-02T08:09:22Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -643,7 +643,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:42:04Z
+                2021-12-02T08:09:22Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -685,6 +685,15 @@ error[E0277]: the size for values of type `(dyn std::any::Any + 'static)` cannot
 |
 = help: the trait `std::marker::Sized` is not implemented for `(dyn std::any::Any + 'static)`
 
+error[E0277]: `(dyn std::any::Any + 'static)` cannot be shared between threads safely
+--> src/test/dashboard/books/The Unstable Book/Language Features/unsized_locals/33.rs:20:15
+|
+20 |     static X: dyn Any = *answer();  // ERROR
+|               ^^^^^^^ `(dyn std::any::Any + 'static)` cannot be shared between threads safely
+|
+= help: the trait `std::marker::Sync` is not implemented for `(dyn std::any::Any + 'static)`
+= note: shared static variables must have a type that implements `Sync`
+
 error[E0277]: the size for values of type `(dyn std::any::Any + 'static)` cannot be known at compilation time
 --> src/test/dashboard/books/The Unstable Book/Language Features/unsized_locals/33.rs:21:14
 |
@@ -693,7 +702,7 @@ error[E0277]: the size for values of type `(dyn std::any::Any + 'static)` cannot
 |
 = help: the trait `std::marker::Sized` is not implemented for `(dyn std::any::Any + 'static)`
 
-error: aborting due to 2 previous errors; 1 warning emitted
+error: aborting due to 3 previous errors; 1 warning emitted
 
 For more information about this error, try `rustc --explain E0277`.
             </xmp>

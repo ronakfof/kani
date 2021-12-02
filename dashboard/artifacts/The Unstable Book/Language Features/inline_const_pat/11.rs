@@ -1,6 +1,6 @@
 // compile-flags: --edition 2015
 #![allow(unused)]
-#![feature(inline_const)]
+#![feature(inline_const_pat)]
 
 fn main() {
 const fn one() -> i32 { 1 }

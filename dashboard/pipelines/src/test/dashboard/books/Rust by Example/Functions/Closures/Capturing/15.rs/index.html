@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c57500e0-87b4-4a1f-97a1-ac1cdd442c92">
+              <a href="#job-57b8409d-1d3e-43d7-a459-45ce06977ce8">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-aeb4dd5c-93b3-489f-8024-3683a538c954">
+              <a href="#job-5bfed2a8-76e7-4a57-9760-1adc1ba545a8">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-0274eceb-f2cf-4574-a3f4-1b1ac47f6711">
+              <a href="#job-91d2afe3-52a2-4f4f-b009-24541c8fe336">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c57500e0-87b4-4a1f-97a1-ac1cdd442c92">
+    <div class="command-table" id="job-57b8409d-1d3e-43d7-a459-45ce06977ce8">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c57500e0-87b4-4a1f-97a1-ac1cdd442c92">#</a>
+                <a href="#job-57b8409d-1d3e-43d7-a459-45ce06977ce8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:41:39Z
+                2021-12-02T08:04:23Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:41:39Z
+                2021-12-02T08:04:24Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -729,9 +729,6 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h04353262a5b429efE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h04353262a5b429efE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h7349b91e6d462231E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h7349b91e6d462231E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::alloc::LayoutError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN69_$LT$core..alloc..layout..LayoutError$u20$as$u20$core..fmt..Debug$GT$3fmt17hbfc5f88d73875fa3E
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he8308b370d004c11E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -762,6 +759,8 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h04353262a5b429efE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h04353262a5b429efE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h7349b91e6d462231E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h7349b91e6d462231E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -780,7 +779,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-aeb4dd5c-93b3-489f-8024-3683a538c954">
+    <div class="command-table" id="job-5bfed2a8-76e7-4a57-9760-1adc1ba545a8">
       
       <div class="success">
       
@@ -788,7 +787,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-aeb4dd5c-93b3-489f-8024-3683a538c954">#</a>
+                <a href="#job-5bfed2a8-76e7-4a57-9760-1adc1ba545a8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -842,7 +841,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:44:54Z
+                2021-12-02T08:05:20Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -850,7 +849,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:44:55Z
+                2021-12-02T08:05:21Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -888,9 +887,6 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h04353262a5b429efE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h04353262a5b429efE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h7349b91e6d462231E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h7349b91e6d462231E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::rvalue Unable to find vtable symbol for virtual function <std::alloc::LayoutError as std::fmt::Debug>::fmt, attempted lookup for symbol name: _ZN69_$LT$core..alloc..layout..LayoutError$u20$as$u20$core..fmt..Debug$GT$3fmt17hbfc5f88d73875fa3E
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117he8308b370d004c11E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
 Expr type
@@ -921,6 +917,8 @@ Expr type
 Pointer { typ: Unsignedbv { width: 8 } }
 Type from MIR
 FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h04353262a5b429efE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h04353262a5b429efE::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h04353262a5b429efE"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h7349b91e6d462231E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h7349b91e6d462231E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h7349b91e6d462231E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -939,7 +937,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-0274eceb-f2cf-4574-a3f4-1b1ac47f6711">
+    <div class="command-table" id="job-91d2afe3-52a2-4f4f-b009-24541c8fe336">
       
       <div class="fail">
       
@@ -947,7 +945,7 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-0274eceb-f2cf-4574-a3f4-1b1ac47f6711">#</a>
+                <a href="#job-91d2afe3-52a2-4f4f-b009-24541c8fe336">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1001,15 +999,15 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:44:55Z
+                2021-12-02T08:06:49Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:44:58Z
+                2021-12-02T08:06:51Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1042,9 +1040,9 @@ Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionjE5ok_orNtNtNtB5_5alloc6layout11LayoutErrorECs621yMKWuJ7F_2_15.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 925 column 15 function std::option::Option::<T>::ok_or thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 950 column 15 function std::option::Option::<T>::ok_or thread 0
 Unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECs621yMKWuJ7F_2_15.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1899 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
+aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/result.rs line 1946 column 15 function <std::result::Result<T, E> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs line 170 column 27 function std::alloc::Global::alloc_impl thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs line 188 column 29 function alloc::raw_vec::RawVec::<T, A>::allocate_in thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
@@ -1052,36 +1050,34 @@ Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs621yMKWu
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc5boxed3BoxlEECs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Unwinding loop _RNvMs_NtCs33scZ6i20Fm_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs621yMKWuJ7F_2_15.1 iteration 1  thread 0
-Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCs33scZ6i20Fm_5alloc3vec3VechEECs621yMKWuJ7F_2_15.1 iteration 1  thread 0
-Runtime Symex: 0.360186s
-size of program expression: 4384 steps
+Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCslgfTW8i2kpw_5alloc5boxed3BoxlEECs621yMKWuJ7F_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
+Unwinding loop _RNvMs_NtCslgfTW8i2kpw_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs621yMKWuJ7F_2_15.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCslgfTW8i2kpw_5alloc3vec3VechEECs621yMKWuJ7F_2_15.1 iteration 1  thread 0
+Runtime Symex: 0.450793s
+size of program expression: 3734 steps
 simple slicing removed 82 assignments
-Generated 472 VCC(s), 154 remaining after simplification
-Runtime Postprocess Equation: 0.000675709s
+Generated 415 VCC(s), 139 remaining after simplification
+Runtime Postprocess Equation: 0.000601104s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0729095s
+Runtime Convert SSA: 0.0518375s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00322934s
+Runtime Post-process: 0.00285962s
 Solving with MiniSAT 2.2.1 with simplifier
-90390 variables, 19319 clauses
+76404 variables, 17824 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.046515s
-Runtime decision procedure: 0.120245s
+Runtime Solver: 0.0216614s
+Runtime decision procedure: 0.0787394s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-90390 variables, 533 clauses
+76404 variables, 455 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.0078729s
-Runtime decision procedure: 0.0080103s
+Runtime Solver: 0.00187621s
+Runtime decision procedure: 0.00203851s
 
 ** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_2569938144898316218") (MIR type Adt(std::alloc::LayoutError, [])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_12504766598841625470") (MIR type Closure(DefId(1:9048 ~ std[2cce]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [overflow.1] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
 [overflow.2] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
@@ -1144,12 +1140,11 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_primitives.55] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
 [pointer_primitives.56] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
 [pointer_primitives.57] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.58] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [precondition_instance.1] memcpy src/dst overlap: SUCCESS
 [precondition_instance.2] memcpy source region readable: SUCCESS
 [precondition_instance.3] memcpy destination region writeable: SUCCESS
-function _ZN3std2io5stdio6_print17hb315b158471eb315E
-[_ZN3std2io5stdio6_print17hb315b158471eb315E.assertion.1] assertion false: FAILURE
+function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
+[_ZN3std2io5stdio6_print17h43e101c4e19578f2E.assertion.1] assertion false: FAILURE
 
 /home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
 [alloc::alloc::box_free.assertion.1] line 331 resume instruction: SUCCESS
@@ -1206,8 +1201,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::boxed::Box::<T>::new.pointer_dereference.6] line 195 dereference failure: invalid integer address in *var_0.0.pointer: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 469 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 469 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 477 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 477 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::allocate_in
 [alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.8] line 170 resume instruction: SUCCESS
@@ -1225,8 +1220,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.6] line 190 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes
-[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.assertion.1] line 357 attempt to divide `_5` by zero: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.division-by-zero.1] line 357 division by zero in var_5 / var_6: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.assertion.1] line 365 attempt to divide `_5` by zero: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::capacity_from_bytes.division-by-zero.1] line 365 division by zero in var_5 / var_6: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
 [alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 238 dereference failure: pointer NULL in self->cap: SUCCESS
@@ -1263,19 +1258,19 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 221 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::alloc_guard
-[alloc::raw_vec::alloc_guard.pointer_arithmetic.1] line 498 pointer arithmetic: dead object in (unsigned char *)&var_4 + 8: SUCCESS
-[alloc::raw_vec::alloc_guard.pointer_dereference.1] line 498 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 8)): SUCCESS
+[alloc::raw_vec::alloc_guard.pointer_arithmetic.1] line 506 pointer arithmetic: dead object in (unsigned char *)&var_4 + 8: SUCCESS
+[alloc::raw_vec::alloc_guard.pointer_dereference.1] line 506 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/slice.rs function <T as std::slice::hack::ConvertVec>::to_vec
 [<T as std::slice::hack::ConvertVec>::to_vec.assertion.1] line 226 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2787 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2787 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2787 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2787 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2787 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2787 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2818 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2818 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2818 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2818 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2818 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2818 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
 [std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: SUCCESS
@@ -1297,25 +1292,8 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::array
-[std::alloc::Layout::array.assertion.1] line 406 unreachable code: SUCCESS
-[std::alloc::Layout::array.pointer_arithmetic.1] line 406 pointer arithmetic: dead object in (unsigned char *)&var_5 + 8: SUCCESS
-[std::alloc::Layout::array.pointer_dereference.1] line 406 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_5 + 8)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::from_size_align
-[std::alloc::Layout::from_size_align.pointer_arithmetic.1] line 63 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_dereference.1] line 63 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-[std::alloc::Layout::from_size_align.assertion.1] line 80 attempt to compute `move _10 - const 1_usize`, which would overflow: SUCCESS
-[std::alloc::Layout::from_size_align.assertion.2] line 80 attempt to compute `const core::num::<impl usize>::MAX - move _9`, which would overflow: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_arithmetic.2] line 81 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[std::alloc::Layout::from_size_align.pointer_dereference.2] line 81 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::pad_to_align
-[std::alloc::Layout::pad_to_align.assertion.1] line 282 attempt to compute `move _7 + move _9`, which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::repeat
-[std::alloc::Layout::repeat.assertion.1] line 302 attempt to compute `move _4 + move _6`, which would overflow: SUCCESS
-[std::alloc::Layout::repeat.assertion.2] line 303 unreachable code: SUCCESS
-[std::alloc::Layout::repeat.overflow.1] line 303 arithmetic overflow on unsigned to signed type conversion in (long int)var_12.case: SUCCESS
+[std::alloc::Layout::array.assertion.1] line 408 unreachable code: SUCCESS
+[std::alloc::Layout::array.overflow.1] line 408 arithmetic overflow on unsigned to signed type conversion in (long int)var_3.case: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
 [std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
@@ -1331,17 +1309,14 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
 
-/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs function core::num::<impl usize>::count_ones
-[core::num::<impl usize>::count_ones.overflow.1] line 87 arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)var_2: SUCCESS
-
 /home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
-[std::option::Option::<T>::ok_or.assertion.1] line 925 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.assertion.2] line 925 unreachable code: SUCCESS
-[std::option::Option::<T>::ok_or.overflow.1] line 925 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 925 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.1] line 925 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 927 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[std::option::Option::<T>::ok_or.pointer_dereference.2] line 927 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.assertion.1] line 950 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.assertion.2] line 950 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.overflow.1] line 950 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 950 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.1] line 950 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 952 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.2] line 952 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
 [std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
@@ -1372,33 +1347,19 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.2] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.3] line 1899 unreachable code: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.1] line 1899 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.3] line 1899 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1899 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.3] line 1899 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.4] line 1901 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1901 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.4] line 1901 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.2] line 1946 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.1] line 1946 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1946 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1946 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1948 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1948 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.3] line 1911 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1911 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1911 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.3] line 1911 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::unwrap
-[std::result::Result::<T, E>::unwrap.assertion.3] line 1292 resume instruction: SUCCESS
-[std::result::Result::<T, E>::unwrap.assertion.2] line 1293 unreachable code: SUCCESS
-[std::result::Result::<T, E>::unwrap.pointer_arithmetic.1] line 1293 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[std::result::Result::<T, E>::unwrap.pointer_dereference.1] line 1293 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[std::result::Result::<T, E>::unwrap.assertion.1] line 1295 a panicking function std::result::unwrap_failed is invoked: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1958 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1958 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Functions/Closures/Capturing/15.rs function main
 [main.assertion.1] line 3 resume instruction: SUCCESS
@@ -1485,7 +1446,7 @@ function _ZN3std2io5stdio6_print17hb315b158471eb315E
 [memcpy.overflow.1] line 44 arithmetic overflow on unsigned to signed type conversion in (signed long int)n: SUCCESS
 [memcpy.overflow.2] line 44 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(signed long int)n: SUCCESS
 
-** 1 of 328 failed (2 iterations)
+** 1 of 302 failed (2 iterations)
 VERIFICATION FAILED
 
             </xmp>

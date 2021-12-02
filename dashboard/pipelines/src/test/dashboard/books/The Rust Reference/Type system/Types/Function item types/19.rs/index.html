@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-9b8a0ea3-3624-4a39-96a3-d7599679c649">
+              <a href="#job-21993fe7-9319-4ea8-b722-80af2ff1aa9b">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-9b8a0ea3-3624-4a39-96a3-d7599679c649">
+    <div class="command-table" id="job-21993fe7-9319-4ea8-b722-80af2ff1aa9b">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-9b8a0ea3-3624-4a39-96a3-d7599679c649">#</a>
+                <a href="#job-21993fe7-9319-4ea8-b722-80af2ff1aa9b">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,7 +635,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:41:20Z
+                2021-12-02T08:05:07Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -643,7 +643,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:41:20Z
+                2021-12-02T08:05:07Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -672,7 +672,9 @@ error[E0308]: mismatched types
 --> src/test/dashboard/books/The Rust Reference/Type system/Types/Function item types/19.rs:7:6
 |
 7 | *x = foo::<u32>; //~ ERROR mismatched types
-|      ^^^^^^^^^^ expected `i32`, found `u32`
+| --   ^^^^^^^^^^ expected `i32`, found `u32`
+| |
+| expected due to the type of this binding
 |
 = note: expected fn item `fn() {main::foo::<i32>}`
 found fn item `fn() {main::foo::<u32>}`

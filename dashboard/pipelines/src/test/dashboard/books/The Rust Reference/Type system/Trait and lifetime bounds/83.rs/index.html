@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2021-12-01T23:36:01Z</li>
-      <li>495cf2b4-1657-43e1-9dd4-3e9560525271</li>
+      <li>2021-12-02T08:01:06Z</li>
+      <li>024b6cbd-682c-46cd-8af6-2a22cb327fe7</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-9d687db3-cdce-467d-a6cb-8d78a3321fac">
+              <a href="#job-28238fe7-f7fb-40ac-962e-478d689c826d">
               
               Is this valid Rust code?
               
@@ -573,7 +573,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-9d687db3-cdce-467d-a6cb-8d78a3321fac">
+    <div class="command-table" id="job-28238fe7-f7fb-40ac-962e-478d689c826d">
       
       <div class="success">
       
@@ -581,7 +581,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-9d687db3-cdce-467d-a6cb-8d78a3321fac">#</a>
+                <a href="#job-28238fe7-f7fb-40ac-962e-478d689c826d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -635,15 +635,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-01T23:41:28Z
+                2021-12-02T08:10:20Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-01T23:41:29Z
+                2021-12-02T08:10:20Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -669,16 +669,10 @@ a:visited:active {
           <div class="output-box"><xmp>stderr:
             
 error[E0277]: `i32` is not an iterator
---> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:5:1
+--> src/test/dashboard/books/The Rust Reference/Type system/Trait and lifetime bounds/83.rs:8:5
 |
-5  | / struct A<'a, T>
-6  | | where
-7  | |     i32: Default,           // Allowed, but not useful
-8  | |     i32: Iterator,          // Error: `i32` is not an iterator
-...  |
-12 | |     f: &'a T,
-13 | | }
-| |_^ `i32` is not an iterator
+8 |     i32: Iterator,          // Error: `i32` is not an iterator
+|     ^^^^^^^^^^^^^ `i32` is not an iterator
 |
 = help: the trait `std::iter::Iterator` is not implemented for `i32`
 = note: if you want to iterate between `start` until a value `end`, use the exclusive range syntax `start..end` or the inclusive range syntax `start..=end`
