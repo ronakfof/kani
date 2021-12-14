@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-10T20:00:39Z</li>
-      <li>dd11d447-eee7-4d47-83c0-84c57387d57b</li>
+      <li>2021-12-14T21:38:12Z</li>
+      <li>2b40d17f-471d-4f4c-9506-12447a81efd9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2d6cd6bb-81e2-4835-a983-3504555ed0c0">
+              <a href="#job-4f858626-b148-49ee-9a2b-21347b5e9eaa">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c2c59e82-8d9e-45f9-9957-d6def96bc1d9">
+              <a href="#job-23158ef6-1177-437d-8a91-feacac77cc27">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b783dabd-91f5-4e6d-9e44-aec487ec2782">
+              <a href="#job-62413e8f-bb54-43bd-90aa-e63f9d146e7f">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2d6cd6bb-81e2-4835-a983-3504555ed0c0">
+    <div class="command-table" id="job-4f858626-b148-49ee-9a2b-21347b5e9eaa">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2d6cd6bb-81e2-4835-a983-3504555ed0c0">#</a>
+                <a href="#job-4f858626-b148-49ee-9a2b-21347b5e9eaa">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:03:50Z
+                2021-12-14T21:45:11Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:03:50Z
+                2021-12-14T21:45:12Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -764,23 +764,6 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h694458dd33f91671E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
@@ -829,6 +812,30 @@ Expr type
 Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h4faf9092f4512da0E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_6998122095524776372")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h8d9d0111adf350a3E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h1e0f2b0fdcacd06aE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr92drop_in_place$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$17h457d33bb46013ec7E::1::var_1" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_6998122095524776372")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$17get_unchecked_mut17h6cac24565907390cE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
 Expr type
@@ -904,30 +911,23 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h4faf9092f4512da0E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_6998122095524776372")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h8d9d0111adf350a3E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h1e0f2b0fdcacd06aE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr92drop_in_place$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$17h457d33bb46013ec7E::1::var_1" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_6998122095524776372")
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence treated as a sequential operation.
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -946,7 +946,7 @@ StructTag("tag-_6998122095524776372")
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c2c59e82-8d9e-45f9-9957-d6def96bc1d9">
+    <div class="command-table" id="job-23158ef6-1177-437d-8a91-feacac77cc27">
       
       <div class="success">
       
@@ -954,7 +954,7 @@ StructTag("tag-_6998122095524776372")
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c2c59e82-8d9e-45f9-9957-d6def96bc1d9">#</a>
+                <a href="#job-23158ef6-1177-437d-8a91-feacac77cc27">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1008,7 +1008,7 @@ StructTag("tag-_6998122095524776372")
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:03:54Z
+                2021-12-14T21:45:12Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1016,7 +1016,7 @@ StructTag("tag-_6998122095524776372")
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:03:55Z
+                2021-12-14T21:45:13Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1089,23 +1089,6 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_relaxed treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acq treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_rel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acqrel treated as a sequential operation.
-WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence treated as a sequential operation.
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h694458dd33f91671E::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
@@ -1154,6 +1137,30 @@ Expr type
 Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h4faf9092f4512da0E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_6998122095524776372")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h8d9d0111adf350a3E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h1e0f2b0fdcacd06aE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr92drop_in_place$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$17h457d33bb46013ec7E::1::var_1" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_6998122095524776372")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$17get_unchecked_mut17h6cac24565907390cE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
 Expr type
@@ -1229,30 +1236,23 @@ Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h4faf9092f4512da0E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_6998122095524776372")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h8d9d0111adf350a3E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h1e0f2b0fdcacd06aE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_9697845436203272281")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr92drop_in_place$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$17h457d33bb46013ec7E::1::var_1" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_6998122095524776372")
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xadd_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_xsub_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load_relaxed treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_load treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acq treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_rel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence_acqrel treated as a sequential operation.
+WARN rustc_codegen_rmc::codegen::intrinsic RMC does not support concurrency for now. atomic_fence treated as a sequential operation.
             </xmp>
           </div><!-- class="output-box" -->
           
@@ -1271,7 +1271,7 @@ StructTag("tag-_6998122095524776372")
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b783dabd-91f5-4e6d-9e44-aec487ec2782">
+    <div class="command-table" id="job-62413e8f-bb54-43bd-90aa-e63f9d146e7f">
       
       <div class="fail">
       
@@ -1279,7 +1279,7 @@ StructTag("tag-_6998122095524776372")
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b783dabd-91f5-4e6d-9e44-aec487ec2782">#</a>
+                <a href="#job-62413e8f-bb54-43bd-90aa-e63f9d146e7f">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1333,7 +1333,7 @@ StructTag("tag-_6998122095524776372")
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:12:59Z
+                2021-12-14T21:45:14Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1341,7 +1341,7 @@ StructTag("tag-_6998122095524776372")
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:14:00Z
+                2021-12-14T21:46:15Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">

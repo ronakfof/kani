@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-10T20:00:39Z</li>
-      <li>dd11d447-eee7-4d47-83c0-84c57387d57b</li>
+      <li>2021-12-14T21:38:12Z</li>
+      <li>2b40d17f-471d-4f4c-9506-12447a81efd9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-6014f97e-e6ec-4422-9034-1cc1f6e8ce91">
+              <a href="#job-3965bb29-f1a9-4a34-9103-366abafd3536">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-51ea3b90-9ba2-47cc-bc59-1981c3ce4524">
+              <a href="#job-27465112-1ba4-4a61-9d22-175a23ac4ce3">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-8aed936f-fc07-4274-ba54-7f6c37d6dc79">
+              <a href="#job-abc003e4-ca98-4b0f-861e-02a650eb78c7">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-6014f97e-e6ec-4422-9034-1cc1f6e8ce91">
+    <div class="command-table" id="job-3965bb29-f1a9-4a34-9103-366abafd3536">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-6014f97e-e6ec-4422-9034-1cc1f6e8ce91">#</a>
+                <a href="#job-3965bb29-f1a9-4a34-9103-366abafd3536">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,15 +683,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:10:41Z
+                2021-12-14T21:41:25Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:10:41Z
+                2021-12-14T21:41:26Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -777,6 +777,12 @@ Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17hd8dee7c2a3dcbdd0E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17hc600a25d6cb0b0baE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
@@ -804,12 +810,6 @@ WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4
 WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h8e66716927040433E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h8e66716927040433E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h2209e7fb643629faE::1::var_1::val" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17hd8dee7c2a3dcbdd0E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -844,7 +844,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-51ea3b90-9ba2-47cc-bc59-1981c3ce4524">
+    <div class="command-table" id="job-27465112-1ba4-4a61-9d22-175a23ac4ce3">
       
       <div class="success">
       
@@ -852,7 +852,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-51ea3b90-9ba2-47cc-bc59-1981c3ce4524">#</a>
+                <a href="#job-27465112-1ba4-4a61-9d22-175a23ac4ce3">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -906,7 +906,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:11:13Z
+                2021-12-14T21:45:22Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -914,7 +914,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:11:14Z
+                2021-12-14T21:45:23Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1000,6 +1000,12 @@ Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
 FlexibleArray { typ: Signedbv { width: 32 } }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17hd8dee7c2a3dcbdd0E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17hc600a25d6cb0b0baE::1::var_5" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
@@ -1027,12 +1033,6 @@ WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4
 WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h8e66716927040433E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(4), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h8e66716927040433E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h8e66716927040433E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h2209e7fb643629faE::1::var_1::val" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Signedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Signedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17hd8dee7c2a3dcbdd0E::1::var_6" }, typ: StructTag("tag-_14254013527129944634"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
 Expr type
 Pointer { typ: Signedbv { width: 32 } }
 Type from MIR
@@ -1067,7 +1067,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-8aed936f-fc07-4274-ba54-7f6c37d6dc79">
+    <div class="command-table" id="job-abc003e4-ca98-4b0f-861e-02a650eb78c7">
       
       <div class="fail">
       
@@ -1075,7 +1075,7 @@ FlexibleArray { typ: Signedbv { width: 32 } }
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-8aed936f-fc07-4274-ba54-7f6c37d6dc79">#</a>
+                <a href="#job-abc003e4-ca98-4b0f-861e-02a650eb78c7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1129,15 +1129,15 @@ FlexibleArray { typ: Signedbv { width: 32 } }
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:11:14Z
+                2021-12-14T21:45:23Z
               </span></p>
               <p>Duration:
               <span class="value">
-                04s
+                03s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:11:18Z
+                2021-12-14T21:45:26Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1174,11 +1174,11 @@ aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/sr
 Not unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionRlE3maplQNCNvCsf0nWdY4P5jZ_3_11516double_positivess_0EBV_.1 iteration 1  thread 0
 Not unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionRlE3maplQNCNvCsf0nWdY4P5jZ_3_11516double_positivess_0EBV_.2 iteration 1  thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/alloc/src/vec/spec_from_iter_nested.rs line 23 column 32 function <std::vec::Vec<T> as std::vec::spec_from_iter_nested::SpecFromIterNested<T, I>>::from_iter thread 0
-Runtime Symex: 0.15655s
+Runtime Symex: 0.132151s
 size of program expression: 1701 steps
 simple slicing removed 9 assignments
 Generated 158 VCC(s), 50 remaining after simplification
-Runtime Postprocess Equation: 0.000196403s
+Runtime Postprocess Equation: 0.000207902s
 Passing problem to propositional reduction
 converting SSA
 warning: ignoring typecast
@@ -1262,119 +1262,119 @@ warning: ignoring typecast
 * #typedef: __CPROVER_size_t
 * #c_type: unsigned_long_int
 * value: 4
-Runtime Convert SSA: 0.0364581s
+Runtime Convert SSA: 0.0221117s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.00137972s
+Runtime Post-process: 0.00127561s
 Solving with MiniSAT 2.2.1 with simplifier
 36036 variables, 13001 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0514239s
-Runtime decision procedure: 0.0882793s
+Runtime Solver: 0.0506056s
+Runtime decision procedure: 0.0797539s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 36036 variables, 95 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000129402s
-Runtime decision procedure: 0.000253104s
+Runtime Solver: 0.000119301s
+Runtime decision procedure: 0.000231103s
 
 ** Results:
 [.unwind.1] unwinding assertion loop 1: SUCCESS
 [.unwind.2] unwinding assertion loop 2: SUCCESS
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Signedbv { width: 32 } } (MIR type Ref(ReErased, i32, Not)). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: StructTag("tag-_11450969069696430120") } (MIR type Ref(ReErased, std::vec::Vec<i32>, Not)). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.3] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: StructTag("tag-_11450969069696430120") } (MIR type Ref(ReErased, std::vec::Vec<i32>, Not)). Please report failures:
+[assertion.3] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Signedbv { width: 32 } } (MIR type Ref(ReErased, i32, Not)). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [division-by-zero.1] division by zero in var_20 / var_21: SUCCESS
 [overflow.1] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
 [overflow.2] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
 [overflow.3] arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_4): SUCCESS
 [overflow.4] arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.4] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
-[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.10] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
-[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.16] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.22] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.4] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.10] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.16] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
+[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.22] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
 [pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.3] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.4] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.5] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.6] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.7] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.8] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.9] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.10] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.11] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.12] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.13] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.14] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.15] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.16] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.17] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.18] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.19] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.20] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.21] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.22] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.23] pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.24] deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.25] dead object in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.26] pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.27] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.28] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.29] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.30] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.31] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.32] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.33] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.34] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.35] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.36] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.37] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.38] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.39] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.40] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.41] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.42] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.43] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.44] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.45] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.46] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.47] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.48] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.49] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.50] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.51] pointer invalid in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.52] deallocated dynamic object in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.53] dead object in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.54] pointer outside object bounds in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.55] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.56] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.57] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.58] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.59] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.3] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.4] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.5] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.6] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.7] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.8] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.9] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.10] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.11] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.12] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.13] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.14] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.15] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.16] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.17] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.18] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.19] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.20] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.21] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.22] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.23] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.24] pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.25] deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.26] dead object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.27] pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.28] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.29] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.30] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.31] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.32] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.33] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.34] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.35] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.36] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.37] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.38] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.39] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.40] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.41] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.42] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.43] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.44] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.45] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.46] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.47] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.48] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.49] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.50] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.51] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.52] pointer invalid in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.53] deallocated dynamic object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.54] dead object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.55] pointer outside object bounds in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.56] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.57] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.58] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.59] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
 [precondition_instance.1] memcpy src/dst overlap: SUCCESS
 [precondition_instance.2] memcpy source region readable: SUCCESS
 [precondition_instance.3] memcpy destination region writeable: SUCCESS
@@ -1832,7 +1832,6 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [std::intrinsics::write_bytes.precondition_instance.1] line 2256 memset destination region writeable: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/macros/mod.rs function main
-[main.assertion.1] line 44 a panicking function core::panicking::assert_failed is invoked: SUCCESS
 [main.pointer_arithmetic.1] line 44 pointer arithmetic: dead object in (unsigned char *)&var_35 + 0: SUCCESS
 [main.pointer_dereference.13] line 44 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_35 + 0)): SUCCESS
 
@@ -1873,8 +1872,6 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [std::ptr::const_ptr::<impl *const T>::wrapping_add.overflow.1] line 642 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
-[std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.2] line 188 resume instruction: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -1941,10 +1938,10 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [std::result::Result::<T, E>::map_err.assertion.2] line 851 unreachable code: SUCCESS
 [std::result::Result::<T, E>::map_err.assertion.3] line 851 unreachable code: SUCCESS
 [std::result::Result::<T, E>::map_err.overflow.1] line 851 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_arithmetic.1] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_arithmetic.2] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_dereference.1] line 851 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_dereference.2] line 851 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_arithmetic.1] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_arithmetic.2] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_dereference.1] line 851 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_dereference.2] line 851 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/slice/iter.rs function std::slice::Iter::<'a, T>::new
 [std::slice::Iter::<'a, T>::new.assertion.1] line 91 assumption failed: SUCCESS
@@ -2052,7 +2049,7 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.36] line 93 dereference failure: invalid integer address in self->ptr: SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Traits/impl Trait/115.rs function main
-[main.assertion.2] line 11 resume instruction: SUCCESS
+[main.assertion.1] line 14 a panicking function core::panicking::assert_failed is invoked: SUCCESS
 
 <builtin-library-calloc> function calloc
 [calloc.assertion.1] line 32 max allocation size exceeded: SUCCESS
@@ -2254,7 +2251,7 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [realloc.precondition_instance.11] line 30 free called for new[] object: SUCCESS
 [realloc.precondition_instance.12] line 30 free called for stack-allocated object: SUCCESS
 
-** 1 of 824 failed (2 iterations)
+** 1 of 821 failed (2 iterations)
 VERIFICATION FAILED
 [RMC] info: Verification output shows one or more unwinding failures.
 [RMC] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-10T20:00:39Z</li>
-      <li>dd11d447-eee7-4d47-83c0-84c57387d57b</li>
+      <li>2021-12-14T21:38:12Z</li>
+      <li>2b40d17f-471d-4f4c-9506-12447a81efd9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ad7ed84b-35e1-4b37-b64a-cb45648833b9">
+              <a href="#job-ec02e0bc-7c6a-463e-8025-11b29245d5f3">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e7a8f16b-4666-47fa-8bec-84709e5c44f3">
+              <a href="#job-94279555-f53b-4234-a730-547252bb215a">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-5abf3a44-d70e-4852-a2b1-f45d7518e879">
+              <a href="#job-8ef00a51-e9de-44d8-9a8b-8ec7f31b10ba">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ad7ed84b-35e1-4b37-b64a-cb45648833b9">
+    <div class="command-table" id="job-ec02e0bc-7c6a-463e-8025-11b29245d5f3">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ad7ed84b-35e1-4b37-b64a-cb45648833b9">#</a>
+                <a href="#job-ec02e0bc-7c6a-463e-8025-11b29245d5f3">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:08:48Z
+                2021-12-14T21:43:01Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:08:49Z
+                2021-12-14T21:43:02Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -753,6 +753,24 @@ Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_6998122095524776372")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_1::self" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
+Expr type
+Pointer { typ: CInteger(Char) }
+Type from MIR
+Array { typ: CInteger(Char), size: 0 }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_3" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
+Expr type
+Pointer { typ: CInteger(Char) }
+Type from MIR
+Array { typ: CInteger(Char), size: 0 }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$3len17hc5441cf0ec6448d3E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h1c0196a37c2a0432E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
@@ -777,17 +795,13 @@ Pointer { typ: StructTag("tag-_14153926526108093119") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_14153926526108093119") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr65drop_in_place$LT$$u5b$std..thread..JoinHandle$LT$u32$GT$$u5d$$GT$17h4a7730a80a99f9c3E::1::var_1" }, typ: StructTag("tag-_14769282372683427294"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_14153926526108093119") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_14153926526108093119") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_14153926526108093119") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h951965cf389ed507E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(52) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Typecast(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }), typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: None, base_name: None }, Parameter { typ: CInteger(SSizeT), identifier: None, base_name: None }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(23) } }, arguments: [Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }] }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 624, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::add"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self") }, Parameter { typ: CInteger(SSizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(40) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count" }, typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Block([Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: BinOp { op: Plus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: None }, Stmt { body: Expression(Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "__CPROVER_assert" }, typ: Code { parameters: [Parameter { typ: Bool, identifier: None, base_name: None }, Parameter { typ: Pointer { typ: CInteger(Char) }, identifier: None, base_name: None }], return_type: Empty }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, arguments: [Expr { value: UnOp { op: Not, e: Expr { value: BinOp { op: OverflowPlus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Bool, location: None } }, typ: Bool, location: None }, Expr { value: AddressOf(Expr { value: Index { array: Expr { value: StringConstant { s: "attempt to compute offset which would overflow" }, typ: Array { typ: CInteger(Char), size: 47 }, location: None }, index: Expr { value: IntConstant(0), typ: CInteger(SSizeT), location: None } }, typ: CInteger(Char), location: None }), typ: Pointer { typ: CInteger(Char) }, location: None }] }, typ: Empty, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(58) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 243, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h6452a7835586dea2E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -800,26 +814,6 @@ Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_6998122095524776372")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_1::self" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
-Expr type
-Pointer { typ: CInteger(Char) }
-Type from MIR
-Array { typ: CInteger(Char), size: 0 }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_3" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
-Expr type
-Pointer { typ: CInteger(Char) }
-Type from MIR
-Array { typ: CInteger(Char), size: 0 }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$3len17hc5441cf0ec6448d3E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(52) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Typecast(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }), typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: None, base_name: None }, Parameter { typ: CInteger(SSizeT), identifier: None, base_name: None }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(23) } }, arguments: [Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }] }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 624, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::add"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self") }, Parameter { typ: CInteger(SSizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(40) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count" }, typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Block([Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: BinOp { op: Plus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: None }, Stmt { body: Expression(Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "__CPROVER_assert" }, typ: Code { parameters: [Parameter { typ: Bool, identifier: None, base_name: None }, Parameter { typ: Pointer { typ: CInteger(Char) }, identifier: None, base_name: None }], return_type: Empty }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, arguments: [Expr { value: UnOp { op: Not, e: Expr { value: BinOp { op: OverflowPlus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Bool, location: None } }, typ: Bool, location: None }, Expr { value: AddressOf(Expr { value: Index { array: Expr { value: StringConstant { s: "attempt to compute offset which would overflow" }, typ: Array { typ: CInteger(Char), size: 47 }, location: None }, index: Expr { value: IntConstant(0), typ: CInteger(SSizeT), location: None } }, typ: CInteger(Char), location: None }), typ: Pointer { typ: CInteger(Char) }, location: None }] }, typ: Empty, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(58) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 243, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h40bc76d90302e435E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -952,7 +946,7 @@ StructTag("tag-_9697845436203272281")
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e7a8f16b-4666-47fa-8bec-84709e5c44f3">
+    <div class="command-table" id="job-94279555-f53b-4234-a730-547252bb215a">
       
       <div class="success">
       
@@ -960,7 +954,7 @@ StructTag("tag-_9697845436203272281")
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e7a8f16b-4666-47fa-8bec-84709e5c44f3">#</a>
+                <a href="#job-94279555-f53b-4234-a730-547252bb215a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1014,7 +1008,7 @@ StructTag("tag-_9697845436203272281")
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:08:49Z
+                2021-12-14T21:44:07Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -1022,7 +1016,7 @@ StructTag("tag-_9697845436203272281")
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:08:50Z
+                2021-12-14T21:44:08Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1084,6 +1078,24 @@ Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_6998122095524776372")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_1::self" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
+Expr type
+Pointer { typ: CInteger(Char) }
+Type from MIR
+Array { typ: CInteger(Char), size: 0 }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_3" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
+Expr type
+Pointer { typ: CInteger(Char) }
+Type from MIR
+Array { typ: CInteger(Char), size: 0 }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$3len17hc5441cf0ec6448d3E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr117drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$std..error..Error$u2b$core..marker..Send$u2b$core..marker..Sync$GT$$GT$17h1c0196a37c2a0432E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_14134968997888648675") }, location: None }), typ: StructTag("tag-_14134968997888648675"), location: None }, field: "0" }, typ: StructTag("tag-_5726308146812169131"), location: None }, field: "pointer" }, typ: StructTag("tag-_6998122095524776372"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
@@ -1108,17 +1120,13 @@ Pointer { typ: StructTag("tag-_14153926526108093119") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_14153926526108093119") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr65drop_in_place$LT$$u5b$std..thread..JoinHandle$LT$u32$GT$$u5d$$GT$17h4a7730a80a99f9c3E::1::var_1" }, typ: StructTag("tag-_14769282372683427294"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_14153926526108093119") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_14153926526108093119") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_14153926526108093119") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h951965cf389ed507E::1::var_1" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_9697845436203272281")
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(52) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Typecast(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }), typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: None, base_name: None }, Parameter { typ: CInteger(SSizeT), identifier: None, base_name: None }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(23) } }, arguments: [Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }] }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 624, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::add"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self") }, Parameter { typ: CInteger(SSizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(40) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count" }, typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Block([Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: BinOp { op: Plus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: None }, Stmt { body: Expression(Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "__CPROVER_assert" }, typ: Code { parameters: [Parameter { typ: Bool, identifier: None, base_name: None }, Parameter { typ: Pointer { typ: CInteger(Char) }, identifier: None, base_name: None }], return_type: Empty }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, arguments: [Expr { value: UnOp { op: Not, e: Expr { value: BinOp { op: OverflowPlus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Bool, location: None } }, typ: Bool, location: None }, Expr { value: AddressOf(Expr { value: Index { array: Expr { value: StringConstant { s: "attempt to compute offset which would overflow" }, typ: Array { typ: CInteger(Char), size: 47 }, location: None }, index: Expr { value: IntConstant(0), typ: CInteger(SSizeT), location: None } }, typ: CInteger(Char), location: None }), typ: Pointer { typ: CInteger(Char) }, location: None }] }, typ: Empty, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(58) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 243, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17h6452a7835586dea2E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -1131,26 +1139,6 @@ Expr type
 Pointer { typ: Empty }
 Type from MIR
 StructTag("tag-_6998122095524776372")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_1::self" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
-Expr type
-Pointer { typ: CInteger(Char) }
-Type from MIR
-Array { typ: CInteger(Char), size: 0 }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$13get_unchecked17h8883c1f6b50f43d1E::1::var_3" }, typ: StructTag("tag-str"), location: None }, field: "data" }, typ: Pointer { typ: CInteger(Char) }, location: None }
-Expr type
-Pointer { typ: CInteger(Char) }
-Type from MIR
-Array { typ: CInteger(Char), size: 0 }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$3len17hc5441cf0ec6448d3E::1::var_2" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self") }, Parameter { typ: CInteger(SizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(52) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_2::count" }, typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Typecast(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_5" }, typ: CInteger(SizeT), location: None }), typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(30) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(43) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: None, base_name: None }, Parameter { typ: CInteger(SSizeT), identifier: None, base_name: None }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(23) } }, arguments: [Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_4" }, typ: CInteger(SSizeT), location: None }] }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 623, col: Some(44) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 624, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::add"), line: 618, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$3add17h135262de22ab1991E"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::add"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
-WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: Unsignedbv { width: 8 } }, identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self") }, Parameter { typ: CInteger(SSizeT), identifier: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count"), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count") }], return_type: Pointer { typ: Unsignedbv { width: 8 } } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(55) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_1::self" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_5" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(37) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(40) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_2::count" }, typ: CInteger(SSizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(43) } }, Stmt { body: Block([Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: BinOp { op: Plus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: None }, Stmt { body: Expression(Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "__CPROVER_assert" }, typ: Code { parameters: [Parameter { typ: Bool, identifier: None, base_name: None }, Parameter { typ: Pointer { typ: CInteger(Char) }, identifier: None, base_name: None }], return_type: Empty }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, arguments: [Expr { value: UnOp { op: Not, e: Expr { value: BinOp { op: OverflowPlus, lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_4" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_6" }, typ: CInteger(SSizeT), location: None } }, typ: Bool, location: None } }, typ: Bool, location: None }, Expr { value: AddressOf(Expr { value: Index { array: Expr { value: StringConstant { s: "attempt to compute offset which would overflow" }, typ: Array { typ: CInteger(Char), size: 47 }, location: None }, index: Expr { value: IntConstant(0), typ: CInteger(SSizeT), location: None } }, typ: CInteger(Char), location: None }), typ: Pointer { typ: CInteger(Char) }, location: None }] }, typ: Empty, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(48) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_3" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(18) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 242, col: Some(58) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE::1::var_0" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 243, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs", function: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), line: 235, col: Some(5) } }), base_name: Some("_ZN4core3ptr7mut_ptr31_$LT$impl$u20$$BP$mut$u20$T$GT$6offset17h43d1c592c82b8a0aE"), pretty_name: Some("std::ptr::mut_ptr::<impl *mut T>::offset"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h40bc76d90302e435E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_6546326017478942584") }, location: None }), typ: StructTag("tag-_6546326017478942584"), location: None }, field: "0" }, typ: StructTag("tag-_6194737518185082709"), location: None }, field: "pointer" }, typ: StructTag("tag-_9697845436203272281"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
@@ -1283,7 +1271,7 @@ StructTag("tag-_9697845436203272281")
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-5abf3a44-d70e-4852-a2b1-f45d7518e879">
+    <div class="command-table" id="job-8ef00a51-e9de-44d8-9a8b-8ec7f31b10ba">
       
       <div class="fail">
       
@@ -1291,7 +1279,7 @@ StructTag("tag-_9697845436203272281")
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-5abf3a44-d70e-4852-a2b1-f45d7518e879">#</a>
+                <a href="#job-8ef00a51-e9de-44d8-9a8b-8ec7f31b10ba">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1345,15 +1333,15 @@ StructTag("tag-_9697845436203272281")
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:08:51Z
+                2021-12-14T21:44:08Z
               </span></p>
               <p>Duration:
               <span class="value">
-                07s
+                06s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:08:58Z
+                2021-12-14T21:44:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1387,8 +1375,11 @@ Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 2074 column 15 function <std::option::Option<T> as std::ops::Try>::branch thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/str/validations.rs line 38 column 14 function core::str::validations::next_code_point thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 816 column 15 function std::option::Option::<T>::unwrap_unchecked thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 816 column 15 function std::option::Option::<T>::unwrap_unchecked thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 816 column 15 function std::option::Option::<T>::unwrap_unchecked thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/option.rs line 845 column 15 function std::option::Option::<T>::map thread 0
 Not unwinding loop _RINvMNtCs61cxoXOqFbB_4core6optionINtB3_6OptionmE3mapcNCNvXNtNtB5_3str4iterNtBU_5CharsNtNtNtNtB5_4iter6traits8iterator8Iterator4next0ECs4p5QcpZLgUE_2_24.1 iteration 1  thread 0
@@ -1398,45 +1389,45 @@ aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/sr
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs line 1995 column 21 function std::iter::Iterator::try_fold thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/library/core/src/iter/adapters/enumerate.rs line 46 column 17 function <std::iter::Enumerate<I> as std::iter::Iterator>::next thread 0
 aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs line 41 column 30 function main thread 0
-Runtime Symex: 0.415968s
-size of program expression: 4090 steps
+Runtime Symex: 0.150856s
+size of program expression: 4096 steps
 simple slicing removed 16 assignments
 Generated 334 VCC(s), 131 remaining after simplification
-Runtime Postprocess Equation: 0.000627711s
+Runtime Postprocess Equation: 0.000403305s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0958939s
+Runtime Convert SSA: 0.068788s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.0165195s
+Runtime Post-process: 0.0146908s
 Solving with MiniSAT 2.2.1 with simplifier
-80246 variables, 33106 clauses
+80238 variables, 33106 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.286862s
-Runtime decision procedure: 0.386285s
+Runtime Solver: 0.188318s
+Runtime decision procedure: 0.257699s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
-80246 variables, 99 clauses
+80238 variables, 86 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000237304s
-Runtime decision procedure: 0.000471307s
+Runtime Solver: 0.000200702s
+Runtime decision procedure: 0.000385805s
 
 ** Results:
 [.unwind.1] unwinding assertion loop 1: SUCCESS
 [.unwind.2] unwinding assertion loop 2: FAILURE
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_3344944947890248675") (MIR type Adt(std::ffi::NulError, [])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_10919722728261245241") (MIR type Closure(DefId(1:778 ~ std[c6e5]::thread::{impl#0}::spawn_unchecked::{closure#1}), [ReErased, [closure@src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs:58:37: 75:10], u32, i32, extern "rust-call" fn(()), (std::thread::Thread, std::option::Option<std::sync::Arc<std::sync::Mutex<std::vec::Vec<u8>>>>, [closure@src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs:58:37: 75:10], std::sync::Arc<std::cell::UnsafeCell<std::option::Option<std::result::Result<u32, std::boxed::Box<dyn std::any::Any + std::marker::Send>>>>>)])). Please report failures:
+[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13187668267520368466") (MIR type Adt(std::io::Error, [])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.3] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_6546326017478942584") (MIR type Adt(std::boxed::Box, [dyn std::any::Any + std::marker::Send, std::alloc::Global])). Please report failures:
+[assertion.3] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: CInteger(SizeT) } (MIR type Ref(ReErased, usize, Not)). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.4] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: CInteger(SizeT) } (MIR type Ref(ReErased, usize, Not)). Please report failures:
+[assertion.4] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.5] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_3344944947890248675") (MIR type Adt(std::ffi::NulError, [])). Please report failures:
+[assertion.5] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_10919722728261245241") (MIR type Closure(DefId(1:778 ~ std[c6e5]::thread::{impl#0}::spawn_unchecked::{closure#1}), [ReErased, [closure@src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs:58:37: 75:10], u32, i32, extern "rust-call" fn(()), (std::thread::Thread, std::option::Option<std::sync::Arc<std::sync::Mutex<std::vec::Vec<u8>>>>, [closure@src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs:58:37: 75:10], std::sync::Arc<std::cell::UnsafeCell<std::option::Option<std::result::Result<u32, std::boxed::Box<dyn std::any::Any + std::marker::Send>>>>>)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.6] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13187668267520368466") (MIR type Adt(std::io::Error, [])). Please report failures:
+[assertion.6] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: StructTag("tag-_3172458081546024222") } (MIR type Ref(ReErased, std::option::Option<usize>, Not)). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.7] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: StructTag("tag-_3172458081546024222") } (MIR type Ref(ReErased, std::option::Option<usize>, Not)). Please report failures:
+[assertion.7] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_6546326017478942584") (MIR type Adt(std::boxed::Box, [dyn std::any::Any + std::marker::Send, std::alloc::Global])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [division-by-zero.1] division by zero in var_19 / var_20: SUCCESS
 [overflow.1] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
@@ -1450,78 +1441,78 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_arithmetic.4] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
 [pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
 [pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
-[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_17 + var_19: SUCCESS
-[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_17 + var_19: SUCCESS
-[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_17 + var_19: SUCCESS
-[pointer_arithmetic.10] pointer arithmetic: dead object in var_17 + var_19: SUCCESS
-[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_17 + var_19: SUCCESS
-[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_17 + var_19: SUCCESS
-[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.16] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_10 + 1: SUCCESS
-[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_10 + 1: SUCCESS
-[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_10 + 1: SUCCESS
-[pointer_arithmetic.22] pointer arithmetic: dead object in var_10 + 1: SUCCESS
-[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_10 + 1: SUCCESS
-[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_10 + 1: SUCCESS
-[pointer_arithmetic.25] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.26] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.27] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.28] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.29] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.30] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
+[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_10 + 1: SUCCESS
+[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_10 + 1: SUCCESS
+[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_10 + 1: SUCCESS
+[pointer_arithmetic.10] pointer arithmetic: dead object in var_10 + 1: SUCCESS
+[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_10 + 1: SUCCESS
+[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_10 + 1: SUCCESS
+[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_17 + var_19: SUCCESS
+[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_17 + var_19: SUCCESS
+[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_17 + var_19: SUCCESS
+[pointer_arithmetic.16] pointer arithmetic: dead object in var_17 + var_19: SUCCESS
+[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_17 + var_19: SUCCESS
+[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_17 + var_19: SUCCESS
+[pointer_arithmetic.19] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.20] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.21] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.22] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.23] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.24] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.25] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.26] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.27] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.28] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.29] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.30] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
 [pointer_arithmetic.31] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
 [pointer_arithmetic.32] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
 [pointer_arithmetic.33] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
 [pointer_arithmetic.34] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
 [pointer_arithmetic.35] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
 [pointer_arithmetic.36] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.37] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.38] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.39] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.40] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.41] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.42] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.43] pointer relation: pointer NULL in var_11: SUCCESS
-[pointer_arithmetic.44] pointer relation: pointer invalid in var_11: SUCCESS
-[pointer_arithmetic.45] pointer relation: deallocated dynamic object in var_11: SUCCESS
-[pointer_arithmetic.46] pointer relation: dead object in var_11: SUCCESS
-[pointer_arithmetic.47] pointer relation: pointer outside object bounds in var_11: SUCCESS
-[pointer_arithmetic.48] pointer relation: invalid integer address in var_11: SUCCESS
-[pointer_arithmetic.49] pointer relation: pointer NULL in var_12: SUCCESS
-[pointer_arithmetic.50] pointer relation: pointer invalid in var_12: SUCCESS
-[pointer_arithmetic.51] pointer relation: deallocated dynamic object in var_12: SUCCESS
-[pointer_arithmetic.52] pointer relation: dead object in var_12: SUCCESS
-[pointer_arithmetic.53] pointer relation: pointer outside object bounds in var_12: SUCCESS
-[pointer_arithmetic.54] pointer relation: invalid integer address in var_12: SUCCESS
+[pointer_arithmetic.37] pointer relation: pointer NULL in var_11: SUCCESS
+[pointer_arithmetic.38] pointer relation: pointer invalid in var_11: SUCCESS
+[pointer_arithmetic.39] pointer relation: deallocated dynamic object in var_11: SUCCESS
+[pointer_arithmetic.40] pointer relation: dead object in var_11: SUCCESS
+[pointer_arithmetic.41] pointer relation: pointer outside object bounds in var_11: SUCCESS
+[pointer_arithmetic.42] pointer relation: invalid integer address in var_11: SUCCESS
+[pointer_arithmetic.43] pointer relation: pointer NULL in var_12: SUCCESS
+[pointer_arithmetic.44] pointer relation: pointer invalid in var_12: SUCCESS
+[pointer_arithmetic.45] pointer relation: deallocated dynamic object in var_12: SUCCESS
+[pointer_arithmetic.46] pointer relation: dead object in var_12: SUCCESS
+[pointer_arithmetic.47] pointer relation: pointer outside object bounds in var_12: SUCCESS
+[pointer_arithmetic.48] pointer relation: invalid integer address in var_12: SUCCESS
+[pointer_arithmetic.49] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.50] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.51] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.52] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.53] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.54] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
 [pointer_dereference.1] dereference failure: pointer NULL in var_1->0: SUCCESS
 [pointer_dereference.2] dereference failure: pointer invalid in var_1->0: SUCCESS
 [pointer_dereference.3] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
 [pointer_dereference.4] dereference failure: dead object in var_1->0: SUCCESS
 [pointer_dereference.5] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
 [pointer_dereference.6] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.7] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.8] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.9] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.10] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.11] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.12] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_dereference.7] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.8] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.9] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.10] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.11] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.12] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.13] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.14] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.15] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.16] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.17] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.18] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.19] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.20] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.21] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.22] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.23] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.24] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.19] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.20] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.21] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[pointer_dereference.22] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.23] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.24] dereference failure: invalid integer address in var_1->0: SUCCESS
 [pointer_dereference.25] dereference failure: pointer NULL in var_1->0: SUCCESS
 [pointer_dereference.26] dereference failure: pointer invalid in var_1->0: SUCCESS
 [pointer_dereference.27] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -1588,30 +1579,30 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_dereference.88] dereference failure: dead object in var_1->0: SUCCESS
 [pointer_dereference.89] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
 [pointer_dereference.90] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.91] dereference failure: pointer NULL in var_1: SUCCESS
-[pointer_dereference.92] dereference failure: pointer invalid in var_1: SUCCESS
-[pointer_dereference.93] dereference failure: deallocated dynamic object in var_1: SUCCESS
-[pointer_dereference.94] dereference failure: dead object in var_1: SUCCESS
-[pointer_dereference.95] dereference failure: pointer outside object bounds in var_1: SUCCESS
-[pointer_dereference.96] dereference failure: invalid integer address in var_1: SUCCESS
-[pointer_dereference.97] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.98] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.99] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.100] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.101] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.102] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.103] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.104] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.105] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.106] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.107] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.108] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.109] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.110] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.111] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.112] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.113] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.114] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.91] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.92] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.93] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.94] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.95] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.96] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.97] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.98] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.99] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.100] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.101] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.102] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.103] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.104] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.105] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[pointer_dereference.106] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.107] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.108] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_dereference.109] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.110] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.111] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[pointer_dereference.112] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.113] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.114] dereference failure: invalid integer address in var_1->0: SUCCESS
 [pointer_dereference.115] dereference failure: pointer NULL in var_1->0: SUCCESS
 [pointer_dereference.116] dereference failure: pointer invalid in var_1->0: SUCCESS
 [pointer_dereference.117] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -1672,70 +1663,70 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_dereference.172] dereference failure: dead object in var_1->0: SUCCESS
 [pointer_dereference.173] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
 [pointer_dereference.174] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.175] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.176] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.177] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.178] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.179] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.180] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_dereference.175] dereference failure: pointer NULL in var_1: SUCCESS
+[pointer_dereference.176] dereference failure: pointer invalid in var_1: SUCCESS
+[pointer_dereference.177] dereference failure: deallocated dynamic object in var_1: SUCCESS
+[pointer_dereference.178] dereference failure: dead object in var_1: SUCCESS
+[pointer_dereference.179] dereference failure: pointer outside object bounds in var_1: SUCCESS
+[pointer_dereference.180] dereference failure: invalid integer address in var_1: SUCCESS
 [pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.3] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.4] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.5] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.6] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.7] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.8] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.9] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.10] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.11] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.12] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.13] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.14] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.15] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.16] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.17] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.18] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.19] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.20] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.21] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
-[pointer_primitives.22] pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.23] deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.24] dead object in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.25] pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
-[pointer_primitives.26] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.27] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.28] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.29] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
-[pointer_primitives.30] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.31] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.32] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.33] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.34] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.35] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.36] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.37] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.38] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.39] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.40] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.41] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.42] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.43] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.44] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.45] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.46] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.47] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.48] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.49] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
-[pointer_primitives.50] pointer invalid in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.51] deallocated dynamic object in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.52] dead object in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.53] pointer outside object bounds in OBJECT_SIZE((void *)var_5): SUCCESS
-[pointer_primitives.54] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.55] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.56] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.57] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
-[pointer_primitives.58] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.3] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.4] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.5] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.6] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.7] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.8] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.9] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.10] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.11] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.12] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.13] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.14] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.15] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.16] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.17] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.18] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.19] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.20] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.21] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.22] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.23] pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.24] deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.25] dead object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.26] pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.27] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.28] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.29] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.30] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.31] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.32] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.33] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.34] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.35] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.36] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.37] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.38] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.39] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.40] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.41] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.42] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.43] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.44] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.45] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.46] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.47] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.48] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.49] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.50] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.51] pointer invalid in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.52] deallocated dynamic object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.53] dead object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.54] pointer outside object bounds in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.55] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.56] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.57] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.58] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
 [pointer_primitives.59] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [pointer_primitives.60] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [pointer_primitives.61] dead object in OBJECT_SIZE(&temp_0): SUCCESS
@@ -2346,12 +2337,6 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2818 dereference failure: dead object in self->len: SUCCESS
 [<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2818 dereference failure: pointer outside object bounds in self->len: SUCCESS
 [<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2818 dereference failure: invalid integer address in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.7] line 2818 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.8] line 2818 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.9] line 2818 dereference failure: deallocated dynamic object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.10] line 2818 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.11] line 2818 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.12] line 2818 dereference failure: invalid integer address in self->len: SUCCESS
 
 /home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
 [std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: SUCCESS
@@ -2484,7 +2469,7 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 362 invalid args: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 363 invalid args: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
 
@@ -2589,6 +2574,9 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [<&mut I as std::iter::ExactSizeIterator>::len.pointer_dereference.5] line 142 dereference failure: pointer outside object bounds in *self: SUCCESS
 [<&mut I as std::iter::ExactSizeIterator>::len.pointer_dereference.6] line 142 dereference failure: invalid integer address in *self: SUCCESS
 
+/home/runner/work/rmc/rmc/library/core/src/iter/traits/exact_size.rs function std::iter::ExactSizeIterator::len
+[std::iter::ExactSizeIterator::len.assertion.1] line 108 a panicking function core::panicking::assert_failed is invoked: SUCCESS
+
 /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::find::check::{closure#0}
 [std::iter::Iterator::find::check::{closure#0}.assertion.1] line 2378 resume instruction: SUCCESS
 
@@ -2597,8 +2585,8 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::iter::Iterator::fold.assertion.2] line 2164 resume instruction: SUCCESS
 [std::iter::Iterator::fold.pointer_arithmetic.1] line 2170 pointer arithmetic: dead object in (unsigned char *)&var_4 + 0: SUCCESS
 [std::iter::Iterator::fold.pointer_arithmetic.2] line 2170 pointer arithmetic: dead object in (unsigned char *)&var_4 + 0: SUCCESS
-[std::iter::Iterator::fold.pointer_dereference.1] line 2170 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 0)): SUCCESS
-[std::iter::Iterator::fold.pointer_dereference.2] line 2170 dereference failure: dead object in *((unsigned int *)((unsigned char *)&var_4 + 0)): SUCCESS
+[std::iter::Iterator::fold.pointer_dereference.1] line 2170 dereference failure: dead object in *((unsigned int *)((unsigned char *)&var_4 + 0)): SUCCESS
+[std::iter::Iterator::fold.pointer_dereference.2] line 2170 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::try_fold
 [std::iter::Iterator::try_fold.assertion.2] line 1987 resume instruction: SUCCESS
@@ -2609,7 +2597,6 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::iter::Iterator::try_fold.pointer_dereference.2] line 1995 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_10 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/macros/mod.rs function std::iter::ExactSizeIterator::len
-[std::iter::ExactSizeIterator::len.assertion.1] line 44 a panicking function core::panicking::assert_failed is invoked: SUCCESS
 [std::iter::ExactSizeIterator::len.pointer_arithmetic.1] line 44 pointer arithmetic: dead object in (unsigned char *)&var_22 + 0: SUCCESS
 [std::iter::ExactSizeIterator::len.pointer_dereference.1] line 44 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_22 + 0)): SUCCESS
 
@@ -2642,7 +2629,6 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::ops::ControlFlow::<B, C>::break_value.pointer_dereference.3] line 180 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ops/function.rs function std::ops::FnOnce::call_once
-[std::ops::FnOnce::call_once.assertion.1] line 227 resume instruction: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.1] line 227 dereference failure: pointer NULL in *var_1: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.2] line 227 dereference failure: pointer invalid in *var_1: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.3] line 227 dereference failure: deallocated dynamic object in *var_1: SUCCESS
@@ -2769,13 +2755,13 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::option::Option::<T>::take.pointer_dereference.13] line 1350 dereference failure: invalid integer address in *var_2: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::unwrap
-[std::option::Option::<T>::unwrap.assertion.1] line 744 called `Option::unwrap()` on a `None` value: SUCCESS
 [std::option::Option::<T>::unwrap.assertion.2] line 744 unreachable code: SUCCESS
-[std::option::Option::<T>::unwrap.assertion.3] line 744 called `Option::unwrap()` on a `None` value: SUCCESS
 [std::option::Option::<T>::unwrap.assertion.4] line 744 unreachable code: SUCCESS
 [std::option::Option::<T>::unwrap.overflow.1] line 744 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
 [std::option::Option::<T>::unwrap.pointer_arithmetic.1] line 744 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
 [std::option::Option::<T>::unwrap.pointer_dereference.1] line 744 dereference failure: dead object in *((unsigned int *)((unsigned char *)&self + 0)): SUCCESS
+[std::option::Option::<T>::unwrap.assertion.1] line 746 called `Option::unwrap()` on a `None` value: SUCCESS
+[std::option::Option::<T>::unwrap.assertion.3] line 746 called `Option::unwrap()` on a `None` value: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::unwrap_or_else
 [std::option::Option::<T>::unwrap_or_else.assertion.1] line 785 unreachable code: SUCCESS
@@ -2813,19 +2799,6 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::ptr::const_ptr::<impl *const T>::wrapping_add.overflow.1] line 642 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
-[std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.2] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.3] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.4] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.5] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.6] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.7] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.8] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.9] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.10] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.11] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.12] line 188 resume instruction: SUCCESS
-[std::ptr::drop_in_place.assertion.13] line 188 resume instruction: SUCCESS
 [std::ptr::drop_in_place.overflow.1] line 188 arithmetic overflow on unsigned to signed type conversion in (long int)var_1->case: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.1] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.2] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
@@ -2833,54 +2806,48 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::ptr::drop_in_place.pointer_arithmetic.4] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.5] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.6] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.7] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.8] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.9] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.10] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.11] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.12] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.13] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.14] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.15] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.16] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.17] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.18] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.19] line 188 pointer arithmetic: pointer NULL in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.20] line 188 pointer arithmetic: pointer invalid in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.21] line 188 pointer arithmetic: deallocated dynamic object in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.22] line 188 pointer arithmetic: dead object in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.23] line 188 pointer arithmetic: pointer outside object bounds in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.24] line 188 pointer arithmetic: invalid integer address in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.25] line 188 pointer arithmetic: pointer NULL in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.26] line 188 pointer arithmetic: pointer invalid in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.27] line 188 pointer arithmetic: deallocated dynamic object in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.28] line 188 pointer arithmetic: dead object in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.29] line 188 pointer arithmetic: pointer outside object bounds in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.30] line 188 pointer arithmetic: invalid integer address in var_1.data + var_4: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.31] line 188 pointer arithmetic: pointer NULL in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.32] line 188 pointer arithmetic: pointer invalid in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.33] line 188 pointer arithmetic: deallocated dynamic object in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.34] line 188 pointer arithmetic: dead object in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.35] line 188 pointer arithmetic: pointer outside object bounds in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.36] line 188 pointer arithmetic: invalid integer address in var_9 + 1: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.37] line 188 pointer arithmetic: pointer NULL in var_9 + var_3: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.38] line 188 pointer arithmetic: pointer invalid in var_9 + var_3: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.39] line 188 pointer arithmetic: deallocated dynamic object in var_9 + var_3: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.40] line 188 pointer arithmetic: dead object in var_9 + var_3: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.41] line 188 pointer arithmetic: pointer outside object bounds in var_9 + var_3: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.42] line 188 pointer arithmetic: invalid integer address in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.7] line 188 pointer arithmetic: pointer NULL in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.8] line 188 pointer arithmetic: pointer invalid in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.9] line 188 pointer arithmetic: deallocated dynamic object in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.10] line 188 pointer arithmetic: dead object in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.11] line 188 pointer arithmetic: pointer outside object bounds in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.12] line 188 pointer arithmetic: invalid integer address in var_1.data + var_4: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.13] line 188 pointer arithmetic: pointer NULL in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.14] line 188 pointer arithmetic: pointer invalid in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.15] line 188 pointer arithmetic: deallocated dynamic object in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.16] line 188 pointer arithmetic: dead object in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.17] line 188 pointer arithmetic: pointer outside object bounds in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.18] line 188 pointer arithmetic: invalid integer address in var_9 + 1: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.19] line 188 pointer arithmetic: pointer NULL in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.20] line 188 pointer arithmetic: pointer invalid in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.21] line 188 pointer arithmetic: deallocated dynamic object in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.22] line 188 pointer arithmetic: dead object in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.23] line 188 pointer arithmetic: pointer outside object bounds in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.24] line 188 pointer arithmetic: invalid integer address in var_9 + var_3: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.25] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.26] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.27] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.28] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.29] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.30] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.31] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.32] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.33] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.34] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.35] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.36] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.37] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.38] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.39] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.40] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.41] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
+[std::ptr::drop_in_place.pointer_arithmetic.42] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.43] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.44] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.45] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.46] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.47] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_arithmetic.48] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.49] line 188 pointer arithmetic: pointer NULL in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.50] line 188 pointer arithmetic: pointer invalid in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.51] line 188 pointer arithmetic: deallocated dynamic object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.52] line 188 pointer arithmetic: dead object in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.53] line 188 pointer arithmetic: pointer outside object bounds in (unsigned char *)&(*var_1) + 0: SUCCESS
-[std::ptr::drop_in_place.pointer_arithmetic.54] line 188 pointer arithmetic: invalid integer address in (unsigned char *)&(*var_1) + 0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -2893,30 +2860,30 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::ptr::drop_in_place.pointer_dereference.10] line 188 dereference failure: dead object in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.11] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.13] line 188 dereference failure: pointer NULL in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.14] line 188 dereference failure: pointer invalid in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.15] line 188 dereference failure: deallocated dynamic object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.16] line 188 dereference failure: dead object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.17] line 188 dereference failure: pointer outside object bounds in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.18] line 188 dereference failure: invalid integer address in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.19] line 188 dereference failure: pointer NULL in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.20] line 188 dereference failure: pointer invalid in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.21] line 188 dereference failure: deallocated dynamic object in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.22] line 188 dereference failure: dead object in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.23] line 188 dereference failure: pointer outside object bounds in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.24] line 188 dereference failure: invalid integer address in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.25] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.26] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.27] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.28] line 188 dereference failure: dead object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.29] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.30] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.31] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.32] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.33] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.34] line 188 dereference failure: dead object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.35] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.36] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.13] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.14] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.15] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.16] line 188 dereference failure: dead object in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.17] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.18] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.19] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.20] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.21] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.22] line 188 dereference failure: dead object in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.23] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.24] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.25] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.26] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.27] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.28] line 188 dereference failure: dead object in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.29] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.30] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.31] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.32] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.33] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.34] line 188 dereference failure: dead object in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.35] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.36] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.37] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.38] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.39] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -2941,48 +2908,48 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::ptr::drop_in_place.pointer_dereference.58] line 188 dereference failure: dead object in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.59] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.60] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.61] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.62] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.63] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.64] line 188 dereference failure: dead object in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.65] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.66] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.67] line 188 dereference failure: pointer NULL in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.68] line 188 dereference failure: pointer invalid in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.69] line 188 dereference failure: deallocated dynamic object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.70] line 188 dereference failure: dead object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.71] line 188 dereference failure: pointer outside object bounds in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.72] line 188 dereference failure: invalid integer address in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.73] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.74] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.75] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.76] line 188 dereference failure: dead object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.77] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.78] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.79] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.80] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.81] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.82] line 188 dereference failure: dead object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.83] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.84] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.85] line 188 dereference failure: pointer NULL in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.86] line 188 dereference failure: pointer invalid in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.87] line 188 dereference failure: deallocated dynamic object in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.88] line 188 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.89] line 188 dereference failure: pointer outside object bounds in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.90] line 188 dereference failure: invalid integer address in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.91] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.92] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.93] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.94] line 188 dereference failure: dead object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.95] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.96] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.97] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.98] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.99] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.100] line 188 dereference failure: dead object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.101] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.102] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.61] line 188 dereference failure: pointer NULL in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.62] line 188 dereference failure: pointer invalid in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.63] line 188 dereference failure: deallocated dynamic object in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.64] line 188 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.65] line 188 dereference failure: pointer outside object bounds in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.66] line 188 dereference failure: invalid integer address in *((unsigned long int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.67] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.68] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.69] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.70] line 188 dereference failure: dead object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.71] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.72] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.73] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.74] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.75] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.76] line 188 dereference failure: dead object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.77] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.78] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.79] line 188 dereference failure: pointer NULL in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.80] line 188 dereference failure: pointer invalid in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.81] line 188 dereference failure: deallocated dynamic object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.82] line 188 dereference failure: dead object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.83] line 188 dereference failure: pointer outside object bounds in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.84] line 188 dereference failure: invalid integer address in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.85] line 188 dereference failure: pointer NULL in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.86] line 188 dereference failure: pointer invalid in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.87] line 188 dereference failure: deallocated dynamic object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.88] line 188 dereference failure: dead object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.89] line 188 dereference failure: pointer outside object bounds in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.90] line 188 dereference failure: invalid integer address in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.91] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.92] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.93] line 188 dereference failure: deallocated dynamic object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.94] line 188 dereference failure: dead object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.95] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.96] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.97] line 188 dereference failure: pointer NULL in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.98] line 188 dereference failure: pointer invalid in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.99] line 188 dereference failure: deallocated dynamic object in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.100] line 188 dereference failure: dead object in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.101] line 188 dereference failure: pointer outside object bounds in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.102] line 188 dereference failure: invalid integer address in *((unsigned int *)((unsigned char *)&(*var_1) + 0)): SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.103] line 188 dereference failure: pointer NULL in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.104] line 188 dereference failure: pointer invalid in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.105] line 188 dereference failure: deallocated dynamic object in *((unsigned char **)((unsigned char *)&(*var_1) + 0)): SUCCESS
@@ -3085,10 +3052,10 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.4] line 1948 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1958 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
-[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1958 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1958 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1958 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1958 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::expect
 [std::result::Result::<T, E>::expect.assertion.3] line 1299 resume instruction: SUCCESS
@@ -3105,10 +3072,10 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::result::Result::<T, E>::map_err.assertion.2] line 851 unreachable code: SUCCESS
 [std::result::Result::<T, E>::map_err.assertion.3] line 851 unreachable code: SUCCESS
 [std::result::Result::<T, E>::map_err.overflow.1] line 851 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_arithmetic.1] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_arithmetic.2] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_dereference.1] line 851 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
-[std::result::Result::<T, E>::map_err.pointer_dereference.2] line 851 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_arithmetic.1] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_arithmetic.2] line 851 pointer arithmetic: dead object in (unsigned char *)&self + 8: SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_dereference.1] line 851 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::result::Result::<T, E>::map_err.pointer_dereference.2] line 851 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&self + 8)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::unwrap
 [std::result::Result::<T, E>::unwrap.assertion.3] line 1339 resume instruction: SUCCESS
@@ -3451,8 +3418,8 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::sync::atomic::atomic_sub.pointer_dereference.6] line 2414 dereference failure: invalid integer address in *var_13: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/sync/atomic.rs function std::sync::atomic::fence
-[std::sync::atomic::fence.assertion.1] line 2681 there is no such thing as a relaxed fence: SUCCESS
 [std::sync::atomic::fence.assertion.2] line 2681 unreachable code: SUCCESS
+[std::sync::atomic::fence.assertion.1] line 2686 there is no such thing as a relaxed fence: SUCCESS
 
 /home/runner/work/rmc/rmc/library/std/src/ffi/c_str.rs function <std::ffi::CString as std::ops::Drop>::drop
 [<std::ffi::CString as std::ops::Drop>::drop.pointer_dereference.1] line 780 dereference failure: pointer NULL in self->inner: SUCCESS
@@ -3526,7 +3493,6 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [std::thread::spawn.assertion.1] line 625 resume instruction: SUCCESS
 
 /home/runner/work/rmc/rmc/src/test/dashboard/books/Rust by Example/Std misc/Threads/Testcase: map-reduce/24.rs function main
-[main.assertion.2] line 7 resume instruction: SUCCESS
 [main.assertion.1] line 41 unreachable code: SUCCESS
 [main.pointer_arithmetic.1] line 41 pointer arithmetic: dead object in (unsigned char *)&var_9 + 8: SUCCESS
 [main.pointer_dereference.1] line 41 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_9 + 8)): SUCCESS
@@ -3645,7 +3611,7 @@ function _ZN78_$LT$std..sys_common..mutex..MovableMutex$u20$as$u20$core..ops..dr
 [realloc.precondition_instance.11] line 30 free called for new[] object: SUCCESS
 [realloc.precondition_instance.12] line 30 free called for stack-allocated object: SUCCESS
 
-** 1 of 1936 failed (2 iterations)
+** 1 of 1909 failed (2 iterations)
 VERIFICATION FAILED
 [RMC] info: Verification output shows one or more unwinding failures.
 [RMC] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.

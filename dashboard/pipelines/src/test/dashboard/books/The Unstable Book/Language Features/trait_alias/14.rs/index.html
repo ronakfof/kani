@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2021-12-10T20:00:39Z</li>
-      <li>dd11d447-eee7-4d47-83c0-84c57387d57b</li>
+      <li>2021-12-14T21:38:12Z</li>
+      <li>2b40d17f-471d-4f4c-9506-12447a81efd9</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -535,7 +535,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e019e5f6-4e08-4dfc-8a39-534fc81b6d86">
+              <a href="#job-e977bbb2-438e-459d-89b2-f3f4b028fcb0">
               
               Is this valid Rust code?
               
@@ -563,7 +563,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ca73928d-9b7c-433e-945d-7d4e24e8ea98">
+              <a href="#job-f948575f-529f-47df-b59f-bbbcd01087fd">
               
               Does RMC support all the Rust features used in it?
               
@@ -593,7 +593,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-862721d2-b7f1-4d44-a7d5-b164d80bb195">
+              <a href="#job-fb21c665-f0e8-48e5-98a3-58a4cbf8cdc9">
               
               Can RMC reason about it?
               
@@ -621,7 +621,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e019e5f6-4e08-4dfc-8a39-534fc81b6d86">
+    <div class="command-table" id="job-e977bbb2-438e-459d-89b2-f3f4b028fcb0">
       
       <div class="success">
       
@@ -629,7 +629,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e019e5f6-4e08-4dfc-8a39-534fc81b6d86">#</a>
+                <a href="#job-e977bbb2-438e-459d-89b2-f3f4b028fcb0">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -683,7 +683,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:06:42Z
+                2021-12-14T21:42:04Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,7 +691,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:06:42Z
+                2021-12-14T21:42:04Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -763,12 +763,6 @@ Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h2dff7334b6b5e16aE::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13953704594215328849")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr68drop_in_place$LT$dyn$u20$core..fmt..Debug$u2b$core..marker..Send$GT$17hc0c19dca324bde9fE::1::var_1" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
@@ -776,6 +770,12 @@ Type from MIR
 StructTag("tag-_13953704594215328849")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr93drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..fmt..Debug$u2b$core..marker..Send$GT$$GT$17h1b8087cd8df8c67eE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_13953704594215328849")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h2dff7334b6b5e16aE::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
@@ -806,7 +806,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ca73928d-9b7c-433e-945d-7d4e24e8ea98">
+    <div class="command-table" id="job-f948575f-529f-47df-b59f-bbbcd01087fd">
       
       <div class="success">
       
@@ -814,7 +814,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ca73928d-9b7c-433e-945d-7d4e24e8ea98">#</a>
+                <a href="#job-f948575f-529f-47df-b59f-bbbcd01087fd">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -868,15 +868,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:08:04Z
+                2021-12-14T21:42:04Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:08:04Z
+                2021-12-14T21:42:05Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -948,12 +948,6 @@ Pointer { typ: StructTag("tag-_9139800189790234500") }
 Type from MIR
 FlexibleArray { typ: StructTag("tag-_9139800189790234500") }
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h2dff7334b6b5e16aE::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13953704594215328849")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr68drop_in_place$LT$dyn$u20$core..fmt..Debug$u2b$core..marker..Send$GT$17hc0c19dca324bde9fE::1::var_1" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
@@ -961,6 +955,12 @@ Type from MIR
 StructTag("tag-_13953704594215328849")
 WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
 Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr93drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..fmt..Debug$u2b$core..marker..Send$GT$$GT$17h1b8087cd8df8c67eE::1::var_1" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
+Expr type
+Pointer { typ: Empty }
+Type from MIR
+StructTag("tag-_13953704594215328849")
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN67_$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17h2dff7334b6b5e16aE::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13801540325448146875") }, location: None }), typ: StructTag("tag-_13801540325448146875"), location: None }, field: "0" }, typ: StructTag("tag-_11584209662815050110"), location: None }, field: "pointer" }, typ: StructTag("tag-_13953704594215328849"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
 Expr type
 Pointer { typ: Empty }
 Type from MIR
@@ -991,7 +991,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-862721d2-b7f1-4d44-a7d5-b164d80bb195">
+    <div class="command-table" id="job-fb21c665-f0e8-48e5-98a3-58a4cbf8cdc9">
       
       <div class="fail">
       
@@ -999,7 +999,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-862721d2-b7f1-4d44-a7d5-b164d80bb195">#</a>
+                <a href="#job-fb21c665-f0e8-48e5-98a3-58a4cbf8cdc9">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -1053,15 +1053,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2021-12-10T20:13:43Z
+                2021-12-14T21:43:37Z
               </span></p>
               <p>Duration:
               <span class="value">
-                02s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2021-12-10T20:13:45Z
+                2021-12-14T21:43:38Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1097,28 +1097,28 @@ Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RNvMs2_NtCs61cxoXOqFbB_4core3fmtNtB5_9Arguments6new_v1Cs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
 Unwinding loop _RINvNtCs61cxoXOqFbB_4core3ptr13drop_in_placeINtNtCslgfTW8i2kpw_5alloc5boxed3BoxDNtNtB4_3fmt5DebugNtNtB4_6marker4SendEL_EECs6GBjdVs7cwe_2_14.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.127349s
-size of program expression: 1308 steps
-simple slicing removed 25 assignments
+Runtime Symex: 0.0724215s
+size of program expression: 1307 steps
+simple slicing removed 24 assignments
 Generated 75 VCC(s), 21 remaining after simplification
-Runtime Postprocess Equation: 0.000144002s
+Runtime Postprocess Equation: 0.000151802s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0173107s
+Runtime Convert SSA: 0.0194318s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 5.0701e-05s
+Runtime Post-process: 4.0001e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 23142 variables, 4895 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00529329s
-Runtime decision procedure: 0.0290982s
+Runtime Solver: 0.0128693s
+Runtime decision procedure: 0.0324551s
 Running propositional reduction
 Solving with MiniSAT 2.2.1 with simplifier
 23142 variables, 88 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.000347506s
-Runtime decision procedure: 0.000386106s
+Runtime Solver: 0.000327004s
+Runtime decision procedure: 0.000366004s
 
 ** Results:
 [assertion.1] Code generation sanity check: Correct CBMC vtable size for Signedbv { width: 32 } (MIR type Int(I32)). Please report failures:
@@ -1127,30 +1127,30 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [assertion.3] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_16805320067997643100") (MIR type Closure(DefId(1:9048 ~ std[c6e5]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
 https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_dereference.1] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.2] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.3] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.4] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.5] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.6] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.7] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.8] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.9] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.10] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.11] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.12] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.1] dereference failure: pointer NULL in var_1: SUCCESS
+[pointer_dereference.2] dereference failure: pointer invalid in var_1: SUCCESS
+[pointer_dereference.3] dereference failure: deallocated dynamic object in var_1: SUCCESS
+[pointer_dereference.4] dereference failure: dead object in var_1: SUCCESS
+[pointer_dereference.5] dereference failure: pointer outside object bounds in var_1: SUCCESS
+[pointer_dereference.6] dereference failure: invalid integer address in var_1: SUCCESS
+[pointer_dereference.7] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.8] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.9] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[pointer_dereference.10] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.11] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.12] dereference failure: invalid integer address in var_1->0: SUCCESS
 [pointer_dereference.13] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.14] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.15] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.16] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.17] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.18] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
-[pointer_dereference.19] dereference failure: pointer NULL in var_1->0: SUCCESS
-[pointer_dereference.20] dereference failure: pointer invalid in var_1->0: SUCCESS
-[pointer_dereference.21] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[pointer_dereference.22] dereference failure: dead object in var_1->0: SUCCESS
-[pointer_dereference.23] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[pointer_dereference.24] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_dereference.19] dereference failure: pointer NULL in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.20] dereference failure: pointer invalid in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.21] dereference failure: deallocated dynamic object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.22] dereference failure: dead object in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.23] dereference failure: pointer outside object bounds in var_1->0.pointer.vtable->drop: SUCCESS
+[pointer_dereference.24] dereference failure: invalid integer address in var_1->0.pointer.vtable->drop: SUCCESS
 [pointer_dereference.25] dereference failure: pointer NULL in var_1->0: SUCCESS
 [pointer_dereference.26] dereference failure: pointer invalid in var_1->0: SUCCESS
 [pointer_dereference.27] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -1169,14 +1169,14 @@ https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
 [pointer_dereference.40] dereference failure: dead object in var_1->0: SUCCESS
 [pointer_dereference.41] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
 [pointer_dereference.42] dereference failure: invalid integer address in var_1->0: SUCCESS
-[pointer_dereference.43] dereference failure: pointer NULL in var_1: SUCCESS
-[pointer_dereference.44] dereference failure: pointer invalid in var_1: SUCCESS
-[pointer_dereference.45] dereference failure: deallocated dynamic object in var_1: SUCCESS
-[pointer_dereference.46] dereference failure: dead object in var_1: SUCCESS
-[pointer_dereference.47] dereference failure: pointer outside object bounds in var_1: SUCCESS
-[pointer_dereference.48] dereference failure: invalid integer address in var_1: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_1): SUCCESS
+[pointer_dereference.43] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.44] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.45] dereference failure: deallocated dynamic object in var_1->0: SUCCESS
+[pointer_dereference.46] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.47] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.48] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_1): SUCCESS
+[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 [pointer_primitives.3] dead object in OBJECT_SIZE(&temp_0): SUCCESS
 function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
 [_ZN3std2io5stdio6_print17h43e101c4e19578f2E.assertion.1] assertion false: FAILURE
@@ -1248,12 +1248,11 @@ function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
 
 /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
 [std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 362 invalid args: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 363 invalid args: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
 [std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ops/function.rs function std::ops::FnOnce::call_once
-[std::ops::FnOnce::call_once.assertion.1] line 227 resume instruction: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.1] line 227 dereference failure: pointer NULL in *var_1: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.2] line 227 dereference failure: pointer invalid in *var_1: SUCCESS
 [std::ops::FnOnce::call_once.pointer_dereference.3] line 227 dereference failure: deallocated dynamic object in *var_1: SUCCESS
@@ -1262,7 +1261,6 @@ function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
 [std::ops::FnOnce::call_once.pointer_dereference.6] line 227 dereference failure: invalid integer address in *var_1: SUCCESS
 
 /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
-[std::ptr::drop_in_place.assertion.1] line 188 resume instruction: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
 [std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
@@ -1303,14 +1301,11 @@ function _ZN3std2io5stdio6_print17h43e101c4e19578f2E
 /home/runner/work/rmc/rmc/library/std/src/sys_common/backtrace.rs function std::sys_common::backtrace::__rust_begin_short_backtrace
 [std::sys_common::backtrace::__rust_begin_short_backtrace.assertion.1] line 119 resume instruction: SUCCESS
 
-/home/runner/work/rmc/rmc/src/test/dashboard/books/The Unstable Book/Language Features/trait_alias/14.rs function main
-[main.assertion.1] line 13 resume instruction: SUCCESS
-
 <builtin-library-malloc> function malloc
 [malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
 [malloc.assertion.2] line 31 max allocation may fail: SUCCESS
 
-** 1 of 156 failed (2 iterations)
+** 1 of 153 failed (2 iterations)
 VERIFICATION FAILED
 
             </xmp>
