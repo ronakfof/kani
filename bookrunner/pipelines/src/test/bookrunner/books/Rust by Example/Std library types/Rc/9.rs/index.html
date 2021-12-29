@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Pipeline src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.rs
+  </title>
+<style>
+#title{
+  background-color: #ec407a;
+  color: white;
+  padding: 2em;
+}
+h1 {
+  margin-bottom: 0em;
+}
+#subtitle {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+.run-info ul {
+  list-style: none;
+}
+.run-info ul li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: -3em;
+  text-transform: uppercase;
+  font-size: small;
+  color: #ec407a;
+}
+#content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  color: #263238;
+  font-family: Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+.command-table {
+  background-color: #eceff1;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-bottom: 4em;
+}
+.command-table .fail-ignored {
+  background-color: #e65100cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .success {
+  background-color: #1a237ecc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .in-progress {
+  background-color: #26323844;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .fail {
+  background-color: #f44336cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-content {
+  background-color: #eceff1;
+  padding: 1em;
+}
+.command-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.command-id-link{
+  flex-grow: 0;
+}
+.command-id-link a {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+  text-decoration: none;
+  margin-left: 0.2em;
+}
+.command-id-link a:link {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-id-link a:visited:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-description {
+  color: #26323899;
+  font-size: smaller;
+  text-align: center;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.command-invocation {
+  padding: 1em;
+  color: #fff;
+  background-color: #005662;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  text-shadow: 0 0 2px #ffccbccc;
+}
+.command-stats-table {
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  padding-top: 0.4em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae3998a;
+  color: #263238cc;
+  margin-bottom: 0.2em;
+}
+.command-stats-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: small;
+  text-transform: uppercase;
+}
+.command-stats-row p .value {
+  color: #00251aaa;
+  text-shadow: 0 0 2px #82ada944;
+  font-weight: bold;
+}
+.output-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #cfd8dc;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  max-height: 20em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.output-box xmp{
+  white-space: pre;
+}
+.stage-name p {
+  margin-left: 0.5em;
+  color: #546e7a;
+  text-shadow:  -1px  0px 0px #fff
+               ,-2px  0px 0px #ffffff99
+               ,-1px  1px 0px #ffffff99
+               ;
+  font-size: 48pt;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: italic;
+}
+.stage-name .underline {
+  width: 100%;
+  height: 1.1em;
+  background-color: #546e7a;
+  margin-top: -1.6em;
+}
+.stage-name {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.outcome-table-info-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #ffee58;
+  border-radius: 0.5em;
+}
+.outcome-table-info-box .outcome{
+  font-weight: bold;
+}
+#toc {
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  margin-right: 3em;
+}
+.toc-title {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-bottom: -1em;
+}
+.toc-section{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+.toc-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.toc-row-icon {
+  padding-right: 8px;
+}
+.status-icon-cross {
+  fill: #f44336;
+    width: 16px;
+    height: 16px;
+}
+.status-icon-tick {
+  fill: #3f51b5;
+  stroke: #ffffff77;
+  stroke-width: 1px;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress {
+  fill: #333;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress circle {
+  stroke: #333;
+  stroke-width: 2px;
+  fill: none
+}
+a:link {
+  color: #1e88e5;
+}
+a:visited {
+  color: #1e88e5;
+}
+a:visited:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+a:visited:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contents-container {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#depgraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-shrink: 7;
+}
+
+#depgraph-title p {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+#depgraph-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#depgraph-preview {
+  padding: 1em;
+}
+
+.memory-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+}
+.memory-preview {
+  width: 75%;
+}
+.memory-preview svg {
+  margin-left: -1em;
+  margin-right: -2em;
+}
+.memory-table {
+}
+.memory-title {
+  text-align: center;
+  font-style: bold;
+}
+.memory-subtitle {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  text-align: center;
+  opacity: 0.8;
+}
+.memory-pad {
+  width: 1.5em;
+}
+.memory-value {
+  text-align: center;
+  margin-right: 2em;
+}
+.rss {
+  color: #ab47bc;
+}
+.vsz {
+  color: #4caf50;
+}
+
+
+@media (prefers-color-scheme: dark){
+  a:link {
+    color: #29b6f6;
+  }
+  a:visited {
+    color: #29b6f6;
+  }
+  a:visited:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  a:visited:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  .command-id-link a:link {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb.
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  .command-id-link a:visited:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  body {
+    color: #babdbe;
+    background-color: #263238;
+  }
+  .outcome-table-info-box p{
+    color: #000a12;
+  }
+  p {
+    color: #babdbe;
+  }
+  #subtitle {
+    color: #fff;
+  }
+  .command-table {
+    background-color: #37474f;
+  }
+  .command-content {
+    background-color: #37474f;
+  }
+  .command-invocation p {
+    color: #fff;
+  }
+  .command-stats-table {
+    background-color: #eae399d0;
+    color: #263238;
+  }
+  .command-stats-table p {
+    color: #263238;
+  }
+  .output-box {
+    color: #cfd8dccc;
+    background-color: #102027;
+  }
+  .stage-name p {
+    text-shadow: -1px  0px 0px #263238,
+                 -2px  0px 0px #26323899,
+                 -1px  1px 0px #26323899;
+  }
+  .status-icon-in-progress { fill: #ddd; }
+  .status-icon-in-progress circle { stroke: #ddd; }
+
+  /* SVG graphs */
+  g text {
+    fill: #eceff1;
+    stroke: #fff0;
+  }
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+  <div id="title">
+    <h1>
+      Book Runner pipeline &lsquo;src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.rs&rsquo;
+    </h1>
+    <p id="subtitle">
+      Litani CI Dashboard
+    </p>
+  </div><!-- id="title" -->
+
+  <div class=run-info>
+    <ul>
+      <li>Pipeline status: fail</li>
+      <li>2021-12-29T23:15:36Z</li>
+      <li>fc315ce2-75eb-4c3d-b8cd-66533cf5b61c</li>
+    </ul>
+  </div><!-- class=run-info -->
+
+  <div id="contents-container">
+
+    <div id="toc">
+      <div class="toc-title">
+        <p>Summary of jobs for this pipeline</p>
+      </div><!-- class="toc-title" -->
+
+      
+        <div class="toc-section">
+          <p>check</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-02ffc2c3-aa9e-43bb-afa4-32afcfe893fa">
+              
+              Is this valid Rust code?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>codegen</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-b0e33eb7-e4cc-46b2-98cb-a26589664e52">
+              
+              Does RMC support all the Rust features used in it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>verification</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-01ed697d-e9c6-49dd-a139-36aa264db572">
+              
+              Can RMC reason about it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+    </div><!-- id="toc" -->
+
+
+    
+
+  </div><!-- id="contents-container" -->
+
+
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>check</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-02ffc2c3-aa9e-43bb-afa4-32afcfe893fa">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-02ffc2c3-aa9e-43bb-afa4-32afcfe893fa">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Is this valid Rust code?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "rmc-rustc" "--edition" "2015" "-Z" "no-codegen" "src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                5
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2021-12-29T23:29:42Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2021-12-29T23:29:42Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_3458415432377579157") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_3458415432377579157") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h5e23f60b196a8d01E::1::var_6" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h267e00dcb9070bf2E::1::var_1::val" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 338, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self"), base_name: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self") }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }, rhs: Expr { value: AddressOf(Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }), typ: StructTag("tag-_13351551328178706652"), location: None }, field: "ptr" }, typ: StructTag("tag-_12396250344231033986"), location: None }), typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr8non_null16NonNull$LT$T$GT$6as_ref17hfe42463c720eb74aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, identifier: None, base_name: None }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(27) } }, arguments: [Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }] }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(34) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(34) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 342, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 338, col: Some(5) } }), base_name: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E"), pretty_name: Some("std::rc::Rc::<T>::inner"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1426, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self"), base_name: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self") }], return_type: Pointer { typ: StructTag("tag-_2862172155563811677") } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(9) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: None, base_name: None }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(15) } }, arguments: [Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }] }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(21) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(21) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None }, rhs: Expr { value: AddressOf(Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }), typ: StructTag("tag-std::rc::RcBox<std::string::String>"), location: None }, field: "value" }, typ: StructTag("tag-_2862172155563811677"), location: None }), typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(9) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1428, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1428, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1426, col: Some(5) } }), base_name: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E"), pretty_name: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h770d6843b2328452E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h770d6843b2328452E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2dc3f78d097d0aefE::1::var_5" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2dc3f78d097d0aefE::1::var_7" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$3len17h9df39c206684a8cdE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17h8e9b520b22c93dc2E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(5) }, typ: Code { parameters: [Parameter { typ: StructTag("tag-str"), identifier: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self"), base_name: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self") }], return_type: StructTag("tag-_9002246437548051943") }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self" }, typ: StructTag("tag-str"), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None }, rhs: Expr { value: ByteExtract { e: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, offset: 0 }, typ: StructTag("tag-_9002246437548051943"), location: None } }, location: None }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(37) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(37) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 241, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(5) } }), base_name: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE"), pretty_name: Some("core::str::<impl str>::as_bytes"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h4d4f59e28cee7071E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h4d4f59e28cee7071E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h770d6843b2328452E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h770d6843b2328452E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-b0e33eb7-e4cc-46b2-98cb-a26589664e52">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-b0e33eb7-e4cc-46b2-98cb-a26589664e52">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does RMC support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                10
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2021-12-29T23:29:43Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2021-12-29T23:29:43Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+          <div class="output-box"><xmp>stderr:
+            
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_3458415432377579157") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h40d8489fbb874c8fE::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_3458415432377579157") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17h5e23f60b196a8d01E::1::var_6" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem11size_of_val17h267e00dcb9070bf2E::1::var_1::val" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 338, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self"), base_name: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self") }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }, rhs: Expr { value: AddressOf(Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }), typ: StructTag("tag-_13351551328178706652"), location: None }, field: "ptr" }, typ: StructTag("tag-_12396250344231033986"), location: None }), typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN4core3ptr8non_null16NonNull$LT$T$GT$6as_ref17hfe42463c720eb74aE" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, identifier: None, base_name: None }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(27) } }, arguments: [Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_2" }, typ: Pointer { typ: StructTag("tag-_12396250344231033986") }, location: None }] }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(34) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 341, col: Some(34) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E::1::var_0" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 342, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("std::rc::Rc::<T>::inner"), line: 338, col: Some(5) } }), base_name: Some("_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E"), pretty_name: Some("std::rc::Rc::<T>::inner"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E", location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1426, col: Some(5) }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self"), base_name: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self") }], return_type: Pointer { typ: StructTag("tag-_2862172155563811677") } }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(9) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }, rhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_1::self" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }, rhs: Expr { value: FunctionCall { function: Expr { value: Symbol { identifier: "_ZN5alloc2rc11Rc$LT$T$GT$5inner17h7467617520658621E" }, typ: Code { parameters: [Parameter { typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, identifier: None, base_name: None }], return_type: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(15) } }, arguments: [Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_3" }, typ: Pointer { typ: StructTag("tag-_13351551328178706652") }, location: None }] }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(10) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(21) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(21) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None }, rhs: Expr { value: AddressOf(Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_2" }, typ: Pointer { typ: StructTag("tag-std::rc::RcBox<std::string::String>") }, location: None }), typ: StructTag("tag-std::rc::RcBox<std::string::String>"), location: None }, field: "value" }, typ: StructTag("tag-_2862172155563811677"), location: None }), typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1427, col: Some(9) } }, Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1428, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E::1::var_0" }, typ: Pointer { typ: StructTag("tag-_2862172155563811677") }, location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1428, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/alloc/src/rc.rs", function: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), line: 1426, col: Some(5) } }), base_name: Some("_ZN66_$LT$alloc..rc..Rc$LT$T$GT$$u20$as$u20$core..ops..deref..Deref$GT$5deref17hc6f94f2456209f49E"), pretty_name: Some("<std::rc::Rc<T> as std::ops::Deref>::deref"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h770d6843b2328452E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h770d6843b2328452E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2dc3f78d097d0aefE::1::var_5" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN73_$LT$$u5b$A$u5d$$u20$as$u20$core..slice..cmp..SlicePartialEq$LT$B$GT$$GT$5equal17h2dc3f78d097d0aefE::1::var_7" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$3len17h9df39c206684a8cdE::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17h8e9b520b22c93dc2E::1::var_1::self" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(5) }, typ: Code { parameters: [Parameter { typ: StructTag("tag-str"), identifier: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self"), base_name: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self") }], return_type: StructTag("tag-_9002246437548051943") }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(37) } }, Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, rhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_1::self" }, typ: StructTag("tag-str"), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(33) } }, Stmt { body: Block([Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None }, rhs: Expr { value: ByteExtract { e: Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_2" }, typ: StructTag("tag-str"), location: None }, offset: 0 }, typ: StructTag("tag-_9002246437548051943"), location: None } }, location: None }, Stmt { body: Goto("bb1"), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(18) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(18) } }, Stmt { body: Label { label: "bb1", body: Stmt { body: Skip, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(37) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 240, col: Some(37) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE::1::var_0" }, typ: StructTag("tag-_9002246437548051943"), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 241, col: Some(6) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/str/mod.rs", function: Some("core::str::<impl str>::as_bytes"), line: 238, col: Some(5) } }), base_name: Some("_ZN4core3str21_$LT$impl$u20$str$GT$8as_bytes17hc4b7f18a0d2f282eE"), pretty_name: Some("core::str::<impl str>::as_bytes"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem7size_of17h4d4f59e28cee7071E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(30) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 305, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem7size_of17h4d4f59e28cee7071E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 306, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::size_of"), line: 304, col: Some(1) } }), base_name: Some("_ZN4core3mem7size_of17h4d4f59e28cee7071E"), pretty_name: Some("std::mem::size_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+WARN rustc_codegen_rmc::codegen::function Double codegen of Symbol { name: "_ZN4core3mem8align_of17h770d6843b2328452E", location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) }, typ: Code { parameters: [], return_type: CInteger(SizeT) }, value: Stmt(Stmt { body: Block([Stmt { body: Decl { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, value: None }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(31) } }, Stmt { body: Label { label: "bb0", body: Stmt { body: Assign { lhs: Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None }, rhs: Expr { value: IntConstant(1), typ: CInteger(SizeT), location: None } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } } }, location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 454, col: Some(5) } }, Stmt { body: Return(Some(Expr { value: Symbol { identifier: "_ZN4core3mem8align_of17h770d6843b2328452E::1::var_0" }, typ: CInteger(SizeT), location: None })), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 455, col: Some(2) } }]), location: Loc { file: "/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs", function: Some("std::mem::align_of"), line: 453, col: Some(1) } }), base_name: Some("_ZN4core3mem8align_of17h770d6843b2328452E"), pretty_name: Some("std::mem::align_of"), module: None, mode: C, is_exported: false, is_input: false, is_macro: false, is_output: false, is_property: false, is_state_var: false, is_type: false, is_auxiliary: false, is_extern: false, is_file_local: false, is_lvalue: true, is_parameter: false, is_static_lifetime: false, is_thread_local: false, is_volatile: false, is_weak: false }
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-01ed697d-e9c6-49dd-a139-36aa264db572">
+      
+      <div class="fail">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-01ed697d-e9c6-49dd-a139-36aa264db572">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Can RMC reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                10
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                60
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2021-12-29T23:29:44Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                03s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2021-12-29T23:29:47Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              no
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+          <div class="output-box"><xmp>stdout:
+            
+CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
+Reading GOTO program from file
+Reading: src/test/bookrunner/books/Rust by Example/Std library types/Rc/9.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 16 object bits, 48 offset bits (user-specified)
+Starting Bounded Model Checking
+Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionjE5ok_orNtNtNtB5_5alloc6layout11LayoutErrorECs6UESoqjURdL_1_9.2 iteration 1  thread 0
+Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionjE5ok_orNtNtNtB5_5alloc6layout11LayoutErrorECs6UESoqjURdL_1_9.0 iteration 1  thread 0
+Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECs6UESoqjURdL_1_9.2 iteration 1  thread 0
+Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionINtNtNtB5_3ptr8non_null7NonNullhEE5ok_orNtNtB5_5alloc10AllocErrorECs6UESoqjURdL_1_9.0 iteration 1  thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvXsn_NtCshb3zqhM0i39_5alloc2rcINtB5_2RcNtNtB7_6string6StringEINtB5_9RcEqIdentBD_E2eqCs6UESoqjURdL_1_9.1 iteration 1  thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs_NtCshb3zqhM0i39_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6UESoqjURdL_1_9.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs2X6rtUiGQdR_4core3ptr13drop_in_placeINtNtCshb3zqhM0i39_5alloc3vec3VechEECs6UESoqjURdL_1_9.0 iteration 1  thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs6UESoqjURdL_1_9.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
+Unwinding loop _RNvMs_NtCshb3zqhM0i39_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs6UESoqjURdL_1_9.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs2X6rtUiGQdR_4core3ptr13drop_in_placeINtNtCshb3zqhM0i39_5alloc3vec3VechEECs6UESoqjURdL_1_9.0 iteration 1  thread 0
+Runtime Symex: 0.754982s
+size of program expression: 9740 steps
+simple slicing removed 173 assignments
+Generated 743 VCC(s), 231 remaining after simplification
+Runtime Postprocess Equation: 0.00182921s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.175705s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 0.0100562s
+Solving with MiniSAT 2.2.1 with simplifier
+164467 variables, 40997 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.103662s
+Runtime decision procedure: 0.280301s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+164467 variables, 738 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime Solver: 0.000934105s
+Runtime decision procedure: 0.0010321s
+
+** Results:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
+[overflow.1] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
+[overflow.2] arithmetic overflow on unsigned to signed type conversion in (signed long int)(1 * var_6): SUCCESS
+[overflow.3] arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_4): SUCCESS
+[overflow.4] arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.2] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.3] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.4] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.5] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.6] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.7] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.8] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.9] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.10] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.11] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.12] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.13] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.14] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.15] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.16] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.17] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.18] pointer invalid in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.19] deallocated dynamic object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.20] dead object in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.21] pointer outside object bounds in POINTER_OFFSET((void *)var_4): SUCCESS
+[pointer_primitives.22] pointer invalid in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.23] deallocated dynamic object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.24] dead object in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.25] pointer outside object bounds in OBJECT_SIZE((void *)var_4): SUCCESS
+[pointer_primitives.26] pointer invalid in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.27] deallocated dynamic object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.28] dead object in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.29] pointer outside object bounds in POINTER_OBJECT((void *)var_4): SUCCESS
+[pointer_primitives.30] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.31] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.32] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.33] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.34] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.35] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.36] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.37] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.38] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.39] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.40] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.41] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.42] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.43] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.44] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.45] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.46] pointer invalid in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.47] deallocated dynamic object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.48] dead object in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.49] pointer outside object bounds in POINTER_OFFSET((void *)var_5): SUCCESS
+[pointer_primitives.50] pointer invalid in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.51] deallocated dynamic object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.52] dead object in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.53] pointer outside object bounds in OBJECT_SIZE((void *)var_5): SUCCESS
+[pointer_primitives.54] pointer invalid in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.55] deallocated dynamic object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.56] dead object in POINTER_OBJECT((void *)var_5): SUCCESS
+[pointer_primitives.57] pointer outside object bounds in POINTER_OBJECT((void *)var_5): SUCCESS
+[precondition_instance.1] memcpy src/dst overlap: SUCCESS
+[precondition_instance.2] memcpy source region readable: SUCCESS
+[precondition_instance.3] memcpy destination region writeable: SUCCESS
+function _ZN3std2io5stdio6_print17h29c670f425d63affE
+[_ZN3std2io5stdio6_print17h29c670f425d63affE.assertion.1] assertion false: FAILURE
+
+/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
+[alloc::alloc::box_free.assertion.1] line 331 resume instruction: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::Global::alloc_impl
+[std::alloc::Global::alloc_impl.assertion.1] line 170 unreachable code: SUCCESS
+[std::alloc::Global::alloc_impl.pointer_arithmetic.1] line 170 pointer arithmetic: dead object in (unsigned char *)&var_15 + 0: SUCCESS
+[std::alloc::Global::alloc_impl.pointer_dereference.1] line 170 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_15 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
+[std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.1] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.2] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.3] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.4] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.5] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.6] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.7] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.8] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.9] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.10] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.11] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.12] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.13] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.14] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.15] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.16] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.17] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.18] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.19] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.20] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.21] line 105 pointer invalid in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.22] line 105 deallocated dynamic object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.23] line 105 dead object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.24] line 105 pointer outside object bounds in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.25] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.26] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.27] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.28] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
+[std::alloc::dealloc.precondition_instance.1] line 105 free argument must be NULL or valid pointer: SUCCESS
+[std::alloc::dealloc.precondition_instance.2] line 105 free argument must be dynamic object: SUCCESS
+[std::alloc::dealloc.precondition_instance.3] line 105 free argument has offset zero: SUCCESS
+[std::alloc::dealloc.precondition_instance.4] line 105 double free: SUCCESS
+[std::alloc::dealloc.precondition_instance.5] line 105 free called for new[] object: SUCCESS
+[std::alloc::dealloc.precondition_instance.6] line 105 free called for stack-allocated object: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/boxed.rs function std::boxed::Box::<T, A>::leak
+[std::boxed::Box::<T, A>::leak.pointer_dereference.1] line 1113 dereference failure: pointer NULL in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.2] line 1113 dereference failure: pointer invalid in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.3] line 1113 dereference failure: deallocated dynamic object in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.4] line 1113 dereference failure: dead object in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.5] line 1113 dereference failure: pointer outside object bounds in var_7->0: SUCCESS
+[std::boxed::Box::<T, A>::leak.pointer_dereference.6] line 1113 dereference failure: invalid integer address in var_7->0: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 478 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 478 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::allocate_in
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.8] line 170 resume instruction: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.2] line 176 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.pointer_arithmetic.1] line 176 pointer arithmetic: dead object in (unsigned char *)&var_7 + 8: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.pointer_dereference.1] line 176 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_7 + 8)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.1] line 178 a panicking function alloc::raw_vec::capacity_overflow is invoked: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.4] line 180 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.overflow.1] line 180 arithmetic overflow on unsigned to signed type conversion in (long int)var_11.case: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.3] line 182 a panicking function alloc::raw_vec::capacity_overflow is invoked: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.5] line 184 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.7] line 188 unreachable code: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.pointer_arithmetic.2] line 188 pointer arithmetic: dead object in (unsigned char *)&result + 0: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.pointer_dereference.2] line 188 dereference failure: dead object in *((unsigned char **)((unsigned char *)&result + 0)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::allocate_in.assertion.6] line 190 a panicking function std::alloc::handle_alloc_error is invoked: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 241 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 241 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 241 dereference failure: deallocated dynamic object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 241 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 241 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 241 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 242 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 242 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.assertion.1] line 248 attempt to compute `move _8 * move _9`, which would overflow: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 248 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 248 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 248 dereference failure: deallocated dynamic object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 248 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 248 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 248 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 250 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 250 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 250 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 250 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 250 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 250 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::new_in
+[alloc::raw_vec::RawVec::<T, A>::new_in.assertion.1] line 122 resume instruction: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 224 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 224 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 224 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 224 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 224 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 224 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::alloc_guard
+[alloc::raw_vec::alloc_guard.pointer_arithmetic.1] line 507 pointer arithmetic: dead object in (unsigned char *)&var_4 + 8: SUCCESS
+[alloc::raw_vec::alloc_guard.pointer_dereference.1] line 507 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_4 + 8)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function <std::rc::Rc<T> as std::clone::Clone>::clone
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.1] line 1500 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.2] line 1500 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.3] line 1500 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.4] line 1500 dereference failure: dead object in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.5] line 1500 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::clone::Clone>::clone.pointer_dereference.6] line 1500 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function <std::rc::Rc<T> as std::ops::Drop>::drop
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.1] line 1473 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.2] line 1473 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.3] line 1473 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.4] line 1473 dereference failure: dead object in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.5] line 1473 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::rc::Rc<T> as std::ops::Drop>::drop.pointer_dereference.6] line 1473 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::Rc::<T>::get_mut_unchecked
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.1] line 1086 dereference failure: pointer NULL in this->ptr: SUCCESS
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.2] line 1086 dereference failure: pointer invalid in this->ptr: SUCCESS
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.3] line 1086 dereference failure: deallocated dynamic object in this->ptr: SUCCESS
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.4] line 1086 dereference failure: dead object in this->ptr: SUCCESS
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.5] line 1086 dereference failure: pointer outside object bounds in this->ptr: SUCCESS
+[std::rc::Rc::<T>::get_mut_unchecked.pointer_dereference.6] line 1086 dereference failure: invalid integer address in this->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::Rc::<T>::new
+[std::rc::Rc::<T>::new.assertion.1] line 365 resume instruction: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.1] line 372 dereference failure: pointer NULL in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.2] line 372 dereference failure: pointer invalid in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.3] line 372 dereference failure: deallocated dynamic object in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.4] line 372 dereference failure: dead object in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.5] line 372 dereference failure: pointer outside object bounds in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.6] line 372 dereference failure: invalid integer address in var_9.0.pointer->strong: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.7] line 372 dereference failure: pointer NULL in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.8] line 372 dereference failure: pointer invalid in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.9] line 372 dereference failure: deallocated dynamic object in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.10] line 372 dereference failure: dead object in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.11] line 372 dereference failure: pointer outside object bounds in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.12] line 372 dereference failure: invalid integer address in var_9.0.pointer->weak: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.13] line 372 dereference failure: pointer NULL in var_9.0.pointer->value: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.14] line 372 dereference failure: pointer invalid in var_9.0.pointer->value: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.15] line 372 dereference failure: deallocated dynamic object in var_9.0.pointer->value: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.16] line 372 dereference failure: dead object in var_9.0.pointer->value: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.17] line 372 dereference failure: pointer outside object bounds in var_9.0.pointer->value: SUCCESS
+[std::rc::Rc::<T>::new.pointer_dereference.18] line 372 dereference failure: invalid integer address in var_9.0.pointer->value: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::Rc::<T>::ptr_eq
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.1] line 1107 dereference failure: pointer NULL in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.2] line 1107 dereference failure: pointer invalid in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.3] line 1107 dereference failure: deallocated dynamic object in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.4] line 1107 dereference failure: dead object in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.5] line 1107 dereference failure: pointer outside object bounds in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.6] line 1107 dereference failure: invalid integer address in this->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.7] line 1107 dereference failure: pointer NULL in other->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.8] line 1107 dereference failure: pointer invalid in other->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.9] line 1107 dereference failure: deallocated dynamic object in other->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.10] line 1107 dereference failure: dead object in other->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.11] line 1107 dereference failure: pointer outside object bounds in other->ptr: SUCCESS
+[std::rc::Rc::<T>::ptr_eq.pointer_dereference.12] line 1107 dereference failure: invalid integer address in other->ptr: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::RcInnerPtr::dec_strong
+[std::rc::RcInnerPtr::dec_strong.assertion.1] line 2481 attempt to compute `move _7 - const 1_usize`, which would overflow: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::RcInnerPtr::dec_weak
+[std::rc::RcInnerPtr::dec_weak.assertion.1] line 2505 attempt to compute `move _7 - const 1_usize`, which would overflow: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/rc.rs function std::rc::RcInnerPtr::inc_strong
+[std::rc::RcInnerPtr::inc_strong.assertion.1] line 2474 abort intrinsic reached: SUCCESS
+[std::rc::RcInnerPtr::inc_strong.assertion.2] line 2476 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/slice.rs function <T as std::slice::hack::ConvertVec>::to_vec
+[<T as std::slice::hack::ConvertVec>::to_vec.assertion.1] line 226 resume instruction: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Deref>::deref
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2431 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2431 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2431 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2431 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2431 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2431 dereference failure: invalid integer address in self->len: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2815 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2815 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2815 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2815 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2815 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2815 dereference failure: invalid integer address in self->len: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
+[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_ptr
+[std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1136 assumption failed: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::len
+[std::vec::Vec::<T, A>::len.pointer_dereference.1] line 1884 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::len.pointer_dereference.2] line 1884 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::len.pointer_dereference.3] line 1884 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::len.pointer_dereference.4] line 1884 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::len.pointer_dereference.5] line 1884 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::len.pointer_dereference.6] line 1884 dereference failure: invalid integer address in self->len: SUCCESS
+
+/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::set_len
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.1] line 1267 dereference failure: pointer NULL in self->len: SUCCESS
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.2] line 1267 dereference failure: pointer invalid in self->len: SUCCESS
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.3] line 1267 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.4] line 1267 dereference failure: dead object in self->len: SUCCESS
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.5] line 1267 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[std::vec::Vec::<T, A>::set_len.pointer_dereference.6] line 1267 dereference failure: invalid integer address in self->len: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
+[std::alloc::Layout::align.pointer_dereference.1] line 120 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 120 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.4] line 120 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::array
+[std::alloc::Layout::array.assertion.1] line 408 unreachable code: SUCCESS
+[std::alloc::Layout::array.overflow.1] line 408 arithmetic overflow on unsigned to signed type conversion in (long int)var_3.case: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
+[std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 110 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 110 dereference failure: deallocated dynamic object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.4] line 110 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 110 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 110 dereference failure: invalid integer address in self->size_: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/cell.rs function std::cell::Cell::<T>::get
+[std::cell::Cell::<T>::get.pointer_dereference.1] line 442 dereference failure: pointer NULL in *var_2: SUCCESS
+[std::cell::Cell::<T>::get.pointer_dereference.2] line 442 dereference failure: pointer invalid in *var_2: SUCCESS
+[std::cell::Cell::<T>::get.pointer_dereference.3] line 442 dereference failure: deallocated dynamic object in *var_2: SUCCESS
+[std::cell::Cell::<T>::get.pointer_dereference.4] line 442 dereference failure: dead object in *var_2: SUCCESS
+[std::cell::Cell::<T>::get.pointer_dereference.5] line 442 dereference failure: pointer outside object bounds in *var_2: SUCCESS
+[std::cell::Cell::<T>::get.pointer_dereference.6] line 442 dereference failure: invalid integer address in *var_2: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/cell.rs function std::cell::Cell::<T>::replace
+[std::cell::Cell::<T>::replace.assertion.1] line 400 resume instruction: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.1] line 403 dereference failure: pointer NULL in *var_3: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.2] line 403 dereference failure: pointer invalid in *var_3: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.3] line 403 dereference failure: deallocated dynamic object in *var_3: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.4] line 403 dereference failure: dead object in *var_3: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.5] line 403 dereference failure: pointer outside object bounds in *var_3: SUCCESS
+[std::cell::Cell::<T>::replace.pointer_dereference.6] line 403 dereference failure: invalid integer address in *var_3: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/cmp.rs function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.1] line 1415 dereference failure: pointer NULL in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.2] line 1415 dereference failure: pointer invalid in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.3] line 1415 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.4] line 1415 dereference failure: dead object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.5] line 1415 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.6] line 1415 dereference failure: invalid integer address in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.7] line 1415 dereference failure: pointer NULL in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.8] line 1415 dereference failure: pointer invalid in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.9] line 1415 dereference failure: deallocated dynamic object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.10] line 1415 dereference failure: dead object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.11] line 1415 dereference failure: pointer outside object bounds in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.12] line 1415 dereference failure: invalid integer address in *other: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
+[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 363 invalid args: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
+[std::option::Option::<T>::ok_or.assertion.1] line 1000 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.assertion.2] line 1000 unreachable code: SUCCESS
+[std::option::Option::<T>::ok_or.overflow.1] line 1000 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.1] line 1000 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.1] line 1000 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[std::option::Option::<T>::ok_or.pointer_arithmetic.2] line 1002 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::option::Option::<T>::ok_or.pointer_dereference.2] line 1002 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/ptr/non_null.rs function std::ptr::NonNull::<T>::as_ref
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.1] line 327 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.2] line 327 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.3] line 327 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.4] line 327 dereference failure: dead object in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.5] line 327 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::NonNull::<T>::as_ref.pointer_dereference.6] line 327 dereference failure: invalid integer address in *self: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/ptr/non_null.rs function std::ptr::NonNull::<T>::new
+[std::ptr::NonNull::<T>::new.pointer_arithmetic.1] line 220 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[std::ptr::NonNull::<T>::new.pointer_dereference.1] line 220 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 121 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 121 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 121 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 121 dereference failure: dead object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 121 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1960 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.2] line 1960 unreachable code: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.overflow.1] line 1960 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.1] line 1960 pointer arithmetic: dead object in (unsigned char *)&self + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.1] line 1960 dereference failure: dead object in *((unsigned char **)((unsigned char *)&self + 0)): SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_arithmetic.2] line 1962 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, E> as std::ops::Try>::branch.pointer_dereference.2] line 1962 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.1] line 1976 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_arithmetic.2] line 1976 pointer arithmetic: dead object in (unsigned char *)&var_0 + 8: SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.1] line 1976 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::result::Result<T, F> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, E>>>::from_residual.pointer_dereference.2] line 1976 dereference failure: dead object in *((unsigned long int *)((unsigned char *)&var_0 + 8)): SUCCESS
+
+<builtin-library-calloc> function calloc
+[calloc.assertion.1] line 32 max allocation size exceeded: SUCCESS
+[calloc.assertion.2] line 37 max allocation may fail: SUCCESS
+
+<builtin-library-malloc> function malloc
+[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
+[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
+
+<builtin-library-memcmp> function memcmp
+[memcmp.overflow.1] line 19 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.1] line 19 pointer invalid in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.2] line 19 deallocated dynamic object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.3] line 19 dead object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.4] line 19 pointer outside object bounds in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.5] line 19 pointer invalid in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.6] line 19 deallocated dynamic object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.7] line 19 dead object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.8] line 19 pointer outside object bounds in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.9] line 19 pointer invalid in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.10] line 19 deallocated dynamic object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.11] line 19 dead object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.12] line 19 pointer outside object bounds in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.13] line 19 pointer invalid in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.14] line 19 deallocated dynamic object in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.15] line 19 dead object in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.16] line 19 pointer outside object bounds in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.17] line 19 pointer invalid in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.18] line 19 deallocated dynamic object in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.19] line 19 dead object in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.20] line 19 pointer outside object bounds in POINTER_OFFSET(s1): SUCCESS
+[memcmp.pointer_primitives.21] line 19 pointer invalid in OBJECT_SIZE(s1): SUCCESS
+[memcmp.pointer_primitives.22] line 19 deallocated dynamic object in OBJECT_SIZE(s1): SUCCESS
+[memcmp.pointer_primitives.23] line 19 dead object in OBJECT_SIZE(s1): SUCCESS
+[memcmp.pointer_primitives.24] line 19 pointer outside object bounds in OBJECT_SIZE(s1): SUCCESS
+[memcmp.pointer_primitives.25] line 19 pointer invalid in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.26] line 19 deallocated dynamic object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.27] line 19 dead object in POINTER_OBJECT(s1): SUCCESS
+[memcmp.pointer_primitives.28] line 19 pointer outside object bounds in POINTER_OBJECT(s1): SUCCESS
+[memcmp.precondition.1] line 19 memcmp region 1 readable: SUCCESS
+[memcmp.overflow.2] line 21 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.29] line 21 pointer invalid in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.30] line 21 deallocated dynamic object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.31] line 21 dead object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.32] line 21 pointer outside object bounds in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.33] line 21 pointer invalid in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.34] line 21 deallocated dynamic object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.35] line 21 dead object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.36] line 21 pointer outside object bounds in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.37] line 21 pointer invalid in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.38] line 21 deallocated dynamic object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.39] line 21 dead object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.40] line 21 pointer outside object bounds in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.41] line 21 pointer invalid in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.42] line 21 deallocated dynamic object in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.43] line 21 dead object in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.44] line 21 pointer outside object bounds in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.45] line 21 pointer invalid in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.46] line 21 deallocated dynamic object in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.47] line 21 dead object in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.48] line 21 pointer outside object bounds in POINTER_OFFSET(s2): SUCCESS
+[memcmp.pointer_primitives.49] line 21 pointer invalid in OBJECT_SIZE(s2): SUCCESS
+[memcmp.pointer_primitives.50] line 21 deallocated dynamic object in OBJECT_SIZE(s2): SUCCESS
+[memcmp.pointer_primitives.51] line 21 dead object in OBJECT_SIZE(s2): SUCCESS
+[memcmp.pointer_primitives.52] line 21 pointer outside object bounds in OBJECT_SIZE(s2): SUCCESS
+[memcmp.pointer_primitives.53] line 21 pointer invalid in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.54] line 21 deallocated dynamic object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.55] line 21 dead object in POINTER_OBJECT(s2): SUCCESS
+[memcmp.pointer_primitives.56] line 21 pointer outside object bounds in POINTER_OBJECT(s2): SUCCESS
+[memcmp.precondition.2] line 21 memcpy region 2 readable: SUCCESS
+[memcmp.pointer_arithmetic.1] line 27 pointer arithmetic: pointer NULL in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.2] line 27 pointer arithmetic: pointer invalid in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.3] line 27 pointer arithmetic: deallocated dynamic object in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.4] line 27 pointer arithmetic: dead object in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.5] line 27 pointer arithmetic: pointer outside object bounds in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.6] line 27 pointer arithmetic: invalid integer address in sc1 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.7] line 27 pointer arithmetic: pointer NULL in sc2 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.8] line 27 pointer arithmetic: pointer invalid in sc2 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.9] line 27 pointer arithmetic: deallocated dynamic object in sc2 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.10] line 27 pointer arithmetic: dead object in sc2 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.11] line 27 pointer arithmetic: pointer outside object bounds in sc2 + 1l: SUCCESS
+[memcmp.pointer_arithmetic.12] line 27 pointer arithmetic: invalid integer address in sc2 + 1l: SUCCESS
+[memcmp.pointer_dereference.1] line 27 dereference failure: pointer NULL in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.2] line 27 dereference failure: pointer invalid in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.3] line 27 dereference failure: deallocated dynamic object in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.4] line 27 dereference failure: dead object in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.5] line 27 dereference failure: pointer outside object bounds in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.6] line 27 dereference failure: invalid integer address in *tmp_post: SUCCESS
+[memcmp.pointer_dereference.7] line 27 dereference failure: pointer NULL in *tmp_post$0: SUCCESS
+[memcmp.pointer_dereference.8] line 27 dereference failure: pointer invalid in *tmp_post$0: SUCCESS
+[memcmp.pointer_dereference.9] line 27 dereference failure: deallocated dynamic object in *tmp_post$0: SUCCESS
+[memcmp.pointer_dereference.10] line 27 dereference failure: dead object in *tmp_post$0: SUCCESS
+[memcmp.pointer_dereference.11] line 27 dereference failure: pointer outside object bounds in *tmp_post$0: SUCCESS
+[memcmp.pointer_dereference.12] line 27 dereference failure: invalid integer address in *tmp_post$0: SUCCESS
+
+<builtin-library-memcpy> function memcpy
+[memcpy.pointer.1] line 33 same object violation in (const char *)(void *)var_4 >= (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.1] line 33 pointer arithmetic: pointer NULL in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.2] line 33 pointer arithmetic: pointer invalid in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.3] line 33 pointer arithmetic: deallocated dynamic object in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.4] line 33 pointer arithmetic: dead object in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.5] line 33 pointer arithmetic: pointer outside object bounds in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.6] line 33 pointer arithmetic: invalid integer address in (const char *)(void *)var_5 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.7] line 33 pointer relation: pointer NULL in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer_arithmetic.8] line 33 pointer relation: pointer invalid in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer_arithmetic.9] line 33 pointer relation: deallocated dynamic object in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer_arithmetic.10] line 33 pointer relation: dead object in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer_arithmetic.11] line 33 pointer relation: pointer outside object bounds in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer_arithmetic.12] line 33 pointer relation: invalid integer address in (const char *)(void *)var_4: SUCCESS
+[memcpy.pointer.2] line 34 same object violation in (const char *)(void *)var_5 >= (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.13] line 34 pointer arithmetic: pointer NULL in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.14] line 34 pointer arithmetic: pointer invalid in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.15] line 34 pointer arithmetic: deallocated dynamic object in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.16] line 34 pointer arithmetic: dead object in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.17] line 34 pointer arithmetic: pointer outside object bounds in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.18] line 34 pointer arithmetic: invalid integer address in (const char *)(void *)var_4 + (signed long int)(1 * var_6): SUCCESS
+[memcpy.pointer_arithmetic.19] line 34 pointer relation: pointer NULL in (const char *)(void *)var_5: SUCCESS
+[memcpy.pointer_arithmetic.20] line 34 pointer relation: pointer invalid in (const char *)(void *)var_5: SUCCESS
+[memcpy.pointer_arithmetic.21] line 34 pointer relation: deallocated dynamic object in (const char *)(void *)var_5: SUCCESS
+[memcpy.pointer_arithmetic.22] line 34 pointer relation: dead object in (const char *)(void *)var_5: SUCCESS
+[memcpy.pointer_arithmetic.23] line 34 pointer relation: pointer outside object bounds in (const char *)(void *)var_5: SUCCESS
+[memcpy.pointer_arithmetic.24] line 34 pointer relation: invalid integer address in (const char *)(void *)var_5: SUCCESS
+[memcpy.overflow.1] line 44 arithmetic overflow on unsigned to signed type conversion in (signed long int)n: SUCCESS
+[memcpy.overflow.2] line 44 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(signed long int)n: SUCCESS
+
+** 1 of 427 failed (2 iterations)
+VERIFICATION FAILED
+
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+
+
+</div><!-- id="content" -->
+</body>
+</html>

@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li></ol></li><li class="chapter-item expanded "><a href="dashboard.html"><strong aria-hidden="true">4.</strong> RMC dashboard</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -155,7 +155,7 @@ But RMC is also useful for finding panics in safe Rust, and it can check user-de
 <h2 id="project-status"><a class="header" href="#project-status">Project Status</a></h2>
 <p>RMC is currently in the initial development phase, and has not yet made an official release.
 It is under active development, but it does not yet support all Rust language features.
-(The <a href="./dashboard.html">RMC dashboard</a> can help you understand our current progress.)
+(The <a href="./bookrunner.html">Book runner</a> can help you understand our current progress.)
 If you encounter issues when using RMC we encourage you to <a href="https://github.com/model-checking/rmc/issues/new/choose">report them to us</a>.</p>
 <p>RMC usually syncs with the main branch of Rust every week, and so is generally up-to-date with the latest Rust language features.</p>
 <h2 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h2>
@@ -1130,9 +1130,9 @@ rm -r build/x86_64-unknown-linux-gnu/test/
 <pre><code class="language-bash"># Test suite run (to run a specific suite from src/test/, just remove the others)
 ./x.py test -i --stage 1 rmc firecracker prusti smack expected cargo-rmc rmc-docs
 </code></pre>
-<pre><code class="language-bash"># Dashboard run
-./scripts/setup/install_dashboard_deps.sh
-./x.py run -i --stage 1 dashboard
+<pre><code class="language-bash"># Book runner run
+./scripts/setup/install_bookrunner_deps.sh
+./x.py run -i --stage 1 bookrunner
 </code></pre>
 <pre><code class="language-bash"># Documentation build
 cd rmc-docs
@@ -1231,7 +1231,7 @@ particularly valuable for project management purposes.</p>
 </ol>
 <p>We recommend reading our section on <a href="rmc-testing.html#regression-testing">Regression Testing</a>
 if you are interested in RMC development. At present, we obtain metrics based
-on the <a href="./dashboard.html">RMC dashboard</a>.</p>
+on the <a href="./bookrunner.html">book runner</a>.</p>
 <h1 id="regression-testing"><a class="header" href="#regression-testing">Regression testing</a></h1>
 <p>RMC relies on a quite extensive range of tests to perform regression testing.
 Regression testing can be executed by running the command:</p>
@@ -1355,9 +1355,9 @@ regression was run.</p>
 <p><strong>Warning:</strong> <code>cargo rmc</code> is under heavy development at the moment. Because of
 that, this section may become outdated soon.</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rmc-dashboard"><a class="header" href="#rmc-dashboard">RMC Dashboard</a></h1>
-<p>The <a href="./dashboard/index.html">RMC Dashboard</a> is a testing tool based on <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
-<p>The purpose of the dashboard to show the level of support in RMC for all Rust features.
+<div style="break-before: page; page-break-before: always;"></div><h1 id="book-runner"><a class="header" href="#book-runner">Book runner</a></h1>
+<p>The <a href="./bookrunner/index.html">book runner</a> is a testing tool based on <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+<p>The purpose of the book runner is to get data about feature coverage in RMC.
 To this end, we use Rust code snippet examples from the following general Rust documentation books:</p>
 <ul>
 <li>The Rust Reference</li>
@@ -1367,7 +1367,7 @@ To this end, we use Rust code snippet examples from the following general Rust d
 </ul>
 <p>However, not all examples from these books are suited for verification.
 For instance, some of them are only included to show what is valid Rust code (or what is not).</p>
-<p>Because of that, we run up to three different types of jobs when generating the dashboard:</p>
+<p>Because of that, we run up to three different types of jobs when generating the report:</p>
 <ul>
 <li><code>check</code> jobs: This check uses the Rust front-end to detect if the example is valid Rust code.</li>
 <li><code>codegen</code> jobs: This check uses the RMC back-end to determine if we can generate GotoC code.</li>
@@ -1378,9 +1378,10 @@ Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
 <blockquote>
 <p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does
 not support hierarchical views at the moment. For this reason, we are
-publishing a <a href="./dashboard/dashboard.txt">text version of the dashboard</a> which
-displays the same results in a hierarchical way while we work on adding more
-features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+publishing a <a href="./bookrunner/bookrunner.txt">text version of the book runner
+report</a> which displays the same results in a
+hierarchical way while we work on adding more features to
+<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 </blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
@@ -1391,15 +1392,15 @@ features to <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a
 The results are summarized as follows: If the obtained and expected outputs differ,
 the color of the stage bar will be red. Otherwise, it will be blue.
 If an example shows one red bar, it is considered a failed example that cannot be handled by RMC.</p>
-<p>The <a href="./dashboard/index.html">RMC Dashboard</a> and <a href="./dashboard/dashboard.txt">its text version</a> are
+<p>The <a href="./bookrunner/index.html">book runner report</a> and <a href="./bookrunner/bookrunner.txt">its text version</a> are
 automatically updated whenever a PR gets merged into RMC.</p>
-<h2 id="the-dashboard-procedure"><a class="header" href="#the-dashboard-procedure">The dashboard procedure</a></h2>
-<p>This section describes how the dashboard operates at a high level.</p>
-<p>To kick off the dashboard process use</p>
-<pre><code>./x.py run -i --stage 1 dashboard
+<h2 id="the-book-running-procedure"><a class="header" href="#the-book-running-procedure">The book running procedure</a></h2>
+<p>This section describes how the book runner operates at a high level.</p>
+<p>To kick off the book runner process use</p>
+<pre><code>./x.py run -i --stage 1 bookrunner
 </code></pre>
-<p>The main function of the dashboard is <code>generate_dashboard()</code> in
-<a href="https://github.com/model-checking/rmc/blob/main/src/tools/dashboard/src/books.rs"><code>src/tools/dashboard/src/books.rs</code></a>,
+<p>The main function of the bookrunner is <code>generate_run()</code> in
+<a href="https://github.com/model-checking/rmc/blob/main/src/tools/bookrunner/src/books.rs"><code>src/tools/bookrunner/src/books.rs</code></a>,
 which follows these steps:</p>
 <ul>
 <li>
@@ -1412,13 +1413,13 @@ from the books.</p>
 </li>
 <li>
 <p>Then for each example it will check if there is a corresponding <code>.props</code> file
-in <code>src/tools/dashboard/configs/</code>. The contents of these files (e.g.,
+in <code>src/tools/bookrunner/configs/</code>. The contents of these files (e.g.,
 command-line options) are prepended to the example.</p>
 </li>
 <li>
-<p>All examples are written in the <code>src/test/dashboard/books/</code> folder.</p>
+<p>All examples are written in the <code>src/test/bookrunner/books/</code> folder.</p>
 <p>In general, the path to a given example is
-<code>src/test/dashboard/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
+<code>src/test/bookrunner/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
 where <code>&lt;line&gt;</code> is the line number where the example appears in the
 documentation. The <code>.props</code> files mentioned above follow the same naming
 scheme in order to match them and detect conflicts.</p>
@@ -1428,13 +1429,13 @@ scheme in order to match them and detect conflicts.</p>
 <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 </li>
 <li>
-<p>Finally, the Litani log is used to generate the <a href="./dashboard/dashboard.txt">text version of the
-dashboard</a>.</p>
+<p>Finally, the Litani log is used to generate the <a href="./bookrunner/bookrunner.txt">text version of the
+bookrunner</a>.</p>
 </li>
 </ul>
 <blockquote>
 <p><strong>Warning:</strong> Note that any changes done to the examples in
-<code>src/test/dashboard/books/</code> may be gone if the dashboard is executed.</p>
+<code>src/test/bookrunner/books/</code> may be gone if the bookrunner is executed.</p>
 </blockquote>
 
                     </main>
