@@ -505,9 +505,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: success</li>
-      <li>2022-01-07T01:09:15Z</li>
-      <li>7c3c781f-445d-4d40-a906-3053b02a755a</li>
+      <li>Pipeline status: fail</li>
+      <li>2022-01-07T22:57:42Z</li>
+      <li>ce7f8866-2cbb-423c-9516-79eba68608d2</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-da867d64-ade7-4620-8f4e-bdfc6dd068f4">
+              <a href="#job-e318657f-0f5e-4817-ba9f-9d5a3c2dbad8">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e8a789da-ac75-4f2b-bf2a-2fb1bb52a072">
+              <a href="#job-95220a91-ae00-47d4-828a-72e6f74e1628">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,15 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-4cd11399-dd43-4b63-9161-833f600b59b4">
+              <a href="#job-0268a119-9010-4a40-8a17-3aeab456e15e">
               
               Can RMC reason about it?
               
@@ -619,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-da867d64-ade7-4620-8f4e-bdfc6dd068f4">
+    <div class="command-table" id="job-e318657f-0f5e-4817-ba9f-9d5a3c2dbad8">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-da867d64-ade7-4620-8f4e-bdfc6dd068f4">#</a>
+                <a href="#job-e318657f-0f5e-4817-ba9f-9d5a3c2dbad8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -649,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -681,22 +687,22 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-07T01:13:35Z
+                2022-01-07T23:00:59Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-07T01:13:36Z
+                2022-01-07T23:00:59Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              yes
+              no
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -711,6 +717,13 @@ a:visited:active {
 
           
 
+          
+          <div class="output-box"><xmp>stderr:
+            
+error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/The` and `Unstable`)
+
+            </xmp>
+          </div><!-- class="output-box" -->
           
 
         </div><!-- class="command-content" -->
@@ -727,15 +740,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e8a789da-ac75-4f2b-bf2a-2fb1bb52a072">
+    <div class="command-table" id="job-95220a91-ae00-47d4-828a-72e6f74e1628">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e8a789da-ac75-4f2b-bf2a-2fb1bb52a072">#</a>
+                <a href="#job-95220a91-ae00-47d4-828a-72e6f74e1628">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -752,63 +765,6 @@ a:visited:active {
             </p>
           </div><!-- class="command-invocation" -->
 
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:16:00Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                00s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:16:00Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
           
 
           
@@ -835,15 +791,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-4cd11399-dd43-4b63-9161-833f600b59b4">
+    <div class="command-table" id="job-0268a119-9010-4a40-8a17-3aeab456e15e">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-4cd11399-dd43-4b63-9161-833f600b59b4">#</a>
+                <a href="#job-0268a119-9010-4a40-8a17-3aeab456e15e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -861,63 +817,6 @@ a:visited:active {
           </div><!-- class="command-invocation" -->
 
           
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:21:48Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                02s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:21:50Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
 
           
 
@@ -925,135 +824,6 @@ a:visited:active {
           
 
 
-          
-          <div class="output-box"><xmp>stdout:
-            
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/bookrunner/books/The Unstable Book/Language Features/box_syntax/16.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 16 object bits, 48 offset bits (user-specified)
-Starting Bounded Model Checking
-Unwinding loop _RINvNtCs2X6rtUiGQdR_4core3ptr13drop_in_placeINtNtCshb3zqhM0i39_5alloc5boxed3BoxlEECs2zuBvzU6Zq2_2_16.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.0175717s
-size of program expression: 459 steps
-simple slicing removed 37 assignments
-Generated 85 VCC(s), 12 remaining after simplification
-Runtime Postprocess Equation: 5.8001e-05s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.00288074s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 2.46e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-7034 variables, 1623 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 4.9101e-05s
-Runtime decision procedure: 0.00302544s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function alloc::alloc::box_free
-[alloc::alloc::box_free.assertion.1] line 331 resume instruction: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
-[std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.1] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.2] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.3] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.4] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.5] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.6] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.7] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.8] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.9] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.10] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.11] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.12] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.13] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.14] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.15] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.16] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.17] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.18] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.19] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.20] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.21] line 105 pointer invalid in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.22] line 105 deallocated dynamic object in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.23] line 105 dead object in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.24] line 105 pointer outside object bounds in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.25] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.26] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.27] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.28] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.precondition_instance.1] line 105 free argument must be NULL or valid pointer: SUCCESS
-[std::alloc::dealloc.precondition_instance.2] line 105 free argument must be dynamic object: SUCCESS
-[std::alloc::dealloc.precondition_instance.3] line 105 free argument has offset zero: SUCCESS
-[std::alloc::dealloc.precondition_instance.4] line 105 double free: SUCCESS
-[std::alloc::dealloc.precondition_instance.5] line 105 free called for new[] object: SUCCESS
-[std::alloc::dealloc.precondition_instance.6] line 105 free called for stack-allocated object: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 120 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 120 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.4] line 120 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 110 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 110 dereference failure: deallocated dynamic object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.4] line 110 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 110 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 110 dereference failure: invalid integer address in self->size_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
-[std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.4] line 188 dereference failure: dead object in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.5] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.6] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.7] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.8] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.9] line 188 dereference failure: deallocated dynamic object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.10] line 188 dereference failure: dead object in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.11] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
-[std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 121 dereference failure: pointer NULL in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 121 dereference failure: pointer invalid in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 121 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 121 dereference failure: dead object in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 121 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/bookrunner/books/The Unstable Book/Language Features/box_syntax/16.rs function main
-[main.pointer_dereference.1] line 6 dereference failure: pointer NULL in *var_5.0.pointer: SUCCESS
-[main.pointer_dereference.2] line 6 dereference failure: pointer invalid in *var_5.0.pointer: SUCCESS
-[main.pointer_dereference.3] line 6 dereference failure: deallocated dynamic object in *var_5.0.pointer: SUCCESS
-[main.pointer_dereference.4] line 6 dereference failure: dead object in *var_5.0.pointer: SUCCESS
-[main.pointer_dereference.5] line 6 dereference failure: pointer outside object bounds in *var_5.0.pointer: SUCCESS
-[main.pointer_dereference.6] line 6 dereference failure: invalid integer address in *var_5.0.pointer: SUCCESS
-
-<builtin-library-malloc> function malloc
-[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
-[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
-
-** 0 of 76 failed (1 iterations)
-VERIFICATION SUCCESSFUL
-
-            </xmp>
-          </div><!-- class="output-box" -->
           
 
           

@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-01-07T01:09:15Z</li>
-      <li>7c3c781f-445d-4d40-a906-3053b02a755a</li>
+      <li>2022-01-07T22:57:42Z</li>
+      <li>ce7f8866-2cbb-423c-9516-79eba68608d2</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ba9e7b3b-4145-4ba6-8905-c72ec76b0538">
+              <a href="#job-f9ef8e22-0339-436d-909b-7acbd9b8459a">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-a59c0c59-83d0-4f00-8eff-d3c339787628">
+              <a href="#job-43a52d07-0599-472f-990b-f3a82c240de8">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,17 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-848746f6-340f-445d-b419-5aa3aec3432b">
+              <a href="#job-0b46bc2e-6773-428a-ad5f-739b79ccbbdc">
               
               Can RMC reason about it?
               
@@ -621,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ba9e7b3b-4145-4ba6-8905-c72ec76b0538">
+    <div class="command-table" id="job-f9ef8e22-0339-436d-909b-7acbd9b8459a">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ba9e7b3b-4145-4ba6-8905-c72ec76b0538">#</a>
+                <a href="#job-f9ef8e22-0339-436d-909b-7acbd9b8459a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -651,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -683,162 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-07T01:14:29Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:14:30Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17h8896400a11e9f6b5E::1::var_1::self" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h27a5248668209358E::1::var_14" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h27a5248668209358E::1::var_17" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>codegen</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-a59c0c59-83d0-4f00-8eff-d3c339787628">
-      
-      <div class="success">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-a59c0c59-83d0-4f00-8eff-d3c339787628">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Does RMC support all the Rust features used in it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:14:30Z
+                2022-01-07T23:01:17Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -846,162 +695,7 @@ FlexibleArray { typ: Unsignedbv { width: 32 } }
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-07T01:14:30Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h170b87c10e2c6bc5E::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$6as_ptr17h8896400a11e9f6b5E::1::var_1::self" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h27a5248668209358E::1::var_14" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice4iter13Iter$LT$T$GT$3new17h27a5248668209358E::1::var_17" }, typ: StructTag("tag-_9726783442150160411"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 32 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 32 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 32 } }
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>verification</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-848746f6-340f-445d-b419-5aa3aec3432b">
-      
-      <div class="fail">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-848746f6-340f-445d-b419-5aa3aec3432b">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Can RMC reason about it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs" "--cbmc-args" "--unwind" "5"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                10
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:15:00Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                02s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:15:02Z
+                2022-01-07T23:01:17Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1022,418 +716,114 @@ FlexibleArray { typ: Unsignedbv { width: 32 } }
 
 
           
-          <div class="output-box"><xmp>stdout:
+
+          
+          <div class="output-box"><xmp>stderr:
             
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 16 object bits, 48 offset bits (user-specified)
-Starting Bounded Model Checking
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.0 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.0 iteration 2 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.0 iteration 3 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.1 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.1 iteration 2 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.1 iteration 3 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.1 iteration 4 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.2 iteration 1  thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.0 iteration 1  thread 0
-Unwinding loop _RNvYNtCscLAPi7pP79a_2_129FibonacciNtNtNtNtCs2X6rtUiGQdR_4core4iter6traits8iterator8Iterator10advance_byB4_.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs line 274 column 9 function std::iter::Iterator::advance_by thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.2 iteration 1  thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.0 iteration 1  thread 0
-Unwinding loop _RNvYNtCscLAPi7pP79a_2_129FibonacciNtNtNtNtCs2X6rtUiGQdR_4core4iter6traits8iterator8Iterator10advance_byB4_.0 iteration 2 file /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs line 274 column 9 function std::iter::Iterator::advance_by thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.2 iteration 1  thread 0
-Unwinding loop _RINvMNtCs2X6rtUiGQdR_4core6optionINtB3_6OptionmE5ok_orjECscLAPi7pP79a_2_12.0 iteration 1  thread 0
-Unwinding loop _RNvYNtCscLAPi7pP79a_2_129FibonacciNtNtNtNtCs2X6rtUiGQdR_4core4iter6traits8iterator8Iterator10advance_byB4_.0 iteration 3 file /home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs line 274 column 9 function std::iter::Iterator::advance_by thread 0
-Unwinding loop _RNvMNtCs2X6rtUiGQdR_4core6resultINtB2_6ResultujE2okCscLAPi7pP79a_2_12.1 iteration 1  thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.2 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.2 iteration 2 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.2 iteration 3 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.2 iteration 4 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs line 71 column 14 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.3 iteration 1 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs line 71 column 14 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.3 iteration 2 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs line 71 column 14 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.3 iteration 3 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs line 71 column 14 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop main.3 iteration 4 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs line 71 column 14 function main thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1CscLAPi7pP79a_2_12.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Not unwinding loop main.3 iteration 5 file /home/runner/work/rmc/rmc/library/std/src/macros.rs line 97 column 9 function main thread 0
-Runtime Symex: 0.460667s
-size of program expression: 10303 steps
-simple slicing removed 148 assignments
-Generated 1262 VCC(s), 324 remaining after simplification
-Runtime Postprocess Equation: 0.00211673s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.134766s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 0.0253725s
-Solving with MiniSAT 2.2.1 with simplifier
-174230 variables, 61872 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.161047s
-Runtime decision procedure: 0.296768s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-174230 variables, 1066 clauses
-SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.00130422s
-Runtime decision procedure: 0.00137002s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Signedbv { width: 32 } } (MIR type Ref(ReErased, i32, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Unsignedbv { width: 32 } } (MIR type Ref(ReErased, u32, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.3] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.4] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
-[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
-[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.10] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
-[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
-[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
-[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
-[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
-[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.16] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
-[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
-[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.3] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-function _ZN3std2io5stdio6_print17h29c670f425d63affE
-[_ZN3std2io5stdio6_print17h29c670f425d63affE.assertion.1] assertion false: FAILURE
-
-/home/runner/work/rmc/rmc/library/core/src/clone.rs function std::clone::impls::<impl std::clone::Clone for i32>::clone
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.1] line 184 dereference failure: pointer NULL in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.2] line 184 dereference failure: pointer invalid in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.3] line 184 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.4] line 184 dereference failure: dead object in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.5] line 184 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for i32>::clone.pointer_dereference.6] line 184 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/clone.rs function std::clone::impls::<impl std::clone::Clone for usize>::clone
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.1] line 184 dereference failure: pointer NULL in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.2] line 184 dereference failure: pointer invalid in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.3] line 184 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.4] line 184 dereference failure: dead object in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.5] line 184 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.6] line 184 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/cmp.rs function std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.1] line 1332 dereference failure: pointer NULL in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.2] line 1332 dereference failure: pointer invalid in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.3] line 1332 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.4] line 1332 dereference failure: dead object in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.5] line 1332 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.6] line 1332 dereference failure: invalid integer address in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.7] line 1332 dereference failure: pointer NULL in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.8] line 1332 dereference failure: pointer invalid in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.9] line 1332 dereference failure: deallocated dynamic object in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.10] line 1332 dereference failure: dead object in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.11] line 1332 dereference failure: pointer outside object bounds in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for i32>::lt.pointer_dereference.12] line 1332 dereference failure: invalid integer address in *other: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/cmp.rs function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.1] line 1332 dereference failure: pointer NULL in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.2] line 1332 dereference failure: pointer invalid in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.3] line 1332 dereference failure: deallocated dynamic object in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.4] line 1332 dereference failure: dead object in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.5] line 1332 dereference failure: pointer outside object bounds in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.6] line 1332 dereference failure: invalid integer address in *self: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.7] line 1332 dereference failure: pointer NULL in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.8] line 1332 dereference failure: pointer invalid in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.9] line 1332 dereference failure: deallocated dynamic object in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.10] line 1332 dereference failure: dead object in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.11] line 1332 dereference failure: pointer outside object bounds in *other: SUCCESS
-[std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.12] line 1332 dereference failure: invalid integer address in *other: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
-[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 363 invalid args: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/adapters/skip.rs function <std::iter::Skip<I> as std::iter::Iterator>::next
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.1] line 35 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.2] line 35 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.3] line 35 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.4] line 35 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.5] line 35 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.pointer_dereference.6] line 35 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Skip<I> as std::iter::Iterator>::next.assertion.1] line 36 attempt to compute `move _8 - const 1_usize`, which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/adapters/take.rs function <std::iter::Take<I> as std::iter::Iterator>::next
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.1] line 35 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.2] line 35 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.3] line 35 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.4] line 35 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.5] line 35 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.6] line 35 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.19] line 35 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.20] line 35 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.21] line 35 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.22] line 35 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.23] line 35 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.24] line 35 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.assertion.1] line 36 attempt to compute `((*_1).1: usize) - const 1_usize`, which would overflow: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.assertion.2] line 36 attempt to compute `((*_1).1: usize) - const 1_usize`, which would overflow: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.7] line 36 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.8] line 36 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.9] line 36 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.10] line 36 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.11] line 36 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.12] line 36 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.13] line 36 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.14] line 36 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.15] line 36 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.16] line 36 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.17] line 36 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.18] line 36 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.25] line 36 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.26] line 36 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.27] line 36 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.28] line 36 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.29] line 36 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.30] line 36 dereference failure: invalid integer address in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.31] line 36 dereference failure: pointer NULL in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.32] line 36 dereference failure: pointer invalid in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.33] line 36 dereference failure: deallocated dynamic object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.34] line 36 dereference failure: dead object in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.35] line 36 dereference failure: pointer outside object bounds in self->n: SUCCESS
-[<std::iter::Take<I> as std::iter::Iterator>::next.pointer_dereference.36] line 36 dereference failure: invalid integer address in self->n: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/range.rs function <i32 as std::iter::Step>::forward_unchecked
-[<i32 as std::iter::Step>::forward_unchecked.overflow.1] line 191 arithmetic overflow on unsigned to signed type conversion in (int)var_5: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/range.rs function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.1] line 624 dereference failure: pointer NULL in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.2] line 624 dereference failure: pointer invalid in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.3] line 624 dereference failure: deallocated dynamic object in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.4] line 624 dereference failure: dead object in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.5] line 624 dereference failure: pointer outside object bounds in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.6] line 624 dereference failure: invalid integer address in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.7] line 624 dereference failure: pointer NULL in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.8] line 624 dereference failure: pointer invalid in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.9] line 624 dereference failure: deallocated dynamic object in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.10] line 624 dereference failure: dead object in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.11] line 624 dereference failure: pointer outside object bounds in *var_9: SUCCESS
-[<std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.12] line 624 dereference failure: invalid integer address in *var_9: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::advance_by
-[std::iter::Iterator::advance_by.assertion.1] line 274 unreachable code: SUCCESS
-[std::iter::Iterator::advance_by.overflow.1] line 274 arithmetic overflow on unsigned to signed type conversion in (long int)var_7.case: SUCCESS
-[std::iter::Iterator::advance_by.assertion.2] line 275 unreachable code: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::nth
-[std::iter::Iterator::nth.assertion.1] line 322 unreachable code: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/mem/mod.rs function std::mem::take
-[std::mem::take.pointer_dereference.1] line 768 dereference failure: pointer NULL in *var_2: SUCCESS
-[std::mem::take.pointer_dereference.2] line 768 dereference failure: pointer invalid in *var_2: SUCCESS
-[std::mem::take.pointer_dereference.3] line 768 dereference failure: deallocated dynamic object in *var_2: SUCCESS
-[std::mem::take.pointer_dereference.4] line 768 dereference failure: dead object in *var_2: SUCCESS
-[std::mem::take.pointer_dereference.5] line 768 dereference failure: pointer outside object bounds in *var_2: SUCCESS
-[std::mem::take.pointer_dereference.6] line 768 dereference failure: invalid integer address in *var_2: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/num/int_macros.rs function core::num::<impl i32>::unchecked_add
-[core::num::<impl i32>::unchecked_add.assertion.1] line 454 attempt to compute unchecked_add which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/num/uint_macros.rs function core::num::<impl usize>::unchecked_add
-[core::num::<impl usize>::unchecked_add.assertion.1] line 463 attempt to compute unchecked_add which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/option.rs function <std::option::Option<T> as std::ops::Try>::branch
-[<std::option::Option<T> as std::ops::Try>::branch.assertion.1] line 2234 unreachable code: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/option.rs function std::option::Option::<T>::ok_or
-[std::option::Option::<T>::ok_or.assertion.1] line 1000 unreachable code: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::add
-[std::ptr::const_ptr::<impl *const T>::add.overflow.1] line 566 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::offset
-[std::ptr::const_ptr::<impl *const T>::offset.assertion.1] line 285 attempt to compute offset which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::wrapping_add
-[std::ptr::const_ptr::<impl *const T>::wrapping_add.overflow.1] line 692 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs function std::ptr::mut_ptr::<impl *mut T>::offset
-[std::ptr::mut_ptr::<impl *mut T>::offset.assertion.1] line 293 attempt to compute offset which would overflow: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function <std::result::Result<T, E> as std::ops::Try>::branch
-[<std::result::Result<T, E> as std::ops::Try>::branch.assertion.1] line 1960 unreachable code: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/result.rs function std::result::Result::<T, E>::ok
-[std::result::Result::<T, E>::ok.assertion.1] line 647 unreachable code: SUCCESS
-[std::result::Result::<T, E>::ok.overflow.1] line 647 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-[std::result::Result::<T, E>::ok.overflow.2] line 651 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/slice/iter.rs function std::slice::Iter::<'a, T>::new
-[std::slice::Iter::<'a, T>::new.assertion.1] line 91 assumption failed: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/slice/iter/macros.rs function <std::slice::Iter<'a, T> as std::iter::Iterator>::next
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.13] line 8 dereference failure: pointer NULL in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.14] line 8 dereference failure: pointer invalid in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.15] line 8 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.16] line 8 dereference failure: dead object in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.17] line 8 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.18] line 8 dereference failure: invalid integer address in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.19] line 8 dereference failure: pointer NULL in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.20] line 8 dereference failure: pointer invalid in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.21] line 8 dereference failure: deallocated dynamic object in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.22] line 8 dereference failure: dead object in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.23] line 8 dereference failure: pointer outside object bounds in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.24] line 8 dereference failure: invalid integer address in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.assertion.1] line 142 assumption failed: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.1] line 142 dereference failure: pointer NULL in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.2] line 142 dereference failure: pointer invalid in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.3] line 142 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.4] line 142 dereference failure: dead object in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.5] line 142 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.6] line 142 dereference failure: invalid integer address in self->ptr: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.assertion.2] line 144 assumption failed: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.7] line 144 dereference failure: pointer NULL in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.8] line 144 dereference failure: pointer invalid in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.9] line 144 dereference failure: deallocated dynamic object in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.10] line 144 dereference failure: dead object in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.11] line 144 dereference failure: pointer outside object bounds in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.12] line 144 dereference failure: invalid integer address in self->end: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_arithmetic.1] line 147 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[<std::slice::Iter<'a, T> as std::iter::Iterator>::next.pointer_dereference.25] line 147 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/slice/iter/macros.rs function std::slice::Iter::<'a, T>::post_inc_start
-[std::slice::Iter::<'a, T>::post_inc_start.assertion.1] line 67 attempt to negate `_8`, which would overflow: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.1] line 67 dereference failure: pointer NULL in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.2] line 67 dereference failure: pointer invalid in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.3] line 67 dereference failure: deallocated dynamic object in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.4] line 67 dereference failure: dead object in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.5] line 67 dereference failure: pointer outside object bounds in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.6] line 67 dereference failure: invalid integer address in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.7] line 67 dereference failure: pointer NULL in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.8] line 67 dereference failure: pointer invalid in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.9] line 67 dereference failure: deallocated dynamic object in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.10] line 67 dereference failure: dead object in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.11] line 67 dereference failure: pointer outside object bounds in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.12] line 67 dereference failure: invalid integer address in self->end: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.13] line 88 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.14] line 88 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.15] line 88 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.16] line 88 dereference failure: dead object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.17] line 88 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.18] line 88 dereference failure: invalid integer address in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.19] line 90 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.20] line 90 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.21] line 90 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.22] line 90 dereference failure: dead object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.23] line 90 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.24] line 90 dereference failure: invalid integer address in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.25] line 93 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.26] line 93 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.27] line 93 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.28] line 93 dereference failure: dead object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.29] line 93 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.30] line 93 dereference failure: invalid integer address in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.31] line 93 dereference failure: pointer NULL in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.32] line 93 dereference failure: pointer invalid in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.33] line 93 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.34] line 93 dereference failure: dead object in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.35] line 93 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[std::slice::Iter::<'a, T>::post_inc_start.pointer_dereference.36] line 93 dereference failure: invalid integer address in self->ptr: SUCCESS
-
-/home/runner/work/rmc/rmc/library/std/src/macros.rs function main
-[main.unwind.3] line 97 unwinding assertion loop 3: SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs function <Fibonacci as std::iter::Iterator>::next
-[<Fibonacci as std::iter::Iterator>::next.assertion.1] line 22 attempt to compute `move _3 + move _4`, which would overflow: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.1] line 22 dereference failure: pointer NULL in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.2] line 22 dereference failure: pointer invalid in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.3] line 22 dereference failure: deallocated dynamic object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.4] line 22 dereference failure: dead object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.5] line 22 dereference failure: pointer outside object bounds in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.6] line 22 dereference failure: invalid integer address in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.7] line 22 dereference failure: pointer NULL in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.8] line 22 dereference failure: pointer invalid in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.9] line 22 dereference failure: deallocated dynamic object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.10] line 22 dereference failure: dead object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.11] line 22 dereference failure: pointer outside object bounds in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.12] line 22 dereference failure: invalid integer address in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.13] line 24 dereference failure: pointer NULL in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.14] line 24 dereference failure: pointer invalid in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.15] line 24 dereference failure: deallocated dynamic object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.16] line 24 dereference failure: dead object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.17] line 24 dereference failure: pointer outside object bounds in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.18] line 24 dereference failure: invalid integer address in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.19] line 24 dereference failure: pointer NULL in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.20] line 24 dereference failure: pointer invalid in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.21] line 24 dereference failure: deallocated dynamic object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.22] line 24 dereference failure: dead object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.23] line 24 dereference failure: pointer outside object bounds in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.24] line 24 dereference failure: invalid integer address in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.25] line 25 dereference failure: pointer NULL in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.26] line 25 dereference failure: pointer invalid in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.27] line 25 dereference failure: deallocated dynamic object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.28] line 25 dereference failure: dead object in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.29] line 25 dereference failure: pointer outside object bounds in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.30] line 25 dereference failure: invalid integer address in self->next: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.31] line 29 dereference failure: pointer NULL in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.32] line 29 dereference failure: pointer invalid in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.33] line 29 dereference failure: deallocated dynamic object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.34] line 29 dereference failure: dead object in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.35] line 29 dereference failure: pointer outside object bounds in self->curr: SUCCESS
-[<Fibonacci as std::iter::Iterator>::next.pointer_dereference.36] line 29 dereference failure: invalid integer address in self->curr: SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs function main
-[main.assertion.1] line 51 unreachable code: SUCCESS
-[main.assertion.2] line 57 unreachable code: SUCCESS
-[main.assertion.3] line 63 unreachable code: SUCCESS
-[main.assertion.4] line 71 unreachable code: SUCCESS
-[main.pointer_arithmetic.1] line 71 pointer arithmetic: dead object in (unsigned char *)&var_200 + 0: SUCCESS
-[main.pointer_dereference.1] line 71 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_200 + 0)): SUCCESS
-
-** 1 of 255 failed (2 iterations)
-VERIFICATION FAILED
+error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/Rust` and `by`)
 
             </xmp>
           </div><!-- class="output-box" -->
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-43a52d07-0599-472f-990b-f3a82c240de8">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-43a52d07-0599-472f-990b-f3a82c240de8">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does RMC support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-0b46bc2e-6773-428a-ad5f-739b79ccbbdc">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-0b46bc2e-6773-428a-ad5f-739b79ccbbdc">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Can RMC reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/Rust by Example/Traits/Iterators/12.rs" "--cbmc-args" "--unwind" "5"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
           
 
           

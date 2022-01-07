@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-01-07T01:09:15Z</li>
-      <li>7c3c781f-445d-4d40-a906-3053b02a755a</li>
+      <li>2022-01-07T22:57:42Z</li>
+      <li>ce7f8866-2cbb-423c-9516-79eba68608d2</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-4c00f714-35a5-46a8-9b03-19a0987cbcda">
+              <a href="#job-75b9e0f1-83ac-401d-848f-7516901f961b">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1016f674-31be-4672-80f0-db34cbf930c0">
+              <a href="#job-f2a2cd91-7235-432d-95ea-e8cb074193e6">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,17 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d9ea4e6f-8558-43ca-9d32-df94cc6b4ade">
+              <a href="#job-1ae67b5a-eb4f-440d-a10a-49773234261b">
               
               Can RMC reason about it?
               
@@ -621,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-4c00f714-35a5-46a8-9b03-19a0987cbcda">
+    <div class="command-table" id="job-75b9e0f1-83ac-401d-848f-7516901f961b">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-4c00f714-35a5-46a8-9b03-19a0987cbcda">#</a>
+                <a href="#job-75b9e0f1-83ac-401d-848f-7516901f961b">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -651,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -683,7 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-07T01:11:56Z
+                2022-01-07T23:00:38Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,413 +695,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-07T01:11:56Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h6c4a33aac1b6c5d9E::1::var_5" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h6c4a33aac1b6c5d9E::1::var_9" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h9c7a715abe07c6e2E::1::var_2" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17h587c66ddb0128957E::1::var_1::reference" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_5" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_4" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_3" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_2" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h5e780c3a7b134b9cE::1::var_1" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17hdb4916efa70cf2f2E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_2730478730410405475") }, location: None }), typ: StructTag("tag-_2730478730410405475"), location: None }, field: "0" }, typ: StructTag("tag-_9071784207732966380"), location: None }, field: "pointer" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17ha713402091acd35cE::1::var_6" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>codegen</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-1016f674-31be-4672-80f0-db34cbf930c0">
-      
-      <div class="success">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-1016f674-31be-4672-80f0-db34cbf930c0">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Does RMC support all the Rust features used in it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:12:09Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                00s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:12:09Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h6c4a33aac1b6c5d9E::1::var_5" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5alloc8box_free17h6c4a33aac1b6c5d9E::1::var_9" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr6unique15Unique$LT$T$GT$6as_ref17h9c7a715abe07c6e2E::1::var_2" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN95_$LT$core..ptr..unique..Unique$LT$T$GT$$u20$as$u20$core..convert..From$LT$$RF$mut$u20$T$GT$$GT$4from17h587c66ddb0128957E::1::var_1::reference" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_5" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_4" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_3" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN5alloc5boxed16Box$LT$T$C$A$GT$4leak17h5cdd298d34aa37feE::1::var_2" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3ptr66drop_in_place$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$17h5e780c3a7b134b9cE::1::var_1" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Dereference(Expr { value: Symbol { identifier: "_ZN4core3ptr91drop_in_place$LT$alloc..boxed..Box$LT$dyn$u20$core..any..Any$u2b$core..marker..Send$GT$$GT$17hdb4916efa70cf2f2E::1::var_1" }, typ: Pointer { typ: StructTag("tag-_2730478730410405475") }, location: None }), typ: StructTag("tag-_2730478730410405475"), location: None }, field: "0" }, typ: StructTag("tag-_9071784207732966380"), location: None }, field: "pointer" }, typ: StructTag("tag-_13876466718212121994"), location: None }, field: "data" }, typ: Pointer { typ: Empty }, location: None }
-Expr type
-Pointer { typ: Empty }
-Type from MIR
-StructTag("tag-_13876466718212121994")
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_6" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_8" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_11" }, typ: StructTag("tag-_7636071924843112833"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-str") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-str") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core3fmt9Arguments6new_v117h4462301d0984ca61E::1::var_14" }, typ: StructTag("tag-_7142799294040364584"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_3458415432377579157") }, location: None }
-Expr type
-Pointer { typ: StructTag("tag-_3458415432377579157") }
-Type from MIR
-FlexibleArray { typ: StructTag("tag-_3458415432377579157") }
-WARN rustc_codegen_rmc::codegen::place Unexpected type mismatch in projection:
-Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_ZN4core5slice3raw14from_raw_parts17ha713402091acd35cE::1::var_6" }, typ: StructTag("tag-_9002246437548051943"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
-Expr type
-Pointer { typ: Unsignedbv { width: 8 } }
-Type from MIR
-FlexibleArray { typ: Unsignedbv { width: 8 } }
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>verification</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-d9ea4e6f-8558-43ca-9d32-df94cc6b4ade">
-      
-      <div class="fail">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-d9ea4e6f-8558-43ca-9d32-df94cc6b4ade">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Can RMC reason about it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                10
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:17:10Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:17:11Z
+                2022-01-07T23:00:38Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -1118,256 +716,114 @@ FlexibleArray { typ: Unsignedbv { width: 8 } }
 
 
           
-          <div class="output-box"><xmp>stdout:
+
+          
+          <div class="output-box"><xmp>stderr:
             
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/bookrunner/books/Rust by Example/Std misc/Path/15.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 16 object bits, 48 offset bits (user-specified)
-Starting Bounded Model Checking
-Unwinding loop _RNvMs_NtCshb3zqhM0i39_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs7USkq60KpYJ_2_15.1 iteration 1  thread 0
-Unwinding loop _RINvNtCs2X6rtUiGQdR_4core3ptr13drop_in_placeINtNtCshb3zqhM0i39_5alloc3vec3VechEECs7USkq60KpYJ_2_15.0 iteration 1  thread 0
-aborting path on assume(false) at file /home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs line 17 column 11 function main thread 0
-aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
-Unwinding loop _RNvMs2_NtCs2X6rtUiGQdR_4core3fmtNtB5_9Arguments6new_v1Cs7USkq60KpYJ_2_15.0 iteration 1 file /home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs line 362 column 12 function std::fmt::Arguments::<'a>::new_v1 thread 0
-Unwinding loop _RNvMs_NtCshb3zqhM0i39_5alloc7raw_vecINtB4_6RawVechE14current_memoryCs7USkq60KpYJ_2_15.1 iteration 1  thread 0
-Unwinding loop _RINvNtCs2X6rtUiGQdR_4core3ptr13drop_in_placeINtNtCshb3zqhM0i39_5alloc3vec3VechEECs7USkq60KpYJ_2_15.0 iteration 1  thread 0
-Runtime Symex: 0.118153s
-size of program expression: 2605 steps
-simple slicing removed 83 assignments
-Generated 232 VCC(s), 90 remaining after simplification
-Runtime Postprocess Equation: 0.000281904s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.0397589s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 0.00265944s
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 52129 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.131888s
-Runtime decision procedure: 0.180996s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9290 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000893712s
-Runtime decision procedure: 0.000981613s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9284 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000970913s
-Runtime decision procedure: 0.00103691s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9284 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00103871s
-Runtime decision procedure: 0.00110101s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9279 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000986413s
-Runtime decision procedure: 0.00104331s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9259 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000639009s
-Runtime decision procedure: 0.000694109s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9260 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000625008s
-Runtime decision procedure: 0.000678109s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9260 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00226593s
-Runtime decision procedure: 0.00233223s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9259 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.00069281s
-Runtime decision procedure: 0.00074531s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-63625 variables, 9258 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 9.1e-06s
-Runtime decision procedure: 4.1001e-05s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_730124297567343459") (MIR type Adt(std::rt::begin_panic::PanicPayload, [&str])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.3] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-str") (MIR type Ref(ReErased, str, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.3] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-function _ZN3std2io5stdio6_print17h29c670f425d63affE
-[_ZN3std2io5stdio6_print17h29c670f425d63affE.assertion.1] assertion false: FAILURE
-
-function _ZN3std3sys4unix6os_str5Slice6to_str17he5a24af1874fd18aE
-[_ZN3std3sys4unix6os_str5Slice6to_str17he5a24af1874fd18aE.assertion.1] assertion false: FAILURE
-
-function _ZN3std4path4Path5_join17hf31a43b566be2816E
-[_ZN3std4path4Path5_join17hf31a43b566be2816E.assertion.1] assertion false: FAILURE
-
-/home/runner/work/rmc/rmc/library/alloc/src/alloc.rs function std::alloc::dealloc
-[std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.1] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.2] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.3] line 105 dead object in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.4] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.5] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.6] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.7] line 105 dead object in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.8] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.9] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.10] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.11] line 105 dead object in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.12] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.13] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.14] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.15] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.16] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.17] line 105 pointer invalid in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.18] line 105 deallocated dynamic object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.19] line 105 dead object in POINTER_OFFSET((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.20] line 105 pointer outside object bounds in POINTER_OFFSET((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.21] line 105 pointer invalid in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.22] line 105 deallocated dynamic object in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.23] line 105 dead object in OBJECT_SIZE((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.24] line 105 pointer outside object bounds in OBJECT_SIZE((void *)var_3): FAILURE
-[std::alloc::dealloc.pointer_primitives.25] line 105 pointer invalid in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.26] line 105 deallocated dynamic object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.27] line 105 dead object in POINTER_OBJECT((void *)var_3): SUCCESS
-[std::alloc::dealloc.pointer_primitives.28] line 105 pointer outside object bounds in POINTER_OBJECT((void *)var_3): FAILURE
-[std::alloc::dealloc.precondition_instance.1] line 105 free argument must be NULL or valid pointer: FAILURE
-[std::alloc::dealloc.precondition_instance.2] line 105 free argument must be dynamic object: FAILURE
-[std::alloc::dealloc.precondition_instance.3] line 105 free argument has offset zero: FAILURE
-[std::alloc::dealloc.precondition_instance.4] line 105 double free: FAILURE
-[std::alloc::dealloc.precondition_instance.5] line 105 free called for new[] object: SUCCESS
-[std::alloc::dealloc.precondition_instance.6] line 105 free called for stack-allocated object: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 478 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
-[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 478 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 241 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 241 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 241 dereference failure: deallocated dynamic object in self->cap: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 241 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 241 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 241 dereference failure: invalid integer address in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 242 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 242 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.assertion.1] line 248 attempt to compute `move _8 * move _9`, which would overflow: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 248 dereference failure: pointer NULL in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 248 dereference failure: pointer invalid in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 248 dereference failure: deallocated dynamic object in self->cap: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 248 dereference failure: dead object in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 248 dereference failure: pointer outside object bounds in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 248 dereference failure: invalid integer address in self->cap: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 250 dereference failure: pointer NULL in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 250 dereference failure: pointer invalid in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 250 dereference failure: deallocated dynamic object in self->ptr: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 250 dereference failure: dead object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 250 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 250 dereference failure: invalid integer address in self->ptr: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 224 dereference failure: pointer NULL in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 224 dereference failure: pointer invalid in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 224 dereference failure: deallocated dynamic object in self->ptr: FAILURE
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 224 dereference failure: dead object in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 224 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
-[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 224 dereference failure: invalid integer address in self->ptr: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Deref>::deref
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2431 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2431 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2431 dereference failure: deallocated dynamic object in self->len: FAILURE
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2431 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2431 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2431 dereference failure: invalid integer address in self->len: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2815 dereference failure: pointer NULL in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2815 dereference failure: pointer invalid in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2815 dereference failure: deallocated dynamic object in self->len: FAILURE
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2815 dereference failure: dead object in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2815 dereference failure: pointer outside object bounds in self->len: SUCCESS
-[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2815 dereference failure: invalid integer address in self->len: SUCCESS
-
-/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
-[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: FAILURE
-
-/home/runner/work/rmc/rmc/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_ptr
-[std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1136 assumption failed: FAILURE
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::align
-[std::alloc::Layout::align.pointer_dereference.1] line 120 dereference failure: pointer NULL in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.2] line 120 dereference failure: pointer invalid in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in self->align_: FAILURE
-[std::alloc::Layout::align.pointer_dereference.4] line 120 dereference failure: dead object in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in self->align_: SUCCESS
-[std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/alloc/layout.rs function std::alloc::Layout::size
-[std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.2] line 110 dereference failure: pointer invalid in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.3] line 110 dereference failure: deallocated dynamic object in self->size_: FAILURE
-[std::alloc::Layout::size.pointer_dereference.4] line 110 dereference failure: dead object in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.5] line 110 dereference failure: pointer outside object bounds in self->size_: SUCCESS
-[std::alloc::Layout::size.pointer_dereference.6] line 110 dereference failure: invalid integer address in self->size_: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/convert/mod.rs function <&T as std::convert::AsRef<U>>::as_ref
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.1] line 493 dereference failure: pointer NULL in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.2] line 493 dereference failure: pointer invalid in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.3] line 493 dereference failure: deallocated dynamic object in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.4] line 493 dereference failure: dead object in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.5] line 493 dereference failure: pointer outside object bounds in *self: SUCCESS
-[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.6] line 493 dereference failure: invalid integer address in *self: SUCCESS
-
-/home/runner/work/rmc/rmc/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
-[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 362 attempt to compute `move _13 + const 1_usize`, which would overflow: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.assertion.2] line 363 invalid args: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-
-/home/runner/work/rmc/rmc/library/std/src/path.rs function std::path::Path::join
-[std::path::Path::join.assertion.1] line 2417 resume instruction: SUCCESS
-
-/home/runner/work/rmc/rmc/src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs function main
-[main.assertion.1] line 17 unreachable code: SUCCESS
-[main.pointer_arithmetic.1] line 17 pointer arithmetic: dead object in (unsigned char *)&var_12 + 0: SUCCESS
-[main.pointer_dereference.1] line 17 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_12 + 0)): SUCCESS
-[main.assertion.2] line 18 new path is not a valid UTF-8 sequence: FAILURE
-
-<builtin-library-malloc> function malloc
-[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
-[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
-
-** 31 of 116 failed (10 iterations)
-VERIFICATION FAILED
+error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/Rust` and `by`)
 
             </xmp>
           </div><!-- class="output-box" -->
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-f2a2cd91-7235-432d-95ea-e8cb074193e6">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-f2a2cd91-7235-432d-95ea-e8cb074193e6">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does RMC support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-1ae67b5a-eb4f-440d-a10a-49773234261b">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-1ae67b5a-eb4f-440d-a10a-49773234261b">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Can RMC reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
           
 
           

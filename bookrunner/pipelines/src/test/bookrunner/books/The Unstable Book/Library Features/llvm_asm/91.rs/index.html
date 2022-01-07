@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-01-07T01:09:15Z</li>
-      <li>7c3c781f-445d-4d40-a906-3053b02a755a</li>
+      <li>2022-01-07T22:57:42Z</li>
+      <li>ce7f8866-2cbb-423c-9516-79eba68608d2</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-8ce10d01-7177-45b7-b6f7-99fcaf3e47a2">
+              <a href="#job-eae18f79-e86c-46a7-87c0-70579aaccbec">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c56c5848-cfa7-4155-9b6b-e7137db0d6ad">
+              <a href="#job-edcc3d60-e664-4222-b531-4db1c3741cb6">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,17 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-eb2dc87c-104c-4514-9581-8ece9f05b17a">
+              <a href="#job-2ac10634-ee08-41ca-ac52-233884b9d0d3">
               
               Can RMC reason about it?
               
@@ -621,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-8ce10d01-7177-45b7-b6f7-99fcaf3e47a2">
+    <div class="command-table" id="job-eae18f79-e86c-46a7-87c0-70579aaccbec">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-8ce10d01-7177-45b7-b6f7-99fcaf3e47a2">#</a>
+                <a href="#job-eae18f79-e86c-46a7-87c0-70579aaccbec">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -651,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -683,7 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-07T01:16:34Z
+                2022-01-07T23:00:51Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -691,253 +695,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-07T01:16:34Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
---> src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs:8:9
-|
-8 |         llvm_asm!("add $2, $0"
-|         ^^^^^^^^
-|
-= note: `#[warn(deprecated)]` on by default
-
-warning: 1 warning emitted
-
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>codegen</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-c56c5848-cfa7-4155-9b6b-e7137db0d6ad">
-      
-      <div class="success">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-c56c5848-cfa7-4155-9b6b-e7137db0d6ad">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Does RMC support all the Rust features used in it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:18:55Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                00s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:18:55Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
-
-          
-
-
-          
-
-
-          
-
-          
-          <div class="output-box"><xmp>stderr:
-            
-warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
---> src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs:8:9
-|
-8 |         llvm_asm!("add $2, $0"
-|         ^^^^^^^^
-|
-= note: `#[warn(deprecated)]` on by default
-
-warning: 1 warning emitted
-
-            </xmp>
-          </div><!-- class="output-box" -->
-          
-
-        </div><!-- class="command-content" -->
-      </div><!-- class="fail" -->
-    </div><!-- id="command-table" -->
-    
-
-  </div><!-- class="stage" -->
-  
-  <div class="stage">
-    <div class="stage-name">
-      <p>verification</p>
-      <div class="underline"></div>
-    </div><!-- class="stage-name" -->
-
-    
-    <div class="command-table" id="job-eb2dc87c-104c-4514-9581-8ece9f05b17a">
-      
-      <div class="fail">
-      
-        <div class="command-content">
-          <div class="command-header">
-            <div class="command-id-link">
-              <p>
-                <a href="#job-eb2dc87c-104c-4514-9581-8ece9f05b17a">#</a>
-              </p>
-            </div><!-- class="command-id-link" -->
-            <div class="command-description">
-              
-              <p>
-                Can RMC reason about it?
-              </p>
-              
-            </div><!-- class="command-description" -->
-          </div><!-- class="command-header" -->
-          <div class="command-invocation">
-            <p>
-            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs"
-            </p>
-          </div><!-- class="command-invocation" -->
-
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                10
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:19:56Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:19:57Z
+                2022-01-07T23:00:51Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -958,65 +716,114 @@ warning: 1 warning emitted
 
 
           
-          <div class="output-box"><xmp>stdout:
+
+          
+          <div class="output-box"><xmp>stderr:
             
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 16 object bits, 48 offset bits (user-specified)
-Starting Bounded Model Checking
-aborting path on assume(false) at  thread 0
-Runtime Symex: 0.00309224s
-size of program expression: 153 steps
-simple slicing removed 4 assignments
-Generated 5 VCC(s), 2 remaining after simplification
-Runtime Postprocess Equation: 2.42e-05s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.00072551s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 2.3201e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-1500 variables, 36 clauses
-SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000212103s
-Runtime decision procedure: 0.00100701s
-Running propositional reduction
-Solving with MiniSAT 2.2.1 with simplifier
-1500 variables, 0 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 9.1e-06s
-Runtime decision procedure: 2.6601e-05s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[assertion.2] InlineAsm is not currently supported by RMC. Please post your example at https://github.com/model-checking/rmc/issues/2 : FAILURE
-[assertion.3] Code generation sanity check: Correct CBMC vtable size for Pointer { typ: Signedbv { width: 32 } } (MIR type Ref(ReErased, i32, Not)). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-/home/runner/work/rmc/rmc/library/core/src/macros/mod.rs function main
-[main.pointer_dereference.1] line 39 dereference failure: pointer NULL in *left_val: SUCCESS
-[main.pointer_dereference.2] line 39 dereference failure: pointer invalid in *left_val: SUCCESS
-[main.pointer_dereference.3] line 39 dereference failure: deallocated dynamic object in *left_val: SUCCESS
-[main.pointer_dereference.4] line 39 dereference failure: dead object in *left_val: SUCCESS
-[main.pointer_dereference.5] line 39 dereference failure: pointer outside object bounds in *left_val: SUCCESS
-[main.pointer_dereference.6] line 39 dereference failure: invalid integer address in *left_val: SUCCESS
-[main.pointer_arithmetic.1] line 44 pointer arithmetic: dead object in (unsigned char *)&var_17 + 0: SUCCESS
-[main.pointer_dereference.7] line 44 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_17 + 0)): SUCCESS
-[main.assertion.1] file /home/runner/work/rmc/rmc/src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs line 19 a panicking function core::panicking::assert_failed is invoked: SUCCESS
-
-** 1 of 14 failed (2 iterations)
-VERIFICATION FAILED
+error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/The` and `Unstable`)
 
             </xmp>
           </div><!-- class="output-box" -->
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-edcc3d60-e664-4222-b531-4db1c3741cb6">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-edcc3d60-e664-4222-b531-4db1c3741cb6">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does RMC support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "rmc-rustc" "--edition" "2015" "--out-dir" "build/tmp" "src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-2ac10634-ee08-41ca-ac52-233884b9d0d3">
+      
+      <div class="in-progress">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-2ac10634-ee08-41ca-ac52-233884b9d0d3">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Can RMC reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "rmc" "src/test/bookrunner/books/The Unstable Book/Library Features/llvm_asm/91.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+
+          
+
+
+          
+
+
           
 
           

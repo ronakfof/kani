@@ -505,9 +505,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: success</li>
-      <li>2022-01-07T01:09:15Z</li>
-      <li>7c3c781f-445d-4d40-a906-3053b02a755a</li>
+      <li>Pipeline status: fail</li>
+      <li>2022-01-07T22:57:42Z</li>
+      <li>ce7f8866-2cbb-423c-9516-79eba68608d2</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,15 +527,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c6189b7c-9c63-4bbd-ae00-a8be0f150ecb">
+              <a href="#job-2d1cc0d8-b74a-471b-8783-777169354bd6">
               
               Is this valid Rust code?
               
@@ -555,15 +557,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-aa05c10f-454e-47b1-a6a6-73eed2b29841">
+              <a href="#job-0285876d-4577-4f18-8f70-d90ee3d9b836">
               
               Does RMC support all the Rust features used in it?
               
@@ -583,15 +587,17 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-tick">
-                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                <svg height="16px" width="16px" class="status-icon-in-progress">
+                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
+                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
+                  <circle cx="8" cy="8" r="7"></circle>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f438fd1b-faa5-4df9-aaaa-b068b14be230">
+              <a href="#job-4164e279-87bf-4363-90da-9293a636d16d">
               
               Can RMC reason about it?
               
@@ -619,15 +625,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c6189b7c-9c63-4bbd-ae00-a8be0f150ecb">
+    <div class="command-table" id="job-2d1cc0d8-b74a-471b-8783-777169354bd6">
       
-      <div class="success">
+      <div class="fail">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c6189b7c-9c63-4bbd-ae00-a8be0f150ecb">#</a>
+                <a href="#job-2d1cc0d8-b74a-471b-8783-777169354bd6">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -649,7 +655,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                0
+                101
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -681,7 +687,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-07T01:14:32Z
+                2022-01-07T23:01:20Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -689,14 +695,14 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-07T01:14:32Z
+                2022-01-07T23:01:20Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              yes
+              no
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -711,6 +717,13 @@ a:visited:active {
 
           
 
+          
+          <div class="output-box"><xmp>stderr:
+            
+error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/The` and `Rustonomicon/Uninitialized`)
+
+            </xmp>
+          </div><!-- class="output-box" -->
           
 
         </div><!-- class="command-content" -->
@@ -727,15 +740,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-aa05c10f-454e-47b1-a6a6-73eed2b29841">
+    <div class="command-table" id="job-0285876d-4577-4f18-8f70-d90ee3d9b836">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-aa05c10f-454e-47b1-a6a6-73eed2b29841">#</a>
+                <a href="#job-0285876d-4577-4f18-8f70-d90ee3d9b836">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -752,63 +765,6 @@ a:visited:active {
             </p>
           </div><!-- class="command-invocation" -->
 
-          
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                10
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:14:32Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:14:33Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
           
 
           
@@ -835,15 +791,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f438fd1b-faa5-4df9-aaaa-b068b14be230">
+    <div class="command-table" id="job-4164e279-87bf-4363-90da-9293a636d16d">
       
-      <div class="success">
+      <div class="in-progress">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f438fd1b-faa5-4df9-aaaa-b068b14be230">#</a>
+                <a href="#job-4164e279-87bf-4363-90da-9293a636d16d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -861,63 +817,6 @@ a:visited:active {
           </div><!-- class="command-invocation" -->
 
           
-          <div class="command-stats-table">
-            <div class="command-stats-row">
-              <p>Command return code:
-              <span class="value">
-                0
-              </span></p>
-              <p>OK returns:
-              <span class="value">
-                ['0']
-              </span></p>
-              <p>Ignored returns:
-              <span class="value">
-                None
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Timeout:
-              <span class="value">
-                60
-              </span></p>
-              <p>Timeout ok:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout ignored:
-              <span class="value">
-                False
-              </span></p>
-              <p>Timeout reached:
-              <span class="value">
-                False
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Start time:
-              <span class="value">
-                2022-01-07T01:14:33Z
-              </span></p>
-              <p>Duration:
-              <span class="value">
-                01s
-              </span></p>
-              <p>End time:
-              <span class="value">
-                2022-01-07T01:14:34Z
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-            <div class="command-stats-row">
-              <p>Command successful:
-              <span class="value">
-              
-              yes
-              
-              </span></p>
-            </div><!-- class="command-stats-row" -->
-          </div><!-- class="command-stats-table" -->
-          
 
           
 
@@ -925,52 +824,6 @@ a:visited:active {
           
 
 
-          
-          <div class="output-box"><xmp>stdout:
-            
-CBMC version 5.43.0 (cbmc-5.43.0) 64-bit x86_64 linux
-Reading GOTO program from file
-Reading: src/test/bookrunner/books/The Rustonomicon/Uninitialized Memory/Unchecked/141.goto
-Generating GOTO Program
-Adding CPROVER library (x86_64)
-Removal of function pointers and virtual functions
-Generic Property Instrumentation
-Running with 16 object bits, 48 offset bits (user-specified)
-Starting Bounded Model Checking
-Runtime Symex: 0.00320884s
-size of program expression: 138 steps
-simple slicing removed 28 assignments
-Generated 8 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 2.27e-05s
-Passing problem to propositional reduction
-converting SSA
-Runtime Convert SSA: 0.000541307s
-Running propositional reduction
-Post-processing
-Runtime Post-process: 1.43e-05s
-Solving with MiniSAT 2.2.1 with simplifier
-775 variables, 130 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 3.62e-05s
-Runtime decision procedure: 0.000631608s
-
-** Results:
-[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_9962361622510755514") (MIR type Closure(DefId(1:9084 ~ std[c3c1]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
-[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
-/home/runner/work/rmc/rmc/library/core/src/ptr/mut_ptr.rs function std::ptr::mut_ptr::<impl *mut T>::write
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.1] line 1066 dereference failure: pointer NULL in *var_3: SUCCESS
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.2] line 1066 dereference failure: pointer invalid in *var_3: SUCCESS
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.3] line 1066 dereference failure: deallocated dynamic object in *var_3: SUCCESS
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.4] line 1066 dereference failure: dead object in *var_3: SUCCESS
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.5] line 1066 dereference failure: pointer outside object bounds in *var_3: SUCCESS
-[std::ptr::mut_ptr::<impl *mut T>::write.pointer_dereference.6] line 1066 dereference failure: invalid integer address in *var_3: SUCCESS
-
-** 0 of 8 failed (1 iterations)
-VERIFICATION SUCCESSFUL
-
-            </xmp>
-          </div><!-- class="output-box" -->
           
 
           
