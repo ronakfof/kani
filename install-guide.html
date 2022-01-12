@@ -153,7 +153,7 @@
 <p>RMC must currently be built from source.</p>
 <p>In general, the following dependencies are required:</p>
 <ol>
-<li>The dependencies needed to built <code>rustc</code>. RMC is a fork of the Rust compiler, and so we have the same minimum requirements.</li>
+<li>Cargo installed via rustup</li>
 <li><a href="https://github.com/diffblue/cbmc">CBMC</a> (&gt;= 5.43.0)</li>
 <li><a href="https://github.com/awslabs/aws-viewer-for-cbmc">CBMC Viewer</a> (&gt;= 2.6)</li>
 </ol>
@@ -189,9 +189,9 @@ git submodule update --init
     --set=rust.deny-warnings=false
 </code></pre>
 <p><strong>NOTE: If you skip the above (<code>llvm.download-ci-llvm=true</code> specifically), builds may take a long time as all of LLVM would need to be built from scratch.</strong></p>
-<p>Then build RMC and its library:</p>
-<pre><code>./x.py build -i --stage 1 library/std
-./scripts/setup/build_rmc_lib.sh
+<p>Then build rmc-compiler executable:</p>
+<pre><code>cd src/rmc-compiler
+cargo build
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>
 <pre><code>./scripts/rmc-regression.sh

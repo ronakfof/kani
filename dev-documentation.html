@@ -152,14 +152,8 @@
                         <h1 id="rmc-developer-documentation"><a class="header" href="#rmc-developer-documentation">RMC developer documentation</a></h1>
 <h2 id="build-command-cheat-sheet"><a class="header" href="#build-command-cheat-sheet">Build command cheat sheet</a></h2>
 <pre><code class="language-bash"># Normal build
-./x.py build -i --stage 1 library/std
-</code></pre>
-<pre><code class="language-bash"># Once built successfully once, do a faster rebuild
-./x.py build -i --stage 1 library/std --keep-stage 1
-</code></pre>
-<p>(<a href="https://rustc-dev-guide.rust-lang.org/building/suggested.html#incremental-builds-with---keep-stage"><code>--keep-stage</code> comes with caveats</a>. Know that it may cause spurious build failures.)</p>
-<pre><code class="language-bash"># Build rmc crate
-./scripts/setup/build_rmc_lib.sh
+cd src/rmc-compiler
+cargo build
 </code></pre>
 <pre><code class="language-bash"># Full regression suite
 ./scripts/rmc-regression.sh
@@ -168,7 +162,7 @@
 rm -r build/x86_64-unknown-linux-gnu/test/
 </code></pre>
 <pre><code class="language-bash"># Test suite run (to run a specific suite from src/test/, just remove the others)
-./x.py test -i --stage 1 rmc firecracker prusti smack expected cargo-rmc rmc-docs
+COMPILETEST_FORCE_STAGE0=1 ./x.py test -i --stage 0 rmc firecracker prusti smack expected cargo-rmc rmc-docs
 </code></pre>
 <pre><code class="language-bash"># Book runner run
 ./scripts/setup/install_bookrunner_deps.sh
@@ -179,10 +173,11 @@ cd rmc-docs
 ./build-docs.sh
 </code></pre>
 <h3 id="resolving-development-issues"><a class="header" href="#resolving-development-issues">Resolving development issues</a></h3>
-<pre><code class="language-bash"># &quot;error[E0514]: found crate `std` compiled by an incompatible version of rustc&quot;
-# or similar error? Clean build RMC:
-rm -rf target build
-./x.py build -i --stage 1 library/std
+<pre><code class="language-bash"># Error &quot;'rustc' panicked at 'failed to lookup `SourceFile` in new context'&quot;
+# or similar error? Clean rmc-compiler build:
+cd src/rmc-compiler
+cargo clean
+cargo build
 </code></pre>
 <h2 id="git-command-cheat-sheet"><a class="header" href="#git-command-cheat-sheet">Git command cheat sheet</a></h2>
 <p>RMC follows the &quot;squash and merge pull request&quot; pattern.
@@ -207,7 +202,8 @@ git submodule update --init
 git switch main
 git pull origin
 git submodule update --init
-./x.py build -i --stage 1 library/std
+cd src/rmc-compiler
+cargo build
 </code></pre>
 <pre><code class="language-bash"># Need to update local branch (e.g. for an open pull request?)
 git fetch origin
