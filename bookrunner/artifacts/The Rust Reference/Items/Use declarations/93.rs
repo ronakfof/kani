@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 #![allow(unused_imports)]
 use std::path::{self, Path, PathBuf};  // good: std is a crate name

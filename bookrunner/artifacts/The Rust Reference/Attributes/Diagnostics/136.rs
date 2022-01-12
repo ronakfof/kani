@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // set the entire `pedantic` clippy lint group to warn
 #![warn(clippy::pedantic)]

@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 fn main() {
 struct A { f1: String, f2: String, f3: String }

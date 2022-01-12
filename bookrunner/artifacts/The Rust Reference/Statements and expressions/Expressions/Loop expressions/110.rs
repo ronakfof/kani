@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 fn main() {
 let mut vals = vec![2, 3, 1, 2, 2];

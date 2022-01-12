@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // bad: the block's type is i32, not ()
 // Error: expected `()` because of default return type

@@ -1,5 +1,5 @@
 // rmc-check-fail
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 // This trait is object-safe, but these methods cannot be dispatched on a trait object.
 fn main() {

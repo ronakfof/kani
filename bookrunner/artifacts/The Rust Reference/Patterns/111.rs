@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 fn main() {
 let (x, y) = (1, 2);               // "(x, y)" is an irrefutable pattern

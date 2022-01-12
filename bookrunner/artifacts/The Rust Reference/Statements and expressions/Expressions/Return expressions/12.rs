@@ -1,4 +1,4 @@
-// compile-flags: --edition 2018
+// compile-flags: --edition 2021
 #![allow(unused)]
 fn main() {
 fn max(a: i32, b: i32) -> i32 {
