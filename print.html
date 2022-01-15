@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -509,7 +509,7 @@ Let's codify this fact about our function by asserting some reasonable bound on 
 <p>Now we have stated our previously implicit expectation: this function should never be called with inputs that are too big.
 But if we attempt to verify this, we get a problem:</p>
 <pre><code>** Results:
-./tests/final-form.rs function estimate_size
+./src/final_form.rs function estimate_size
 [estimate_size.assertion.1] line 3 assertion failed: x &lt; 4096: FAILURE
 
 ** 1 of 1 failed (2 iterations)
@@ -521,20 +521,24 @@ But we know that, that was our intention.</p>
 <p>This is the purpose of <em>proof harnesses</em>.
 Much like property testing (which would also find this assertion failure as a bug), we need to set up our preconditions, call the function in question, then assert our post conditions.
 Here's a revised example of the proof harness, one that now succeeds:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
-#[no_mangle]
-fn main() {
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[cfg(rmc)]
+#[rmc::proof]
+fn verify_success() {
     let x: u32 = rmc::any();
     rmc::assume(x &lt; 4096);
     let y = estimate_size(x);
     assert!(y &lt; 10);
 }
-</code></pre></pre>
+<span class="boring">}
+</span></code></pre></pre>
 <p>But now we must wonder if we've really fully tested our function.
 What if we revise the function, but forget to update the assumption in our proof harness to cover the new range of inputs?</p>
 <p>Fortunately, RMC is able to report a coverage metric for each proof harness.
 Try running:</p>
-<pre><code>rmc --visualize tests/final-form.rs
+<pre><code>rmc --visualize src/final_form.rs --function verify_success
 open report/html/index.html
 </code></pre>
 <p>The beginning of the report includes coverage information.
@@ -599,17 +603,21 @@ fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
 test tests::doesnt_crash ... ok
 </code></pre>
 <p>But we're able to check this unsafe code with RMC:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
-#[no_mangle]
-fn main() {
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[cfg(rmc)]
+#[rmc::proof]
+fn bound_check() {
     let size: usize = rmc::any();
     rmc::assume(size &lt; 4096);
     let index: usize = rmc::any();
     let array: Vec&lt;u32&gt; = vec![0; size];
     get_wrapped(index, &amp;array);
 }
-</code></pre></pre>
-<pre><code># rmc tests/bounds-check.rs
+<span class="boring">}
+</span></code></pre></pre>
+<pre><code># rmc src/bounds_check.rs
 [...]
 ** 1 of 468 failed (2 iterations)
 VERIFICATION FAILED
@@ -618,7 +626,7 @@ VERIFICATION FAILED
 This is a result of using the standard library <code>Vec</code> implementation, which means our harness actually used quite a bit of code, short as it looks.
 RMC is inserting a lot more checks than appear as asserts in our code, so the output can be large.
 Let's narrow that output down a bit:</p>
-<pre><code># rmc tests/bounds-check.rs | grep FAIL
+<pre><code># rmc src/bounds_check.rs | grep FAIL
 [get_wrapped.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *var_5: FAILURE
 VERIFICATION FAILED
 </code></pre>
@@ -636,7 +644,7 @@ Any unsafe code that manipulates pointers will, as we see here, raise failures i
 <details>
 <summary>Click to see explanation for exercise 1</summary>
 <p>Having switched back to the safe indexing operation, RMC reports two failures instead of just one:</p>
-<pre><code># rmc tests/bounds-check.rs | grep FAIL
+<pre><code># rmc src/bounds_check.rs | grep FAIL
 [get_wrapped.assertion.3] line 9 index out of bounds: the length is move _12 but the index is _5: FAILURE
 [get_wrapped.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in a.data[var_5]: FAILURE
 VERIFICATION FAILED
@@ -660,19 +668,19 @@ We can use this to find out what example values lead to a problem.
 In this case, where we just have a couple of <code>rmc::any</code> values in our proof harness, we can learn a lot just by seeing what these are.
 In this trace we find (and the values you get may be different):</li>
 </ol>
-<pre><code>Step 23: Function main, File tests/bounds-check.rs, Line 43
+<pre><code>Step 23: Function bound_check, File src/bounds_check.rs, Line 43
 let size: usize = rmc::any();
 size = 0ul
 
-Step 27: Function main, File tests/bounds-check.rs, Line 45
+Step 27: Function bound_check, File src/bounds_check.rs, Line 45
 let index: usize = rmc::any();
 index = 0ul
 
-Step 36: Function main, File tests/bounds-check.rs, Line 43
+Step 36: Function bound_check, File src/bounds_check.rs, Line 43
 let size: usize = rmc::any();
 size = 2464ul
 
-Step 39: Function main, File tests/bounds-check.rs, Line 45
+Step 39: Function main, File src/bounds_check.rs, Line 45
 let index: usize = rmc::any();
 index = 2463ul
 </code></pre>
@@ -702,7 +710,7 @@ RMC will spot this not as a bound error, but as a mathematical error: on an empt
 <li>Exercise: Try to run RMC on the above, to see what this kind of failure looks like.</li>
 </ol>
 <p>Rust also performs runtime safety checks for integer overflows, much like it does for bounds checks.
-Consider this code (from <code>tests/overflow.rs</code>):</p>
+Consider this code (from <code>src/overflow.rs</code>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -714,10 +722,10 @@ Consider this code (from <code>tests/overflow.rs</code>):</p>
 <p>A trivial function, but if we write a property test for it, we immediately find inputs where it fails, thanks to Rust's dynamic checks.
 RMC will find these failures as well.
 Here's the output from RMC:</p>
-<pre><code># rmc tests/overflow.rs
+<pre><code># rmc src/overflow.rs
 [...]
 ** Results:
-./tests/overflow.rs function simple_addition
+./src/overflow.rs function simple_addition
 [simple_addition.assertion.1] line 6 attempt to compute `move _3 + move _4`, which would overflow: FAILURE
 [simple_addition.overflow.1] line 6 arithmetic overflow on unsigned + in var_3 + var_4: FAILURE
 
@@ -733,7 +741,7 @@ As a result, this currently still fails in RMC.</p>
 </blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
 <p>One of the classic subtle bugs that persisted in many implementations for a very long time is finding the midpoint in quick sort.
-This often naively looks like this (from <code>tests/overflow-quicksort.rs</code>):</p>
+This often naively looks like this (from <code>src/overflow_quicksort.rs</code>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -934,6 +942,150 @@ The label is revealed by the output of <code>--show-loops</code> as we saw above
 <li>We saw how to put a practical bound on problem size in our proof harness.</li>
 <li>We saw how to pick an unwinding size large enough to successfully verify that bounded proof.</li>
 </ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nondeterministic-variables"><a class="header" href="#nondeterministic-variables">Nondeterministic variables</a></h1>
+<p>RMC is able to reason about programs and their execution paths by allowing users to assign nondeterministic (i.e., symbolic) values to  certain variables.
+Since RMC is a bit-level model checker, this means that RMC considers that an unconstrained nondeterministic value represents all the possible bit-value combinations assigned to the variable's memory contents.</p>
+<p>As a Rust developer, this sounds a lot like the <code>mem::transmute</code> operation, which is highly <code>unsafe</code>.
+And that's correct.</p>
+<p>In this tutorial, we will show how to safely use nondeterministic assignments to generate valid symbolic variables that respect Rust's type invariants, as well as show how you can specify invariants for types that you define enabling creation of safe nondeterministic variables for those types.</p>
+<h2 id="safe-nondeterministic-variables"><a class="header" href="#safe-nondeterministic-variables">Safe nondeterministic variables</a></h2>
+<p>Let's say you are developing an inventory management tool, and you would like to verify that your API to manage items is correct.
+Here is a simple implementation of this API:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>use std::num::NonZeroU32;
+use vector_map::VecMap;
+
+type ProductId = u32;
+
+pub struct Inventory {
+    inner: VecMap&lt;ProductId, NonZeroU32&gt;,
+}
+
+impl Inventory {
+    pub fn update(&amp;mut self, id: ProductId, new_quantity: NonZeroU32) {
+        self.inner.insert(id, new_quantity);
+    }
+
+    pub fn get(&amp;self, id: &amp;ProductId) -&gt; Option&lt;NonZeroU32&gt; {
+        self.inner.get(id).cloned()
+    }
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>Now we would like to verify that no matter which combination of <code>id</code> and <code>quantity</code>, that a call to <code>Inventory::update()</code> followed by a call to <code>Inventory::get()</code> using the same id returns some value that is equal to the one we inserted:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    #[rmc::proof]
+    pub fn safe_update() {
+        // Create inventory variable.
+        let mut inventory = Inventory { inner: VecMap::new() };
+
+        // Create non-deterministic variables for id and quantity.
+        let id: ProductId = rmc::any();
+        let quantity: NonZeroU32 = rmc::any();
+        assert!(quantity.get() != 0, &quot;NonZeroU32 is internally a u32 but it should never be 0.&quot;);
+
+        // Update the inventory and check the result.
+        inventory.update(id.clone(), quantity);
+        assert!(inventory.get(&amp;id).unwrap() == quantity);
+    }
+<span class="boring">}
+</span></code></pre></pre>
+<p>In this harness, we use<code>rmc::any()</code> to generate <code>ProductId</code> and the new quantity.
+<code>rmc::any()</code> is a <strong>safe</strong> API function, and it represents only valid values.</p>
+<p>If we run this example, RMC verification will succeed, including the assertion that shows that the underlying <code>u32</code> variable  used to represent <code>NonZeroU32</code> cannot be zero, per its type invariant:</p>
+<p>You can try it out by running the example under
+<a href="https://github.com/model-checking/rmc/tree/main/rmc-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<pre><code>cargo rmc --function safe_update
+</code></pre>
+<h2 id="unsafe-nondeterministic-variables"><a class="header" href="#unsafe-nondeterministic-variables">Unsafe nondeterministic variables</a></h2>
+<p>RMC also includes an <strong>unsafe</strong> method to generate unconstrained nondeterministic variables which do not take type invariants into consideration.
+As any unsafe method in rust, users must be careful when using unsafe methods and ensure the right guardrails are put in place to avoid undesirable behavior.</p>
+<p>That said, there may be cases where you want to verify your code taking into consideration that some inputs may contain invalid data.</p>
+<p>Let's see what happens if we modify our verification harness to use the unsafe method <code>rmc::any_raw()</code> to generate the updated value.</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    #[rmc::proof]
+    pub fn unsafe_update() {
+        // Create inventory variable.
+        let mut inventory = Inventory { inner: VecMap::new() };
+
+        // Create non-deterministic variables for id and quantity with unsafe rmc::any_raw().
+        let id: ProductId = rmc::any();
+        let quantity: NonZeroU32 = unsafe { rmc::any_raw() };
+
+        // The assert bellow would fail if we comment it out.
+        // assert!(id.get() != 0, &quot;NonZeroU32 is internally a u32 but it should never be 0.&quot;);
+
+        // Update the inventory and check the result.
+        inventory.update(id.clone(), quantity);
+        assert!(inventory.get(&amp;id).unwrap() == quantity); // This unwrap will panic.
+    }
+<span class="boring">}
+</span></code></pre></pre>
+<p>We commented out the assertion that the underlying <code>u32</code> variable cannot be <code>0</code>, since this no longer holds.
+The RMC verification will now fail showing that <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
+<p>This is an interesting issue that emerges from how <code>rustc</code> optimizes the memory layout of <code>Option&lt;NonZeroU32&gt;</code>.
+The compiler is able to represent <code>Option&lt;NonZeroU32&gt;</code> using <code>32</code> bits by using the value <code>0</code> to represent <code>None</code>.</p>
+<p>You can try it out by running the example under <a href="https://github.com/model-checking/rmc/tree/main/rmc-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<pre><code>cargo rmc --function unsafe_update
+</code></pre>
+<h2 id="safe-nondeterministic-variables-for-custom-types"><a class="header" href="#safe-nondeterministic-variables-for-custom-types">Safe nondeterministic variables for custom types</a></h2>
+<p>Now you would like to add a new structure to your library that allow users to represent a review rating, which can go from 0 to 5 stars.
+Let's say you add the following implementation:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[derive(Copy, Clone)]
+pub struct Rating {
+    value: u8,
+}
+
+impl Rating {
+    pub fn from(value: u8) -&gt; Option&lt;Rating&gt; {
+        if value &lt;= 5 { Some(Rating { value }) } else { None }
+    }
+
+    pub fn get(&amp;self) -&gt; u8 {
+        self.value
+    }
+}
+
+<span class="boring">}
+</span></code></pre></pre>
+<p>The easiest way to allow users to create nondeterministic variables of the Rating type which represents values from 0-5 stars is by implementing the <code>rmc::Invariant</code> trait.</p>
+<p>The implementation only requires you to define a check to your structure that returns whether its current value is valid or not.
+In our case, we have the following implementation:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    unsafe impl rmc::Invariant for Rating {
+        fn is_valid(&amp;self) -&gt; bool {
+            self.value &lt;= 5
+        }
+    }
+<span class="boring">}
+</span></code></pre></pre>
+<p>Now you can use <code>rmc::any()</code> to create valid nondeterministic variables of the Rating type as shown in this harness:</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    #[rmc::proof]
+    pub fn check_rating() {
+        let rating = rmc::any::&lt;Rating&gt;();
+        assert!(rating.get() &lt;= 5);
+        assert!(Rating::from(rating.get()).is_some());
+    }
+<span class="boring">}
+</span></code></pre></pre>
+<p>You can try it out by running the example under
+<a href="https://github.com/model-checking/rmc/tree/main/rmc-docs/src/tutorial/arbitrary-variables/"><code>rmc-docs/src/tutorial/arbitrary-variables</code></a>:</p>
+<pre><code>cargo rmc --function check_rating
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="where-to-start-on-real-code"><a class="header" href="#where-to-start-on-real-code">Where to start on real code</a></h1>
 <p>It can be daunting to find the right place to start writing proofs for a real-world project.
 This section will try to help you get over that hurdle.</p>

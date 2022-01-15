@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html" class="active"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.4.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html" class="active"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -195,17 +195,21 @@ fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
 test tests::doesnt_crash ... ok
 </code></pre>
 <p>But we're able to check this unsafe code with RMC:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
-#[no_mangle]
-fn main() {
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[cfg(rmc)]
+#[rmc::proof]
+fn bound_check() {
     let size: usize = rmc::any();
     rmc::assume(size &lt; 4096);
     let index: usize = rmc::any();
     let array: Vec&lt;u32&gt; = vec![0; size];
     get_wrapped(index, &amp;array);
 }
-</code></pre></pre>
-<pre><code># rmc tests/bounds-check.rs
+<span class="boring">}
+</span></code></pre></pre>
+<pre><code># rmc src/bounds_check.rs
 [...]
 ** 1 of 468 failed (2 iterations)
 VERIFICATION FAILED
@@ -214,7 +218,7 @@ VERIFICATION FAILED
 This is a result of using the standard library <code>Vec</code> implementation, which means our harness actually used quite a bit of code, short as it looks.
 RMC is inserting a lot more checks than appear as asserts in our code, so the output can be large.
 Let's narrow that output down a bit:</p>
-<pre><code># rmc tests/bounds-check.rs | grep FAIL
+<pre><code># rmc src/bounds_check.rs | grep FAIL
 [get_wrapped.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *var_5: FAILURE
 VERIFICATION FAILED
 </code></pre>
@@ -232,7 +236,7 @@ Any unsafe code that manipulates pointers will, as we see here, raise failures i
 <details>
 <summary>Click to see explanation for exercise 1</summary>
 <p>Having switched back to the safe indexing operation, RMC reports two failures instead of just one:</p>
-<pre><code># rmc tests/bounds-check.rs | grep FAIL
+<pre><code># rmc src/bounds_check.rs | grep FAIL
 [get_wrapped.assertion.3] line 9 index out of bounds: the length is move _12 but the index is _5: FAILURE
 [get_wrapped.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in a.data[var_5]: FAILURE
 VERIFICATION FAILED
@@ -256,19 +260,19 @@ We can use this to find out what example values lead to a problem.
 In this case, where we just have a couple of <code>rmc::any</code> values in our proof harness, we can learn a lot just by seeing what these are.
 In this trace we find (and the values you get may be different):</li>
 </ol>
-<pre><code>Step 23: Function main, File tests/bounds-check.rs, Line 43
+<pre><code>Step 23: Function bound_check, File src/bounds_check.rs, Line 43
 let size: usize = rmc::any();
 size = 0ul
 
-Step 27: Function main, File tests/bounds-check.rs, Line 45
+Step 27: Function bound_check, File src/bounds_check.rs, Line 45
 let index: usize = rmc::any();
 index = 0ul
 
-Step 36: Function main, File tests/bounds-check.rs, Line 43
+Step 36: Function bound_check, File src/bounds_check.rs, Line 43
 let size: usize = rmc::any();
 size = 2464ul
 
-Step 39: Function main, File tests/bounds-check.rs, Line 45
+Step 39: Function main, File src/bounds_check.rs, Line 45
 let index: usize = rmc::any();
 index = 2463ul
 </code></pre>
@@ -298,7 +302,7 @@ RMC will spot this not as a bound error, but as a mathematical error: on an empt
 <li>Exercise: Try to run RMC on the above, to see what this kind of failure looks like.</li>
 </ol>
 <p>Rust also performs runtime safety checks for integer overflows, much like it does for bounds checks.
-Consider this code (from <code>tests/overflow.rs</code>):</p>
+Consider this code (from <code>src/overflow.rs</code>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -310,10 +314,10 @@ Consider this code (from <code>tests/overflow.rs</code>):</p>
 <p>A trivial function, but if we write a property test for it, we immediately find inputs where it fails, thanks to Rust's dynamic checks.
 RMC will find these failures as well.
 Here's the output from RMC:</p>
-<pre><code># rmc tests/overflow.rs
+<pre><code># rmc src/overflow.rs
 [...]
 ** Results:
-./tests/overflow.rs function simple_addition
+./src/overflow.rs function simple_addition
 [simple_addition.assertion.1] line 6 attempt to compute `move _3 + move _4`, which would overflow: FAILURE
 [simple_addition.overflow.1] line 6 arithmetic overflow on unsigned + in var_3 + var_4: FAILURE
 
@@ -329,7 +333,7 @@ As a result, this currently still fails in RMC.</p>
 </blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
 <p>One of the classic subtle bugs that persisted in many implementations for a very long time is finding the midpoint in quick sort.
-This often naively looks like this (from <code>tests/overflow-quicksort.rs</code>):</p>
+This often naively looks like this (from <code>src/overflow_quicksort.rs</code>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
