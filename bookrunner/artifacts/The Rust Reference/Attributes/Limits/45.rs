@@ -1,4 +1,4 @@
-// rmc-codegen-fail
+// kani-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![type_length_limit = "4"]

@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 // The following examples show situations where it is not allowed to elide the

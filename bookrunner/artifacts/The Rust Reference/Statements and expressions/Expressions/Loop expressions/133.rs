@@ -1,5 +1,4 @@
 // compile-flags: --edition 2021
-// rmc-flags: --cbmc-args --unwind 4
 #![allow(unused)]
 fn main() {
 let v = &["apples", "cake", "coffee"];

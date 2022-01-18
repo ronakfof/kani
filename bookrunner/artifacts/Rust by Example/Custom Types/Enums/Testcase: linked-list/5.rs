@@ -1,5 +1,4 @@
 // compile-flags: --edition 2015
-// rmc-flags: --cbmc-args --unwind 3
 #![allow(unused)]
 use crate::List::*;
 

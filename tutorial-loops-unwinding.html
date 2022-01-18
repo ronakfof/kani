@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Loops, unwinding, and bounds - The Rust Model Checker</title>
+        <title>Loops, unwinding, and bounds - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html" class="active"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html" class="active"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,7 +111,7 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/tutorial-loops-unwinding.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/tutorial-loops-unwinding.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -168,64 +168,64 @@
 </span></code></pre></pre>
 <p>This code has an off-by-one error that only occurs on the last iteration of the loop (when called with an input that will trigger it).
 We can try to find this bug with a proof harness like this:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(rmc)]
+<pre><pre class="playground"><code class="language-rust">#[cfg(kani)]
 #[no_mangle]
 fn main() {
     const LIMIT: usize = 10;
     let mut buffer: [u8; LIMIT] = [1; LIMIT];
 
-    let length = rmc::any();
-    rmc::assume(length &lt;= LIMIT);
+    let length = kani::any();
+    kani::assume(length &lt;= LIMIT);
 
     initialize_prefix(length, &amp;mut buffer);
 }
 </code></pre></pre>
-<p>When we run RMC on this, we run into an unfortunate result: non-termination.
+<p>When we run Kani on this, we run into an unfortunate result: non-termination.
 This non-termination is caused by the model checker trying to unroll the loop an unbounded number of times.</p>
 <blockquote>
 <p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/rmc/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
 You are supposed to see some log lines that might give some clue that an infinite loop is occurring.
-If RMC doesn't terminate, it's almost always the problem that this section is covering, however.</p>
+If Kani doesn't terminate, it's almost always the problem that this section is covering, however.</p>
 </blockquote>
 <p>To verify programs like this, we really need to do two things:</p>
 <ol>
 <li>Create an upper bound on the size of the problem.
 We've actually already done part of this: our proof harness seems to be trying to set an upper limit of 10.</li>
-<li>Tell RMC about this limit, if it's not able to figure it out on its own.</li>
+<li>Tell Kani about this limit, if it's not able to figure it out on its own.</li>
 </ol>
 <blockquote>
-<p><strong>NOTE:</strong> In the future, RMC may eventually support specifying <em>loop invariants</em>, which allow us to do away with fixed upper bounds like this.
+<p><strong>NOTE:</strong> In the future, Kani may eventually support specifying <em>loop invariants</em>, which allow us to do away with fixed upper bounds like this.
 That support is not ready yet, however.</p>
 </blockquote>
 <p>Bounding proofs like this means we may no longer be proving as much as we originally hoped.
 Who's to say, if we prove everything works up to size 10, that there isn't a novel bug lurking, expressible only with problems of size 11+?
 But, let's get back to the practical issue at hand.</p>
-<p>We can &quot;make progress&quot; in our work by giving RMC a global bound on the problem size using the <code>--unwind &lt;bound&gt;</code> flag.
+<p>We can &quot;make progress&quot; in our work by giving Kani a global bound on the problem size using the <code>--unwind &lt;bound&gt;</code> flag.
 This flag puts a fixed upper bound on loop unrolling.
-RMC will automatically generate verification conditions that help us understand if that bound isn't enough.
+Kani will automatically generate verification conditions that help us understand if that bound isn't enough.
 Let's start with the &quot;sledge hammer&quot; by dropping all the way down to size 1:</p>
-<pre><code># rmc src/lib.rs --cbmc-args --unwind 1
+<pre><code># kani src/lib.rs --cbmc-args --unwind 1
 [.unwind.0] unwinding assertion loop 0: FAILURE
 VERIFICATION FAILED
 </code></pre>
 <blockquote>
 <p><strong>NOTE:</strong> <code>--unwind</code> is a flag to the underlying model checker, CBMC, and so it needs to appear after <code>--cbmc-args</code>.
-This flag <code>--cbmc-args</code> &quot;switches modes&quot; in the command line from RMC flags to CBMC flags, so we place all RMC flags and arguments before it.</p>
+This flag <code>--cbmc-args</code> &quot;switches modes&quot; in the command line from Kani flags to CBMC flags, so we place all Kani flags and arguments before it.</p>
 </blockquote>
 <p>This output is showing us two things:</p>
 <ol>
-<li>RMC tells us we haven't unwound enough. This is the failure of the &quot;unwinding assertion.&quot;</li>
+<li>Kani tells us we haven't unwound enough. This is the failure of the &quot;unwinding assertion.&quot;</li>
 <li>We aren't seeing other failures if we only unroll the loop once.
 The execution can't progress far enough to reveal the bug we're interested in (which actually only happens in the last iteration of the loop).</li>
 </ol>
 <p>Doing an initial <code>--unwind 1</code> is generally enough to force termination, but often too little to do any practical verification.</p>
 <p>We were clearly aiming at a size limit of 10 in our proof harness, so let's try a few things here:</p>
-<pre><code># rmc src/lib.rs --cbmc-args --unwind 10 | grep FAIL
+<pre><code># kani src/lib.rs --cbmc-args --unwind 10 | grep FAIL
 [.unwind.0] unwinding assertion loop 0: FAILURE
 VERIFICATION FAILED
 </code></pre>
 <p>A bound of 10 still isn't enough because we generally need to unwind one greater than the number of executed loop iterations:</p>
-<pre><code># rmc src/lib.rs --cbmc-args --unwind 11 | grep FAIL
+<pre><code># kani src/lib.rs --cbmc-args --unwind 11 | grep FAIL
 [initialize_prefix.unwind.0] line 11 unwinding assertion loop 0: FAILURE
 [initialize_prefix.assertion.2] line 12 index out of bounds: the length is move _20 but the index is _19: FAILURE
 [initialize_prefix.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in buffer.data[var_19]: FAILURE
@@ -233,14 +233,14 @@ VERIFICATION FAILED
 </code></pre>
 <p>We're still not seeing the unwinding assertion failure go away!
 This is because our error is really an off by one problem, we loop one too many times, so let's add one more:</p>
-<pre><code># rmc src/lib.rs --cbmc-args --unwind 12 | grep FAIL
+<pre><code># kani src/lib.rs --cbmc-args --unwind 12 | grep FAIL
 [initialize_prefix.assertion.2] line 12 index out of bounds: the length is move _20 but the index is _19: FAILURE
 [initialize_prefix.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in buffer.data[var_19]: FAILURE
 VERIFICATION FAILED
 </code></pre>
-<p>RMC is now sure we've unwound the loop enough to verify our proof harness, and now we're seeing just the bound checking failures from the off by one error.</p>
+<p>Kani is now sure we've unwound the loop enough to verify our proof harness, and now we're seeing just the bound checking failures from the off by one error.</p>
 <ol>
-<li>Exercise: Fix the off-by-one bounds error and get RMC to verify successfully.</li>
+<li>Exercise: Fix the off-by-one bounds error and get Kani to verify successfully.</li>
 <li>Exercise: After fixing the error, <code>--unwind 11</code> works. Why?</li>
 </ol>
 <h2 id="customizing-individual-loop-bounds"><a class="header" href="#customizing-individual-loop-bounds">Customizing individual loop bounds</a></h2>
@@ -252,11 +252,11 @@ Once you know which loop is the culprit, it can sometimes be helpful to provide 
 For example, we see 0.5s at unwinding 12, and 3s at unwinding 100.</li>
 </ol>
 <blockquote>
-<p><strong>NOTE:</strong> RMC does not yet support annotating code with unwinding bounds.
+<p><strong>NOTE:</strong> Kani does not yet support annotating code with unwinding bounds.
 What follows is a hacky way to make things happen, if you need it.</p>
 </blockquote>
 <p>In situations where you need to optimize solving time better, specific bounds for specific loops can be provided on the command line.</p>
-<pre><code># rmc src/lib.rs --cbmc-args --show-loops
+<pre><code># kani src/lib.rs --cbmc-args --show-loops
 [...]
 Loop _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:
   file ./src/lib.rs line 11 column 5 function initialize_prefix
@@ -268,15 +268,15 @@ Loop gen-repeat&lt;[u8; 10]::16806744624734428132&gt;.0:
 </code></pre>
 <p>This command shows us the mangled names of the loops involved.
 Then we can specify the bound for specific loops by name, from the command line:</p>
-<pre><code>rmc src/lib.rs --cbmc-args --unwindset _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:12
+<pre><code>kani src/lib.rs --cbmc-args --unwindset _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:12
 </code></pre>
 <p>The general format of the <code>--unwindset</code> option is: <code>label_1:bound_1,label_2:bound_2,...</code>.
 The label is revealed by the output of <code>--show-loops</code> as we saw above.</p>
 <h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
 <p>In this section:</p>
 <ol>
-<li>We saw RMC fail to terminate.</li>
-<li>We saw how <code>--unwind 1</code> can &quot;sledgehammer&quot; RMC into terminating, possibly with additional and/or missing failures.</li>
+<li>We saw Kani fail to terminate.</li>
+<li>We saw how <code>--unwind 1</code> can &quot;sledgehammer&quot; Kani into terminating, possibly with additional and/or missing failures.</li>
 <li>We saw how &quot;unwinding assertions&quot; can warn us that we've set the unwinding limit too low.</li>
 <li>We saw how to put a practical bound on problem size in our proof harness.</li>
 <li>We saw how to pick an unwinding size large enough to successfully verify that bounded proof.</li>

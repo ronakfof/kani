@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>RMC developer documentation - The Rust Model Checker</title>
+        <title>Kani developer documentation - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html" class="active"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html" class="active"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,7 +111,7 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/dev-documentation.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/dev-documentation.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -149,38 +149,38 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="rmc-developer-documentation"><a class="header" href="#rmc-developer-documentation">RMC developer documentation</a></h1>
+                        <h1 id="kani-developer-documentation"><a class="header" href="#kani-developer-documentation">Kani developer documentation</a></h1>
 <h2 id="build-command-cheat-sheet"><a class="header" href="#build-command-cheat-sheet">Build command cheat sheet</a></h2>
 <pre><code class="language-bash"># Normal build
-cd src/rmc-compiler
+cd src/kani-compiler
 cargo build
 </code></pre>
 <pre><code class="language-bash"># Full regression suite
-./scripts/rmc-regression.sh
+./scripts/kani-regression.sh
 </code></pre>
 <pre><code class="language-bash"># Delete regression test caches
 rm -r build/x86_64-unknown-linux-gnu/test/
 </code></pre>
 <pre><code class="language-bash"># Test suite run (to run a specific suite from src/test/, just remove the others)
-COMPILETEST_FORCE_STAGE0=1 ./x.py test -i --stage 0 rmc firecracker prusti smack expected cargo-rmc rmc-docs
+COMPILETEST_FORCE_STAGE0=1 ./x.py test -i --stage 0 kani firecracker prusti smack expected cargo-kani kani-docs
 </code></pre>
 <pre><code class="language-bash"># Book runner run
 ./scripts/setup/install_bookrunner_deps.sh
 ./x.py run -i --stage 1 bookrunner
 </code></pre>
 <pre><code class="language-bash"># Documentation build
-cd rmc-docs
+cd kani-docs
 ./build-docs.sh
 </code></pre>
 <h3 id="resolving-development-issues"><a class="header" href="#resolving-development-issues">Resolving development issues</a></h3>
 <pre><code class="language-bash"># Error &quot;'rustc' panicked at 'failed to lookup `SourceFile` in new context'&quot;
-# or similar error? Clean rmc-compiler build:
-cd src/rmc-compiler
+# or similar error? Clean kani-compiler build:
+cd src/kani-compiler
 cargo clean
 cargo build
 </code></pre>
 <h2 id="git-command-cheat-sheet"><a class="header" href="#git-command-cheat-sheet">Git command cheat sheet</a></h2>
-<p>RMC follows the &quot;squash and merge pull request&quot; pattern.
+<p>Kani follows the &quot;squash and merge pull request&quot; pattern.
 As a result, the &quot;main commit message&quot; will be the title of your pull request.
 The individual commit message bodies you commit during development will by default be a bulleted list in the squashed commit message body, but these are editable at merge time.
 So you don't have to worry about a series of &quot;oops typo fix&quot; messages while fixing up your pull request, these can be edited out of the final message when you click merge.</p>
@@ -191,7 +191,7 @@ git remote add fork git@github.com:${USER}/rmc.git
 git clean -xffd
 git submodule foreach --recursive git clean -xffd
 git submodule update --init
-# Don't forget to re-configure your RMC build:
+# Don't forget to re-configure your Kani build:
 ./configure \
     --enable-debug \
     --set=llvm.download-ci-llvm=true \
@@ -202,7 +202,7 @@ git submodule update --init
 git switch main
 git pull origin
 git submodule update --init
-cd src/rmc-compiler
+cd src/kani-compiler
 cargo build
 </code></pre>
 <pre><code class="language-bash"># Need to update local branch (e.g. for an open pull request?)
@@ -218,22 +218,22 @@ git switch pr/$ID
 <pre><code class="language-bash"># Search only git-tracked files
 git grep codegen_panic
 </code></pre>
-<pre><code class="language-bash"># See all commits that are part of RMC, not part of Rust
+<pre><code class="language-bash"># See all commits that are part of Kani, not part of Rust
 git log --graph --oneline origin/upstream-rustc..origin/main
 </code></pre>
-<pre><code class="language-bash"># See all files modified by RMC (compared to upstream Rust)
+<pre><code class="language-bash"># See all files modified by Kani (compared to upstream Rust)
 git diff --stat origin/upstream-rustc..origin/main
 </code></pre>
-<h2 id="rmc-command-cheat-sheet"><a class="header" href="#rmc-command-cheat-sheet">RMC command cheat sheet</a></h2>
-<p>These can help understand what RMC is generating or encountering on an example or test file:</p>
-<pre><code class="language-bash"># Enable `debug!` macro logging output when running RMC:
-rmc --debug file.rs
+<h2 id="kani-command-cheat-sheet"><a class="header" href="#kani-command-cheat-sheet">Kani command cheat sheet</a></h2>
+<p>These can help understand what Kani is generating or encountering on an example or test file:</p>
+<pre><code class="language-bash"># Enable `debug!` macro logging output when running Kani:
+kani --debug file.rs
 </code></pre>
 <pre><code class="language-bash"># Keep CBMC Symbol Table and Goto-C output (.json and .goto)
-rmc --keep-temps file.rs
+kani --keep-temps file.rs
 </code></pre>
 <pre><code class="language-bash"># Generate &quot;C code&quot; from CBMC IR (.c)
-rmc --gen-c file.rs
+kani --gen-c file.rs
 </code></pre>
 <h2 id="cbmc-command-cheat-sheet"><a class="header" href="#cbmc-command-cheat-sheet">CBMC command cheat sheet</a></h2>
 <pre><code class="language-bash"># See CBMC IR from a C file:
@@ -256,7 +256,7 @@ goto-instrument --dump-c file.out &gt; file.gen.c
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="rmc-testing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="kani-testing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -270,7 +270,7 @@ goto-instrument --dump-c file.out &gt; file.gen.c
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="rmc-testing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="kani-testing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

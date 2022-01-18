@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 // error[E0262]: invalid lifetime parameter name: `'static`

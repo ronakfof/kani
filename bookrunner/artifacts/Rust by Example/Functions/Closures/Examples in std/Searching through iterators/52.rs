@@ -1,5 +1,4 @@
 // compile-flags: --edition 2015
-// rmc-flags: --cbmc-args --unwind 7
 #![allow(unused)]
 fn main() {
     let vec = vec![1, 9, 3, 3, 13, 2];

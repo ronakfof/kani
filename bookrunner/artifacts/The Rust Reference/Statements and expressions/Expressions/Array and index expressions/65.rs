@@ -1,4 +1,4 @@
-// rmc-verify-fail
+// kani-verify-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 // lint is deny by default.

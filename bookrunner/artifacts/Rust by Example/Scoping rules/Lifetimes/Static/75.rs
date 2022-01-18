@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2015
 #![allow(unused)]
 use std::fmt::Debug;

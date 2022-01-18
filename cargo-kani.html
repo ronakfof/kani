@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>RMC on a single file - The Rust Model Checker</title>
+        <title>Kani on a package - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html" class="active"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html" class="active"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,7 +111,7 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/rmc-single-file.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/cargo-kani.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -149,57 +149,36 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="rmc-on-a-single-file"><a class="header" href="#rmc-on-a-single-file">RMC on a single file</a></h1>
-<p>For small examples, or initial learning, it's very common to run RMC on just one source file.
-The command line format for invoking RMC directly has a few common formats:</p>
-<pre><code>rmc filename.rs
-# or
-rmc filename.rs [--rmc-flags]
-# or
-rmc filename.rs [--rmc-flags] --cbmc-args [--cbmc-flags]
+                        <h1 id="kani-on-a-package"><a class="header" href="#kani-on-a-package">Kani on a package</a></h1>
+<p>Kani currently ships with a <code>cargo-kani</code> script, but this support is limited. If you find any issue, please <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
+<p>To run <code>cargo-kani</code> in your crate, execute from the crate directory:</p>
+<pre><code>cargo kani [KANI_ARGUMENTS]* [--cbmc-args [CBMC_ARGUMENTS]*]
 </code></pre>
-<p>For example,</p>
-<pre><code>rmc filenames.rs --visualize --cbmc-args --object-bits 11 --unwind 15
+<p>To list all the arguments supported by cargo kani, execute:</p>
+<pre><code>cargo kani --help
 </code></pre>
-<h2 id="common-rmc-arguments"><a class="header" href="#common-rmc-arguments">Common RMC arguments</a></h2>
-<p><strong><code>--visualize</code></strong> will generate a report in the local directory accessible through <code>report/html/index.html</code>.
-This report will shows coverage information, as well as give traces for each failure RMC finds.</p>
-<p><strong><code>--function &lt;name&gt;</code></strong> RMC defaults to assuming the starting function is called <code>main</code>.
-You can change it to a different function with this argument.
-Note that to &quot;find&quot; the function given, it needs to be given the <code>#[no_mangle]</code> annotation.</p>
-<p><strong><code>--gen-c</code></strong> will generate a C file that roughly corresponds to the input Rust file.
-This can sometimes be helpful when trying to debug a problem with RMC.</p>
-<p><strong><code>--keep-temps</code></strong> will preserve generated files that RMC generates.
-In particular, this will include a <code>.json</code> file which is the &quot;CBMC symbol table&quot;.
-This can be helpful in trying to diagnose bugs in RMC, and may sometimes be requested in RMC bug reports.</p>
-<h2 id="common-cbmc-arguments"><a class="header" href="#common-cbmc-arguments">Common CBMC arguments</a></h2>
-<p>RMC invokes CBMC to do the underlying solving.
-(CBMC is the &quot;C Bounded Model Checker&quot; but is actually a framework that supports model checking multiple languages.)
-CBMC arguments are sometimes necessary to get good results.</p>
-<p>To give arguments to CBMC, you pass <code>--cbmc-args</code> to RMC.
-This &quot;switches modes&quot; from RMC arguments to CBMC arguments.
-Everything else given on the command line will be assumed to be a CBMC argument, and so all RMC arguments should be provided before this flag.</p>
-<p><strong><code>--unwind &lt;n&gt;</code></strong> Give a global upper bound on all loops.
-This can force termination when CBMC tries to unwind loops indefinitely.</p>
-<p><strong><code>--object-bits &lt;n&gt;</code></strong> CBMC, by default, assumes there are only going to be 256 objects allocated on the heap in a single trace.
-This corresponds to a default of <code>--object-bits 8</code>.
-Rust programs often will use more than this, and so need to raise this limit.
-However, very large traces with many allocations often prove intractable to solve.
-If you run into this issue, a good first start is to raise the limit to 2048, i.e. <code>--object-bits 11</code>.</p>
-<p><strong><code>--unwindset label_1:bound_1,label_2:bound_2,...</code></strong> Give specific unwinding bounds on specific loops.
-The labels for each loop can be discovered by running with the following CBMC flag:</p>
-<p><strong><code>--show-loops</code></strong> Print the labels of each loop in the program.
-Useful for <code>--unwindset</code>.</p>
+<h1 id="common-cargo-kani-arguments"><a class="header" href="#common-cargo-kani-arguments">Common cargo-kani arguments</a></h1>
+<p>Cargo kani supports the kani standalone arguments described in the <a href="./kani-single-file.html">Kani single file section</a>. Additionally, it also accepts the following arguments:</p>
+<p><strong><code>--config-toml</code></strong> Location of a configuration file in toml format for your project. This defaults to the crate's Cargo.toml.</p>
+<p><strong><code>--no-config-toml</code></strong> Do not use any configuration TOML file.</p>
+<p><strong><code>--build-target</code></strong> Build for the target triple.</p>
+<h1 id="package-configuration"><a class="header" href="#package-configuration">Package configuration</a></h1>
+<p>Users may want to add default configurations for their crate's or workspace's harnesses, and they can do it by adding configurations to their <code>Cargo.toml</code> or any other TOML file.</p>
+<p>For example, in order to configure a maximum loop unwind threshold for harnesses in a package, you can add the following line to your package <code>Cargo.toml</code>:</p>
+<pre><code class="language-toml">[package.metadata.kani]
+flags= { unwind = &quot;5&quot; }
+</code></pre>
+<p>Note that Kani will extract any extra configuration from sections <code>[kani]</code>, <code>[workspace.metadata.kani]</code>, and <code>[package.metadata.kani]</code> in the TOML file.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="tool-comparison.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="kani-single-file.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="cargo-rmc.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="kani-tutorial.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -209,11 +188,11 @@ Useful for <code>--unwindset</code>.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="tool-comparison.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="kani-single-file.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="cargo-rmc.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="kani-tutorial.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

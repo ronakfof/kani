@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2018
 #![allow(unused)]
 struct Inspector<'a>(&'a u8, &'static str);

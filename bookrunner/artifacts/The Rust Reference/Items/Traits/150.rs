@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 // Self: Sized traits are not object-safe.

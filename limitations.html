@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Limitations - The Rust Model Checker</title>
+        <title>Limitations - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html" class="active"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html" class="active"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,7 +111,7 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/limitations.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/limitations.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -151,7 +151,7 @@
                     <main>
                         <h1 id="limitations"><a class="header" href="#limitations">Limitations</a></h1>
 <h2 id="rust-feature-support"><a class="header" href="#rust-feature-support">Rust feature support</a></h2>
-<p>The table below tries to summarize the current support in RMC for
+<p>The table below tries to summarize the current support in Kani for
 the Rust language features according to the <a href="https://doc.rust-lang.org/stable/reference/">Rust Reference</a>.
 We use the following values to indicate the level of support:</p>
 <ul>
@@ -256,10 +256,10 @@ would greatly appreciate that you <a href="https://github.com/model-checking/rmc
 </tbody></table>
 <h2 id="notes-on-partially-or-unsupported-features"><a class="header" href="#notes-on-partially-or-unsupported-features">Notes on partially or unsupported features</a></h2>
 <h3 id="code-generation-for-unsupported-features"><a class="header" href="#code-generation-for-unsupported-features">Code generation for unsupported features</a></h3>
-<p>RMC aims to be an industrial verification tool. Most industrial crates may
+<p>Kani aims to be an industrial verification tool. Most industrial crates may
 include unsupported features in parts of their code that do not need to be
-verified. In general, this should not prevent users using RMC to verify their code.</p>
-<p>Because of that, the general rule is that RMC generates an <code>assert(false)</code>
+verified. In general, this should not prevent users using Kani to verify their code.</p>
+<p>Because of that, the general rule is that Kani generates an <code>assert(false)</code>
 statement followed by an <code>assume(false)</code> statement when compiling any
 unsupported feature. <code>assert(false)</code> will cause verification to fail if the
 statement is reachable during the verification stage, while <code>assume(false)</code> will
@@ -268,20 +268,20 @@ affected if the statement is not reachable from the code under verification, so
 users can still verify components of their code that do not use unsupported
 features.</p>
 <h3 id="assembly"><a class="header" href="#assembly">Assembly</a></h3>
-<p>RMC does not support assembly code for now. We may add it in the future but at
+<p>Kani does not support assembly code for now. We may add it in the future but at
 present there are no plans to do so.</p>
 <p>Check out the tracking issues for <a href="https://github.com/model-checking/rmc/issues/2">inline assembly (<code>asm!</code>
 macro)</a> and <a href="https://github.com/model-checking/rmc/issues/316">global assembly
 (<code>asm_global!</code> macro)</a> to know
 more about the current status.</p>
 <h3 id="concurrency"><a class="header" href="#concurrency">Concurrency</a></h3>
-<p>Concurrent features are currently out of scope for RMC. In general, the
+<p>Concurrent features are currently out of scope for Kani. In general, the
 verification of concurrent programs continues to be an open research problem
 where most tools that analyze concurrent code lack support for other features.
-Because of this, RMC emits a warning whenever it encounters concurrent code and
+Because of this, Kani emits a warning whenever it encounters concurrent code and
 compiles as if it was sequential code.</p>
 <h3 id="standard-library-functions"><a class="header" href="#standard-library-functions">Standard library functions</a></h3>
-<p>At present, RMC is able to link in functions from the standard library but the
+<p>At present, Kani is able to link in functions from the standard library but the
 generated code will not contain them unless they are generic, intrinsics,
 inlined or macros. Missing functions are treated in a similar way to unsupported
 features (i.e., replacing the function body with an <code>assert(false)</code> statement).
@@ -320,7 +320,7 @@ if you are aware of one.</p>
 each function it encounters.</li>
 <li>Abortion: Immediately ends the program without cleaning up.</li>
 </ol>
-<p>Currently, RMC does not support stack unwinding. This has some implications
+<p>Currently, Kani does not support stack unwinding. This has some implications
 regarding memory safety since programs sometimes rely on the unwinding logic to
 ensure there is no resource leak or persistent data inconsistency. Check out
 <a href="https://github.com/model-checking/rmc/issues/692">this issue</a> for updates on
@@ -329,7 +329,7 @@ stack unwinding support.</p>
 <p>At present, we are aware of some issues with destructors, in particular those
 related to <a href="#advanced-features">advanced features</a>.</p>
 <h3 id="intrinsics"><a class="header" href="#intrinsics">Intrinsics</a></h3>
-<p>The table below tries to summarize the current support in RMC for Rust
+<p>The table below tries to summarize the current support in Kani for Rust
 intrinsics.</p>
 <p>In general, code generation for unsupported intrinsics follows the rule
 described in <a href="#code-generation-for-unsupported-features">Code generation for unsupported
@@ -546,12 +546,12 @@ features</a>.</p>
 </tbody></table>
 <h4 id="atomics"><a class="header" href="#atomics">Atomics</a></h4>
 <p>All atomic intrinsics are compiled as an atomic block where the operation is
-performed. But as noted in <a href="#concurrency">Notes - Concurrency</a>, RMC support for
+performed. But as noted in <a href="#concurrency">Notes - Concurrency</a>, Kani support for
 concurrent verification is limited and not used by default. Verification on code
-containing atomic intrinsics should not be trusted given that RMC assumes the
+containing atomic intrinsics should not be trusted given that Kani assumes the
 code to be sequential.</p>
 <h4 id="simd-instructions"><a class="header" href="#simd-instructions">SIMD instructions</a></h4>
-<p>While RMC is capable of generating code for SIMD instructions, unfortunately, it
+<p>While Kani is capable of generating code for SIMD instructions, unfortunately, it
 does not provide support for the verification of some operations like vector
 comparison (e.g., <code>simd_eq</code>).</p>
 

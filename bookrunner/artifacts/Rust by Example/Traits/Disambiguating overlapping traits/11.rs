@@ -1,5 +1,4 @@
 // compile-flags: --edition 2015
-// rmc-flags: --cbmc-args --unwind 10
 #![allow(unused)]
 trait UsernameWidget {
     // Get the selected username out of this widget

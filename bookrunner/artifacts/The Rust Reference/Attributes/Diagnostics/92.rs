@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 // This allows all lints in the "unused" group.

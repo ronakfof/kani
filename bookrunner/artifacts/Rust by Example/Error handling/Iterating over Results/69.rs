@@ -1,5 +1,4 @@
 // compile-flags: --edition 2015
-// rmc-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 fn main() {
     let strings = vec!["tofu", "93", "18"];

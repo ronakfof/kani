@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Failures that RMC can spot - The Rust Model Checker</title>
+        <title>Failures that Kani can spot - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="rmc-single-file.html"><strong aria-hidden="true">1.3.</strong> RMC on a single file</a></li><li class="chapter-item expanded "><a href="cargo-rmc.html"><strong aria-hidden="true">1.4.</strong> RMC on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with RMC</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html" class="active"><strong aria-hidden="true">2.2.</strong> Failures that RMC can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> RMC developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rmc-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html" class="active"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,7 +111,7 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -149,14 +149,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="failures-that-rmc-can-spot"><a class="header" href="#failures-that-rmc-can-spot">Failures that RMC can spot</a></h1>
-<p>In the <a href="./tutorial-first-steps.html">last section</a> we saw RMC spot two major kinds of failures: assertions and panics.
-If the proof harness allows some program trace that results in a panic, then RMC will report that as a failure.
+                        <h1 id="failures-that-kani-can-spot"><a class="header" href="#failures-that-kani-can-spot">Failures that Kani can spot</a></h1>
+<p>In the <a href="./tutorial-first-steps.html">last section</a> we saw Kani spot two major kinds of failures: assertions and panics.
+If the proof harness allows some program trace that results in a panic, then Kani will report that as a failure.
 We additionally saw very briefly a couple of other kinds of failures, like null pointer dereferences and overflow.
-In this section, we're going to expand on these additional checks, to give you an idea of what other problems RMC will find.</p>
+In this section, we're going to expand on these additional checks, to give you an idea of what other problems Kani will find.</p>
 <h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
 <p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
-Consider this Rust code (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/rmc-docs/src/tutorial/kinds-of-failure/"><code>rmc-docs/src/tutorial/kinds-of-failure</code></a>):</p>
+Consider this Rust code (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -194,60 +194,60 @@ fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
 [...]
 test tests::doesnt_crash ... ok
 </code></pre>
-<p>But we're able to check this unsafe code with RMC:</p>
+<p>But we're able to check this unsafe code with Kani:</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
-</span>#[cfg(rmc)]
-#[rmc::proof]
+</span>#[cfg(kani)]
+#[kani::proof]
 fn bound_check() {
-    let size: usize = rmc::any();
-    rmc::assume(size &lt; 4096);
-    let index: usize = rmc::any();
+    let size: usize = kani::any();
+    kani::assume(size &lt; 4096);
+    let index: usize = kani::any();
     let array: Vec&lt;u32&gt; = vec![0; size];
     get_wrapped(index, &amp;array);
 }
 <span class="boring">}
 </span></code></pre></pre>
-<pre><code># rmc src/bounds_check.rs
+<pre><code># kani src/bounds_check.rs
 [...]
 ** 1 of 468 failed (2 iterations)
 VERIFICATION FAILED
 </code></pre>
 <p>Notice there were a <em>lot</em> of verification conditions being checked: in the above output, 468! (It may change for you.)
 This is a result of using the standard library <code>Vec</code> implementation, which means our harness actually used quite a bit of code, short as it looks.
-RMC is inserting a lot more checks than appear as asserts in our code, so the output can be large.
+Kani is inserting a lot more checks than appear as asserts in our code, so the output can be large.
 Let's narrow that output down a bit:</p>
-<pre><code># rmc src/bounds_check.rs | grep FAIL
+<pre><code># kani src/bounds_check.rs | grep FAIL
 [get_wrapped.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *var_5: FAILURE
 VERIFICATION FAILED
 </code></pre>
-<p>Notice that, for RMC, this has gone from a simple bounds-checking problem to a pointer-checking problem.
-RMC will check operations on pointers to ensure they're not potentially invalid memory accesses.
+<p>Notice that, for Kani, this has gone from a simple bounds-checking problem to a pointer-checking problem.
+Kani will check operations on pointers to ensure they're not potentially invalid memory accesses.
 Any unsafe code that manipulates pointers will, as we see here, raise failures if its behavior is actually unsafe. </p>
 <p>Consider trying a few more small exercises with this example:</p>
 <ol>
-<li>Exercise: Switch back to the normal/safe indexing operation and re-try RMC. What changes compared to the unsafe operation and why?
+<li>Exercise: Switch back to the normal/safe indexing operation and re-try Kani. What changes compared to the unsafe operation and why?
 (Try predicting the answer, then seeing if you got it right.)</li>
-<li>Exercise: <a href="./tutorial-first-steps.html#getting-a-trace">Remember how to get a trace from RMC?</a> Find out what inputs it failed on.</li>
-<li>Exercise: Fix the error, run RMC, and see a successful verification.</li>
-<li>Exercise: Try switching back to the unsafe code (now with the error fixed) and re-run RMC. It should still successfully verify.</li>
+<li>Exercise: <a href="./tutorial-first-steps.html#getting-a-trace">Remember how to get a trace from Kani?</a> Find out what inputs it failed on.</li>
+<li>Exercise: Fix the error, run Kani, and see a successful verification.</li>
+<li>Exercise: Try switching back to the unsafe code (now with the error fixed) and re-run Kani. It should still successfully verify.</li>
 </ol>
 <details>
 <summary>Click to see explanation for exercise 1</summary>
-<p>Having switched back to the safe indexing operation, RMC reports two failures instead of just one:</p>
-<pre><code># rmc src/bounds_check.rs | grep FAIL
+<p>Having switched back to the safe indexing operation, Kani reports two failures instead of just one:</p>
+<pre><code># kani src/bounds_check.rs | grep FAIL
 [get_wrapped.assertion.3] line 9 index out of bounds: the length is move _12 but the index is _5: FAILURE
 [get_wrapped.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in a.data[var_5]: FAILURE
 VERIFICATION FAILED
 </code></pre>
 <p>The first is Rust's implicit assertion for the safe indexing operation.
-The second is RMC's check to ensure the pointer operation is actually safe.
+The second is Kani's check to ensure the pointer operation is actually safe.
 This pattern (two checks for similar issues in safe Rust code) is common, and we'll see it again in the next section.</p>
 </details>
 <details>
 <summary>Click to see explanation for exercise 2</summary>
-<p>Having run <code>rmc --visualize</code> and clicked on one of the failures to see a trace, there are three things to immediately notice:</p>
+<p>Having run <code>kani --visualize</code> and clicked on one of the failures to see a trace, there are three things to immediately notice:</p>
 <ol>
 <li>This trace is huge. The standard library <code>Vec</code> is involved, there's a lot going on.</li>
 <li>The top of the trace file contains some &quot;trace navigation tips&quot; that might be helpful in navigating the trace.</li>
@@ -255,25 +255,25 @@ This pattern (two checks for similar issues in safe Rust code) is common, and we
 </ol>
 <p>To navigate this trace to find the information you need, we recommend searching for things you expect to be somewhere in the trace:</p>
 <ol>
-<li>Search the document for <code>rmc::any</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
+<li>Search the document for <code>kani::any</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
 We can use this to find out what example values lead to a problem.
-In this case, where we just have a couple of <code>rmc::any</code> values in our proof harness, we can learn a lot just by seeing what these are.
+In this case, where we just have a couple of <code>kani::any</code> values in our proof harness, we can learn a lot just by seeing what these are.
 In this trace we find (and the values you get may be different):</li>
 </ol>
 <pre><code>Step 23: Function bound_check, File src/bounds_check.rs, Line 43
-let size: usize = rmc::any();
+let size: usize = kani::any();
 size = 0ul
 
 Step 27: Function bound_check, File src/bounds_check.rs, Line 45
-let index: usize = rmc::any();
+let index: usize = kani::any();
 index = 0ul
 
 Step 36: Function bound_check, File src/bounds_check.rs, Line 43
-let size: usize = rmc::any();
+let size: usize = kani::any();
 size = 2464ul
 
 Step 39: Function main, File src/bounds_check.rs, Line 45
-let index: usize = rmc::any();
+let index: usize = kani::any();
 index = 2463ul
 </code></pre>
 <p>Try not to be fooled by the first assignments: we're seeing zero-initialization there.
@@ -297,9 +297,9 @@ For example, search upwards from the failure for <code>i =</code>.</li>
 <span class="boring">}
 </span></code></pre></pre>
 <p>We've corrected the out-of-bounds access, but now we've omitted the &quot;base case&quot;: what to return on an empty list.
-RMC will spot this not as a bound error, but as a mathematical error: on an empty list the modulus operator (<code>%</code>) will cause a division by zero.</p>
+Kani will spot this not as a bound error, but as a mathematical error: on an empty list the modulus operator (<code>%</code>) will cause a division by zero.</p>
 <ol>
-<li>Exercise: Try to run RMC on the above, to see what this kind of failure looks like.</li>
+<li>Exercise: Try to run Kani on the above, to see what this kind of failure looks like.</li>
 </ol>
 <p>Rust also performs runtime safety checks for integer overflows, much like it does for bounds checks.
 Consider this code (from <code>src/overflow.rs</code>):</p>
@@ -312,9 +312,9 @@ Consider this code (from <code>src/overflow.rs</code>):</p>
 <span class="boring">}
 </span></code></pre></pre>
 <p>A trivial function, but if we write a property test for it, we immediately find inputs where it fails, thanks to Rust's dynamic checks.
-RMC will find these failures as well.
-Here's the output from RMC:</p>
-<pre><code># rmc src/overflow.rs
+Kani will find these failures as well.
+Here's the output from Kani:</p>
+<pre><code># kani src/overflow.rs
 [...]
 ** Results:
 ./src/overflow.rs function simple_addition
@@ -324,12 +324,12 @@ Here's the output from RMC:</p>
 ** 2 of 2 failed (2 iterations)
 VERIFICATION FAILED
 </code></pre>
-<p>Notice the two failures: the Rust-inserted overflow check (<code>simple_addition.assertion.1</code>) and RMC's explicit overflow check (<code>simple_addition.overflow.1</code>).</p>
+<p>Notice the two failures: the Rust-inserted overflow check (<code>simple_addition.assertion.1</code>) and Kani's explicit overflow check (<code>simple_addition.overflow.1</code>).</p>
 <blockquote>
 <p><strong>NOTE:</strong> You could attempt to fix this issue by using Rust's alternative mathematical functions with explicit overflow behavior.
 For instance, instead of <code>a + b</code> write <code>a.wrapping_add(b)</code>.</p>
-<p>However, <a href="https://github.com/model-checking/rmc/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional RMC overflow check.
-As a result, this currently still fails in RMC.</p>
+<p>However, <a href="https://github.com/model-checking/rmc/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
+As a result, this currently still fails in Kani.</p>
 </blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
 <p>One of the classic subtle bugs that persisted in many implementations for a very long time is finding the midpoint in quick sort.
@@ -342,7 +342,7 @@ This often naively looks like this (from <code>src/overflow_quicksort.rs</code>)
 }
 <span class="boring">}
 </span></code></pre></pre>
-<p>RMC immediately spots the bug in the above code.</p>
+<p>Kani immediately spots the bug in the above code.</p>
 <ol>
 <li>Exercise: Fix this function so it no longer overflows.
 (Hint: depending on which approach you take, you may need to add the assumption that <code>high &gt; low</code> to your proof harness.
@@ -372,19 +372,19 @@ Here's one possible assertion to make that obvious:</p>
 <span class="boring">}
 </span></code></pre></pre>
 <p>Since this implementation is just the original one, but cast to a wider unsigned integer type, it should have the same result but without overflowing.
-When RMC tells us both of these methods yield the same exact result, that gives us additional confidence that we haven't overlooked something.</p>
+When Kani tells us both of these methods yield the same exact result, that gives us additional confidence that we haven't overlooked something.</p>
 </details>
 <h2 id="future-work"><a class="header" href="#future-work">Future work</a></h2>
-<p>RMC notably does not currently check the following:</p>
+<p>Kani notably does not currently check the following:</p>
 <ol>
 <li>
 <p>Concurrency bugs, deadlocks, or data races.
-It's possible RMC may be extended in the future to find such issues.</p>
+It's possible Kani may be extended in the future to find such issues.</p>
 </li>
 <li>
 <p>Rust type invariants.
 For example, it's undefined behavior in Rust to produce a value of type <code>bool</code> that isn't <code>0</code> or <code>1</code>.
-RMC will not spot this error (in presumably unsafe code), yet.</p>
+Kani will not spot this error (in presumably unsafe code), yet.</p>
 </li>
 <li>
 <p>Fully generic functions.
@@ -396,10 +396,10 @@ Proof harnesses have to be written specializing type parameters (<code>T</code>)
 <h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
 <p>In this section:</p>
 <ol>
-<li>We saw RMC spot potential bounds check errors.</li>
-<li>We saw RMC spot actually-unsafe dereferencing of a raw pointer to invalid memory.</li>
-<li>We saw RMC spot a division by zero error.</li>
-<li>We saw RMC spot overflowing addition.</li>
+<li>We saw Kani spot potential bounds check errors.</li>
+<li>We saw Kani spot actually-unsafe dereferencing of a raw pointer to invalid memory.</li>
+<li>We saw Kani spot a division by zero error.</li>
+<li>We saw Kani spot overflowing addition.</li>
 <li>As an exercise, we tried proving an assertion (finding the midpoint) that was not completely trivial.</li>
 </ol>
 

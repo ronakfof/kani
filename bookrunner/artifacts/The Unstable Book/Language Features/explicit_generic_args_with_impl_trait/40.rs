@@ -1,4 +1,4 @@
-// rmc-check-fail
+// kani-check-fail
 // compile-flags: --edition 2015
 #![allow(unused)]
 #![feature(explicit_generic_args_with_impl_trait)]
