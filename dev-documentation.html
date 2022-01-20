@@ -224,6 +224,20 @@ git log --graph --oneline origin/upstream-rustc..origin/main
 <pre><code class="language-bash"># See all files modified by Kani (compared to upstream Rust)
 git diff --stat origin/upstream-rustc..origin/main
 </code></pre>
+<h2 id="set-up-rust-analyzer-in-vscode"><a class="header" href="#set-up-rust-analyzer-in-vscode">Set up <code>rust-analyzer</code> in VSCode</a></h2>
+<p>Add the following to the <code>rust-analyzer</code> extension settings in <code>settings.json</code>:</p>
+<pre><code>    &quot;rust-analyzer.updates.channel&quot;: &quot;nightly&quot;,
+    &quot;rust-analyzer.rustcSource&quot;: &quot;discover&quot;,
+    &quot;rust-analyzer.workspace.symbol.search.scope&quot;: &quot;workspace_and_dependencies&quot;,
+</code></pre>
+<p>Ensure that any packages that use <code>rustc</code> data structures have the following line set in their <code>Cargo.toml</code></p>
+<pre><code>[package.metadata.rust-analyzer]
+# This package uses rustc crates.
+rustc_private=true
+</code></pre>
+<p>You may also need to install the <code>rustc-dev</code> package using rustup</p>
+<pre><code>rustup toolchain install nightly --component rustc-dev   
+</code></pre>
 <h2 id="kani-command-cheat-sheet"><a class="header" href="#kani-command-cheat-sheet">Kani command cheat sheet</a></h2>
 <p>These can help understand what Kani is generating or encountering on an example or test file:</p>
 <pre><code class="language-bash"># Enable `debug!` macro logging output when running Kani:
