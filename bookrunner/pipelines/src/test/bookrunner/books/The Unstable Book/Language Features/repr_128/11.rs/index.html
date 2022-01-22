@@ -505,9 +505,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: fail</li>
-      <li>2022-01-21T20:27:40Z</li>
-      <li>3b531530-dce1-4086-b89b-c88ea364ee27</li>
+      <li>Pipeline status: success</li>
+      <li>2022-01-22T01:41:57Z</li>
+      <li>dcf48958-2873-4b63-b51f-7f66899c8737</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -527,17 +527,15 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-1ad3293a-288f-4663-b63c-f2fff668181a">
+              <a href="#job-b03a3dac-bc0a-4b54-8107-f243a3922702">
               
               Is this valid Rust code?
               
@@ -557,17 +555,15 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-in-progress">
-                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
-                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
-                  <circle cx="8" cy="8" r="7"></circle>
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-2000d4b9-06e7-4aa9-ae95-f3be7bb740aa">
+              <a href="#job-130af76d-64c6-4267-9009-285553e2d356">
               
               Does Kani support all the Rust features used in it?
               
@@ -587,17 +583,15 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-in-progress">
-                  <polygon points="7,8 8,9 9,8 8,1"> </polygon>
-                  <polygon points="8,8 8,9 11,11 9,8"> </polygon>
-                  <circle cx="8" cy="8" r="7"></circle>
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-74493644-b037-4131-b0f8-4007f76d9a04">
+              <a href="#job-eafafbfd-e70f-4123-a0d3-e55b6b3ae2b3">
               
               Ca Kani reason about it?
               
@@ -625,15 +619,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-1ad3293a-288f-4663-b63c-f2fff668181a">
+    <div class="command-table" id="job-b03a3dac-bc0a-4b54-8107-f243a3922702">
       
-      <div class="fail">
+      <div class="success">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-1ad3293a-288f-4663-b63c-f2fff668181a">#</a>
+                <a href="#job-b03a3dac-bc0a-4b54-8107-f243a3922702">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -655,7 +649,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                101
+                0
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -687,22 +681,22 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-21T20:30:58Z
+                2022-01-22T01:54:18Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-21T20:30:58Z
+                2022-01-22T01:54:19Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              no
+              yes
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -720,7 +714,16 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
-error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/The` and `Unstable`)
+warning: the feature `repr128` is incomplete and may not be safe to use and/or cause compiler crashes
+--> src/test/bookrunner/books/The Unstable Book/Language Features/repr_128/11.rs:3:12
+|
+3 | #![feature(repr128)]
+|            ^^^^^^^
+|
+= note: `#[warn(incomplete_features)]` on by default
+= note: see issue #56071 <https://github.com/rust-lang/rust/issues/56071> for more information
+
+warning: 1 warning emitted
 
             </xmp>
           </div><!-- class="output-box" -->
@@ -740,15 +743,15 @@ error: multiple input filenames provided (first two filenames are `src/test/book
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-2000d4b9-06e7-4aa9-ae95-f3be7bb740aa">
+    <div class="command-table" id="job-130af76d-64c6-4267-9009-285553e2d356">
       
-      <div class="in-progress">
+      <div class="success">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-2000d4b9-06e7-4aa9-ae95-f3be7bb740aa">#</a>
+                <a href="#job-130af76d-64c6-4267-9009-285553e2d356">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -766,6 +769,63 @@ error: multiple input filenames provided (first two filenames are `src/test/book
           </div><!-- class="command-invocation" -->
 
           
+          <div class="command-stats-table">
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                10
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-22T02:01:40Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                01s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-22T02:01:41Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+          </div><!-- class="command-stats-table" -->
+          
 
           
 
@@ -775,6 +835,22 @@ error: multiple input filenames provided (first two filenames are `src/test/book
 
           
 
+          
+          <div class="output-box"><xmp>stderr:
+            
+warning: the feature `repr128` is incomplete and may not be safe to use and/or cause compiler crashes
+--> src/test/bookrunner/books/The Unstable Book/Language Features/repr_128/11.rs:3:12
+|
+3 | #![feature(repr128)]
+|            ^^^^^^^
+|
+= note: `#[warn(incomplete_features)]` on by default
+= note: see issue #56071 <https://github.com/rust-lang/rust/issues/56071> for more information
+
+warning: 1 warning emitted
+
+            </xmp>
+          </div><!-- class="output-box" -->
           
 
         </div><!-- class="command-content" -->
@@ -791,15 +867,15 @@ error: multiple input filenames provided (first two filenames are `src/test/book
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-74493644-b037-4131-b0f8-4007f76d9a04">
+    <div class="command-table" id="job-eafafbfd-e70f-4123-a0d3-e55b6b3ae2b3">
       
-      <div class="in-progress">
+      <div class="success">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-74493644-b037-4131-b0f8-4007f76d9a04">#</a>
+                <a href="#job-eafafbfd-e70f-4123-a0d3-e55b6b3ae2b3">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -817,6 +893,63 @@ error: multiple input filenames provided (first two filenames are `src/test/book
           </div><!-- class="command-invocation" -->
 
           
+          <div class="command-stats-table">
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                60
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-22T02:01:41Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                01s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-22T02:01:42Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+          </div><!-- class="command-stats-table" -->
+          
 
           
 
@@ -824,6 +957,33 @@ error: multiple input filenames provided (first two filenames are `src/test/book
           
 
 
+          
+          <div class="output-box"><xmp>stdout:
+            
+CBMC version 5.48.0 (cbmc-5.48.0) 64-bit x86_64 linux
+Reading GOTO program from file src/test/bookrunner/books/The Unstable Book/Language Features/repr_128/11.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 16 object bits, 48 offset bits (user-specified)
+Starting Bounded Model Checking
+Runtime Symex: 0.00107011s
+size of program expression: 69 steps
+simple slicing removed 0 assignments
+Generated 2 VCC(s), 0 remaining after simplification
+Runtime Postprocess Equation: 8.2e-06s
+
+** Results:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_4317141983261250885") (MIR type Closure(DefId(1:9147 ~ std[2f3c]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+https://github.com/model-checking/rmc/issues/new?template=bug_report.md: SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+            </xmp>
+          </div><!-- class="output-box" -->
           
 
           

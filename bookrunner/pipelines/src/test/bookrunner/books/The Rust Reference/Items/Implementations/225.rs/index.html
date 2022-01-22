@@ -506,8 +506,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-01-21T20:27:40Z</li>
-      <li>3b531530-dce1-4086-b89b-c88ea364ee27</li>
+      <li>2022-01-22T01:41:57Z</li>
+      <li>dcf48958-2873-4b63-b51f-7f66899c8737</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -537,7 +537,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-833f34c4-2890-451a-92bd-cfd6120c69b3">
+              <a href="#job-78c51ff3-7365-4ce1-92d8-d03d013dc430">
               
               Is this valid Rust code?
               
@@ -575,7 +575,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-833f34c4-2890-451a-92bd-cfd6120c69b3">
+    <div class="command-table" id="job-78c51ff3-7365-4ce1-92d8-d03d013dc430">
       
       <div class="fail">
       
@@ -583,7 +583,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-833f34c4-2890-451a-92bd-cfd6120c69b3">#</a>
+                <a href="#job-78c51ff3-7365-4ce1-92d8-d03d013dc430">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -637,7 +637,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-01-21T20:31:38Z
+                2022-01-22T01:59:34Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -645,7 +645,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-01-21T20:31:38Z
+                2022-01-22T01:59:34Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -670,8 +670,52 @@ a:visited:active {
           
           <div class="output-box"><xmp>stderr:
             
-error: multiple input filenames provided (first two filenames are `src/test/bookrunner/books/The` and `Rust`)
+error[E0412]: cannot find type `Struct` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:9:9
+|
+9 | impl<T> Struct { /* ... */ }
+|         ^^^^^^ not found in this scope
 
+error[E0412]: cannot find type `Struct` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:12:22
+|
+12 | impl<const N: usize> Struct { /* ... */ }
+|                      ^^^^^^ not found in this scope
+
+error[E0412]: cannot find type `Struct` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:15:9
+|
+15 | impl<T> Struct {
+|         ^^^^^^ not found in this scope
+
+error[E0412]: cannot find type `Struct` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:20:12
+|
+20 | impl<T, U> Struct where U: HasAssocType<Ty = T> { /* ... */ }
+|            ^^^^^^ not found in this scope
+
+error[E0405]: cannot find trait `HasAssocType` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:20:28
+|
+20 | impl<T, U> Struct where U: HasAssocType<Ty = T> { /* ... */ }
+|                            ^^^^^^^^^^^^ not found in this scope
+
+error[E0405]: cannot find trait `GenericTrait` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:23:12
+|
+23 | impl<T, U> GenericTrait<U> for u32 where U: GenericTrait<T> {}
+|            ^^^^^^^^^^^^ not found in this scope
+
+error[E0405]: cannot find trait `GenericTrait` in this scope
+--> src/test/bookrunner/books/The Rust Reference/Items/Implementations/225.rs:23:45
+|
+23 | impl<T, U> GenericTrait<U> for u32 where U: GenericTrait<T> {}
+|                                             ^^^^^^^^^^^^ not found in this scope
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0405, E0412.
+For more information about an error, try `rustc --explain E0405`.
             </xmp>
           </div><!-- class="output-box" -->
           
