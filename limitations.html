@@ -117,10 +117,10 @@
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/limitations.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/kani-docs/src/limitations.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -161,7 +161,7 @@ with it.</li>
 <li><strong>No</strong>: The feature is not supported. Some support may be available but analyses should not be trusted.</li>
 </ul>
 <p>As with all software, bugs may be found anywhere regardless of the level of support. In such cases, we
-would greatly appreciate that you <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
+would greatly appreciate that you <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
 <table><thead><tr><th>Reference</th><th>Feature</th><th>Support</th><th>Notes</th></tr></thead><tbody>
 <tr><td>3.1</td><td>Macros By Example</td><td>Yes</td><td></td></tr>
 <tr><td>3.2</td><td>Procedural Macros</td><td>Yes</td><td></td></tr>
@@ -270,8 +270,8 @@ features.</p>
 <h3 id="assembly"><a class="header" href="#assembly">Assembly</a></h3>
 <p>Kani does not support assembly code for now. We may add it in the future but at
 present there are no plans to do so.</p>
-<p>Check out the tracking issues for <a href="https://github.com/model-checking/rmc/issues/2">inline assembly (<code>asm!</code>
-macro)</a> and <a href="https://github.com/model-checking/rmc/issues/316">global assembly
+<p>Check out the tracking issues for <a href="https://github.com/model-checking/kani/issues/2">inline assembly (<code>asm!</code>
+macro)</a> and <a href="https://github.com/model-checking/kani/issues/316">global assembly
 (<code>asm_global!</code> macro)</a> to know
 more about the current status.</p>
 <h3 id="concurrency"><a class="header" href="#concurrency">Concurrency</a></h3>
@@ -289,7 +289,7 @@ This results in verification failures if the code under verification, for
 example, includes a reachable <code>println!</code> statement.</p>
 <p>We have done some experiments to embed the standard library into the generated
 code, but this causes verification times to increase significantly. As of now,
-we have not been able to find a simple solution for <a href="https://github.com/model-checking/rmc/issues/581">this
+we have not been able to find a simple solution for <a href="https://github.com/model-checking/kani/issues/581">this
 issue</a>, but we have some ideas
 for future work in this direction.</p>
 <h3 id="advanced-features"><a class="header" href="#advanced-features">Advanced features</a></h3>
@@ -299,18 +299,18 @@ all their use cases.</p>
 <p>In particular, there are some outstanding issues to note here:</p>
 <ul>
 <li>Unimplemented <code>PointerCast::ClosureFnPointer</code> in
-<a href="https://github.com/model-checking/rmc/issues/274">#274</a> and <code>Variant</code> case
+<a href="https://github.com/model-checking/kani/issues/274">#274</a> and <code>Variant</code> case
 in projections type in
-<a href="https://github.com/model-checking/rmc/issues/448">#448</a>.</li>
+<a href="https://github.com/model-checking/kani/issues/448">#448</a>.</li>
 <li>Unexpected fat pointer results in
-<a href="https://github.com/model-checking/rmc/issues/82">#82</a>,
-<a href="https://github.com/model-checking/rmc/issues/277">#277</a>,
-<a href="https://github.com/model-checking/rmc/issues/327">#327</a>,
-<a href="https://github.com/model-checking/rmc/issues/378">#378</a> and
-<a href="https://github.com/model-checking/rmc/issues/676">#676</a>.</li>
+<a href="https://github.com/model-checking/kani/issues/82">#82</a>,
+<a href="https://github.com/model-checking/kani/issues/277">#277</a>,
+<a href="https://github.com/model-checking/kani/issues/327">#327</a>,
+<a href="https://github.com/model-checking/kani/issues/378">#378</a> and
+<a href="https://github.com/model-checking/kani/issues/676">#676</a>.</li>
 </ul>
 <p>We are particularly interested in bug reports concerning
-these features, so please <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">file a bug
+these features, so please <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">file a bug
 report</a>
 if you are aware of one.</p>
 <h3 id="panic-strategies"><a class="header" href="#panic-strategies">Panic strategies</a></h3>
@@ -323,7 +323,7 @@ each function it encounters.</li>
 <p>Currently, Kani does not support stack unwinding. This has some implications
 regarding memory safety since programs sometimes rely on the unwinding logic to
 ensure there is no resource leak or persistent data inconsistency. Check out
-<a href="https://github.com/model-checking/rmc/issues/692">this issue</a> for updates on
+<a href="https://github.com/model-checking/kani/issues/692">this issue</a> for updates on
 stack unwinding support.</p>
 <h3 id="destructors"><a class="header" href="#destructors">Destructors</a></h3>
 <p>At present, we are aware of some issues with destructors, in particular those

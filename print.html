@@ -118,7 +118,7 @@
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                                                 
@@ -156,7 +156,7 @@ But Kani is also useful for finding panics in safe Rust, and it can check user-d
 <p>Kani is currently in the initial development phase, and has not yet made an official release.
 It is under active development, but it does not yet support all Rust language features.
 (The <a href="./bookrunner.html">Book runner</a> can help you understand our current progress.)
-If you encounter issues when using Kani we encourage you to <a href="https://github.com/model-checking/rmc/issues/new/choose">report them to us</a>.</p>
+If you encounter issues when using Kani we encourage you to <a href="https://github.com/model-checking/kani/issues/new/choose">report them to us</a>.</p>
 <p>Kani usually syncs with the main branch of Rust every week, and so is generally up-to-date with the latest Rust language features.</p>
 <h2 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h2>
 <ol>
@@ -174,8 +174,8 @@ If you encounter issues when using Kani we encourage you to <a href="https://git
 </ol>
 <h2 id="installing-on-ubuntu-2004"><a class="header" href="#installing-on-ubuntu-2004">Installing on Ubuntu 20.04</a></h2>
 <p>The simplest way to install (especially if you're using a fresh VM) is following our CI scripts:</p>
-<pre><code># git clone git@github.com:model-checking/rmc.git
-git clone https://github.com/model-checking/rmc.git
+<pre><code># git clone git@github.com:model-checking/kani.git
+git clone https://github.com/model-checking/kani.git
 cd kani
 git submodule update --init
 ./scripts/setup/ubuntu-20.04/install_deps.sh
@@ -186,8 +186,8 @@ source $HOME/.cargo/env
 </code></pre>
 <h2 id="installing-on-mac-os"><a class="header" href="#installing-on-mac-os">Installing on Mac OS</a></h2>
 <p>You need to have <a href="https://brew.sh/">Homebrew</a> installed already.</p>
-<pre><code># git clone git@github.com:model-checking/rmc.git
-git clone https://github.com/model-checking/rmc.git
+<pre><code># git clone git@github.com:model-checking/kani.git
+git clone https://github.com/model-checking/kani.git
 cd kani
 git submodule update --init
 ./scripts/setup/macos-10.15/install_deps.sh
@@ -297,7 +297,7 @@ The labels for each loop can be discovered by running with the following CBMC fl
 <p><strong><code>--show-loops</code></strong> Print the labels of each loop in the program.
 Useful for <code>--unwindset</code>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="kani-on-a-package"><a class="header" href="#kani-on-a-package">Kani on a package</a></h1>
-<p>Kani currently ships with a <code>cargo-kani</code> script, but this support is limited. If you find any issue, please <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
+<p>Kani currently ships with a <code>cargo-kani</code> script, but this support is limited. If you find any issue, please <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
 <p>To run <code>cargo-kani</code> in your crate, execute from the crate directory:</p>
 <pre><code>cargo kani [KANI_ARGUMENTS]* [--cbmc-args [CBMC_ARGUMENTS]*]
 </code></pre>
@@ -345,7 +345,7 @@ It will also teach you the basics of &quot;debugging&quot; proof harnesses, whic
 <p>Kani is unlike the testing tools you may already be familiar with.
 Much of testing is concerned with thinking of new corner cases that need to be covered.
 With Kani, all the corner cases are covered from the start, and the new concern is narrowing down the scope to something manageable for the checker.</p>
-<p>Consider this first program (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/kani-first-steps/"><code>kani-docs/src/tutorial/kani-first-steps</code></a>):</p>
+<p>Consider this first program (which can be found under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/kani-first-steps/"><code>kani-docs/src/tutorial/kani-first-steps</code></a>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -564,7 +564,7 @@ We additionally saw very briefly a couple of other kinds of failures, like null 
 In this section, we're going to expand on these additional checks, to give you an idea of what other problems Kani will find.</p>
 <h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
 <p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
-Consider this Rust code (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
+Consider this Rust code (which can be found under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -736,7 +736,7 @@ VERIFICATION FAILED
 <blockquote>
 <p><strong>NOTE:</strong> You could attempt to fix this issue by using Rust's alternative mathematical functions with explicit overflow behavior.
 For instance, instead of <code>a + b</code> write <code>a.wrapping_add(b)</code>.</p>
-<p>However, <a href="https://github.com/model-checking/rmc/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
+<p>However, <a href="https://github.com/model-checking/kani/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
 As a result, this currently still fails in Kani.</p>
 </blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
@@ -844,7 +844,7 @@ fn main() {
 <p>When we run Kani on this, we run into an unfortunate result: non-termination.
 This non-termination is caused by the model checker trying to unroll the loop an unbounded number of times.</p>
 <blockquote>
-<p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/rmc/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
+<p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/kani/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
 You are supposed to see some log lines that might give some clue that an infinite loop is occurring.
 If Kani doesn't terminate, it's almost always the problem that this section is covering, however.</p>
 </blockquote>
@@ -998,7 +998,7 @@ impl Inventory {
 <code>kani::any()</code> is a <strong>safe</strong> API function, and it represents only valid values.</p>
 <p>If we run this example, Kani verification will succeed, including the assertion that shows that the underlying <code>u32</code> variable  used to represent <code>NonZeroU32</code> cannot be zero, per its type invariant:</p>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
 <pre><code>cargo kani --function safe_update
 </code></pre>
 <h2 id="unsafe-nondeterministic-variables"><a class="header" href="#unsafe-nondeterministic-variables">Unsafe nondeterministic variables</a></h2>
@@ -1031,7 +1031,7 @@ As any unsafe method in rust, users must be careful when using unsafe methods an
 The Kani verification will now fail showing that <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
 <p>This is an interesting issue that emerges from how <code>rustc</code> optimizes the memory layout of <code>Option&lt;NonZeroU32&gt;</code>.
 The compiler is able to represent <code>Option&lt;NonZeroU32&gt;</code> using <code>32</code> bits by using the value <code>0</code> to represent <code>None</code>.</p>
-<p>You can try it out by running the example under <a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
 <pre><code>cargo kani --function unsafe_update
 </code></pre>
 <h2 id="safe-nondeterministic-variables-for-custom-types"><a class="header" href="#safe-nondeterministic-variables-for-custom-types">Safe nondeterministic variables for custom types</a></h2>
@@ -1083,7 +1083,7 @@ In our case, we have the following implementation:</p>
 <span class="boring">}
 </span></code></pre></pre>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/arbitrary-variables/"><code>kani-docs/src/tutorial/arbitrary-variables</code></a>:</p>
+<a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/"><code>kani-docs/src/tutorial/arbitrary-variables</code></a>:</p>
 <pre><code>cargo kani --function check_rating
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="where-to-start-on-real-code"><a class="header" href="#where-to-start-on-real-code">Where to start on real code</a></h1>
@@ -1229,7 +1229,7 @@ As a result, the &quot;main commit message&quot; will be the title of your pull 
 The individual commit message bodies you commit during development will by default be a bulleted list in the squashed commit message body, but these are editable at merge time.
 So you don't have to worry about a series of &quot;oops typo fix&quot; messages while fixing up your pull request, these can be edited out of the final message when you click merge.</p>
 <pre><code class="language-bash"># Set up your git fork
-git remote add fork git@github.com:${USER}/rmc.git
+git remote add fork git@github.com:${USER}/kani.git
 </code></pre>
 <pre><code class="language-bash"># Reset everything. Don't have any uncommitted changes!
 git clean -xffd
@@ -1456,9 +1456,9 @@ supported, you only need to rename it so the name does not contain <code>fixme</
 <a href="https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html">Rust unit testing</a>
 style.</p>
 <p>At present, Kani only uses unit tests in the
-<a href="https://github.com/model-checking/rmc/tree/main/compiler/cbmc">cbmc crate</a>
+<a href="https://github.com/model-checking/kani/tree/main/compiler/cbmc">cbmc crate</a>
 to test the
-<a href="https://github.com/model-checking/rmc/blob/main/compiler/cbmc/src/goto_program/symtab_transformer/identity_transformer.rs">identity symbol table transformer</a>.</p>
+<a href="https://github.com/model-checking/kani/blob/main/compiler/cbmc/src/goto_program/symtab_transformer/identity_transformer.rs">identity symbol table transformer</a>.</p>
 <h2 id="script-based-tests"><a class="header" href="#script-based-tests">Script-based tests</a></h2>
 <p>These are tests which are run using scripts. Scripting gives us the ability to
 perform ad-hoc checks that cannot be done otherwise. They are currently used
@@ -1522,7 +1522,7 @@ automatically updated whenever a PR gets merged into Kani.</p>
 <pre><code>./x.py run -i --stage 1 bookrunner
 </code></pre>
 <p>The main function of the bookrunner is <code>generate_run()</code> in
-<a href="https://github.com/model-checking/rmc/blob/main/src/tools/bookrunner/src/books.rs"><code>src/tools/bookrunner/src/books.rs</code></a>,
+<a href="https://github.com/model-checking/kani/blob/main/src/tools/bookrunner/src/books.rs"><code>src/tools/bookrunner/src/books.rs</code></a>,
 which follows these steps:</p>
 <ul>
 <li>
@@ -1571,7 +1571,7 @@ with it.</li>
 <li><strong>No</strong>: The feature is not supported. Some support may be available but analyses should not be trusted.</li>
 </ul>
 <p>As with all software, bugs may be found anywhere regardless of the level of support. In such cases, we
-would greatly appreciate that you <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
+would greatly appreciate that you <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
 <table><thead><tr><th>Reference</th><th>Feature</th><th>Support</th><th>Notes</th></tr></thead><tbody>
 <tr><td>3.1</td><td>Macros By Example</td><td>Yes</td><td></td></tr>
 <tr><td>3.2</td><td>Procedural Macros</td><td>Yes</td><td></td></tr>
@@ -1680,8 +1680,8 @@ features.</p>
 <h3 id="assembly"><a class="header" href="#assembly">Assembly</a></h3>
 <p>Kani does not support assembly code for now. We may add it in the future but at
 present there are no plans to do so.</p>
-<p>Check out the tracking issues for <a href="https://github.com/model-checking/rmc/issues/2">inline assembly (<code>asm!</code>
-macro)</a> and <a href="https://github.com/model-checking/rmc/issues/316">global assembly
+<p>Check out the tracking issues for <a href="https://github.com/model-checking/kani/issues/2">inline assembly (<code>asm!</code>
+macro)</a> and <a href="https://github.com/model-checking/kani/issues/316">global assembly
 (<code>asm_global!</code> macro)</a> to know
 more about the current status.</p>
 <h3 id="concurrency"><a class="header" href="#concurrency">Concurrency</a></h3>
@@ -1699,7 +1699,7 @@ This results in verification failures if the code under verification, for
 example, includes a reachable <code>println!</code> statement.</p>
 <p>We have done some experiments to embed the standard library into the generated
 code, but this causes verification times to increase significantly. As of now,
-we have not been able to find a simple solution for <a href="https://github.com/model-checking/rmc/issues/581">this
+we have not been able to find a simple solution for <a href="https://github.com/model-checking/kani/issues/581">this
 issue</a>, but we have some ideas
 for future work in this direction.</p>
 <h3 id="advanced-features"><a class="header" href="#advanced-features">Advanced features</a></h3>
@@ -1709,18 +1709,18 @@ all their use cases.</p>
 <p>In particular, there are some outstanding issues to note here:</p>
 <ul>
 <li>Unimplemented <code>PointerCast::ClosureFnPointer</code> in
-<a href="https://github.com/model-checking/rmc/issues/274">#274</a> and <code>Variant</code> case
+<a href="https://github.com/model-checking/kani/issues/274">#274</a> and <code>Variant</code> case
 in projections type in
-<a href="https://github.com/model-checking/rmc/issues/448">#448</a>.</li>
+<a href="https://github.com/model-checking/kani/issues/448">#448</a>.</li>
 <li>Unexpected fat pointer results in
-<a href="https://github.com/model-checking/rmc/issues/82">#82</a>,
-<a href="https://github.com/model-checking/rmc/issues/277">#277</a>,
-<a href="https://github.com/model-checking/rmc/issues/327">#327</a>,
-<a href="https://github.com/model-checking/rmc/issues/378">#378</a> and
-<a href="https://github.com/model-checking/rmc/issues/676">#676</a>.</li>
+<a href="https://github.com/model-checking/kani/issues/82">#82</a>,
+<a href="https://github.com/model-checking/kani/issues/277">#277</a>,
+<a href="https://github.com/model-checking/kani/issues/327">#327</a>,
+<a href="https://github.com/model-checking/kani/issues/378">#378</a> and
+<a href="https://github.com/model-checking/kani/issues/676">#676</a>.</li>
 </ul>
 <p>We are particularly interested in bug reports concerning
-these features, so please <a href="https://github.com/model-checking/rmc/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">file a bug
+these features, so please <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">file a bug
 report</a>
 if you are aware of one.</p>
 <h3 id="panic-strategies"><a class="header" href="#panic-strategies">Panic strategies</a></h3>
@@ -1733,7 +1733,7 @@ each function it encounters.</li>
 <p>Currently, Kani does not support stack unwinding. This has some implications
 regarding memory safety since programs sometimes rely on the unwinding logic to
 ensure there is no resource leak or persistent data inconsistency. Check out
-<a href="https://github.com/model-checking/rmc/issues/692">this issue</a> for updates on
+<a href="https://github.com/model-checking/kani/issues/692">this issue</a> for updates on
 stack unwinding support.</p>
 <h3 id="destructors"><a class="header" href="#destructors">Destructors</a></h3>
 <p>At present, we are aware of some issues with destructors, in particular those

@@ -117,10 +117,10 @@
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/tutorial-loops-unwinding.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/kani-docs/src/tutorial-loops-unwinding.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -183,7 +183,7 @@ fn main() {
 <p>When we run Kani on this, we run into an unfortunate result: non-termination.
 This non-termination is caused by the model checker trying to unroll the loop an unbounded number of times.</p>
 <blockquote>
-<p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/rmc/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
+<p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/kani/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
 You are supposed to see some log lines that might give some clue that an infinite loop is occurring.
 If Kani doesn't terminate, it's almost always the problem that this section is covering, however.</p>
 </blockquote>

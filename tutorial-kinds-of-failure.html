@@ -117,10 +117,10 @@
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/kani-docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/kani-docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -156,7 +156,7 @@ We additionally saw very briefly a couple of other kinds of failures, like null 
 In this section, we're going to expand on these additional checks, to give you an idea of what other problems Kani will find.</p>
 <h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
 <p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
-Consider this Rust code (which can be found under <a href="https://github.com/model-checking/rmc/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
+Consider this Rust code (which can be found under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -328,7 +328,7 @@ VERIFICATION FAILED
 <blockquote>
 <p><strong>NOTE:</strong> You could attempt to fix this issue by using Rust's alternative mathematical functions with explicit overflow behavior.
 For instance, instead of <code>a + b</code> write <code>a.wrapping_add(b)</code>.</p>
-<p>However, <a href="https://github.com/model-checking/rmc/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
+<p>However, <a href="https://github.com/model-checking/kani/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
 As a result, this currently still fails in Kani.</p>
 </blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
