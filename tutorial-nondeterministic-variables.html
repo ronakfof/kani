@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/kani/edit/main/kani-docs/src/tutorial-nondeterministic-variables.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/docs/src/tutorial-nondeterministic-variables.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -205,7 +205,7 @@ impl Inventory {
 <code>kani::any()</code> is a <strong>safe</strong> API function, and it represents only valid values.</p>
 <p>If we run this example, Kani verification will succeed, including the assertion that shows that the underlying <code>u32</code> variable  used to represent <code>NonZeroU32</code> cannot be zero, per its type invariant:</p>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
 <pre><code>cargo kani --function safe_update
 </code></pre>
 <h2 id="unsafe-nondeterministic-variables"><a class="header" href="#unsafe-nondeterministic-variables">Unsafe nondeterministic variables</a></h2>
@@ -238,7 +238,7 @@ As any unsafe method in rust, users must be careful when using unsafe methods an
 The Kani verification will now fail showing that <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
 <p>This is an interesting issue that emerges from how <code>rustc</code> optimizes the memory layout of <code>Option&lt;NonZeroU32&gt;</code>.
 The compiler is able to represent <code>Option&lt;NonZeroU32&gt;</code> using <code>32</code> bits by using the value <code>0</code> to represent <code>None</code>.</p>
-<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
+<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
 <pre><code>cargo kani --function unsafe_update
 </code></pre>
 <h2 id="safe-nondeterministic-variables-for-custom-types"><a class="header" href="#safe-nondeterministic-variables-for-custom-types">Safe nondeterministic variables for custom types</a></h2>
@@ -290,7 +290,7 @@ In our case, we have the following implementation:</p>
 <span class="boring">}
 </span></code></pre></pre>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/arbitrary-variables/"><code>kani-docs/src/tutorial/arbitrary-variables</code></a>:</p>
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>docs/src/tutorial/arbitrary-variables</code></a>:</p>
 <pre><code>cargo kani --function check_rating
 </code></pre>
 

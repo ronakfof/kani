@@ -120,7 +120,7 @@
                                                                         <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/kani/edit/main/kani-docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/docs/src/tutorial-kinds-of-failure.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -156,7 +156,7 @@ We additionally saw very briefly a couple of other kinds of failures, like null 
 In this section, we're going to expand on these additional checks, to give you an idea of what other problems Kani will find.</p>
 <h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
 <p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
-Consider this Rust code (which can be found under <a href="https://github.com/model-checking/kani/tree/main/kani-docs/src/tutorial/kinds-of-failure/"><code>kani-docs/src/tutorial/kinds-of-failure</code></a>):</p>
+Consider this Rust code (which can be found under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/kinds-of-failure/"><code>docs/src/tutorial/kinds-of-failure</code></a>):</p>
 <pre><pre class="playground"><code class="language-rust">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
