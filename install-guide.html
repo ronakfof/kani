@@ -182,15 +182,7 @@ git submodule update --init
 source $HOME/.cargo/env
 </code></pre>
 <h2 id="building-and-testing-kani"><a class="header" href="#building-and-testing-kani">Building and testing Kani</a></h2>
-<p>Perform one-time build configuration:</p>
-<pre><code>./configure \
-    --enable-debug \
-    --set=llvm.download-ci-llvm=true \
-    --set=rust.debug-assertions-std=false \
-    --set=rust.deny-warnings=false
-</code></pre>
-<p><strong>NOTE: If you skip the above (<code>llvm.download-ci-llvm=true</code> specifically), builds may take a long time as all of LLVM would need to be built from scratch.</strong></p>
-<p>Then build kani-compiler executable:</p>
+<p>Build kani-compiler executable:</p>
 <pre><code>( cd src/kani-compiler &amp;&amp; cargo build )
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>

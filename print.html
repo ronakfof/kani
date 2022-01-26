@@ -197,15 +197,7 @@ git submodule update --init
 source $HOME/.cargo/env
 </code></pre>
 <h2 id="building-and-testing-kani"><a class="header" href="#building-and-testing-kani">Building and testing Kani</a></h2>
-<p>Perform one-time build configuration:</p>
-<pre><code>./configure \
-    --enable-debug \
-    --set=llvm.download-ci-llvm=true \
-    --set=rust.debug-assertions-std=false \
-    --set=rust.deny-warnings=false
-</code></pre>
-<p><strong>NOTE: If you skip the above (<code>llvm.download-ci-llvm=true</code> specifically), builds may take a long time as all of LLVM would need to be built from scratch.</strong></p>
-<p>Then build kani-compiler executable:</p>
+<p>Build kani-compiler executable:</p>
 <pre><code>( cd src/kani-compiler &amp;&amp; cargo build )
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>
@@ -1235,12 +1227,6 @@ git remote add fork git@github.com:${USER}/kani.git
 git clean -xffd
 git submodule foreach --recursive git clean -xffd
 git submodule update --init
-# Don't forget to re-configure your Kani build:
-./configure \
-    --enable-debug \
-    --set=llvm.download-ci-llvm=true \
-    --set=rust.debug-assertions-std=false \
-    --set=rust.deny-warnings=false
 </code></pre>
 <pre><code class="language-bash"># Done with that PR, time for a new one?
 git switch main
@@ -1280,7 +1266,7 @@ git diff --stat origin/upstream-rustc..origin/main
 rustc_private=true
 </code></pre>
 <p>You may also need to install the <code>rustc-dev</code> package using rustup</p>
-<pre><code>rustup toolchain install nightly --component rustc-dev   
+<pre><code>rustup toolchain install nightly --component rustc-dev
 </code></pre>
 <h2 id="kani-command-cheat-sheet"><a class="header" href="#kani-command-cheat-sheet">Kani command cheat sheet</a></h2>
 <p>These can help understand what Kani is generating or encountering on an example or test file:</p>
