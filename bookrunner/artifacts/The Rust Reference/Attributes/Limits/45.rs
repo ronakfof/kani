@@ -1,4 +1,4 @@
-// kani-check-fail
+// kani-codegen-fail
 // compile-flags: --edition 2021
 #![allow(unused)]
 #![type_length_limit = "4"]

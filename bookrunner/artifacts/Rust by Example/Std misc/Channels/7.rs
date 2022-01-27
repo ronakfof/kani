@@ -1,4 +1,5 @@
 // compile-flags: --edition 2015
+// kani-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 use std::sync::mpsc::{Sender, Receiver};
 use std::sync::mpsc;

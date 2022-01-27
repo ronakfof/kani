@@ -1,4 +1,5 @@
 // compile-flags: --edition 2021
+// kani-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 fn main() {
 let words = vec!["a", "b", "c"];

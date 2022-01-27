@@ -1,4 +1,5 @@
 // compile-flags: --edition 2015
+// kani-flags: --cbmc-args --unwind 7
 #![allow(unused)]
 fn main() {
     let names = vec!["Bob", "Frank", "Ferris"];

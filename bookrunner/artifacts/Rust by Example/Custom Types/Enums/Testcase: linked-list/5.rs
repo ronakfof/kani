@@ -1,4 +1,5 @@
 // compile-flags: --edition 2015
+// kani-flags: --cbmc-args --unwind 3
 #![allow(unused)]
 use crate::List::*;
 

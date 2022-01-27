@@ -1,4 +1,5 @@
 // compile-flags: --edition 2015
+// kani-flags: --cbmc-args --unwind 4
 #![allow(unused)]
 fn main() {
     // `Vec` has non-copy semantics.

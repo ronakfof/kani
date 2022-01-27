@@ -1,4 +1,5 @@
 // compile-flags: --edition 2021
+// kani-flags: --cbmc-args --unwind 0
 #![allow(unused)]
 fn main() {
 let pi: Result<f32, _> = "3.14".parse();

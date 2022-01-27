@@ -1,4 +1,5 @@
 // compile-flags: --edition 2021
+// kani-flags: --cbmc-args --unwind 4
 #![allow(unused)]
 fn main() {
 let ok_num = Ok::<_, ()>(5);
