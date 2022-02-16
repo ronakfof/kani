@@ -154,7 +154,7 @@
 <p>In general, the following dependencies are required. Note: These dependencies may be installed by running the CI scripts shown below and there is no need to install them separately, for their respective OS.</p>
 <ol>
 <li>Cargo installed via rustup</li>
-<li><a href="https://github.com/diffblue/cbmc">CBMC</a> (&gt;= 5.48.0)</li>
+<li><a href="https://github.com/diffblue/cbmc">CBMC</a> (&gt;= 5.50.0)</li>
 <li><a href="https://github.com/awslabs/aws-viewer-for-cbmc">CBMC Viewer</a> (&gt;= 2.6)</li>
 </ol>
 <h2 id="installing-on-ubuntu-2004"><a class="header" href="#installing-on-ubuntu-2004">Installing on Ubuntu 20.04</a></h2>
@@ -182,8 +182,8 @@ git submodule update --init
 source $HOME/.cargo/env
 </code></pre>
 <h2 id="building-and-testing-kani"><a class="header" href="#building-and-testing-kani">Building and testing Kani</a></h2>
-<p>Build kani-compiler executable:</p>
-<pre><code>( cd src/kani-compiler &amp;&amp; cargo build )
+<p>Build Kani's packages:</p>
+<pre><code>cargo build
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>
 <pre><code>./scripts/kani-regression.sh

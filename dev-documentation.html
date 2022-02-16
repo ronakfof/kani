@@ -159,7 +159,7 @@ cargo build
 ./scripts/kani-regression.sh
 </code></pre>
 <pre><code class="language-bash"># Delete regression test caches
-rm -r build/x86_64-unknown-linux-gnu/test/
+rm -r build/x86_64-unknown-linux-gnu/tests/
 </code></pre>
 <pre><code class="language-bash"># Test suite run (to run a specific suite from src/test/, just remove the others)
 COMPILETEST_FORCE_STAGE0=1 ./x.py test -i --stage 0 kani firecracker prusti smack expected cargo-kani kani-docs

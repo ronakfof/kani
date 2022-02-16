@@ -554,6 +554,21 @@ code to be sequential.</p>
 <p>While Kani is capable of generating code for SIMD instructions, unfortunately, it
 does not provide support for the verification of some operations like vector
 comparison (e.g., <code>simd_eq</code>).</p>
+<h2 id="overrides"><a class="header" href="#overrides">Overrides</a></h2>
+<p>As explained in <a href="./tool-comparison.html#comparison-with-other-tools">Comparison with other
+tools</a>, Kani is based on a
+technique called model checking, which verifies a program without actually
+executing it. It does so through encoding the program and analyzing the encoded
+version. The encoding process often requires &quot;modeling&quot; some of the library
+functions to make them suitable for analysis. Typical examples of functionality
+that requires modeling are system calls and I/O operations. In some cases, Kani
+performs such encoding through overriding some of the definitions in the Rust
+standard library. The following table lists some of the symbols that Kani
+overrides and a description of their behavior compared to the <code>std</code> versions:</p>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>print</code>, <code>eprint</code>, <code>println</code>, and <code>eprintln</code> macros</td><td>Kani's version of these macros skips functionality that is not relevant for verification, e.g., string formatting and I/O operations</td></tr>
+<tr><td><code>assert</code>, <code>assert_eq</code>, and <code>assert_ne</code> macros</td><td>Kani overrides these macros in order to skip string formatting code, control the message that is displayed in the verification report for those asserts, and perform some instrumentation.</td></tr>
+</tbody></table>
 
                     </main>
 
