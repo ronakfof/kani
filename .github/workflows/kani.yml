@@ -4,23 +4,6 @@ name: Kani CI
 on: [push, pull_request]
 
 jobs:
-  regression:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macos-10.15, ubuntu-18.04, ubuntu-20.04]
-    steps:
-      - name: Checkout Kani
-        uses: actions/checkout@v2
-
-      - name: Build Kani
-        uses: ./.github/actions/build
-        with:
-            os: ${{ matrix.os }}
-
-      - name: Execute Kani regression
-        run: ./scripts/kani-regression.sh
-
   bookrunner:
     runs-on: ubuntu-20.04
     permissions:
@@ -32,7 +15,7 @@ jobs:
       - name: Build Kani
         uses: ./.github/actions/build
         with:
-            os: ubuntu-20.04
+            os: macos-10.15
 
       - name: Install book runner dependencies
         run: ./scripts/setup/install_bookrunner_deps.sh
