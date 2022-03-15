@@ -18,7 +18,9 @@ jobs:
             os: macos-10.15
 
       - name: Install book runner dependencies
-        run: ./scripts/setup/install_bookrunner_deps.sh
+        run: |
+          brew install litani
+          python3 -m pip install bs4
 
       - name: Generate book runner report
         run: cargo run -p bookrunner
