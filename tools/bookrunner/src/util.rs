@@ -146,15 +146,13 @@ pub fn parse_test_header(path: &Path) -> TestProps {
     TestProps::new(path.to_path_buf(), fail_step, rustc_args, kani_args)
 }
 
-/// Adds Kani and Litani directories to the current `PATH` environment variable.
-pub fn add_kani_and_litani_to_path() {
+/// Adds Kani  to the current `PATH` environment variable.
+pub fn add_kani_to_path() {
     let cwd = env::current_dir().unwrap();
     let kani_dir = cwd.join("scripts");
-    let mut litani_dir = cwd.clone();
-    litani_dir.extend(["tools", "litani"].iter());
     env::set_var(
         "PATH",
-        format!("{}:{}:{}", kani_dir.display(), litani_dir.display(), env::var("PATH").unwrap()),
+        format!("{}:{}", kani_dir.display(), env::var("PATH").unwrap()),
     );
 }
 
