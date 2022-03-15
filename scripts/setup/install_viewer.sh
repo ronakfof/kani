@@ -11,10 +11,5 @@ if [[ $# -ne 1 ]]; then
   exit 1
 fi
 
-FILE="cbmc_viewer-$1-py3-none-any.whl"
-URL="https://github.com/awslabs/aws-viewer-for-cbmc/releases/download/viewer-$1/$FILE"
-
 set -x
-
-wget -O "$FILE" "$URL"
-sudo -H python3 -m pip install --upgrade "$FILE"
+sudo -H python3 -m pip install --upgrade cbmc-viewer==$1
